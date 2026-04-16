@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>imely.ai · Creator Seeding Program</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --violet: #7733E4;
+    --violet-deep: #5a1fc9;
+    --violet-glow: rgba(119,51,228,0.45);
+    --lime: #BFFE4E;
+    --lime-dim: rgba(191,254,78,0.15);
+    --lime-glow: rgba(191,254,78,0.35);
+    --bg: #0a080f;
+    --bg2: #0f0c18;
+    --surface: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+    --border-violet: rgba(119,51,228,0.4);
+    --text: #f0eaff;
+    --text-2: #c8bcf0;
+    --text-3: #8a7ab0;
+    --text-4: #5a4e80;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .blob {
+    position: fixed; border-radius: 50%; filter: blur(120px);
+    pointer-events: none; z-index: 0;
+  }
+  .blob-1 { width: 600px; height: 600px; background: var(--violet-glow); top: -200px; left: -100px; }
+  .blob-2 { width: 400px; height: 400px; background: var(--lime-glow); opacity: 0.2; bottom: 10%; right: -100px; }
+  .blob-3 { width: 300px; height: 300px; background: var(--violet-glow); opacity: 0.25; top: 60%; left: 40%; }
+
+  .wrapper {
+    position: relative; z-index: 1;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+  }
+
+  /* LOGO */
+  .logo-mark {
+    text-align: center;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--text-4);
+    margin-bottom: 48px;
+  }
+  .logo-mark span { color: var(--violet); }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 0 0 72px;
+    position: relative;
+  }
+  .hero::after {
+    content: '';
+    display: block; width: 1px; height: 60px;
+    background: linear-gradient(to bottom, var(--violet), transparent);
+    margin: 48px auto 0;
+  }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--border-violet);
+    background: rgba(119,51,228,0.12);
+    border-radius: 99px;
+    padding: 5px 16px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--lime);
+    margin-bottom: 28px;
+    backdrop-filter: blur(8px);
+  }
+  .badge::before {
+    content: '';
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--lime);
+    box-shadow: 0 0 8px var(--lime);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 6vw, 54px);
+    font-weight: 900; line-height: 1.05;
+    letter-spacing: -0.03em; margin-bottom: 16px;
+  }
+  .hero h1 .highlight {
+    background: linear-gradient(135deg, var(--lime) 0%, #a8ff1a 50%, var(--lime) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(191,254,78,0.5));
+  }
+  .hero .tagline {
+    font-size: 15px; color: var(--text-2); font-weight: 400;
+    max-width: 460px; margin: 0 auto 28px; line-height: 1.65;
+  }
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .hero-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 12px; font-weight: 500; color: var(--text-2);
+    backdrop-filter: blur(8px);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .hero-pill:hover { border-color: var(--violet); color: var(--text); }
+
+  /* SECTION */
+  .section { margin-bottom: 56px; }
+  .section-label {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--violet);
+    margin-bottom: 20px;
+  }
+  .section-label::before {
+    content: '';
+    display: block; width: 24px; height: 1px;
+    background: var(--violet);
+    box-shadow: 0 0 8px var(--violet);
+  }
+
+  /* CARDS */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 18px;
+    transition: border-color 0.25s, transform 0.25s;
+    backdrop-filter: blur(12px);
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute; inset: 0; border-radius: 16px;
+    background: linear-gradient(135deg, var(--violet-glow) 0%, transparent 60%);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .card:hover::before { opacity: 1; }
+  .card:hover { border-color: var(--border-violet); transform: translateY(-2px); }
+  .card-icon { font-size: 24px; margin-bottom: 12px; display: block; }
+  .card-title { font-size: 13px; font-weight: 700; color: var(--lime); margin-bottom: 6px; }
+  .card-desc { font-size: 12.5px; color: var(--text-3); line-height: 1.6; }
+
+  /* CRITERIA */
+  .criteria { list-style: none; }
+  .criteria li {
+    font-size: 14px; color: var(--text-2); line-height: 1.65;
+    padding: 10px 0; display: flex; gap: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .criteria li:last-child { border-bottom: none; }
+  .criteria li::before {
+    content: '◆';
+    color: var(--violet); font-size: 8px; flex-shrink: 0; margin-top: 6px;
+    filter: drop-shadow(0 0 4px var(--violet));
+  }
+
+  /* PAY */
+  .pay-card {
+    border: 1px solid var(--border-violet);
+    border-radius: 20px; overflow: hidden;
+    backdrop-filter: blur(16px);
+    background: rgba(119,51,228,0.06);
+  }
+  .pay-row { display: flex; align-items: center; gap: 24px; padding: 28px; }
+  .pay-row.bonus-row {
+    border-top: 1px solid rgba(191,254,78,0.2);
+    background: rgba(191,254,78,0.04);
+  }
+  .pay-amount { font-size: 32px; font-weight: 900; white-space: nowrap; letter-spacing: -0.03em; min-width: 170px; flex-shrink: 0; }
+  .pay-amount.base { color: var(--text); text-shadow: 0 0 30px rgba(119,51,228,0.6); }
+  .pay-amount.bonus { color: var(--lime); font-size: 36px; text-shadow: 0 0 30px var(--lime-glow); }
+  .pay-label { font-size: 13px; line-height: 1.7; color: var(--text-2); }
+  .tag {
+    display: inline-block; border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 9px; font-weight: 800; letter-spacing: 0.15em;
+    text-transform: uppercase; margin-bottom: 6px;
+  }
+  .tag.base-tag { background: var(--violet); color: #fff; box-shadow: 0 0 12px rgba(119,51,228,0.5); }
+  .tag.gold-tag { background: var(--lime); color: #0a0a0a; box-shadow: 0 0 12px var(--lime-glow); }
+  .pay-label strong { font-weight: 700; color: var(--text); }
+  .underline { text-decoration: underline; text-underline-offset: 3px; font-weight: 700; color: var(--lime); }
+
+  /* BENEFITS */
+  .benefits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .benefit-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px; transition: border-color 0.25s;
+    backdrop-filter: blur(12px);
+  }
+  .benefit-card:hover { border-color: var(--border-violet); }
+  .benefit-icon { font-size: 20px; margin-bottom: 10px; display: block; }
+  .benefit-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .benefit-desc { font-size: 12.5px; color: var(--text-3); line-height: 1.5; }
+
+  /* INCOME */
+  .income-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 26px; backdrop-filter: blur(12px);
+  }
+  .income-row { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  .income-row:last-of-type { margin-bottom: 0; }
+  .income-label { font-size: 12px; font-weight: 600; color: var(--text-3); width: 90px; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.08em; }
+  .income-bar-bg { flex: 1; height: 6px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden; }
+  .income-bar { height: 100%; border-radius: 99px; }
+  .income-bar.base { width: 22%; background: linear-gradient(90deg, var(--violet), #9b55ff); box-shadow: 0 0 8px var(--violet-glow); }
+  .income-bar.breakout { width: 100%; background: linear-gradient(90deg, var(--violet), #9b55ff, var(--lime)); box-shadow: 0 0 12px var(--lime-glow); }
+  .income-val { font-size: 13px; font-weight: 800; white-space: nowrap; min-width: 130px; text-align: right; }
+  .income-val.v-base { color: #9b55ff; }
+  .income-val.v-breakout { color: var(--lime); font-size: 14px; text-shadow: 0 0 16px var(--lime-glow); }
+  .income-note {
+    font-size: 11.5px; color: var(--text-4);
+    border-top: 1px solid var(--border);
+    padding-top: 16px; margin-top: 18px; line-height: 1.7;
+  }
+  .income-note strong { color: var(--text-3); }
+
+  /* NOTE */
+  .note-box {
+    background: rgba(119,51,228,0.08);
+    border: 1px solid var(--border-violet);
+    border-left: 3px solid var(--violet);
+    border-radius: 14px;
+    padding: 20px 22px;
+    font-size: 13.5px; line-height: 1.8; color: var(--text-2);
+    backdrop-filter: blur(8px);
+  }
+  .note-box strong { color: var(--lime); font-weight: 700; }
+
+  /* TIMELINE */
+  .timeline-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    display: flex; align-items: center; gap: 20px;
+    backdrop-filter: blur(12px);
+    position: relative; overflow: hidden;
+  }
+  .timeline-card::after {
+    content: '';
+    position: absolute; right: 0; top: 0; bottom: 0; width: 3px;
+    background: linear-gradient(to bottom, var(--violet), var(--lime));
+    border-radius: 0 16px 16px 0;
+  }
+  .timeline-icon { font-size: 28px; }
+  .timeline-title { font-size: 14px; font-weight: 800; margin-bottom: 4px; color: var(--text); }
+  .timeline-sub { font-size: 13px; color: var(--text-3); }
+  .timeline-sub span { color: var(--lime); font-weight: 700; }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-violet), transparent);
+    margin: 8px 0 40px;
+  }
+
+  /* CTA */
+  .cta { text-align: center; padding: 48px 0 0; }
+  .cta a { text-decoration: none; }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--lime); color: #0a0a0a;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px; font-weight: 800; letter-spacing: 0.02em;
+    padding: 15px 48px; border-radius: 99px;
+    border: none; cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 32px rgba(191,254,78,0.4), 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 48px rgba(191,254,78,0.6), 0 8px 30px rgba(0,0,0,0.4);
+  }
+  .cta-btn::after { content: '→'; font-size: 16px; }
+  .cta-sub { font-size: 12px; color: var(--text-4); margin-top: 14px; letter-spacing: 0.05em; }
+
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+    .benefits { grid-template-columns: 1fr; }
+    .pay-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .pay-amount { min-width: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<div class="wrapper">
+
+  <div class="logo-mark"><span>imely</span>.ai</div>
+
+  <div class="hero">
+    <div class="badge">Beta Creator Program</div>
+    <h1>Character<br><span class="highlight">Writer / Creator</span></h1>
+    <p class="tagline">Biến ý tưởng thành nhân vật.<br>Biến nhân vật thành thu nhập.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Remote / Linh hoạt</span>
+      <span class="hero-pill">Phí cố định + thưởng</span>
+      <span class="hero-pill">Mở: Q2 2026</span>
+      <span class="hero-pill">15/4 – 15/10 · 6 tháng</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Bạn sẽ làm gì</div>
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">🪄</span>
+        <div class="card-title">Xây dựng nhân vật</div>
+        <div class="card-desc">Thiết kế avatar, tạo tính cách và phong cách hội thoại riêng cho từng nhân vật</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🌍</span>
+        <div class="card-title">Xây dựng cốt truyện & thế giới</div>
+        <div class="card-desc">Viết lore, backstory và kịch bản mở đầu để nhân vật sống động ngay từ đầu</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📣</span>
+        <div class="card-title">Phát triển fan base</div>
+        <div class="card-desc">Chia sẻ nhân vật, kéo người dùng đầu tiên và xây dựng cộng đồng xung quanh nhân vật</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Chúng tôi tìm kiếm ai</div>
+    <ul class="criteria">
+      <li>Có khả năng viết nhân vật, sáng tác hội thoại hoặc xây dựng thế giới — không cần kinh nghiệm kỹ thuật</li>
+      <li>Đã từng chơi hoặc biết đến các app AI chat (Doki, Character.AI, v.v.) là lợi thế</li>
+      <li>Có thể hoàn thành ít nhất 1–3 nhân vật trong thời gian thỏa thuận</li>
+      <li>Chăm chỉ, tự quản lý tốt — công việc hoàn toàn linh hoạt theo lịch của bạn</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label">Thu nhập cơ bản</div>
+    <div class="pay-card">
+      <div class="pay-row">
+        <div class="pay-amount base">60.000đ</div>
+        <div class="pay-label">
+          <div class="tag base-tag">Mức cơ bản</div><br>
+          cho mỗi nhân vật được duyệt và đăng lên nền tảng —
+          <span class="underline">trả ngay</span>, không cần chờ hiệu suất
+        </div>
+      </div>
+      <div class="pay-row bonus-row">
+        <div class="pay-amount bonus">2.000.000đ</div>
+        <div class="pay-label">
+          <div class="tag gold-tag">Mức Breakout ✦</div><br>
+          thưởng thêm khi nhân vật đạt <strong>1.000.000 messages</strong> —
+          tính 2 chiều (user + character reply)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Quyền lợi của bạn</div>
+    <div class="benefits">
+      <div class="benefit-card">
+        <span class="benefit-icon">💎</span>
+        <div class="benefit-title">Phí cố định / nhân vật</div>
+        <div class="benefit-desc">Được trả ngay khi nhân vật vượt qua vòng duyệt chất lượng</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🏆</span>
+        <div class="benefit-title">Thưởng hiệu suất</div>
+        <div class="benefit-desc">Nhân vật càng cuốn, người dùng càng nhắn nhiều — thưởng càng lớn</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">⭐</span>
+        <div class="benefit-title">Creator Spotlight</div>
+        <div class="benefit-desc">Nhân vật nổi bật được featured — bàn đạp để build tên tuổi của bạn</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🚀</span>
+        <div class="benefit-title">Không giới hạn số nhân vật</div>
+        <div class="benefit-desc">Tạo nhiều nhân vật, nhận thu nhập — không có trần giới hạn</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Thu nhập tiềm năng</div>
+    <div class="income-wrap">
+      <div class="income-row">
+        <div class="income-label">Được duyệt</div>
+        <div class="income-bar-bg"><div class="income-bar base"></div></div>
+        <div class="income-val v-base">60.000đ / nhân vật</div>
+      </div>
+      <div class="income-row">
+        <div class="income-label">Breakout ✦</div>
+        <div class="income-bar-bg"><div class="income-bar breakout"></div></div>
+        <div class="income-val v-breakout">+ 2.000.000đ</div>
+      </div>
+      <div class="income-note">
+        Mốc Breakout đạt được khi nhân vật đạt <strong>1.000.000 messages</strong> — tính 2 chiều (user + character reply). Các điều kiện cụ thể sẽ được thảo luận trong quá trình onboarding.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Lưu ý chương trình</div>
+    <div class="note-box">
+      <strong>🔍 Hệ thống detect tự động:</strong> Nhân vật không đạt yêu cầu chất lượng sẽ bị phát hiện và không đủ điều kiện nhận thưởng.<br><br>
+      <strong>📊 Cách tính messages:</strong> Messages được tính <strong>2 chiều</strong> — mỗi lượt user nhắn + mỗi lượt character phản hồi đều được đếm.<br><br>
+      <strong>⚗️ Chương trình thử nghiệm:</strong> Beta program với 2 mốc thưởng, chạy 6 tháng từ <strong>15/4 – 15/10/2026</strong>.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Thời gian</div>
+    <div class="timeline-card">
+      <div class="timeline-icon">🗓️</div>
+      <div>
+        <div class="timeline-title">Beta Program · 6 tháng</div>
+        <div class="timeline-sub"><span>15/4/2026</span> → <span>15/10/2026</span> · Chương trình thử nghiệm 2 mốc thưởng đầu tiên</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer"><button class="cta-btn">Ứng tuyển ngay</button></a>
+    <div class="cta-sub">Slots có hạn · Ưu tiên creators chất lượng cao</div>
+  </div>
+
+</div>
+</body>
+</html>
