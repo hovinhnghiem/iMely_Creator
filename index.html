@@ -283,23 +283,45 @@
 
   /* CTA */
   .cta { text-align: center; padding: 48px 0 0; }
+  .cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
   .cta a { text-decoration: none; }
   .cta-btn {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--lime); color: #0a0a0a;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 14px; font-weight: 800; letter-spacing: 0.02em;
-    padding: 15px 48px; border-radius: 99px;
+    padding: 15px 44px; border-radius: 99px;
     border: none; cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 0 32px rgba(191,254,78,0.4), 0 4px 20px rgba(0,0,0,0.4);
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 0 32px rgba(191,254,78,0.3), 0 4px 15px rgba(0,0,0,0.3);
+    white-space: nowrap;
+  }
+  .cta-btn-secondary {
+    background: rgba(255,255,255,0.03);
+    color: var(--text-2);
+    border: 1px solid var(--border-violet);
+    box-shadow: 0 0 20px rgba(119,51,228,0.1);
   }
   .cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 48px rgba(191,254,78,0.6), 0 8px 30px rgba(0,0,0,0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 0 48px rgba(191,254,78,0.5), 0 10px 25px rgba(0,0,0,0.4);
+    color: #000;
   }
-  .cta-btn::after { content: '→'; font-size: 16px; }
-  .cta-sub { font-size: 12px; color: var(--text-4); margin-top: 14px; letter-spacing: 0.05em; }
+  .cta-btn-secondary:hover {
+    background: rgba(119,51,228,0.15);
+    border-color: var(--violet);
+    color: var(--text);
+    box-shadow: 0 0 32px var(--violet-glow), 0 10px 25px rgba(0,0,0,0.4);
+  }
+  .cta-btn.primary::after { content: '→'; font-size: 16px; }
+  .cta-btn.secondary::after { content: '📑'; font-size: 14px; opacity: 0.8; }
+  .cta-sub { font-size: 12px; color: var(--text-4); letter-spacing: 0.05em; }
 
   @media (max-width: 600px) {
     .cards { grid-template-columns: 1fr; }
@@ -452,7 +474,14 @@
   </div>
 
   <div class="cta">
-    <a href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer"><button class="cta-btn">Ứng tuyển ngay</button></a>
+    <div class="cta-group">
+      <a href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer">
+        <button class="cta-btn primary">Ứng tuyển ngay</button>
+      </a>
+      <a href="https://luminous-teacher-42d.notion.site/iMely-ai-Ti-u-ch-x-t-duy-t-34570b093f3d80959155de3de98dd873?source=copy_link" target="_blank" rel="noopener noreferrer">
+        <button class="cta-btn cta-btn-secondary secondary">Tiêu chí xét duyệt</button>
+      </a>
+    </div>
     <div class="cta-sub">Slots có hạn · Ưu tiên creators chất lượng cao</div>
   </div>
 
