@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quy trình nhận thưởng — iMely Social Content Creator</title>
+  <meta name="description" content="Quy trình nhận thưởng cho iMely Social Content Creator Program.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07120f;
+      --card-bg: rgba(11, 31, 24, 0.7);
+      --panel-bg: rgba(255, 255, 255, 0.03);
+      --accent: #1affe0;
+      --accent-soft: rgba(26, 255, 224, 0.1);
+      --accent-border: rgba(26, 255, 224, 0.2);
+      --accent-glow: rgba(26, 255, 224, 0.35);
+      --text-main: #e8f5f1;
+      --text-dim: #7ab8a8;
+      --glass-border: rgba(255, 255, 255, 0.05);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: var(--bg-dark);
+      background-image:
+        radial-gradient(circle at 10% 15%, rgba(26, 255, 224, 0.07) 0%, transparent 38%),
+        radial-gradient(circle at 88% 82%, rgba(26, 255, 224, 0.04) 0%, transparent 40%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 3rem 1rem 5rem;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+    .container { margin: 0 auto; max-width: 860px; }
+    .brand { display: flex; justify-content: center; margin-bottom: 1.5rem; }
+    .brand img { height: 88px; width: auto; filter: drop-shadow(0 0 22px var(--accent-glow)); }
+
+    .top-link,
+    .form-link {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      color: var(--text-main);
+      display: inline-flex;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      min-height: 46px;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .top-link:hover,
+    .form-link:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .form-link {
+      background: var(--accent);
+      color: var(--bg-dark);
+      margin-top: 0.75rem;
+    }
+
+    .hero { margin-bottom: 2rem; text-align: center; }
+    .hero-actions { display: flex; justify-content: center; margin-bottom: 1.5rem; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 99px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.4rem;
+      padding: 6px 16px;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { font-family: 'Outfit', sans-serif; }
+
+    h1 {
+      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 900;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.08;
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      color: var(--text-dim);
+      font-size: 1.08rem;
+      margin: 0 auto;
+      max-width: 650px;
+    }
+
+    section {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      margin-bottom: 1.35rem;
+      overflow: hidden;
+      padding: 2rem;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      border-color: var(--accent-border);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 1rem;
+    }
+
+    p { color: var(--text-dim); margin-bottom: 0.45rem; }
+    ul { list-style: none; margin: 0.55rem 0 0; }
+
+    li {
+      color: var(--text-main);
+      margin-bottom: 0.6rem;
+      padding-left: 1.6rem;
+      position: relative;
+    }
+
+    li::before {
+      color: var(--accent);
+      content: '✦';
+      font-size: 0.85rem;
+      left: 0;
+      position: absolute;
+      top: 0.15rem;
+    }
+
+    strong { color: var(--text-main); font-weight: 800; }
+
+    .callout {
+      background: var(--panel-bg);
+      border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      margin-top: 1rem;
+      padding: 1rem 1rem 1rem 1.2rem;
+    }
+
+    @media (max-width: 680px) {
+      body { padding: 2rem 1rem 4rem; }
+      .brand img { height: 68px; }
+      section { border-radius: 20px; padding: 1.5rem; }
+      .form-link { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="iMely Logo">
+    </div>
+
+    <header class="hero">
+      <div class="hero-actions">
+        <a class="top-link" href="index.html#social">← Quay lại Creator Programs</a>
+      </div>
+      <div class="badge">Reward Process</div>
+      <h1>Quy trình nhận thưởng<br>Social Content Creator</h1>
+      <p class="hero-desc">Đợt 1: 15/05/2026 - 15/07/2026</p>
+    </header>
+
+    <section>
+      <h2>Bước 1 — Đăng ký</h2>
+      <ul>
+        <li>Điền form đăng kí gồm thông tin cá nhân, link kênh TikTok, cam kết đủ 18 tuổi và thông tin STK / MOMO nhận thưởng.</li>
+        <li>Team xét duyệt hồ sơ và gửi email xác nhận - Thưởng sẽ được tính cho các video được đăng tải sau khi imely đã gởi email xác nhận.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bước 2 — Đăng video lên TikTok</h2>
+      <ul>
+        <li>Thực hiện video theo đúng Content Guidelines của chương trình.</li>
+        <li>Bắt buộc có hashtag <strong>#imely</strong> để được tính vào chương trình.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bước 3 — Nộp form sau 7 ngày</h2>
+      <ul>
+        <li>Đúng 7 ngày sau khi đăng, nộp Google Form gồm link dẫn tới video trên TikTok và ảnh chụp màn hình analytics (view/like).</li>
+        <li>Số liệu tại thời điểm nộp là số liệu chốt, không cập nhật lại.</li>
+        <li>Deadline nộp: trước ngày 22 hàng tháng để nhận tiền tháng đó — nộp từ ngày 23 tính sang tháng sau.</li>
+      </ul>
+      <a class="form-link" href="https://forms.gle/SavqdQunen7QwvXz7" target="_blank" rel="noopener noreferrer">Mở Google Form →</a>
+    </section>
+
+    <section>
+      <h2>Bước 4 — Xét duyệt</h2>
+      <ul>
+        <li>Team phản hồi trong vòng 2 ngày làm việc và phản hồi duyệt / không duyệt qua email.</li>
+        <li>Tối đa 15 video được duyệt / người trong toàn bộ chương trình.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bước 5 — Nhận thưởng</h2>
+      <ul>
+        <li>Thanh toán 1 lần/tháng vào ngày 1 hàng tháng.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[iMely.ai] Tiêu chí xét duyệt</title>
+  <meta name="description" content="Tiêu chí xét duyệt nhân vật cho iMely.ai Creator Program.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07120f;
+      --card-bg: rgba(11, 31, 24, 0.7);
+      --panel-bg: rgba(255, 255, 255, 0.03);
+      --accent: #1affe0;
+      --accent-soft: rgba(26, 255, 224, 0.1);
+      --accent-border: rgba(26, 255, 224, 0.2);
+      --accent-glow: rgba(26, 255, 224, 0.35);
+      --text-main: #e8f5f1;
+      --text-dim: #7ab8a8;
+      --text-muted: #6f8781;
+      --glass-border: rgba(255, 255, 255, 0.05);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: var(--bg-dark);
+      background-image:
+        radial-gradient(circle at 10% 15%, rgba(26, 255, 224, 0.07) 0%, transparent 38%),
+        radial-gradient(circle at 88% 82%, rgba(26, 255, 224, 0.04) 0%, transparent 40%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 3rem 1rem 5rem;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 860px;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand img {
+      height: 88px;
+      width: auto;
+      filter: drop-shadow(0 0 22px var(--accent-glow));
+    }
+
+    .top-link {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      border-radius: 99px;
+      color: var(--text-main);
+      display: inline-flex;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      min-height: 46px;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .top-link:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 99px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.4rem;
+      padding: 6px 16px;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    h1 {
+      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 900;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.08;
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      color: var(--text-dim);
+      font-size: 1.08rem;
+      margin: 0 auto;
+      max-width: 650px;
+    }
+
+    section {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      margin-bottom: 1.35rem;
+      overflow: hidden;
+      padding: 2rem;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      border-color: var(--accent-border);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-dim);
+      margin-bottom: 0.45rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0.55rem 0 0;
+    }
+
+    li {
+      color: var(--text-main);
+      margin-bottom: 0.6rem;
+      padding-left: 1.6rem;
+      position: relative;
+    }
+
+    li::before {
+      color: var(--accent);
+      content: '✦';
+      font-size: 0.85rem;
+      left: 0;
+      position: absolute;
+      top: 0.15rem;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 800;
+    }
+
+    .callout {
+      background: var(--panel-bg);
+      border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      margin-top: 1rem;
+      padding: 1rem 1rem 1rem 1.2rem;
+    }
+
+    .footer {
+      color: var(--text-dim);
+      font-style: italic;
+      margin: 2rem auto 0;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .footer strong {
+      color: var(--text-main);
+      font-style: normal;
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding: 2rem 1rem 4rem;
+      }
+
+      .brand img {
+        height: 68px;
+      }
+
+      section {
+        border-radius: 20px;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="iMely Logo">
+    </div>
+
+    <header class="hero">
+      <div class="hero-actions">
+        <a class="top-link" href="index.html">← Quay lại Creator Programs</a>
+      </div>
+      <div class="badge">Character Quality Criteria</div>
+      <h1>[iMely.ai]<br>Tiêu chí xét duyệt</h1>
+      <p class="hero-desc">Checklist đánh giá nhân vật trước khi tham gia iMely Creator Program.</p>
+    </header>
+
+    <section>
+      <h2>1. Uniqueness</h2>
+      <p><strong>SHOULD:</strong> Combination của tên + xuất thân + hoàn cảnh + mối quan hệ với người dùng tạo ra một profile không thể swap. Nếu thay tên thì toàn bộ logic của nhân vật sẽ vỡ.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Có thể mô tả nhân vật chỉ bằng trope mà không cần thêm gì</li>
+        <li>Hai nhân vật khác nhau trong cùng submission pool có backstory gần như giống nhau chỉ khác setting</li>
+        <li>Không có chi tiết định danh cụ thể nào đủ để phân biệt với 10 nhân vật cùng archetype</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Background</h2>
+      <p><strong>PASS:</strong> Các sự kiện trong quá khứ của nhân vật giải thích được hành vi, thế giới quan, và cách họ phản ứng trong hiện tại. Có thể trace ngược từ tính cách về nguồn gốc.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Tính cách và backstory không liên kết - nhân vật "lạnh lùng" nhưng không có lý do gì trong quá khứ hình thành điều đó</li>
+        <li>Có mâu thuẫn timeline hoặc logic không giải thích được</li>
+        <li>Backstory chỉ là decoration, không ảnh hưởng đến cách nhân vật hành xử trong conversation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Narrative Depth - Cốt truyện</h2>
+      <p><strong>PASS:</strong> Phần mô tả nhân vật gợi ra nhiều hơn những gì nó nói thẳng. Có subtext, có thứ chưa được giải quyết, có câu hỏi mà người dùng sẽ muốn tự tìm câu trả lời qua chat.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Toàn bộ story của nhân vật đã được kể hết trong phần mô tả - không còn gì để khám phá</li>
+        <li>Không có internal contradiction hoặc tension chưa được giải quyết</li>
+        <li>Arc của nhân vật có thể tóm tắt trong 1 câu mà không mất gì</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Conversation</h2>
+      <p><strong>PASS:</strong> Đọc thoại mẫu mà không có tên nhân vật vẫn nhận ra đây là ai - qua cách chọn từ, cấu trúc câu, những gì nhân vật <strong>không</strong> nói thẳng, cách né tránh hoặc phản công bằng ngôn ngữ.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Thoại mẫu có thể paste sang bất kỳ nhân vật nào cùng mood mà vẫn hợp</li>
+        <li>Không đủ 3 dòng thoại mẫu trong submission</li>
+        <li>Giọng quá phụ thuộc vào context - tách ra khỏi scene thì không còn nhận ra</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Personalization</h2>
+      <p><strong>PASS:</strong> Cá nhân hoá và độc bản identity/ relationship, cần cụ thể đủ để người dùng biết mình nên hành xử như thế nào ngay từ tin nhắn đầu.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Người dùng có thể là bất kỳ ai - vai trò hoàn toàn mở không có định hướng</li>
+        <li>Opening không tạo ra đủ context để người dùng bắt đầu tự nhiên</li>
+        <li>Nhân vật không có lý do cụ thể nào để tương tác với người dùng trong scene đó</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Community Standards - Tiêu chuẩn cộng đồng</h2>
+      <p><strong>PASS:</strong> Nhân vật có thể dark, morally complex, hoặc explore chủ đề nhạy cảm - miễn là phục vụ narrative và không gây hại cho người dùng thực tế.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Nội dung có thể gây hại trực tiếp cho người dùng ngoài đời thực nếu được thực hành theo</li>
+        <li>Nhân vật được xây dựng để target hoặc miệt thị một nhóm người dựa trên đặc điểm cá nhân</li>
+        <li>Dựa trên người thật có thể nhận diện - public figure hay người thường</li>
+        <li>Nhân vật hoặc người dùng được đặt là trẻ vị thành niên trong bối cảnh romantic hoặc sexual</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Public Content Standards - Tiêu chuẩn nội dung công khai</h2>
+      <p><strong>PASS:</strong> Toàn bộ nội dung hiển thị công khai - hashtag, tagline, thông tin công khai - sử dụng ngôn ngữ phù hợp với mọi đối tượng người dùng trên app.</p>
+      <p><strong>FAIL:</strong></p>
+      <ul>
+        <li>Hashtag chứa từ ngữ nhạy cảm, tục tĩu, hoặc gợi dục</li>
+        <li>Tagline sử dụng ngôn ngữ vi phạm tiêu chuẩn cộng đồng hoặc quy định nền tảng</li>
+        <li>Phần thông tin công khai (tên, mô tả hiển thị, tags) chứa nội dung không phù hợp</li>
+      </ul>
+      <p class="callout"><strong>Lưu ý:</strong> Phần nội dung bên trong nhân vật (system prompt, world info, v.v.) sẽ được xét duyệt linh hoạt hơn. Restriction chỉ áp dụng với các phần hiển thị công khai với tất cả người dùng.</p>
+    </section>
+
+  </main>
+</body>
+</html>
