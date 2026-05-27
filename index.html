@@ -3,631 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>imely — Creator Programs</title>
-  <meta name="description" content="Chương trình Creator imely dành cho Character Writer / Creator và Social Content Creator.">
+  <title>imely — Character Creator Program</title>
+  <meta name="description" content="Chương trình Character Creator imely dành cho creator yêu thích viết nhân vật, xây dựng thế giới và phát triển cộng đồng.">
+  <link rel="alternate" hreflang="vi" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <link rel="alternate" hreflang="id" href="id/index.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #07120f;
-      --card-bg: rgba(11, 31, 24, 0.7);
-      --panel-bg: rgba(255, 255, 255, 0.03);
-      --accent: #1affe0;
-      --accent-strong: #10a38d;
-      --accent-soft: rgba(26, 255, 224, 0.1);
-      --accent-border: rgba(26, 255, 224, 0.2);
-      --accent-glow: rgba(26, 255, 224, 0.35);
-      --text-main: #e8f5f1;
-      --text-dim: #7ab8a8;
-      --text-muted: #6f8781;
-      --glass-border: rgba(255, 255, 255, 0.05);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      background: var(--bg-dark);
-      background-image:
-        radial-gradient(circle at 10% 15%, rgba(26, 255, 224, 0.07) 0%, transparent 38%),
-        radial-gradient(circle at 88% 82%, rgba(26, 255, 224, 0.04) 0%, transparent 40%);
-      color: var(--text-main);
-      line-height: 1.6;
-      min-height: 100vh;
-      padding: 3rem 1rem 8rem;
-      overflow-x: hidden;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .brand {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .brand img {
-      width: auto;
-      height: 88px;
-      filter: drop-shadow(0 0 22px var(--accent-glow));
-    }
-
-    .tabs {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.75rem;
-      width: 100%;
-      margin: 0 auto 2.5rem;
-      padding: 0.5rem;
-      border: 1px solid var(--glass-border);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.025);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    .tab-button {
-      border: 1px solid transparent;
-      border-radius: 16px;
-      background: transparent;
-      color: var(--text-dim);
-      cursor: pointer;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      padding: 0.9rem 1rem;
-      transition: var(--transition);
-    }
-
-    .tab-button:hover {
-      border-color: var(--accent-border);
-      color: var(--text-main);
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .tab-button[aria-selected="true"] {
-      background: var(--accent);
-      color: var(--bg-dark);
-      box-shadow: 0 12px 34px rgba(26, 255, 224, 0.22);
-    }
-
-    .program-panel[hidden] {
-      display: none;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 2rem;
-      padding-top: 0.5rem;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      background: var(--accent-soft);
-      border: 1px solid var(--accent-border);
-      color: var(--accent);
-      padding: 6px 16px;
-      border-radius: 99px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(26, 255, 224, 0.28); }
-      70% { box-shadow: 0 0 0 10px rgba(26, 255, 224, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(26, 255, 224, 0); }
-    }
-
-    h1, h2, h3 {
-      font-family: 'Outfit', sans-serif;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 4rem);
-      font-weight: 900;
-      line-height: 1.08;
-      margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-desc {
-      font-size: 1.08rem;
-      color: var(--text-dim);
-      max-width: 650px;
-      margin: 0 auto 2rem;
-    }
-
-    .pills {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .pill {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--glass-border);
-      padding: 8px 18px;
-      border-radius: 12px;
-      font-size: 14px;
-      color: var(--text-main);
-      transition: var(--transition);
-    }
-
-    .pill:hover {
-      background: var(--accent-soft);
-      border-color: var(--accent);
-    }
-
-    .glass-card {
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--glass-border);
-      border-radius: 24px;
-      padding: 2.5rem;
-      margin-bottom: 2rem;
-      position: relative;
-      overflow: hidden;
-      transition: var(--transition);
-    }
-
-    .glass-card:hover {
-      border-color: var(--accent-border);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .section-header h2 {
-      color: var(--accent);
-      font-size: 1.45rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .section-header .line {
-      height: 1px;
-      flex-grow: 1;
-      background: linear-gradient(90deg, var(--accent-border), transparent);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .features.two-up {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .feature-card {
-      background: var(--panel-bg);
-      border: 1px solid var(--glass-border);
-      border-radius: 20px;
-      padding: 1.5rem;
-      transition: var(--transition);
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      background: var(--accent-soft);
-      border-color: var(--accent-border);
-    }
-
-    .feature-icon {
-      display: block;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .feature-title {
-      color: #fff;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-
-    .feature-text {
-      color: var(--text-dim);
-      font-size: 14px;
-    }
-
-    .custom-list {
-      list-style: none;
-    }
-
-    .custom-list li {
-      color: var(--text-main);
-      margin-bottom: 1.25rem;
-      padding-left: 2rem;
-      position: relative;
-    }
-
-    .custom-list li:last-child {
-      margin-bottom: 0;
-    }
-
-    .custom-list li::before {
-      content: '✦';
-      color: var(--accent);
-      font-size: 1.15rem;
-      left: 0;
-      line-height: 1;
-      position: absolute;
-      top: 0.2rem;
-    }
-
-    .income-banner {
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
-      border-radius: 20px;
-      color: var(--bg-dark);
-      margin-bottom: 2rem;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .income-banner .label {
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      opacity: 0.82;
-      text-transform: uppercase;
-    }
-
-    .income-banner .amount {
-      font-family: 'Outfit', sans-serif;
-      font-size: clamp(2.4rem, 9vw, 3.5rem);
-      font-weight: 900;
-      line-height: 1;
-      margin: 0.5rem 0;
-    }
-
-    .income-banner .subtext {
-      font-weight: 600;
-      opacity: 0.86;
-    }
-
-    .stats-table {
-      border-collapse: separate;
-      border-spacing: 0 12px;
-      width: 100%;
-    }
-
-    .stats-table tr {
-      background: rgba(255, 255, 255, 0.02);
-      transition: var(--transition);
-    }
-
-    .stats-table tr:hover {
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .stats-table td {
-      border-bottom: 1px solid var(--glass-border);
-      border-top: 1px solid var(--glass-border);
-      padding: 1rem 1.5rem;
-      vertical-align: middle;
-    }
-
-    .stats-table td:first-child {
-      border-left: 1px solid var(--glass-border);
-      border-radius: 12px 0 0 12px;
-      color: var(--text-dim);
-    }
-
-    .stats-table td:last-child {
-      border-right: 1px solid var(--glass-border);
-      border-radius: 0 12px 12px 0;
-      color: #fff;
-      font-weight: 800;
-      text-align: right;
-    }
-
-    .stats-table td.highlight {
-      color: var(--accent);
-    }
-
-    .program-note {
-      background: var(--panel-bg);
-      border: 1px solid var(--glass-border);
-      border-radius: 14px;
-      color: var(--text-dim);
-      font-size: 14px;
-      margin-top: 1.5rem;
-      padding: 1rem;
-    }
-
-    .program-note strong {
-      color: var(--accent);
-    }
-
-    .policy-block {
-      margin-bottom: 1.5rem;
-    }
-
-    .policy-block:last-child {
-      margin-bottom: 0;
-    }
-
-    .policy-title {
-      color: var(--text-muted);
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.13em;
-      margin-bottom: 0.8rem;
-      text-transform: uppercase;
-    }
-
-    .policy-copy {
-      background: var(--panel-bg);
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      color: var(--text-dim);
-      font-size: 14px;
-      padding: 1.25rem;
-    }
-
-    .policy-copy strong {
-      color: var(--accent);
-    }
-
-    .policy-copy a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    .timeline-card {
-      background: var(--panel-bg);
-      border: 1px solid var(--glass-border);
-      border-radius: 18px;
-      display: flex;
-      gap: 1.25rem;
-      overflow: hidden;
-      padding: 1.5rem;
-      position: relative;
-    }
-
-    .timeline-card::before {
-      background: var(--accent);
-      box-shadow: 0 0 15px var(--accent-glow);
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 4px;
-    }
-
-    .timeline-icon {
-      font-size: 2rem;
-      line-height: 1;
-    }
-
-    .timeline-title {
-      color: #fff;
-      font-family: 'Outfit', sans-serif;
-      font-weight: 800;
-      margin-bottom: 0.35rem;
-    }
-
-    .timeline-sub {
-      color: var(--text-dim);
-      font-size: 14px;
-    }
-
-    .timeline-sub span {
-      color: var(--accent);
-      font-weight: 800;
-    }
-
-    .panel-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      padding: 1rem 0 5rem;
-      text-align: center;
-    }
-
-    .action-button {
-      align-items: center;
-      border-radius: 18px;
-      display: inline-flex;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      justify-content: center;
-      min-height: 54px;
-      padding: 0.95rem 1.6rem;
-      text-decoration: none;
-      transition: var(--transition);
-      white-space: nowrap;
-    }
-
-    .action-button.primary {
-      background: var(--accent);
-      box-shadow: 0 10px 34px rgba(26, 255, 224, 0.25);
-      color: var(--bg-dark);
-    }
-
-    .action-button.primary:hover {
-      box-shadow: 0 14px 44px rgba(26, 255, 224, 0.42);
-      transform: translateY(-3px);
-    }
-
-    .action-button.secondary {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--glass-border);
-      color: var(--text-main);
-    }
-
-    .action-button.secondary:hover {
-      background: var(--accent-soft);
-      border-color: var(--accent-border);
-      color: var(--accent);
-      transform: translateY(-3px);
-    }
-
-    .footer-note {
-      color: var(--text-dim);
-      font-size: 14px;
-      margin-bottom: 2rem;
-      padding-bottom: 4rem;
-      text-align: center;
-    }
-
-    .sticky-cta {
-      bottom: 2rem;
-      left: 0;
-      padding: 0 1rem;
-      position: fixed;
-      right: 0;
-      z-index: 100;
-    }
-
-    .sticky-cta-link {
-      align-items: center;
-      background: var(--accent);
-      border-radius: 18px;
-      box-shadow: 0 10px 40px rgba(26, 255, 224, 0.3);
-      color: var(--bg-dark);
-      display: flex;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.18rem;
-      font-weight: 900;
-      justify-content: center;
-      margin: 0 auto;
-      max-width: 420px;
-      min-height: 64px;
-      padding: 1rem 1.5rem;
-      text-decoration: none;
-      transition: var(--transition);
-      width: 100%;
-    }
-
-    .sticky-cta-link:hover {
-      box-shadow: 0 15px 50px rgba(26, 255, 224, 0.48);
-      transform: translateY(-3px) scale(1.01);
-    }
-
-    @media (max-width: 700px) {
-      body {
-        padding: 2rem 1rem 7rem;
-      }
-
-      .brand img {
-        height: 68px;
-      }
-
-      .tabs {
-        grid-template-columns: 1fr;
-        margin-bottom: 2rem;
-      }
-
-      .tab-button {
-        min-height: 52px;
-      }
-
-      .glass-card {
-        border-radius: 20px;
-        padding: 1.5rem;
-      }
-
-      .section-header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-
-      .section-header h2 {
-        font-size: 1.25rem;
-        white-space: normal;
-      }
-
-      .section-header .line {
-        width: 100%;
-      }
-
-      .features,
-      .features.two-up {
-        grid-template-columns: 1fr;
-      }
-
-      .stats-table,
-      .stats-table tbody,
-      .stats-table tr,
-      .stats-table td {
-        display: block;
-        width: 100%;
-      }
-
-      .stats-table tr {
-        border: 1px solid var(--glass-border);
-        border-radius: 14px;
-        overflow: hidden;
-      }
-
-      .stats-table td {
-        border: none;
-        padding: 0.85rem 1rem;
-      }
-
-      .stats-table td:first-child,
-      .stats-table td:last-child {
-        border: none;
-        border-radius: 0;
-        text-align: left;
-      }
-
-      .timeline-card {
-        flex-direction: column;
-      }
-
-      .action-button {
-        width: 100%;
-        white-space: normal;
-      }
-
-      .sticky-cta {
-        bottom: 1rem;
-      }
-
-      .sticky-cta-link {
-        font-size: 1rem;
-        min-height: 58px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css">
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
@@ -635,21 +20,29 @@
 </head>
 <body>
   <div class="container">
-    <div class="brand">
-      <img src="darkmode_splash_imely4.png" alt="imely Logo">
-    </div>
-
-    <div class="tabs" role="tablist" aria-label="imely creator programs">
-      <button class="tab-button" id="tab-character" type="button" role="tab" aria-selected="true" aria-controls="panel-character" data-program-tab="character">
-        Character Creator
-      </button>
-      <button class="tab-button" id="tab-social" type="button" role="tab" aria-selected="false" aria-controls="panel-social" tabindex="-1" data-program-tab="social">
-        Social Content Creator
-      </button>
-    </div>
-
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html"><img src="darkmode_splash_imely4.png" alt="Logo imely"></a>
+      </div>
+      <div class="top-row">
+        <nav class="site-nav" aria-label="Điều hướng chương trình">
+          <a class="nav-link is-active" href="index.html">Character Creator</a>
+          <a class="nav-link" href="social.html">Social Content Creator</a>
+        </nav>
+        <details class="language-menu">
+          <summary class="language-trigger" aria-label="Chọn ngôn ngữ">
+            <span>VI</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <nav class="language-options" aria-label="Chọn ngôn ngữ">
+            <a href="en/index.html" hreflang="en" aria-label="English">EN</a>
+            <a href="id/index.html" hreflang="id" aria-label="Bahasa Indonesia">ID</a>
+          </nav>
+        </details>
+      </div>
+    </header>
     <main>
-      <article class="program-panel" id="panel-character" role="tabpanel" aria-labelledby="tab-character" data-program-panel="character">
+      <article class="program-panel">
         <header class="hero">
           <div class="badge">Beta Creator Program</div>
           <h1>Character Creator<br>× imely</h1>
@@ -664,124 +57,113 @@
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Bạn sẽ làm gì</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Bạn sẽ làm gì</h2>
+          <div class="line"></div>
+        </div>
           <div class="features">
-            <div class="feature-card">
-              <span class="feature-icon">🪄</span>
-              <div class="feature-title">Xây dựng nhân vật</div>
-              <div class="feature-text">Thiết kế avatar, tạo tính cách và phong cách hội thoại riêng cho từng nhân vật</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🌍</span>
-              <div class="feature-title">Xây dựng cốt truyện & thế giới</div>
-              <div class="feature-text">Viết lore, backstory và kịch bản mở đầu để nhân vật sống động ngay từ đầu</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">📣</span>
-              <div class="feature-title">Phát triển fan base</div>
-              <div class="feature-text">Chia sẻ nhân vật, kéo người dùng đầu tiên và xây dựng cộng đồng xung quanh nhân vật</div>
-            </div>
+          <div class="feature-card">
+            <span class="feature-icon">🪄</span>
+            <div class="feature-title">Xây dựng nhân vật</div>
+            <div class="feature-text">Thiết kế avatar, tạo tính cách và phong cách hội thoại riêng cho từng nhân vật.</div>
           </div>
+          <div class="feature-card">
+            <span class="feature-icon">🌍</span>
+            <div class="feature-title">Xây dựng cốt truyện & thế giới</div>
+            <div class="feature-text">Viết lore, backstory và kịch bản mở đầu để nhân vật sống động ngay từ đầu.</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📣</span>
+            <div class="feature-title">Phát triển fan base</div>
+            <div class="feature-text">Chia sẻ nhân vật, kéo người dùng đầu tiên và xây dựng cộng đồng xung quanh nhân vật.</div>
+          </div>
+        </div>
         </section>
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Chúng tôi tìm kiếm ai</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Chúng tôi tìm kiếm ai</h2>
+          <div class="line"></div>
+        </div>
           <ul class="custom-list">
-            <li>Có khả năng viết nhân vật, sáng tác hội thoại hoặc xây dựng thế giới — không cần kinh nghiệm kỹ thuật</li>
-            <li>Đã từng chơi hoặc biết đến các app AI chat (Doki, Character.AI, v.v.) là lợi thế</li>
-            <li>Có thể hoàn thành ít nhất 1–3 nhân vật trong thời gian thỏa thuận</li>
-            <li>Chăm chỉ, tự quản lý tốt — công việc hoàn toàn linh hoạt theo lịch của bạn</li>
-          </ul>
+          <li>Có khả năng viết nhân vật, sáng tác hội thoại hoặc xây dựng thế giới — không cần kinh nghiệm kỹ thuật.</li>
+          <li>Đã từng chơi hoặc biết đến các app AI chat (Doki, Character.AI, v.v.) là lợi thế.</li>
+          <li>Có thể hoàn thành ít nhất 1–3 nhân vật trong thời gian thỏa thuận.</li>
+          <li>Chăm chỉ, tự quản lý tốt — công việc hoàn toàn linh hoạt theo lịch của bạn.</li>
+        </ul>
         </section>
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Thu nhập hấp dẫn</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Thu nhập hấp dẫn</h2>
+          <div class="line"></div>
+        </div>
           <div class="income-banner">
             <div class="label">Thưởng Breakout tối đa</div>
             <div class="amount">2.000.000đ</div>
             <div class="subtext">(Tính cho nhân vật đạt mốc messages)</div>
           </div>
           <table class="stats-table">
-            <tbody>
-              <tr><td>Thù lao cố định / nhân vật</td><td>60.000đ</td></tr>
-              <tr><td>Cột mốc Breakout (Messages)</td><td>500.000 msgs</td></tr>
-              <tr><td>Thưởng thêm Breakout</td><td class="highlight">+ 2.000.000đ</td></tr>
-              <tr><td>Số lượng nhân vật tối thiểu</td><td>1 nhân vật</td></tr>
-              <tr><td>Số lượng nhân vật tối đa</td><td class="highlight">Không giới hạn</td></tr>
-              <tr><td>Thời gian xét duyệt</td><td>Duyệt ngay sau khi đăng</td></tr>
-            </tbody>
-          </table>
-          <div class="program-note">
-            <strong>* Cách tính messages:</strong> Messages được tính <strong>1 chiều</strong> — chỉ lượt user nhắn được đếm, lượt character phản hồi không được tính.
-          </div>
+          <tbody>
+            <tr><td>Thù lao cố định / nhân vật</td><td>60.000đ</td></tr>
+            <tr><td>Cột mốc Breakout (Messages)</td><td>500.000 msgs</td></tr>
+            <tr><td>Thưởng thêm Breakout</td><td class="highlight">+ 2.000.000đ</td></tr>
+            <tr><td>Số lượng nhân vật tối thiểu</td><td>1 nhân vật</td></tr>
+            <tr><td>Số lượng nhân vật tối đa</td><td class="highlight">Không giới hạn</td></tr>
+            <tr><td>Thời gian xét duyệt</td><td>Duyệt ngay sau khi đăng</td></tr>
+          </tbody>
+        </table>
+          <div class="program-note"><strong>* Cách tính messages:</strong> Messages được tính <strong>1 chiều</strong> — chỉ lượt user nhắn được đếm, lượt character phản hồi không được tính.</div>
         </section>
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Quyền lợi của bạn</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Quyền lợi của bạn</h2>
+          <div class="line"></div>
+        </div>
           <div class="features two-up">
-            <div class="feature-card">
-              <span class="feature-icon">💎</span>
-              <div class="feature-title">Phí cố định / nhân vật</div>
-              <div class="feature-text">Được trả ngay khi nhân vật vượt qua vòng duyệt chất lượng</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🏆</span>
-              <div class="feature-title">Thưởng hiệu suất</div>
-              <div class="feature-text">Nhân vật càng cuốn, người dùng càng nhắn nhiều — thưởng càng lớn</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">⭐</span>
-              <div class="feature-title">Creator Spotlight</div>
-              <div class="feature-text">Nhân vật nổi bật được featured — bàn đạp để build tên tuổi của bạn</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🚀</span>
-              <div class="feature-title">Không giới hạn số nhân vật</div>
-              <div class="feature-text">Tạo nhiều nhân vật, nhận thu nhập — không có trần giới hạn</div>
-            </div>
+          <div class="feature-card">
+            <span class="feature-icon">💎</span>
+            <div class="feature-title">Phí cố định / nhân vật</div>
+            <div class="feature-text">Được trả ngay khi nhân vật vượt qua vòng duyệt chất lượng.</div>
           </div>
+          <div class="feature-card">
+            <span class="feature-icon">🏆</span>
+            <div class="feature-title">Thưởng hiệu suất</div>
+            <div class="feature-text">Nhân vật càng cuốn, người dùng càng nhắn nhiều — thưởng càng lớn.</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">⭐</span>
+            <div class="feature-title">Creator Spotlight</div>
+            <div class="feature-text">Nhân vật nổi bật được featured — bàn đạp để build tên tuổi của bạn.</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🚀</span>
+            <div class="feature-title">Không giới hạn số nhân vật</div>
+            <div class="feature-text">Tạo nhiều nhân vật, nhận thu nhập — không có trần giới hạn.</div>
+          </div>
+        </div>
         </section>
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Lưu ý chương trình</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Lưu ý chương trình</h2>
+          <div class="line"></div>
+        </div>
           <div class="policy-block">
             <div class="policy-title">📌 Quy định chung</div>
-            <div class="policy-copy">
-              <strong>🔍 Hệ thống detect tự động:</strong> Nhân vật không đạt yêu cầu chất lượng sẽ bị phát hiện và không đủ điều kiện nhận thưởng.<br><br>
-              <strong>📑 Tiêu chí chất lượng:</strong> Để đảm bảo quyền lợi, vui lòng tham khảo kỹ <a href="criteria.html">Tiêu chí xét duyệt</a> chính thức.<br><br>
-              <strong>📊 Cách tính messages:</strong> Messages được tính <strong>1 chiều</strong> — chỉ lượt user nhắn được đếm, lượt character phản hồi không được tính.<br><br>
-              <strong>⚗️ Chương trình thử nghiệm:</strong> Beta program với 2 mốc thưởng, chạy 6 tháng từ <strong>15/4 – 15/10/2026</strong>.
-            </div>
+            <div class="policy-copy"><strong>🔍 Hệ thống detect tự động:</strong> Nhân vật không đạt yêu cầu chất lượng sẽ bị phát hiện và không đủ điều kiện nhận thưởng.<br><br><strong>📑 Tiêu chí chất lượng:</strong> Để đảm bảo quyền lợi, vui lòng tham khảo kỹ <a href="criteria.html">Tiêu chí xét duyệt</a> chính thức.<br><br><strong>📊 Cách tính messages:</strong> Messages được tính <strong>1 chiều</strong> — chỉ lượt user nhắn được đếm, lượt character phản hồi không được tính.<br><br><strong>⚗️ Chương trình thử nghiệm:</strong> Beta program với 2 mốc thưởng, chạy 6 tháng từ <strong>15/4 – 15/10/2026</strong>.</div>
           </div>
           <div class="policy-block">
             <div class="policy-title">⚖️ Điều khoản & Chính sách</div>
-            <div class="policy-copy">
-              <strong>🚫 Bản quyền nhân vật:</strong> Nhân vật được phát hiện sao chép từ creator khác sẽ bị gỡ khỏi nền tảng và không đủ điều kiện nhận bất kỳ khoản thanh toán nào.<br><br>
-              <strong>⏳ Xét duyệt nội dung:</strong> Do chính sách kiểm duyệt của từng nền tảng có thể khác nhau, một số nhân vật có thể cần thêm thời gian xét duyệt.<br><br>
-              <strong>⚡ Slots có giới hạn:</strong> Chương trình có thể đóng nhận đơn trước hạn nếu đủ số lượng creator.
-            </div>
+            <div class="policy-copy"><strong>🚫 Bản quyền nhân vật:</strong> Nhân vật được phát hiện sao chép từ creator khác sẽ bị gỡ khỏi nền tảng và không đủ điều kiện nhận bất kỳ khoản thanh toán nào.<br><br><strong>⏳ Xét duyệt nội dung:</strong> Do chính sách kiểm duyệt của từng nền tảng có thể khác nhau, một số nhân vật có thể cần thêm thời gian xét duyệt.<br><br><strong>⚡ Slots có giới hạn:</strong> Chương trình có thể đóng nhận đơn trước hạn nếu đủ số lượng creator.</div>
           </div>
         </section>
 
         <section class="glass-card">
           <div class="section-header">
-            <h2>Thời gian</h2>
-            <div class="line"></div>
-          </div>
+          <h2>Thời gian</h2>
+          <div class="line"></div>
+        </div>
           <div class="timeline-card">
             <div class="timeline-icon">🗓️</div>
             <div>
@@ -792,180 +174,15 @@
         </section>
 
         <div class="panel-actions">
-          <a class="action-button secondary" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Website imely.ai</a>
-          <a class="action-button secondary" href="criteria.html">Tiêu chí xét duyệt</a>
-        </div>
-      </article>
-
-      <article class="program-panel" id="panel-social" role="tabpanel" aria-labelledby="tab-social" data-program-panel="social" hidden>
-        <header class="hero">
-          <div class="badge">Content Creator Program</div>
-          <h1>Social Content Creator <br>× imely</h1>
-          <p class="hero-desc">
-            imely là AI companion app mới của Việt Nam — nơi bạn có thể trò chuyện mượt mà với hàng loạt nhân vật AI độc bản, sống động và đầy cá tính.
-          </p>
-          <div class="pills">
-            <span class="pill">TikTok · Freelance</span>
-            <span class="pill">Tháng 5 – 7 2025</span>
-            <span class="pill">Lên đến 4.5M VNĐ</span>
-          </div>
-        </header>
-
-        <section class="glass-card">
-          <div class="section-header">
-            <h2>Nhiệm vụ của bạn</h2>
-            <div class="line"></div>
-          </div>
-          <div class="features">
-            <div class="feature-card">
-              <span class="feature-icon">🎬</span>
-              <div class="feature-title">Tạo video TikTok</div>
-              <div class="feature-text">Review, giới thiệu imely theo góc nhìn sáng tạo — không kịch bản gò bó.</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🎮</span>
-              <div class="feature-title">Dùng thử & Feedback</div>
-              <div class="feature-text">Trải nghiệm app sớm và định hình sản phẩm cùng team phát triển.</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🌱</span>
-              <div class="feature-title">Xây cộng đồng</div>
-              <div class="feature-text">Kéo những người đam mê AI chat vào vũ trụ imely từ những ngày đầu.</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="glass-card">
-          <div class="section-header">
-            <h2>Chúng tôi tìm kiếm ai</h2>
-            <div class="line"></div>
-          </div>
-          <ul class="custom-list">
-            <li>Đã từng dùng hoặc quan tâm sâu sắc đến các AI chat app (Character.AI, Doki...).</li>
-            <li>Sở hữu kênh TikTok về AI, công nghệ, roleplay, review app hoặc storytelling.</li>
-            <li>Có gu thẩm mỹ và khả năng kể chuyện thu hút người xem.</li>
-            <li>Không áp lực số lượng follower — Chúng tôi ưu tiên chất lượng nội dung.</li>
-          </ul>
-        </section>
-
-        <section class="glass-card">
-          <div class="section-header">
-            <h2>Quyền lợi độc quyền</h2>
-            <div class="line"></div>
-          </div>
-          <div class="features two-up">
-            <div class="feature-card">
-              <span class="feature-icon">💎</span>
-              <div class="feature-title">Gem imely vô hạn</div>
-              <div class="feature-text">Sử dụng mọi tính năng cao cấp hoàn toàn miễn phí.</div>
-            </div>
-            <div class="feature-card">
-              <span class="feature-icon">🔑</span>
-              <div class="feature-title">Early Access</div>
-              <div class="feature-text">Gia nhập cộng đồng Discord kín, nhận tin tức và tính năng sớm nhất.</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="glass-card">
-          <div class="section-header">
-            <h2>Thu nhập hấp dẫn</h2>
-            <div class="line"></div>
-          </div>
-          <div class="income-banner">
-            <div class="label">Tổng thu nhập tối đa</div>
-            <div class="amount">4.500.000đ</div>
-            <div class="subtext">(Tính cho 15 video chất lượng)</div>
-          </div>
-          <table class="stats-table">
-            <tbody>
-              <tr><td>Thù lao cơ bản / video</td><td>50.000đ</td></tr>
-              <tr><td>Cột mốc View (Baseline)</td><td>3.000 views</td></tr>
-              <tr><td>Thưởng vượt mốc</td><td class="highlight">+30.000đ / 3k view</td></tr>
-              <tr><td>Tối đa cho mỗi video</td><td class="highlight">300.000đ</td></tr>
-              <tr><td>Số lượng video tối thiểu</td><td>3 video</td></tr>
-              <tr><td>Số lượng video tối đa</td><td>15 video</td></tr>
-              <tr><td>Thời gian xét duyệt</td><td>Sau 1 tuần đăng bài</td></tr>
-            </tbody>
-          </table>
-          <div class="program-note">
-            <strong>Ví dụ:</strong> Video đạt 9.000 views → 50.000đ + (2 × 30.000đ) = <strong>110.000đ</strong>
-          </div>
-        </section>
-
-        <footer class="footer-note">
-          * Chương trình có thể kết thúc sớm dựa trên ngân sách.<br>
-          Mọi thay đổi sẽ được thông báo trước 3 ngày qua Discord.
-        </footer>
-
-        <div class="panel-actions">
-          <a class="action-button secondary" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Website imely.ai</a>
-          <a class="action-button secondary" href="social-content-criteria.html">Tiêu chí xét duyệt</a>
-          <a class="action-button secondary" href="social-reward-process.html">Quy trình nhận thưởng</a>
-        </div>
+        <a class="action-button secondary" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Website imely.ai</a>
+        <a class="action-button secondary" href="criteria.html">Tiêu chí xét duyệt</a>
+      </div>
       </article>
     </main>
+
+    <div class="sticky-cta">
+      <a class="sticky-cta-link" href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer">Đăng ký Character Creator →</a>
+    </div>
   </div>
-
-  <div class="sticky-cta">
-    <a class="sticky-cta-link" href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer" data-sticky-cta data-character-href="https://forms.gle/3YBhzq8EPbwhV5Dt9" data-social-href="https://forms.gle/3YBhzq8EPbwhV5Dt9">
-      Đăng ký Character Creator →
-    </a>
-  </div>
-
-  <script>
-    const programConfig = {
-      character: {
-        label: 'Đăng ký Character Creator →'
-      },
-      social: {
-        label: 'Đăng ký Social Content Creator →'
-      }
-    };
-
-    const tabs = Array.from(document.querySelectorAll('[data-program-tab]'));
-    const panels = Array.from(document.querySelectorAll('[data-program-panel]'));
-    const stickyCta = document.querySelector('[data-sticky-cta]');
-
-    function activateProgram(program, shouldScroll = true) {
-      tabs.forEach((tab) => {
-        const isActive = tab.dataset.programTab === program;
-        tab.setAttribute('aria-selected', String(isActive));
-        tab.tabIndex = isActive ? 0 : -1;
-      });
-
-      panels.forEach((panel) => {
-        panel.hidden = panel.dataset.programPanel !== program;
-      });
-
-      stickyCta.textContent = programConfig[program].label;
-      stickyCta.href = stickyCta.dataset[`${program}Href`];
-      if (shouldScroll) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }
-
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => activateProgram(tab.dataset.programTab));
-      tab.addEventListener('keydown', (event) => {
-        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-
-        event.preventDefault();
-        let nextIndex = index;
-
-        if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
-        if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
-        if (event.key === 'Home') nextIndex = 0;
-        if (event.key === 'End') nextIndex = tabs.length - 1;
-
-        tabs[nextIndex].focus();
-        activateProgram(tabs[nextIndex].dataset.programTab);
-      });
-    });
-
-    if (window.location.hash === '#social') {
-      activateProgram('social', false);
-    }
-  </script>
 </body>
 </html>

@@ -5,227 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Guidelines — imely Social Content Creator Program</title>
   <meta name="description" content="Tiêu chí xét duyệt nội dung cho imely Social Content Creator Program.">
+  <link rel="alternate" hreflang="vi" href="social-content-criteria.html">
+  <link rel="alternate" hreflang="en" href="en/social-content-criteria.html">
+  <link rel="alternate" hreflang="id" href="id/social-content-criteria.html">
+  <link rel="alternate" hreflang="x-default" href="social-content-criteria.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #07120f;
-      --card-bg: rgba(11, 31, 24, 0.7);
-      --panel-bg: rgba(255, 255, 255, 0.03);
-      --accent: #1affe0;
-      --accent-soft: rgba(26, 255, 224, 0.1);
-      --accent-border: rgba(26, 255, 224, 0.2);
-      --accent-glow: rgba(26, 255, 224, 0.35);
-      --text-main: #e8f5f1;
-      --text-dim: #7ab8a8;
-      --glass-border: rgba(255, 255, 255, 0.05);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      background: var(--bg-dark);
-      background-image:
-        radial-gradient(circle at 10% 15%, rgba(26, 255, 224, 0.07) 0%, transparent 38%),
-        radial-gradient(circle at 88% 82%, rgba(26, 255, 224, 0.04) 0%, transparent 40%);
-      color: var(--text-main);
-      line-height: 1.6;
-      min-height: 100vh;
-      padding: 3rem 1rem 5rem;
-      overflow-x: hidden;
-    }
-
-    a { color: inherit; }
-    .container { margin: 0 auto; max-width: 860px; }
-    .brand { display: flex; justify-content: center; margin-bottom: 1.5rem; }
-    .brand img { height: 88px; width: auto; filter: drop-shadow(0 0 22px var(--accent-glow)); }
-
-    .top-link {
-      align-items: center;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--glass-border);
-      border-radius: 18px;
-      color: var(--text-main);
-      display: inline-flex;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 800;
-      min-height: 46px;
-      padding: 0.7rem 1.2rem;
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .top-link:hover {
-      background: var(--accent-soft);
-      border-color: var(--accent-border);
-      color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .hero { margin-bottom: 2rem; text-align: center; }
-    .hero-actions { display: flex; justify-content: center; margin-bottom: 1.5rem; }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      background: var(--accent-soft);
-      border: 1px solid var(--accent-border);
-      border-radius: 99px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 1.4rem;
-      padding: 6px 16px;
-      text-transform: uppercase;
-    }
-
-    h1, h2 { font-family: 'Outfit', sans-serif; }
-
-    h1 {
-      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      font-size: clamp(2.5rem, 8vw, 4rem);
-      font-weight: 900;
-      -webkit-text-fill-color: transparent;
-      line-height: 1.08;
-      margin-bottom: 1rem;
-    }
-
-    .hero-desc {
-      color: var(--text-dim);
-      font-size: 1.08rem;
-      margin: 0 auto;
-      max-width: 650px;
-    }
-
-    section {
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--glass-border);
-      border-radius: 24px;
-      margin-bottom: 1.35rem;
-      overflow: hidden;
-      padding: 2rem;
-      transition: var(--transition);
-    }
-
-    section:hover {
-      border-color: var(--accent-border);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-
-    h2 {
-      color: var(--accent);
-      font-size: 1.35rem;
-      font-weight: 800;
-      line-height: 1.35;
-      margin-bottom: 1rem;
-    }
-
-    p { color: var(--text-dim); margin-bottom: 0.45rem; }
-    ul { list-style: none; margin: 0.55rem 0 0; }
-
-    li {
-      color: var(--text-main);
-      margin-bottom: 0.6rem;
-      padding-left: 1.6rem;
-      position: relative;
-    }
-
-    li::before {
-      color: var(--accent);
-      content: '✦';
-      font-size: 0.85rem;
-      left: 0;
-      position: absolute;
-      top: 0.15rem;
-    }
-
-    strong { color: var(--text-main); font-weight: 800; }
-
-    .callout {
-      background: var(--panel-bg);
-      border: 1px solid var(--glass-border);
-      border-left: 4px solid var(--accent);
-      border-radius: 14px;
-      margin-top: 1rem;
-      padding: 1rem 1rem 1rem 1.2rem;
-    }
-
-    @media (max-width: 680px) {
-      body { padding: 2rem 1rem 4rem; }
-      .brand img { height: 68px; }
-      section { border-radius: 20px; padding: 1.5rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css">
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body>
-  <main class="container">
-    <div class="brand">
-      <img src="darkmode_splash_imely4.png" alt="imely Logo">
-    </div>
-
-    <header class="hero">
-      <div class="hero-actions">
-        <a class="top-link" href="index.html#social">← Quay lại Creator Programs</a>
+<body class="detail">
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html"><img src="darkmode_splash_imely4.png" alt="Logo imely"></a>
       </div>
-      <div class="badge">Social Content Criteria</div>
-      <h1>Content Guidelines<br>Social Content Creator</h1>
-      <p class="hero-desc">Cập nhật: 11/05/2026</p>
+      <div class="top-row">
+        <nav class="site-nav" aria-label="Điều hướng chương trình">
+          <a class="nav-link" href="index.html">Character Creator</a>
+          <a class="nav-link is-active" href="social.html">Social Content Creator</a>
+        </nav>
+        <details class="language-menu">
+          <summary class="language-trigger" aria-label="Chọn ngôn ngữ">
+            <span>VI</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <nav class="language-options" aria-label="Chọn ngôn ngữ">
+            <a href="en/social-content-criteria.html" hreflang="en" aria-label="English">EN</a>
+            <a href="id/social-content-criteria.html" hreflang="id" aria-label="Bahasa Indonesia">ID</a>
+          </nav>
+        </details>
+      </div>
     </header>
+    <main class="detail-page">
+      <header class="hero">
+        <div class="hero-actions">
+          <a class="top-link" href="social.html">← Quay lại Social Content Creator</a>
+        </div>
+        <div class="badge">Social Content Criteria</div>
+        <h1>Content Guidelines<br>Social Content Creator</h1>
+        <p class="hero-desc">Cập nhật: 11/05/2026</p>
+      </header>
 
-    <section>
-      <h2>Về bộ tiêu chuẩn này</h2>
-      <p>Tiêu chuẩn áp dụng cho mọi nội dung do creator tạo ra trong khuôn khổ chương trình Social Content Creator của imely: video TikTok review app, giới thiệu char (nhân vật AI trên imely), hoặc chia sẻ trải nghiệm. Chỉ video đáp ứng đủ tiêu chuẩn này mới được xét duyệt thanh toán.</p>
-      <p>Quy trình nộp bài, xét duyệt và thanh toán: xem tài liệu riêng tại <strong>imely-content.vercel.app</strong>.</p>
-    </section>
+      <section class="detail-section">
+        <h2>Về bộ tiêu chuẩn này</h2>
+        <p>Tiêu chuẩn áp dụng cho mọi nội dung do creator tạo ra trong khuôn khổ chương trình Social Content Creator của imely: video TikTok review app, giới thiệu char (nhân vật AI trên imely), hoặc chia sẻ trải nghiệm. Chỉ video đáp ứng đủ tiêu chuẩn này mới được xét duyệt thanh toán.</p>
+        <p>Quy trình nộp bài, xét duyệt và thanh toán: xem tài liệu riêng tại <strong>imely-content.vercel.app</strong>.</p>
+        
+        
+      </section>
 
-    <section>
-      <h2>1. Yêu cầu tham gia</h2>
-      <ul>
-        <li>Creator phải từ 18 tuổi trở lên.</li>
-        <li>Khi đăng ký, creator xác nhận đã đọc và đồng ý toàn bộ guidelines này.</li>
-        <li>Mọi thay đổi về quy định sẽ được thông báo trước ít nhất 3 ngày qua Discord. Quy định mới chỉ áp dụng cho video đăng sau ngày hiệu lực.</li>
-        <li>Chương trình hiện chỉ áp dụng cho video đăng trên TikTok.</li>
-      </ul>
-    </section>
+      <section class="detail-section">
+        <h2>1. Yêu cầu tham gia</h2>
+        <ul>
+          <li>Creator phải từ 18 tuổi trở lên.</li>
+          <li>Khi đăng ký, creator xác nhận đã đọc và đồng ý toàn bộ guidelines này.</li>
+          <li>Mọi thay đổi về quy định sẽ được thông báo trước ít nhất 3 ngày qua Discord. Quy định mới chỉ áp dụng cho video đăng sau ngày hiệu lực.</li>
+          <li>Chương trình hiện chỉ áp dụng cho video đăng trên TikTok.</li>
+        </ul>
+        
+        
+      </section>
 
-    <section>
-      <h2>2. Tiêu chuẩn nội dung video</h2>
-      <p>Video phải đảm bảo <strong>SFW (Safe for Work)</strong> — phù hợp với mọi đối tượng, không vi phạm tiêu chuẩn cộng đồng của TikTok. Cụ thể, video không được:</p>
-      <ul>
-        <li>Chứa từ tục tĩu, chửi thề, hoặc hình ảnh, âm thanh bạo lực, khêu gợi tình dục, kinh dị.</li>
-        <li>Kỳ thị, phân biệt đối xử, hoặc chứa ngôn từ thù hận dựa trên vùng miền, sắc tộc, quốc tịch, tôn giáo, giới tính, xu hướng tính dục, hoặc người khuyết tật.</li>
-        <li>Quảng bá hành vi nguy hiểm, self-harm, hoặc tự tử.</li>
-        <li>Đặt nhân vật hoặc người dùng là trẻ vị thành niên trong bối cảnh lãng mạn hoặc gợi dục.</li>
-        <li>Chứa thông tin sai lệch về imely, về cá nhân, tổ chức, hoặc xuyên tạc lịch sử.</li>
-        <li>Sử dụng hình ảnh người thật có thể nhận diện (người của công chúng hoặc người thường) làm chất liệu.</li>
-        <li>Nói xấu, công kích, hoặc so sánh tiêu cực với app đối thủ.</li>
-        <li>Sử dụng view, like, comment, share, follower mua bằng bot hoặc dịch vụ trả phí.</li>
-      </ul>
-      <p class="callout"><strong>Lưu ý về char 18+:</strong> creator được phép quảng bá char có nội dung 18+ trên app, nhưng bản thân video và mọi phần hiển thị công khai (avatar, tên, mô tả, caption, hashtag) đều phải SFW. Tương tự như trailer phim 18+ — có thể giới thiệu char đó tồn tại và hấp dẫn, nhưng không show chi tiết NSFW.</p>
-      <p class="callout"><strong>Về việc verify engagement:</strong> imely sẽ rà soát screenshot analytics khi creator nộp bài. Nếu phát hiện dấu hiệu bất thường (ví dụ: spike view không hợp lý, tỉ lệ engagement lệch), imely có quyền tự quyết định loại video khỏi vòng xét duyệt mà không cần chứng minh thêm.</p>
-    </section>
+      <section class="detail-section">
+        <h2>2. Tiêu chuẩn nội dung video</h2>
+        <p>Video phải đảm bảo <strong>SFW (Safe for Work)</strong> — phù hợp với mọi đối tượng, không vi phạm tiêu chuẩn cộng đồng của TikTok. Cụ thể, video không được:</p>
+        <ul>
+          <li>Chứa từ tục tĩu, chửi thề, hoặc hình ảnh, âm thanh bạo lực, khêu gợi tình dục, kinh dị.</li>
+          <li>Kỳ thị, phân biệt đối xử, hoặc chứa ngôn từ thù hận dựa trên vùng miền, sắc tộc, quốc tịch, tôn giáo, giới tính, xu hướng tính dục, hoặc người khuyết tật.</li>
+          <li>Quảng bá hành vi nguy hiểm, self-harm, hoặc tự tử.</li>
+          <li>Đặt nhân vật hoặc người dùng là trẻ vị thành niên trong bối cảnh lãng mạn hoặc gợi dục.</li>
+          <li>Chứa thông tin sai lệch về imely, về cá nhân, tổ chức, hoặc xuyên tạc lịch sử.</li>
+          <li>Sử dụng hình ảnh người thật có thể nhận diện (người của công chúng hoặc người thường) làm chất liệu.</li>
+          <li>Nói xấu, công kích, hoặc so sánh tiêu cực với app đối thủ.</li>
+          <li>Sử dụng view, like, comment, share, follower mua bằng bot hoặc dịch vụ trả phí.</li>
+        </ul>
+        <p class="callout"><strong>Lưu ý về char 18+:</strong> creator được phép quảng bá char có nội dung 18+ trên app, nhưng bản thân video và mọi phần hiển thị công khai (avatar, tên, mô tả, caption, hashtag) đều phải SFW. Tương tự như trailer phim 18+ — có thể giới thiệu char đó tồn tại và hấp dẫn, nhưng không show chi tiết NSFW.</p>
+        <p class="callout"><strong>Về việc verify engagement:</strong> imely sẽ rà soát screenshot analytics khi creator nộp bài. Nếu phát hiện dấu hiệu bất thường (ví dụ: spike view không hợp lý, tỉ lệ engagement lệch), imely có quyền tự quyết định loại video khỏi vòng xét duyệt mà không cần chứng minh thêm.</p>
+      </section>
 
-    <section>
-      <h2>3. Trách nhiệm sau khi đã thanh toán</h2>
-      <ul>
-        <li>Bằng việc tham gia chương trình, creator cấp cho imely quyền không độc quyền được repost, edit, sử dụng video trong các kênh marketing chính thức của imely.</li>
-        <li>Creator tự chịu trách nhiệm khai báo và nộp thuế thu nhập cá nhân theo quy định pháp luật Việt Nam đối với thù lao nhận từ chương trình.</li>
-      </ul>
-      <p class="callout">Mọi thắc mắc liên hệ team qua Discord tại <strong>#chat-với-team-imely</strong>.</p>
-    </section>
-  </main>
+      <section class="detail-section">
+        <h2>3. Trách nhiệm sau khi đã thanh toán</h2>
+        <ul>
+          <li>Bằng việc tham gia chương trình, creator cấp cho imely quyền không độc quyền được repost, edit, sử dụng video trong các kênh marketing chính thức của imely.</li>
+          <li>Creator tự chịu trách nhiệm khai báo và nộp thuế thu nhập cá nhân theo quy định pháp luật Việt Nam đối với thù lao nhận từ chương trình.</li>
+        </ul>
+        
+        <p class="callout">Mọi thắc mắc liên hệ team qua Discord tại <strong>#chat-với-team-imely</strong>.</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
