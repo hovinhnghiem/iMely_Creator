@@ -605,6 +605,386 @@ h1 {
   box-shadow: 0 14px 44px rgba(26, 255, 224, 0.42);
 }
 
+.discord-panel {
+  background:
+    linear-gradient(135deg, rgba(26, 255, 224, 0.12), rgba(88, 101, 242, 0.12)),
+    rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 520px;
+  overflow: hidden;
+  padding: 1.1rem;
+  position: relative;
+}
+
+.discord-panel::before {
+  background: linear-gradient(90deg, var(--accent), #5865f2, var(--accent));
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.discord-panel-brand {
+  align-items: center;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.imely-brand-mark {
+  background: rgba(7, 18, 15, 0.72);
+  border: 1px solid rgba(26, 255, 224, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(26, 255, 224, 0.18);
+  display: block;
+  height: 50px;
+  overflow: hidden;
+  width: 50px;
+}
+
+.imely-brand-mark img {
+  display: block;
+  height: auto;
+  width: 50px;
+}
+
+.imely-brand-copy {
+  display: grid;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.imely-brand-copy strong {
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.imely-brand-copy small {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.official-badge {
+  background: rgba(26, 255, 224, 0.12);
+  border: 1px solid rgba(26, 255, 224, 0.28);
+  border-radius: 999px;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.4rem 0.7rem;
+}
+
+.discord-cta {
+  align-items: center;
+  background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(88, 101, 242, 0.26);
+  color: #ffffff;
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-weight: 700;
+  gap: 0.9rem;
+  max-width: 100%;
+  min-height: 66px;
+  min-width: 0;
+  padding: 0.85rem 1.2rem;
+  text-decoration: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.discord-cta:hover {
+  box-shadow: 0 18px 46px rgba(88, 101, 242, 0.36);
+  transform: translateY(-3px);
+}
+
+.discord-icon {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  display: inline-flex;
+  flex: 0 0 42px;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.discord-icon svg {
+  display: block;
+  fill: #ffffff;
+  height: 26px;
+  width: 26px;
+}
+
+.discord-cta span:last-child {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.discord-cta strong,
+.discord-cta small {
+  overflow-wrap: anywhere;
+}
+
+.discord-cta strong {
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.discord-cta small {
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.discord-invite-code {
+  color: rgba(232, 245, 241, 0.7);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.official-social-panel {
+  background:
+    linear-gradient(135deg, rgba(26, 255, 224, 0.1), rgba(255, 255, 255, 0.035)),
+    rgba(255, 255, 255, 0.026);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 1.15rem;
+  overflow: hidden;
+  padding: 1.15rem;
+  position: relative;
+}
+
+.official-social-panel::before {
+  background: linear-gradient(90deg, var(--accent), #1877f2, #5865f2, #ff0050);
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.official-social-brand {
+  align-items: center;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.official-social-desc {
+  color: var(--text-dim);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 680px;
+}
+
+.social-link-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.social-link-card {
+  --social-color: var(--accent);
+  --social-bg: rgba(26, 255, 224, 0.12);
+  --social-border: rgba(26, 255, 224, 0.28);
+  --social-border-hover: rgba(26, 255, 224, 0.52);
+  --social-icon-bg: rgba(26, 255, 224, 0.14);
+  --social-shadow: rgba(26, 255, 224, 0.16);
+  align-items: center;
+  background:
+    linear-gradient(135deg, var(--social-bg), rgba(255, 255, 255, 0.035)),
+    rgba(7, 18, 15, 0.5);
+  border: 1px solid var(--social-border);
+  border-radius: 18px;
+  color: var(--text-main);
+  display: flex;
+  gap: 0.85rem;
+  min-height: 88px;
+  min-width: 0;
+  padding: 1rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.social-link-card:hover {
+  border-color: var(--social-border-hover);
+  box-shadow: 0 16px 36px var(--social-shadow);
+  transform: translateY(-3px);
+}
+
+.social-link-card.facebook,
+.social-link-card.facebook-group {
+  --social-color: #1877f2;
+  --social-bg: rgba(24, 119, 242, 0.14);
+  --social-border: rgba(24, 119, 242, 0.32);
+  --social-border-hover: rgba(24, 119, 242, 0.58);
+  --social-icon-bg: rgba(24, 119, 242, 0.18);
+  --social-shadow: rgba(24, 119, 242, 0.2);
+}
+
+.social-link-card.discord {
+  --social-color: #5865f2;
+  --social-bg: rgba(88, 101, 242, 0.14);
+  --social-border: rgba(88, 101, 242, 0.32);
+  --social-border-hover: rgba(88, 101, 242, 0.58);
+  --social-icon-bg: rgba(88, 101, 242, 0.18);
+  --social-shadow: rgba(88, 101, 242, 0.2);
+}
+
+.social-link-card.tiktok {
+  --social-color: #ff0050;
+  --social-bg: rgba(255, 0, 80, 0.13);
+  --social-border: rgba(255, 0, 80, 0.32);
+  --social-border-hover: rgba(255, 0, 80, 0.56);
+  --social-icon-bg: rgba(255, 0, 80, 0.18);
+  --social-shadow: rgba(255, 0, 80, 0.2);
+}
+
+.social-icon {
+  align-items: center;
+  background: var(--social-icon-bg);
+  border: 1px solid var(--social-border);
+  border-radius: 15px;
+  display: inline-flex;
+  flex: 0 0 46px;
+  height: 46px;
+  justify-content: center;
+  position: relative;
+  width: 46px;
+}
+
+.social-icon svg {
+  display: block;
+  fill: #ffffff;
+  height: 25px;
+  width: 25px;
+}
+
+.brand-logo {
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+.brand-logo svg {
+  fill: currentColor;
+  height: 28px;
+  width: 28px;
+}
+
+.facebook-logo {
+  color: #1877f2;
+}
+
+.discord-logo {
+  color: #5865f2;
+}
+
+.discord-logo svg {
+  height: 29px;
+  width: 29px;
+}
+
+.tiktok-logo {
+  color: #000000;
+}
+
+.tiktok-logo svg {
+  fill: none;
+  height: 28px;
+  overflow: visible;
+  width: 28px;
+}
+
+.tiktok-logo .tiktok-cyan {
+  fill: #25f4ee;
+  transform: translate(-0.42px, -0.12px);
+}
+
+.tiktok-logo .tiktok-red {
+  fill: #fe2c55;
+  transform: translate(0.42px, 0.18px);
+}
+
+.tiktok-logo .tiktok-black {
+  fill: #000000;
+}
+
+.social-group-mark {
+  align-items: center;
+  background: #1877f2;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  bottom: -5px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.22);
+  display: inline-flex;
+  height: 20px;
+  justify-content: center;
+  position: absolute;
+  right: -5px;
+  width: 20px;
+}
+
+.social-group-mark svg {
+  fill: #ffffff;
+  height: 12px;
+  width: 12px;
+}
+
+.social-link-card span:last-child {
+  display: grid;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.social-link-card strong,
+.social-link-card small {
+  overflow-wrap: anywhere;
+}
+
+.social-link-card strong {
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.03rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.social-link-card small {
+  color: rgba(232, 245, 241, 0.72);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
 .action-button.secondary:hover {
   background: var(--accent-soft);
   border-color: var(--accent-border);
@@ -790,6 +1170,28 @@ strong {
     width: 100%;
   }
 
+  .discord-cta {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .official-social-panel {
+    padding: 1rem;
+  }
+
+  .official-social-brand {
+    gap: 0.7rem;
+  }
+
+  .social-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-link-card {
+    min-height: 82px;
+    width: 100%;
+  }
+
   .sticky-cta {
     bottom: 1rem;
   }
@@ -797,5 +1199,11 @@ strong {
   .sticky-cta-link {
     font-size: 1rem;
     min-height: 58px;
+  }
+}
+
+@media (max-width: 520px) {
+  .social-link-grid {
+    grid-template-columns: 1fr;
   }
 }
