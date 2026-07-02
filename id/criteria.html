@@ -24,46 +24,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/styles.css?v=20260701-landing">
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body class="detail">
-  <div class="container">
-    <header class="site-header">
-      <div class="brand">
-        <a href="index.html"><img src="../darkmode_splash_imely4.png" alt="Logo imely"></a>
-      </div>
-      <div class="top-row">
-        <nav class="site-nav" aria-label="Navigasi program">
-          <a class="nav-link is-active" href="index.html">Character Creator</a>
-          <a class="nav-link" href="social.html">Social Content Creator</a>
-        </nav>
-        <details class="language-menu">
-          <summary class="language-trigger" aria-label="Pilih bahasa">
+<body class="creator-landing">
+  <div class="landing-shell">
+    <header class="landing-header">
+      <a class="creator-brand" href="index.html" aria-label="imely Creator Program">
+        <img src="../assets/brand/app-icon.png" alt="imely">
+        <span>
+          <strong>imely Creator</strong>
+          <small>Official program</small>
+        </span>
+      </a>
+
+      <nav class="landing-nav" aria-label="Navigasi utama">
+        <a href="index.html#programs">Program</a>
+        <a href="index.html#process">Alur</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+
+      <div class="landing-header-actions">
+        <details class="landing-language">
+          <summary aria-label="Pilih bahasa">
             <span>ID</span>
             <span aria-hidden="true">▾</span>
           </summary>
-          <nav class="language-options" aria-label="Pilih bahasa">
-            <a href="../criteria.html" hreflang="vi" aria-label="Tiếng Việt">VI</a>
-            <a href="../en/criteria.html" hreflang="en" aria-label="English">EN</a>
+          <nav aria-label="Pilih bahasa">
+            <a href="../criteria.html" hreflang="vi">VI</a>
+            <a href="../en/criteria.html" hreflang="en">EN</a>
           </nav>
         </details>
+        <a class="header-cta" href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer">Daftar</a>
       </div>
     </header>
-    <main class="detail-page">
-      <header class="hero">
-        <div class="hero-actions">
-          <a class="top-link" href="index.html">← Kembali ke Character Creator</a>
-        </div>
-        <div class="badge">Character Quality Criteria</div>
-        <h1>[imely.ai]<br>Kriteria Review</h1>
-        <p class="hero-desc">Checklist evaluasi karakter sebelum bergabung di imely Creator Program.</p>
-      </header>
 
-      <section class="detail-section">
+    <main class="criteria-page">
+      <section class="landing-section criteria-hero-section">
+        <article class="detail-panel criteria-hero is-character-resource">
+          <div>
+            <a class="text-link detail-back-link" href="index.html"><span aria-hidden="true">←</span> Kembali ke Character Creator</a>
+            <p class="eyebrow">Character Quality Criteria</p>
+            <h1>[imely.ai]<br>Kriteria Review</h1>
+            <p>Checklist evaluasi karakter sebelum bergabung di imely Creator Program.</p>
+          </div>
+          <img src="../assets/brand/mascot-3d-crop.png" alt="">
+        </article>
+      </section>
+
+      <section class="criteria-layout" aria-label="Daftar isi">
+        <aside class="criteria-index">
+          <p>Isi halaman</p>
+          <a href="#character-criteria-section-1">1. Uniqueness — Keunikan</a>
+          <a href="#character-criteria-section-2">2. Background — Latar Belakang</a>
+          <a href="#character-criteria-section-3">3. Narrative Depth — Kedalaman Cerita</a>
+          <a href="#character-criteria-section-4">4. Conversation — Gaya Percakapan</a>
+          <a href="#character-criteria-section-5">5. Personalization — Personalisasi</a>
+          <a href="#character-criteria-section-6">6. Community Standards — Standar Komunitas</a>
+          <a href="#character-criteria-section-7">7. Public Content Standards — Standar Konten Publik</a>
+        </aside>
+        <div class="criteria-content">
+<section class="criteria-section" id="character-criteria-section-1">
         <h2>1. Uniqueness — Keunikan</h2>
         <p><strong>LOLOS:</strong> Kombinasi nama, latar belakang, situasi, dan hubungan dengan user menciptakan profil yang tidak bisa digantikan. Kalau namanya diganti, seluruh logika karakter ikut runtuh.</p>
         <p><strong>GAGAL:</strong></p>
@@ -72,10 +96,10 @@
           <li>Dua karakter berbeda dalam satu submission punya backstory yang nyaris sama, hanya beda setting.</li>
           <li>Tidak ada detail spesifik yang membuat karakter ini terasa berbeda dari 10 karakter lain dengan tipe serupa.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-2">
         <h2>2. Background — Latar Belakang</h2>
         <p><strong>LOLOS:</strong> Apa yang terjadi di masa lalu karakter menjelaskan perilaku, cara pandang, dan reaksi mereka di masa sekarang. Kepribadian karakter bisa ditelusuri balik ke akar ceritanya.</p>
         <p><strong>GAGAL:</strong></p>
@@ -84,10 +108,10 @@
           <li>Ada kontradiksi timeline atau logika cerita yang tidak terjelaskan.</li>
           <li>Backstory hanya jadi pelengkap, tidak berpengaruh pada cara karakter bersikap di percakapan.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-3">
         <h2>3. Narrative Depth — Kedalaman Cerita</h2>
         <p><strong>LOLOS:</strong> Deskripsi karakter menyiratkan lebih dari yang diucapkan secara langsung. Ada subtext, ada bagian yang sengaja belum terungkap, ada pertanyaan yang bikin user penasaran dan ingin menggali sendiri lewat percakapan.</p>
         <p><strong>GAGAL:</strong></p>
@@ -96,10 +120,10 @@
           <li>Tidak ada konflik internal atau ketegangan yang masih menggantung.</li>
           <li>Arc karakter bisa diringkas dalam satu kalimat tanpa kehilangan sesuatu yang penting.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-4">
         <h2>4. Conversation — Gaya Percakapan</h2>
         <p><strong>LOLOS:</strong> Saat membaca dialog sample tanpa melihat nama karakternya, pembaca tetap bisa mengenali ini siapa — dari pilihan kata, struktur kalimatnya, hal-hal yang tidak karakter ucapkan secara langsung, dan cara mereka menghindar atau membalas dengan bahasa.</p>
         <p><strong>GAGAL:</strong></p>
@@ -108,10 +132,10 @@
           <li>Dialog sample kurang dari 3 baris dalam submission.</li>
           <li>Gaya bicara terlalu bergantung pada situasi — begitu dilepas dari adegan, ciri khasnya hilang.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-5">
         <h2>5. Personalization — Personalisasi</h2>
         <p><strong>LOLOS:</strong> Identitas karakter dan hubungannya dengan user cukup spesifik, sampai user langsung paham harus bersikap seperti apa dari pesan pertama.</p>
         <p><strong>GAGAL:</strong></p>
@@ -120,10 +144,10 @@
           <li>Pesan pembuka tidak memberikan konteks yang cukup untuk user memulai percakapan secara natural.</li>
           <li>Karakter tidak punya alasan spesifik untuk berinteraksi dengan user di adegan itu.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-6">
         <h2>6. Community Standards — Standar Komunitas</h2>
         <p><strong>LOLOS:</strong> Karakter boleh dark, rumit secara moral, atau mengangkat tema sensitif — selama itu mendukung narasinya dan tidak membahayakan user secara nyata.</p>
         <p><strong>GAGAL:</strong></p>
@@ -133,10 +157,10 @@
           <li>Karakter berbasis pada orang nyata yang bisa dikenali — baik tokoh publik maupun orang biasa.</li>
           <li>Karakter atau user diposisikan sebagai anak di bawah umur dalam konteks romantis atau seksual.</li>
         </ul>
-        
+
       </section>
 
-      <section class="detail-section">
+      <section class="criteria-section" id="character-criteria-section-7">
         <h2>7. Public Content Standards — Standar Konten Publik</h2>
         <p><strong>LOLOS:</strong> Semua konten yang tampil ke publik — hashtag, tagline, deskripsi yang kelihatan — pakai bahasa yang sesuai untuk semua kalangan user di app.</p>
         <p><strong>GAGAL:</strong></p>
@@ -147,7 +171,39 @@
         </ul>
         <p class="callout"><strong>Catatan:</strong> Bagian internal karakter (system prompt, world info, dll) akan direview lebih fleksibel. Pembatasan ini hanya berlaku untuk bagian yang tampil ke semua user secara publik.</p>
       </section>
+        </div>
+      </section>
     </main>
+
+    <footer class="landing-footer">
+      <div>
+        <a class="creator-brand footer-brand" href="index.html" aria-label="imely Creator Program">
+          <img src="../assets/brand/app-icon.png" alt="imely">
+          <span>
+            <strong>imely Creator</strong>
+            <small>Official program</small>
+          </span>
+        </a>
+        <p>Program creator resmi imely. Bikin karakter, cerita, dan dapat penghasilan transparan.</p>
+        <a class="text-link" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">imely.ai <span aria-hidden="true">↗</span></a>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html#programs">Program</a>
+        <a href="index.html#process">Alur</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <nav aria-label="Halaman detail">
+        <a href="character.html">Character Creator</a>
+        <a href="social.html">Social Creator</a>
+        <a href="criteria.html">Kriteria karakter</a>
+        <a href="social-content-criteria.html">Panduan konten</a>
+        <a href="social-reward-process.html">Cara klaim bonus</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 imely Creator Program</span>
+        <span>Dikelola tim imely · Indonesia</span>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
