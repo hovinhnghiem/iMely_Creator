@@ -4053,3 +4053,480 @@ body.gems-campaign-page {
     width: calc(100% - 2rem);
   }
 }
+
+.creator-handbook-page .landing-nav a[aria-current="page"] {
+  background: var(--landing-teal-50);
+  color: var(--landing-ink);
+}
+
+.handbook-main {
+  padding-bottom: 5rem;
+}
+
+.handbook-hero {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.handbook-hero h1 {
+  color: var(--landing-ink);
+  font-size: clamp(3rem, 5.4vw, 4.3rem);
+  font-weight: 900;
+  line-height: 1.08;
+  max-width: 760px;
+  text-wrap: balance;
+}
+
+.handbook-hero .hero-lead {
+  max-width: 760px;
+}
+
+.handbook-hero-art {
+  align-items: center;
+  aspect-ratio: 1;
+  background:
+    linear-gradient(135deg, rgba(77, 231, 244, 0.2), rgba(30, 224, 200, 0.08)),
+    #ffffff;
+  border: 1px solid rgba(22, 194, 192, 0.18);
+  border-radius: 32px;
+  box-shadow: var(--landing-shadow-soft);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.handbook-hero-art img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.handbook-reader {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1rem 1.5rem 0;
+}
+
+.handbook-tabs {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--landing-line);
+  border-radius: 999px;
+  box-shadow: var(--landing-shadow-soft);
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  padding: 0.42rem;
+  position: sticky;
+  scrollbar-width: none;
+  top: 5.7rem;
+  z-index: 20;
+}
+
+.handbook-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.handbook-tab {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--landing-ink-soft);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  gap: 0.4rem;
+  min-height: 42px;
+  padding: 0.56rem 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.handbook-tab span {
+  align-items: center;
+  background: rgba(22, 194, 192, 0.12);
+  border-radius: 999px;
+  color: var(--landing-teal-700, #0e9ba0);
+  display: inline-flex;
+  font-size: 0.74rem;
+  height: 1.4rem;
+  justify-content: center;
+  min-width: 1.4rem;
+  padding: 0 0.35rem;
+}
+
+.handbook-tab:hover,
+.handbook-tab.is-active {
+  background: linear-gradient(135deg, var(--landing-teal-100), rgba(30, 224, 200, 0.52));
+  color: var(--landing-ink);
+}
+
+.handbook-tab:hover {
+  transform: translateY(-1px);
+}
+
+.handbook-panels {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.handbook-panel {
+  display: none;
+}
+
+.handbook-panel.is-active {
+  display: grid;
+  gap: 1rem;
+}
+
+.handbook-panel-head {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(234, 251, 253, 0.82)),
+    #ffffff;
+  border: 1px solid var(--landing-line);
+  border-radius: 28px;
+  box-shadow: var(--landing-shadow-soft);
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.handbook-panel-head .eyebrow {
+  margin-bottom: 0.7rem;
+}
+
+.handbook-panel-head h2 {
+  color: var(--landing-ink);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.handbook-panel-head p:not(.eyebrow) {
+  color: var(--landing-ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.72;
+  margin-top: 0.85rem;
+}
+
+.handbook-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--landing-line);
+  border-radius: 24px;
+  box-shadow: 0 12px 34px rgba(10, 17, 24, 0.045);
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.15rem, 2.5vw, 1.7rem);
+}
+
+.handbook-card-heading {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.handbook-card-heading > span:first-child {
+  align-items: center;
+  background: var(--landing-teal-50);
+  border: 1px solid rgba(22, 194, 192, 0.18);
+  border-radius: 14px;
+  display: inline-flex;
+  font-size: 1.1rem;
+  height: 2.3rem;
+  justify-content: center;
+  width: 2.3rem;
+}
+
+.handbook-card-heading h3 {
+  color: var(--landing-ink);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 900;
+  line-height: 1.22;
+}
+
+.handbook-list,
+.handbook-sublist {
+  display: grid;
+  gap: 0.7rem;
+  list-style: none;
+}
+
+.handbook-list li,
+.handbook-sublist li {
+  color: var(--landing-ink-soft);
+  line-height: 1.72;
+  padding-left: 1.45rem;
+  position: relative;
+}
+
+.handbook-list li::before,
+.handbook-sublist li::before {
+  color: var(--landing-teal-600);
+  content: "•";
+  font-weight: 900;
+  left: 0.25rem;
+  position: absolute;
+  top: 0;
+}
+
+.handbook-sublist {
+  margin-top: 0.5rem;
+}
+
+.handbook-muted,
+.handbook-note {
+  color: var(--landing-ink-soft);
+  line-height: 1.72;
+}
+
+.handbook-note {
+  color: var(--landing-muted);
+  font-size: 0.94rem;
+}
+
+.handbook-mini-title {
+  color: var(--landing-ink);
+  font-weight: 900;
+  margin-top: 0.25rem;
+}
+
+.handbook-steps {
+  color: var(--landing-ink-soft);
+  display: grid;
+  gap: 0.55rem;
+  line-height: 1.72;
+  padding-left: 1.35rem;
+}
+
+.handbook-formula {
+  background: var(--landing-teal-50);
+  border: 1px solid rgba(22, 194, 192, 0.2);
+  border-radius: 16px;
+  color: var(--landing-ink);
+  font-weight: 900;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  padding: 1rem;
+}
+
+.handbook-card code {
+  background: rgba(22, 194, 192, 0.12);
+  border-radius: 7px;
+  color: var(--landing-teal-700, #0e9ba0);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.92em;
+  padding: 0.12rem 0.32rem;
+}
+
+.handbook-tag {
+  background: linear-gradient(135deg, #f7b955, #ff6f91);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 0.74rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 0.36rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.handbook-do {
+  border-color: rgba(22, 194, 192, 0.28);
+}
+
+.handbook-dont {
+  border-color: rgba(255, 111, 145, 0.26);
+}
+
+.handbook-new {
+  background: linear-gradient(135deg, rgba(234, 251, 253, 0.88), rgba(255, 248, 237, 0.9));
+}
+
+.handbook-split {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 34%);
+}
+
+.handbook-card figure,
+.handbook-shot-grid figure {
+  background: #ffffff;
+  border: 1px solid var(--landing-line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.handbook-card figure img,
+.handbook-shot-grid figure img {
+  aspect-ratio: 390 / 844;
+  background: var(--landing-surface);
+  object-fit: cover;
+  width: 100%;
+}
+
+.handbook-card figure figcaption,
+.handbook-shot-grid figure figcaption {
+  color: var(--landing-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.45;
+  padding: 0.72rem 0.8rem 0.85rem;
+}
+
+.handbook-shot-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.2rem;
+}
+
+.handbook-arrows {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.handbook-arrow {
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid var(--landing-line);
+  border-radius: 22px;
+  color: var(--landing-ink);
+  cursor: pointer;
+  display: grid;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  gap: 0.35rem;
+  min-height: 86px;
+  padding: 1rem;
+  text-align: left;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.handbook-arrow:last-child {
+  text-align: right;
+}
+
+.handbook-arrow:hover:not(:disabled) {
+  border-color: rgba(22, 194, 192, 0.34);
+  box-shadow: var(--landing-shadow-soft);
+  transform: translateY(-2px);
+}
+
+.handbook-arrow:disabled {
+  cursor: not-allowed;
+  opacity: 0.44;
+}
+
+.handbook-arrow-label {
+  color: var(--landing-teal-700, #0e9ba0);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.handbook-arrow span:last-child {
+  color: var(--landing-ink);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.handbook-foot {
+  color: var(--landing-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .handbook-hero {
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+  }
+
+  .handbook-hero-art {
+    max-width: 240px;
+    padding: 1.5rem;
+  }
+
+  .handbook-tabs {
+    border-radius: 24px;
+    top: 5rem;
+  }
+
+  .handbook-split,
+  .handbook-shot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .handbook-card figure {
+    max-width: 420px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .handbook-main {
+    padding-bottom: 3.5rem;
+  }
+
+  .handbook-hero {
+    padding: 3.2rem 1rem 1.3rem;
+  }
+
+  .handbook-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .handbook-hero-art {
+    display: none;
+  }
+
+  .handbook-reader {
+    padding: 0.6rem 1rem 0;
+  }
+
+  .handbook-tabs {
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    top: 4.8rem;
+  }
+
+  .handbook-tab {
+    font-size: 0.84rem;
+    min-height: 38px;
+    padding: 0.5rem 0.72rem;
+  }
+
+  .handbook-panel-head,
+  .handbook-card {
+    border-radius: 20px;
+  }
+
+  .handbook-panel-head h2 {
+    font-size: 1.85rem;
+  }
+
+  .handbook-card-heading {
+    align-items: flex-start;
+  }
+
+  .handbook-arrows {
+    grid-template-columns: 1fr;
+  }
+
+  .handbook-arrow,
+  .handbook-arrow:last-child {
+    text-align: left;
+  }
+}
