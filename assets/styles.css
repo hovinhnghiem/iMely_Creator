@@ -3278,6 +3278,110 @@ body.gems-campaign-page {
   padding-top: 2rem;
 }
 
+.gems-topic-spotlight {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(234, 251, 253, 0.95) 48%, rgba(255, 248, 235, 0.88)),
+    #ffffff;
+  border: 1px solid rgba(22, 194, 192, 0.34);
+  border-radius: 34px;
+  box-shadow: 0 30px 90px rgba(22, 194, 192, 0.14);
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 128px minmax(0, 1fr) minmax(210px, 0.34fr);
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.gems-topic-spotlight::before {
+  background: linear-gradient(90deg, var(--landing-teal-600), var(--landing-mint), var(--gems-gold));
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gems-topic-rail {
+  align-items: center;
+  background:
+    linear-gradient(180deg, #0e9ba0, #08656f),
+    #0e9ba0;
+  border-radius: 24px;
+  color: #ffffff;
+  display: grid;
+  justify-items: center;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+}
+
+.gems-topic-rail span {
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gems-topic-rail strong {
+  color: var(--gems-lemon);
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 900;
+  line-height: 0.92;
+}
+
+.gems-topic-content {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  padding: 0.35rem 0;
+}
+
+.gems-topic-kicker-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.gems-topic-badge,
+.gems-topic-deadline span {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 34px;
+  padding: 0.48rem 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.gems-topic-badge {
+  background: linear-gradient(135deg, var(--landing-teal-600), var(--landing-mint));
+  color: var(--landing-ink);
+}
+
+.gems-topic-badge.is-soft {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(22, 194, 192, 0.28);
+  color: #0e6f78;
+}
+
+.gems-topic-spotlight .section-heading {
+  margin: 0;
+  max-width: 760px;
+}
+
+.gems-topic-spotlight .section-heading h2 {
+  color: var(--gems-ink);
+}
+
+.gems-topic-spotlight .section-heading p:not(.eyebrow) {
+  margin-top: 0.85rem;
+}
+
 .gems-chip-cloud {
   display: flex;
   flex-wrap: nowrap;
@@ -3293,15 +3397,59 @@ body.gems-campaign-page {
 
 .gems-chip-cloud span {
   background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(255, 111, 145, 0.24);
+  border: 1px solid rgba(22, 194, 192, 0.24);
   border-radius: 999px;
-  color: var(--gems-plum);
+  color: #2d5056;
   flex: 0 0 auto;
   font-size: 0.86rem;
   font-weight: 900;
   min-height: 38px;
   padding: 0.52rem 0.72rem;
   white-space: nowrap;
+}
+
+.gems-topic-deadline {
+  align-content: space-between;
+  background:
+    linear-gradient(145deg, rgba(234, 251, 253, 0.96), rgba(255, 248, 235, 0.72)),
+    rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(22, 194, 192, 0.26);
+  border-radius: 24px;
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1rem;
+}
+
+.gems-topic-deadline span {
+  background: #0e9ba0;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.gems-topic-deadline strong {
+  color: var(--gems-ink);
+  display: block;
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 0.72rem;
+}
+
+.gems-topic-deadline p {
+  color: var(--landing-ink-soft);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.55;
+  margin-top: 0.7rem;
+}
+
+.gems-topic-deadline img {
+  align-self: end;
+  height: auto;
+  justify-self: end;
+  max-width: 124px;
+  width: 52%;
 }
 
 .gems-tier-grid {
@@ -3529,6 +3677,12 @@ body.gems-campaign-page {
   margin-top: 0.35rem;
 }
 
+.gems-topic-spotlight .gems-guideline-entry {
+  background: rgba(255, 255, 255, 0.68);
+  border-color: rgba(89, 199, 231, 0.42);
+  box-shadow: none;
+}
+
 @media (max-width: 1100px) {
   .landing-hero {
     gap: 2rem;
@@ -3664,6 +3818,22 @@ body.gems-campaign-page {
   .gems-caps-panel,
   .gems-campaign-cta {
     grid-template-columns: 1fr;
+  }
+
+  .gems-topic-spotlight {
+    grid-template-columns: 104px minmax(0, 1fr);
+    padding: 1rem;
+  }
+
+  .gems-topic-deadline {
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .gems-topic-deadline img {
+    max-width: 96px;
+    width: 96px;
   }
 }
 
@@ -4052,6 +4222,51 @@ body.gems-campaign-page {
 
   .gems-campaign-section {
     padding: 3.7rem 1rem;
+  }
+
+  .gems-topic-spotlight {
+    border-radius: 26px;
+    grid-template-columns: 1fr;
+    padding: 0.85rem;
+  }
+
+  .gems-topic-rail {
+    align-items: center;
+    grid-template-columns: minmax(0, 1fr) auto;
+    justify-items: start;
+    min-height: 0;
+    padding: 0.85rem 1rem;
+    text-align: left;
+  }
+
+  .gems-topic-rail strong {
+    font-size: 2.45rem;
+  }
+
+  .gems-topic-kicker-row {
+    gap: 0.4rem;
+  }
+
+  .gems-topic-badge,
+  .gems-topic-deadline span {
+    font-size: 0.72rem;
+    min-height: 32px;
+    padding: 0.44rem 0.62rem;
+  }
+
+  .gems-topic-deadline {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr) 74px;
+    padding: 0.9rem;
+  }
+
+  .gems-topic-deadline img {
+    max-width: 74px;
+    width: 74px;
+  }
+
+  .gems-topic-deadline strong {
+    font-size: 1.75rem;
   }
 
   .gems-step-grid article,
