@@ -1578,6 +1578,12 @@ body.creator-landing *::after {
   max-width: 650px;
 }
 
+.creator-landing .hero-lead strong {
+  color: var(--landing-ink);
+  font-weight: 900;
+  -webkit-text-fill-color: currentColor;
+}
+
 .hero-actions-row {
   align-items: center;
   display: flex;
@@ -4350,6 +4356,10 @@ body.indo-guide-page {
   line-height: 1.8;
   margin-top: 1.4rem;
   max-width: 760px;
+}
+
+.indo-guide-hero .hero-lead strong {
+  color: var(--indo-guide-green-deep);
 }
 
 .indo-guide-hero-card {
