@@ -4459,7 +4459,6 @@ body.indo-guide-page {
 }
 
 .indo-guide-tabbar button,
-.indo-guide-lang-toggle button,
 .indo-guide-prompt-head button,
 .indo-guide-copy-primary {
   border: 0;
@@ -4612,28 +4611,6 @@ body.indo-guide-page {
   flex-wrap: wrap;
   gap: 0.65rem;
   justify-content: flex-end;
-}
-
-.indo-guide-lang-toggle {
-  background: rgba(255, 255, 255, 0.84);
-  border: 1px solid rgba(18, 200, 154, 0.18);
-  border-radius: 999px;
-  display: inline-flex;
-  gap: 0.25rem;
-  padding: 0.25rem;
-}
-
-.indo-guide-lang-toggle button {
-  background: transparent;
-  border-radius: 999px;
-  color: var(--landing-muted);
-  min-height: 38px;
-  padding: 0.55rem 0.9rem;
-}
-
-.indo-guide-lang-toggle button.is-active {
-  background: var(--indo-guide-green);
-  color: #ffffff;
 }
 
 .indo-guide-copy-primary {
@@ -4920,8 +4897,7 @@ body.indo-guide-page {
     padding-top: 3.6rem;
   }
 
-  .indo-guide-tabbar,
-  .indo-guide-lang-toggle {
+  .indo-guide-tabbar {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;

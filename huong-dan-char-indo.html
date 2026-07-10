@@ -91,8 +91,8 @@
           <span>imely đề xuất</span>
         </div>
         <div>
-          <strong>2 ngôn ngữ</strong>
-          <span>Prompt VI / ID</span>
+          <strong>Bahasa ID</strong>
+          <span>Prompt mặc định</span>
         </div>
       </section>
 
@@ -150,7 +150,7 @@
               <article>
                 <span>03</span>
                 <h3>Chạy prompt AI rồi rà lại</h3>
-                <p>Dán char Việt vào prompt bên dưới. Chọn ngôn ngữ prompt bạn đọc thoải mái nhất, cả hai đều cho ra char tiếng Indo.</p>
+                <p>Dán char Việt vào prompt Bahasa Indonesia bên dưới, chạy AI rồi rà lại kết quả trước khi đưa lên imely.</p>
               </article>
             </div>
           </section>
@@ -162,17 +162,13 @@
                 <h2>Copy prompt chính rồi dán char Việt vào cuối.</h2>
               </div>
               <div class="indo-guide-prompt-actions">
-                <div class="indo-guide-lang-toggle" aria-label="Ngôn ngữ prompt">
-                  <button class="is-active" type="button" id="indoGuideLangVi">Tiếng Việt</button>
-                  <button type="button" id="indoGuideLangId">Bahasa Indo</button>
-                </div>
                 <button class="indo-guide-copy-primary" type="button" data-copy-source="main">Copy prompt chính</button>
               </div>
             </div>
 
             <div class="indo-guide-prompt-card">
               <div class="indo-guide-prompt-head">
-                <span>Prompt chính <strong id="indoGuideMainBadge">VI</strong></span>
+                <span>Prompt chính <strong id="indoGuideMainBadge">ID</strong></span>
                 <button type="button" data-copy-source="main">Copy</button>
               </div>
               <pre id="indoGuidePromptMain"></pre>
@@ -471,7 +467,7 @@ Tagline / Hashtags / Public Info / Character / Backstory / First Message / NPC /
       }
     ];
 
-    let indoGuideLang = "vi";
+    const indoGuideLang = "id";
 
     function renderIndoGuidePrompts() {
       document.getElementById("indoGuidePromptMain").textContent = indoGuidePrompts.main[indoGuideLang];
@@ -505,13 +501,6 @@ Tagline / Hashtags / Public Info / Character / Backstory / First Message / NPC /
         card.append(head, pre);
         list.appendChild(card);
       });
-    }
-
-    function setIndoGuideLang(lang) {
-      indoGuideLang = lang;
-      document.getElementById("indoGuideLangVi").classList.toggle("is-active", lang === "vi");
-      document.getElementById("indoGuideLangId").classList.toggle("is-active", lang === "id");
-      renderIndoGuidePrompts();
     }
 
     function setIndoGuidePane(pane) {
@@ -560,8 +549,6 @@ Tagline / Hashtags / Public Info / Character / Backstory / First Message / NPC /
       textarea.remove();
     }
 
-    document.getElementById("indoGuideLangVi").addEventListener("click", function () { setIndoGuideLang("vi"); });
-    document.getElementById("indoGuideLangId").addEventListener("click", function () { setIndoGuideLang("id"); });
     document.getElementById("indoGuideTabGuide").addEventListener("click", function () { setIndoGuidePane("guide"); });
     document.getElementById("indoGuideTabImage").addEventListener("click", function () { setIndoGuidePane("image"); });
     document.querySelectorAll("[data-copy-source]").forEach(function (button) {
