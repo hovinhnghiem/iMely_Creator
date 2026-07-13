@@ -1748,6 +1748,14 @@ body.creator-landing *::after {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.program-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.proof-band-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .program-card,
 .earning-panel,
 .process-grid article,
@@ -3760,6 +3768,10 @@ body.gems-campaign-page {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .proof-band-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .landing-section {
     padding-bottom: 4.5rem;
     padding-top: 4.5rem;
@@ -3923,6 +3935,10 @@ body.gems-campaign-page {
     grid-template-columns: 1fr;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .proof-band-two {
+    grid-template-columns: 1fr;
   }
 
   .proof-band div + div {
