@@ -2528,6 +2528,10 @@ body.creator-landing *::after {
   padding: 1rem 1.05rem 1.08rem;
 }
 
+.policy-accordion p strong {
+  color: var(--landing-ink);
+}
+
 .policy-accordion a {
   color: var(--landing-teal-700, #0e9ba0);
   font-weight: 900;
