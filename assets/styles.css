@@ -3163,6 +3163,12 @@ body.gems-campaign-page {
   width: 100%;
 }
 
+.taiwan-campaign-page .gems-hero-panel img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+}
+
 .gems-hero-panel span,
 .gems-step-grid article > span,
 .gems-tier-grid article > span,
@@ -3286,6 +3292,26 @@ body.gems-campaign-page {
 
 .gems-step-grid .text-link {
   margin-top: 0.9rem;
+}
+
+.gems-step-grid .text-link.is-disabled,
+.mini-button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  pointer-events: none;
+  user-select: none;
+}
+
+.gems-step-grid .text-link.is-disabled {
+  color: var(--landing-muted);
+  text-decoration: none;
+}
+
+.mini-button.is-disabled {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: var(--gems-line);
+  box-shadow: none;
+  color: var(--landing-muted);
 }
 
 .gems-genre-section {
@@ -3852,6 +3878,13 @@ body.gems-campaign-page {
   .gems-topic-deadline img {
     max-width: 96px;
     width: 96px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .taiwan-campaign-page .gems-hero-panel {
+    align-items: center;
+    grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1fr);
   }
 }
 
