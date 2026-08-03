@@ -3428,28 +3428,25 @@ body.gems-campaign-page {
 
 .gems-chip-cloud {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 0.45rem;
-  overflow-x: auto;
-  padding-bottom: 0.2rem;
-  scrollbar-width: none;
-}
-
-.gems-chip-cloud::-webkit-scrollbar {
-  display: none;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  overflow: visible;
 }
 
 .gems-chip-cloud span {
+  align-items: center;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(22, 194, 192, 0.24);
   border-radius: 999px;
   color: #2d5056;
-  flex: 0 0 auto;
+  display: inline-flex;
+  flex: 0 1 auto;
   font-size: 0.86rem;
   font-weight: 900;
+  max-width: 100%;
   min-height: 38px;
   padding: 0.52rem 0.72rem;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .gems-topic-deadline {
