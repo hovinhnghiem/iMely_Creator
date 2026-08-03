@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hướng dẫn chuyển char sang tiếng Phồn thể — imely</title>
+  <meta name="description" content="Hướng dẫn 6 bước chuyển char tiếng Việt sang tiếng Trung Phồn thể cho thị trường Đài Loan, kèm prompt AI và 19 module thể loại.">
+  <link rel="canonical" href="https://creator.imely.ai/guideline-chuyen-ngu-taiwan.html">
+  <meta property="og:title" content="Hướng dẫn chuyển char sang tiếng Phồn thể — imely">
+  <meta property="og:description" content="Copy prompt AI, làm theo 6 bước và chuyển char Việt sang bản tiếng Phồn thể phù hợp thị trường Đài Loan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creator.imely.ai/guideline-chuyen-ngu-taiwan.html">
+  <meta property="og:image" content="https://creator.imely.ai/assets/brand/taiwan-campaign.png">
+  <meta property="og:image:width" content="1254">
+  <meta property="og:image:height" content="1254">
+  <meta property="og:image:alt" content="Mascot imely bên lá cờ Đài Loan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hướng dẫn chuyển char sang tiếng Phồn thể — imely">
+  <meta name="twitter:description" content="Guideline 6 bước và prompt AI giúp creator chuyển char Việt sang bản tiếng Phồn thể cho thị trường Đài Loan.">
+  <meta name="twitter:image" content="https://creator.imely.ai/assets/brand/taiwan-campaign.png">
+  <meta name="twitter:image:alt" content="Mascot imely bên lá cờ Đài Loan">
+  <link rel="stylesheet" href="assets/styles.css?v=20260803-taiwan-guide">
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="creator-landing indo-guide-page taiwan-guide-page">
+  <div class="landing-shell">
+    <header class="landing-header">
+      <a class="creator-brand" href="index.html" aria-label="imely Creator Program Việt Nam">
+        <img src="assets/brand/app-icon.png" alt="imely">
+        <span>
+          <strong>imely Creator</strong>
+          <small>Official guideline</small>
+        </span>
+      </a>
+
+      <nav class="landing-nav" aria-label="Điều hướng guideline">
+        <a href="#taiwan-guide-steps">6 bước</a>
+        <a href="#taiwan-guide-prompt">Prompt</a>
+        <a href="#taiwan-guide-modules">Module thể loại</a>
+        <a href="#taiwan-guide-checklist">Checklist</a>
+      </nav>
+
+      <div class="landing-header-actions">
+        <details class="landing-language">
+          <summary aria-label="Chọn ngôn ngữ">
+            <span>VI</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <nav aria-label="Chọn ngôn ngữ">
+            <a href="en/index.html" hreflang="en">EN</a>
+            <a href="id/index.html" hreflang="id">ID</a>
+            <a href="tw/index.html" hreflang="zh-Hant">TW</a>
+          </nav>
+        </details>
+        <a class="campaign-header-link" href="characters-for-gems-taiwan.html">
+          <span class="campaign-label-full">Tạo Char nhận Gems</span>
+          <span class="campaign-label-short">Gem</span>
+        </a>
+        <a class="header-cta" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Mở imely</a>
+      </div>
+    </header>
+
+    <main class="indo-guide-main">
+      <section class="indo-guide-hero">
+        <div>
+          <p class="eyebrow">Chủ đề 2 · Đài Loan · Guideline</p>
+          <h1>Chuyển char tiếng Việt sang tiếng Phồn thể trong 6 bước.</h1>
+          <p class="hero-lead">Bạn không cần biết tiếng Trung. Copy prompt chuyển ngữ bên dưới, dán vào AI bạn đang dùng, dán char tiếng Việt vào — rồi mang bản Phồn thể lên imely sau khi đã chuyển app sang <strong lang="zh-Hant">繁體中文</strong>.</p>
+          <div class="hero-actions-row">
+            <a class="button-primary" href="#taiwan-guide-prompt">Lấy prompt chuyển ngữ <span aria-hidden="true">→</span></a>
+            <a class="button-secondary" href="#taiwan-guide-steps">Xem 6 bước</a>
+          </div>
+        </div>
+        <aside class="indo-guide-hero-card" aria-label="Prompt này hỗ trợ những gì">
+          <img src="assets/brand/taiwan-campaign.png" alt="Mascot imely bên lá cờ Đài Loan">
+          <div>
+            <span>Prompt này lo giúp bạn</span>
+            <ul class="taiwan-guide-benefits">
+              <li>Viết đúng chữ <strong>Phồn thể</strong>, không lẫn Giản thể.</li>
+              <li>Lọc từ Đại lục và Hồng Kông.</li>
+              <li>Đổi tên, xưng hô và bối cảnh sang bản Đài tự nhiên.</li>
+              <li>Giữ nguyên <code>{{user}}</code> và <code>{{char}}</code>.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="indo-guide-stats" aria-label="Điểm chính của guideline">
+        <div>
+          <strong>6 bước</strong>
+          <span>Từ char Việt đến char Đài</span>
+        </div>
+        <div>
+          <strong>~5 phút</strong>
+          <span>Nếu đã có sẵn bản Việt</span>
+        </div>
+        <div>
+          <strong>500 Gems</strong>
+          <span>Tối đa mỗi char đạt mốc</span>
+        </div>
+      </section>
+
+      <aside class="taiwan-guide-campaign-note" aria-label="Giới hạn chiến dịch">
+        <div>
+          <strong>Giới hạn campaign:</strong> tối đa 10 char và 5.000 Gems cho mỗi creator trong thời gian 2/8–2/9/2026.
+        </div>
+        <a class="text-link" href="characters-for-gems-taiwan.html">Xem đầy đủ campaign <span aria-hidden="true">→</span></a>
+      </aside>
+
+      <section class="indo-guide-section" id="taiwan-guide-steps">
+        <div class="section-heading align-left">
+          <p class="eyebrow">Quy trình</p>
+          <h2>Sáu bước, làm một lần là quen.</h2>
+          <p>Không cần công cụ đặc biệt, không cần điền form. Char hợp lệ sẽ được hệ thống imely tự ghi nhận.</p>
+        </div>
+        <div class="indo-guide-step-grid taiwan-guide-step-grid">
+          <article>
+            <span>Bước 01</span>
+            <h3>Mở công cụ AI bạn thích</h3>
+            <p>Claude, Gemini, ChatGPT, DeepSeek, Grok — dùng cái nào cũng được. Prompt viết bằng tiếng Anh nên chạy ổn định trên mọi model.</p>
+            <p class="taiwan-guide-step-note"><strong>Mẹo:</strong> bản miễn phí là đủ. Nếu char dài, chia làm 2 lần dán.</p>
+          </article>
+          <article>
+            <span>Bước 02</span>
+            <h3>Dán prompt chuyển ngữ</h3>
+            <p>Copy nguyên khối prompt ở mục bên dưới và dán vào khung chat. Đừng sửa hoặc dịch prompt sang tiếng Việt.</p>
+            <p class="taiwan-guide-step-note"><strong>Tuỳ chọn:</strong> dán thêm 1–2 <a href="#taiwan-guide-modules">module thể loại</a> nếu char theo một trope cụ thể.</p>
+          </article>
+          <article>
+            <span>Bước 03</span>
+            <h3>Dán nội dung char tiếng Việt</h3>
+            <p>Dán toàn bộ char vào cuối prompt: tên, mô tả, tính cách, bối cảnh, lời chào đầu, mẫu thoại và tag.</p>
+            <p class="taiwan-guide-step-note"><strong>Lưu ý:</strong> giữ nguyên <code>{{user}}</code> và <code>{{char}}</code>, đừng xoá.</p>
+          </article>
+          <article>
+            <span>Bước 04</span>
+            <h3>Chuyển app sang tiếng Phồn thể</h3>
+            <p>Vào app imely và đổi ngôn ngữ sang <strong lang="zh-Hant">繁體中文</strong> trước khi bắt đầu tạo char. Đây là bước quyết định char có được tính hay không.</p>
+            <p class="taiwan-guide-step-note"><strong>Đừng bỏ qua:</strong> tạo char khi app còn để tiếng Việt sẽ không được ghi nhận.</p>
+          </article>
+          <article>
+            <span>Bước 05</span>
+            <h3>Tạo char như bình thường</h3>
+            <p>Dán bản Phồn thể vào từng ô tương ứng. Toàn bộ nội dung — tên, mô tả, lời chào và prompt — đều phải là tiếng Phồn thể.</p>
+            <p class="taiwan-guide-step-note"><strong>Trước khi đăng:</strong> chạy qua <a href="#taiwan-guide-checklist">checklist cuối trang</a>.</p>
+          </article>
+          <article>
+            <span>Bước 06</span>
+            <h3>Chờ hái Gems</h3>
+            <p>Hệ thống tự theo dõi lifetime messages của từng char. Đạt 100 tin nhắn là bắt đầu có thưởng. Data rút thứ 5, Gems về tài khoản thứ 6 hằng tuần.</p>
+            <p class="taiwan-guide-step-note"><strong>Mốc:</strong> 100 tin → 100 Gems · 1.000 tin → +150 · 10.000 tin → +250.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="indo-guide-section" id="taiwan-guide-prompt">
+        <div class="indo-guide-prompt-toolbar">
+          <div>
+            <p class="eyebrow">Bước 02 · Công cụ chính</p>
+            <h2>Prompt chuyển ngữ char.</h2>
+            <p class="taiwan-guide-section-lead">Copy nguyên khối. Prompt viết bằng tiếng Anh để các model tuân thủ ổn định hơn — bạn không cần dịch.</p>
+          </div>
+          <div class="indo-guide-prompt-actions">
+            <button class="indo-guide-copy-primary" type="button" data-copy-target="taiwanGuidePromptMain">Copy prompt đầy đủ</button>
+          </div>
+        </div>
+
+        <div class="indo-guide-prompt-card">
+          <div class="indo-guide-prompt-head">
+            <span>Prompt · VI → <strong lang="zh-Hant">繁體中文（台灣）</strong></span>
+            <button type="button" data-copy-target="taiwanGuidePromptMain">Copy</button>
+          </div>
+          <pre id="taiwanGuidePromptMain">You are a Taiwanese localization specialist for AI character cards (roleplay personas).
+
+TASK
+I will give you a character card written in Vietnamese. Convert it into Traditional Chinese for the Taiwan market (zh-Hant-TW).
+This is LOCALIZATION, not translation. The character must read as if a Taiwanese writer created them from scratch. A reader must not be able to tell it came from Vietnamese.
+
+===== 1. HARD RULES =====
+- Traditional Chinese only. Zero simplified characters anywhere, including names.
+- Taiwan orthography, not Hong Kong: use 裡 (not 裏), 為 (not 爲).
+- Female "you" = 妳. Male/neutral "you" = 你. Keep gender pronouns consistent throughout. 他 = he, 她 = she.
+- Full-width punctuation only: ，。？！（）
+- Dialogue uses 「」. Quotes inside dialogue use 『』.
+- Ellipsis = …… (exactly two characters). Never ... or 。。。
+- Dash = —— (exactly two characters). Never – or -.
+- Never use straight quotes " " or half-width , . ? !
+- Keep all public-facing fields PG13/SFW and suitable for a general audience.
+- Do not use real historical figures/events or real religions from any country. Fictionalize those elements when needed.
+
+===== 2. STRICT BAN LIST =====
+Ban Mainland Chinese vocabulary:
+視頻 質量 水平 信息 網絡 立馬 靠譜 顏值 小區 默認 登錄 短信 屏蔽 打印 賬號 智能 服務器 網盤 博主 激活 出租車 地鐵 公交車 早上好 方便麵 特別(meaning "very") 挺…的 咋 啥
+Ban Beijing 兒化音 entirely: 哪兒 這會兒 玩兒 一會兒
+Ban Cantonese / Hong Kong slang: 咩 冇 係 點解 搞咩 龍頭 社團(meaning triad)
+Ban AI-customer-service tone: 親 好的呢 很高興為您服務 有什麼我可以幫您 親愛的用戶
+Ban two false friends: 土豆 (means peanut in Taiwan — use 馬鈴薯 for potato) and 愛人 (means lover/affair in Taiwan — use 伴侶 or 另一半 for spouse)
+
+Use these Taiwan equivalents instead:
+影片 品質 水準 訊息 網路 馬上 可靠 長相 社區 預設 登入 簡訊 封鎖 列印 帳號 智慧 伺服器 雲端硬碟 部落客 啟用 計程車 捷運 公車 早安 泡麵 超／有夠 蠻…的 怎麼 什麼 傻眼 太扯
+
+===== 3. NAMES =====
+Convert the Vietnamese name into a natural Taiwanese Chinese name. Do NOT transliterate the Vietnamese sounds.
+- 2–3 characters total. Common TW surnames: 陳 林 黃 張 李 王 吳 劉 蔡 楊 許 鄭 謝 郭 洪 邱 曾 廖 賴 周
+- The name must sound like a real Taiwanese person, not like a Mainland historical drama.
+- Match the original name's gender feel and age feel.
+- If the character has a nickname, build a Taiwanese one: 小 + one character, 阿 + one character, or a doubled syllable.
+- Keep the name consistent everywhere it appears in the card.
+
+===== 4. PRONOUNS AND RELATIONSHIP (most important step) =====
+Vietnamese pronouns (anh/em/chị/tôi/mình/cậu/tớ/ông/bà/con/cháu) encode age, gender and intimacy. Chinese has no such system. If you translate them literally, the relationship disappears.
+Move that information into these three channels instead:
+1. FORMS OF ADDRESS — 學長／學姊／姐姐／老師／(surname)+經理／full name → given name → nickname. Changing how they address someone marks a change in the relationship.
+2. SENTENCE-FINAL PARTICLES — intimacy lives here: 啦 欸 齁 嘛 喔 囉. Coldness = strip ALL particles out.
+3. SENTENCE FORM — commands vs. requests vs. 請／麻煩／謝謝 for respect.
+Note: Vietnamese "ạ" has no particle equivalent in Chinese. Express politeness through sentence structure, never by inventing a particle.
+
+===== 5. SYNTAX — do not carry Vietnamese structure over =====
+- Adjectives go BEFORE nouns.
+- Time and place go BEFORE the verb, in the order time → place.
+- Drop repeated subjects. If a paragraph has one subject, state it only in the first sentence.
+- Avoid 被 passives — 被 carries a sense of misfortune in Chinese. Rewrite as active.
+- Do not chain 的. Kinship and body parts drop it entirely: 我媽 not 我的媽媽.
+- Do not mark plurals. Chinese does not require 們 the way Vietnamese requires những/các.
+- Do not overuse 一個 or 很. Taiwanese prefers 超 and 有夠.
+
+===== 6. VOICE =====
+- Paragraphs of 1–3 sentences. Frequent line breaks. Single-line beats for emphasis.
+- Dialogue carries the character. Narration stays thin.
+- Inner thoughts as fragments, not full analytical sentences.
+- Show emotion through sensory detail and pauses, not by naming the emotion.
+- Anchor in concrete objects rather than stacked adjectives.
+- Use Taiwanese conversational markers naturally: 不會吧 也太…了吧 是說 欸不是 有夠 超 根本 到底 幹嘛 蛤？ 傻眼
+- Humor is dry, self-deprecating, 吐槽-style.
+- No emoji spam. Kaomoji (owo ㅇㅅㅇ QQ TvT) are fine in casual registers.
+
+===== 7. CULTURAL LOCALIZATION =====
+Replace Vietnamese setting details with Taiwanese equivalents:
+quán trà sữa → 手搖飲 (with orders like 半糖去冰)
+tạp hoá / cửa hàng tiện lợi → 7-11 or 全家
+xe máy → 機車 (keep this — riding pillion is a classic Taiwanese romance beat)
+Grab → 計程車 or Uber
+Zalo / Messenger → Line
+cấp 3 → 高中 · thi đại học → 學測 · lớp học thêm → 補習班 · giáo viên chủ nhiệm → 導師 · căng tin → 福利社
+Real temples, religions, historical figures, or historical events → replace with clearly fictional institutions, rituals, people, and events.
+Tết or real religious festivals → replace with a fictional seasonal holiday when the plot needs one.
+tiền → 新台幣 / 元
+Add Taiwanese everyday texture where natural: 捷運 夜市 便當 悠遊卡 颱風假
+NEVER include: 微信 支付寶 淘寶 高考 人民幣 城管
+
+===== 8. PRESERVE EXACTLY =====
+- Keep every placeholder untouched: {{user}} {{char}} {{User}} &lt;BOT&gt; etc.
+- Keep the card's field structure, headings, and formatting.
+- Keep the character's core personality, backstory logic, relationship dynamic, emotional intensity, and narrative stakes.
+- Keep all public-facing content PG13/SFW. Remove explicit sexual or graphic violent detail, unnecessary racist or sexist content, real history, and real religion.
+- Do not add new plot, new traits, or new scenes that were not in the original.
+
+[TROPE MODULE — OPTIONAL: paste one or two trope modules here. If empty, ignore this line.]
+
+===== 9. SELF-CHECK BEFORE YOU ANSWER =====
+Silently verify all of the following, and fix anything that fails:
+1. Zero simplified characters.
+2. Zero words from the ban list in section 2.
+3. 妳／你 correct and consistent.
+4. All punctuation full-width; 「」 for dialogue; …… and —— are two characters each.
+5. No Vietnamese syntax left: adjective order, time+place position, repeated subjects, 被 passives, 的 chains.
+6. At least 3 Taiwanese particles or markers per ~300 characters of dialogue.
+7. No Vietnamese or Mainland cultural props remain.
+8. Every placeholder is intact.
+9. Public-facing fields are PG13/SFW, with no real history or religion.
+
+===== 10. OUTPUT FORMAT =====
+First, output the fully converted character card, in the same structure as the original.
+Then, under a heading 在地化說明, list at most 5 short bullets covering: the name choice, and any setting swaps you made.
+Output nothing else. No preamble, no explanation of your process.
+
+===== CHARACTER CARD =====
+[DÁN CHAR TIẾNG VIỆT VÀO ĐÂY]</pre>
+        </div>
+
+        <div class="taiwan-guide-callouts">
+          <p><strong>Đừng dịch prompt sang tiếng Việt.</strong> Các từ khoá tiếng Trung trong prompt như 視頻, 妳 và 「」 phải giữ nguyên mặt chữ để AI khớp đúng.</p>
+          <p><strong>Muốn giữ tên tiếng Việt?</strong> Nếu nhân vật là người Việt và tên là một phần cốt truyện, thêm dòng: <code>Keep the original Vietnamese name.</code></p>
+        </div>
+      </section>
+
+      <section class="indo-guide-section" id="taiwan-guide-modules">
+        <div class="section-heading align-left">
+          <p class="eyebrow">Tuỳ chọn · Bước 02B</p>
+          <h2>Module thể loại — bạn tự chọn, tự dán thêm.</h2>
+          <p>Mỗi thể loại có kiến trúc câu và cách dùng dấu câu riêng. Copy đoạn tương ứng và dán vào vị trí <code>[TROPE MODULE — OPTIONAL]</code> trong prompt. Chỉ nên dùng tối đa 1–2 module cho một char.</p>
+        </div>
+
+        <nav class="gems-chip-cloud taiwan-guide-module-index" aria-label="Danh sách module thể loại">
+          <a href="#module-chiem-huu">Chiếm hữu · 強取豪奪</a>
+          <a href="#module-theo-duoi-vo">Theo đuổi vợ · 追妻火葬場</a>
+          <a href="#module-trung-sinh">Trùng sinh · 重生</a>
+          <a href="#module-xuyen-khong">Xuyên không · 穿越</a>
+          <a href="#module-nam-cuong-nu-cuong">Nam cường nữ cường · 男強女強</a>
+          <a href="#module-tong-tai">Tổng tài · 總裁</a>
+          <a href="#module-ngot-sung">Ngọt sủng · 甜寵</a>
+          <a href="#module-cuoi-truoc-yeu-sau">Cưới trước yêu sau · 先婚後愛／契約婚</a>
+          <a href="#module-he-thong">Hệ thống · 系統流</a>
+          <a href="#module-phe-vat-nghich-tap">Phế vật nghịch tập · 廢材逆襲</a>
+          <a href="#module-tra-xanh">Trà xanh / bạch liên hoa · 綠茶／白蓮花</a>
+          <a href="#module-harem">Harem · 修羅場</a>
+          <a href="#module-bl">BL · 耽美</a>
+          <a href="#module-gl">GL · 百合</a>
+          <a href="#module-hoc-duong">Học đường · 校園</a>
+          <a href="#module-linh-di">Linh dị – trinh thám · 靈異／懸疑</a>
+          <a href="#module-chuyen-gia">Chuyên gia · 專業人士</a>
+          <a href="#module-thanh-mai-truc-ma">Thanh mai trúc mã · 青梅竹馬</a>
+          <a href="#module-mafia">Mafia · 黑手黨</a>
+        </nav>
+
+        <div class="indo-guide-genre-prompts taiwan-guide-module-grid">
+          <article class="indo-guide-prompt-card" id="module-chiem-huu">
+            <div class="indo-guide-prompt-head"><h3>Chiếm hữu · <strong lang="zh-Hant">強取豪奪</strong></h3><button type="button" data-copy-target="prompt-module-chiem-huu" aria-label="Copy module Chiếm hữu">Copy module</button></div>
+            <pre id="prompt-module-chiem-huu">TROPE: Declaratives only, he almost never asks questions. Verbs of possession and bestowal (佔有 庇護 賞 要). Alternate 「他說：」 and 「她冷笑：」 with minimal narration. She counters his threats with calm, hyper-specific technical data.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-theo-duoi-vo">
+            <div class="indo-guide-prompt-head"><h3>Theo đuổi vợ · <strong lang="zh-Hant">追妻火葬場</strong></h3><button type="button" data-copy-target="prompt-module-theo-duoi-vo" aria-label="Copy module Theo đuổi vợ">Copy module</button></div>
+            <pre id="prompt-module-theo-duoi-vo">TROPE: Two-phase register. Phase 1 — he speaks in sentences of 3 characters or fewer with hard periods, cold. Phase 2 — long sentences, he repeats her name, tags lines with 好不好. She stays politely distant throughout: clean sentences, hard periods, zero ellipses. Politeness is her weapon.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-trung-sinh">
+            <div class="indo-guide-prompt-head"><h3>Trùng sinh · <strong lang="zh-Hant">重生</strong></h3><button type="button" data-copy-target="prompt-module-trung-sinh" aria-label="Copy module Trùng sinh">Copy module</button></div>
+            <pre id="prompt-module-trung-sinh">TROPE: Dual timeline. Constantly contrast 上輩子 against 這一次. Use the pattern 「這一次，我不會再…」. The character holds knowledge of the future and states coming events in a flat, calm voice to build tension.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-xuyen-khong">
+            <div class="indo-guide-prompt-head"><h3>Xuyên không · <strong lang="zh-Hant">穿越</strong></h3><button type="button" data-copy-target="prompt-module-xuyen-khong" aria-label="Copy module Xuyên không">Copy module</button></div>
+            <pre id="prompt-module-xuyen-khong">TROPE: A modern voice dropped into an ancient or other world; comedy comes from the register gap. First-person snark. Describe old-world things with modern gaming/internet words (開局 通關 副本 存檔). Frequent rhetorical questions like 「有沒有搞錯？」</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-nam-cuong-nu-cuong">
+            <div class="indo-guide-prompt-head"><h3>Nam cường nữ cường · <strong lang="zh-Hant">男強女強</strong></h3><button type="button" data-copy-target="prompt-module-nam-cuong-nu-cuong" aria-label="Copy module Nam cường nữ cường">Copy module</button></div>
+            <pre id="prompt-module-nam-cuong-nu-cuong">TROPE: The two leads' dialogue must be symmetrical — matched length, matched structure, strict alternation. Ban all hedging words (只是 有點 好像 可能). Each uses their own professional jargon and never explains it to the other.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-tong-tai">
+            <div class="indo-guide-prompt-head"><h3>Tổng tài · <strong lang="zh-Hant">總裁</strong></h3><button type="button" data-copy-target="prompt-module-tong-tai" aria-label="Copy module Tổng tài">Copy module</button></div>
+            <pre id="prompt-module-tong-tai">TROPE: Build power through space and objects (頂樓 落地窗 腕錶 簽字 電梯). He speaks in commands of 2–4 characters (「進來。」「簽字。」). Show his emotional shifts through the secretary's and the whole office's reactions, not through his inner monologue. Forms of address track the relationship: 總裁 → surname+總 → given name.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-ngot-sung">
+            <div class="indo-guide-prompt-head"><h3>Ngọt sủng · <strong lang="zh-Hant">甜寵</strong></h3><button type="button" data-copy-target="prompt-module-ngot-sung" aria-label="Copy module Ngọt sủng">Copy module</button></div>
+            <pre id="prompt-module-ngot-sung">TROPE: Low conflict. Use three-beat inner monologue with 「……」 before the third beat as the turn. Heavy hedging (好像 有點 似乎 大概). Generate comedy from a three-item list of flaws. Conflict must stay logistical and never wound a character.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-cuoi-truoc-yeu-sau">
+            <div class="indo-guide-prompt-head"><h3>Cưới trước yêu sau · <strong lang="zh-Hant">先婚後愛／契約婚</strong></h3><button type="button" data-copy-target="prompt-module-cuoi-truoc-yeu-sau" aria-label="Copy module Cưới trước yêu sau">Copy module</button></div>
+            <pre id="prompt-module-cuoi-truoc-yeu-sau">TROPE: Let contract language invade ordinary dialogue — 條款 期限 甲方乙方 第三條 不得干涉 違約. Every step of emotional progress corresponds to one clause being broken. Include meddling elders and scenes of performing as a couple in public.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-he-thong">
+            <div class="indo-guide-prompt-head"><h3>Hệ thống · <strong lang="zh-Hant">系統流</strong></h3><button type="button" data-copy-target="prompt-module-he-thong" aria-label="Copy module Hệ thống">Copy module</button></div>
+            <pre id="prompt-module-he-thong">TROPE: System messages wrapped in 【】 — mechanical, affectless, numeric (【好感度 +5】【進度 80%】). The protagonist answers in irritated colloquial snark. Comedy comes from the gap between the two registers. The system always addresses the protagonist as 宿主.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-phe-vat-nghich-tap">
+            <div class="indo-guide-prompt-head"><h3>Phế vật nghịch tập · <strong lang="zh-Hant">廢材逆襲</strong></h3><button type="button" data-copy-target="prompt-module-phe-vat-nghich-tap" aria-label="Copy module Phế vật nghịch tập">Copy module</button></div>
+            <pre id="prompt-module-phe-vat-nghich-tap">TROPE: Open with dense contempt dialogue (廢物 沒用 丟臉 憑妳？). In the payoff, use 3–5 short punch sentences then one longer sentence to land it. After every reversal, write the collective crowd reaction (全場譁然／所有人倒抽一口氣／鴉雀無聲).</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-tra-xanh">
+            <div class="indo-guide-prompt-head"><h3>Trà xanh / bạch liên hoa · <strong lang="zh-Hant">綠茶／白蓮花</strong></h3><button type="button" data-copy-target="prompt-module-tra-xanh" aria-label="Copy module Trà xanh hoặc bạch liên hoa">Copy module</button></div>
+            <pre id="prompt-module-tra-xanh">TROPE: This character never asks for anything directly. Every line is three parts: deprecate herself, praise the other person's partner, then leave a hook that makes them act. Always use negative framing (我不是故意的／我不想…／你不用管我). End lines with 「～」 and particles 哦／呢.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-harem">
+            <div class="indo-guide-prompt-head"><h3>Harem (F3/F4/F5) · <strong lang="zh-Hant">修羅場</strong></h3><button type="button" data-copy-target="prompt-module-harem" aria-label="Copy module Harem">Copy module</button></div>
+            <pre id="prompt-module-harem">TROPE: Multiple love interests in one space. Give each a fixed sentence length and particle habit so the reader can tell them apart without name tags. Insert action beats between lines (setting down a cup, a single laugh). Open with 「你們……都在？」 and three seconds of silence.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-bl">
+            <div class="indo-guide-prompt-head"><h3>BL · <strong lang="zh-Hant">耽美</strong></h3><button type="button" data-copy-target="prompt-module-bl" aria-label="Copy module BL">Copy module</button></div>
+            <pre id="prompt-module-bl">TROPE: Mark relationship progress through forms of address (學長 → given name → nickname). One character controls pace with short lines; the other carries long interior monologue. Build tension through physical distance and eye contact, not declarations. Set it in a Taiwanese campus or workplace. Use 攻／受, never 1/0.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-gl">
+            <div class="indo-guide-prompt-head"><h3>GL · <strong lang="zh-Hant">百合</strong></h3><button type="button" data-copy-target="prompt-module-gl" aria-label="Copy module GL">Copy module</button></div>
+            <pre id="prompt-module-gl">TROPE: Use 妳 throughout, never slip. Dialogue is minimal, dry, three exchanges. Emotional peaks use anaphora triplets (藏在…，藏在…，藏在…) and before/after contrast (在妳之前…；在妳之後…). Pick one nature image (season, light, wind) and run it through the whole card. Put the feeling in what goes unsaid. 年上×年下 dynamic preferred.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-hoc-duong">
+            <div class="indo-guide-prompt-head"><h3>Học đường · <strong lang="zh-Hant">校園</strong></h3><button type="button" data-copy-target="prompt-module-hoc-duong" aria-label="Copy module Học đường">Copy module</button></div>
+            <pre id="prompt-module-hoc-duong">TROPE: Use Taiwanese school nouns (制服 福利社 社辦 段考 學測 補習班 導師 校慶 機車棚). Address people as 學長／學姊／學弟／學妹. Dialogue is light with the highest sentence-final particle density of any trope, and natural Taiwanese-language mixing (蛤 母湯 拍謝). Scenes on the rooftop, in corridors, at convenience stores, on the back of a scooter.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-linh-di">
+            <div class="indo-guide-prompt-head"><h3>Linh dị – trinh thám · <strong lang="zh-Hant">靈異／懸疑</strong></h3><button type="button" data-copy-target="prompt-module-linh-di" aria-label="Copy module Linh dị trinh thám">Copy module</button></div>
+            <pre id="prompt-module-linh-di">TROPE: Delete adjectives; use nouns and short action sentences. Fear comes from withheld information, not description. Insert fictional document forms into the narration (rule lists 【禁止事項】（一）（二）, statements, SMS, CCTV timecodes). Use clearly fictional institutions, rituals, symbols, and folklore; do not reference any real religion. Occasionally switch to second person.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-chuyen-gia">
+            <div class="indo-guide-prompt-head"><h3>Chuyên gia · <strong lang="zh-Hant">專業人士</strong></h3><button type="button" data-copy-target="prompt-module-chuyen-gia" aria-label="Copy module Chuyên gia">Copy module</button></div>
+            <pre id="prompt-module-chuyen-gia">TROPE: Use exact Taiwanese job titles (主治醫師 住院醫師 護理師 — never 護士 — 事務所 合夥律師 檢察官 開庭 病歷 值班). Follow every technical term with one plain-language line. At work the character speaks with precision, no affect, imperative mood; the register only loosens off the clock. Build the emotion out of that gap.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-thanh-mai-truc-ma">
+            <div class="indo-guide-prompt-head"><h3>Thanh mai trúc mã · <strong lang="zh-Hant">青梅竹馬</strong></h3><button type="button" data-copy-target="prompt-module-thanh-mai-truc-ma" aria-label="Copy module Thanh mai trúc mã">Copy module</button></div>
+            <pre id="prompt-module-thanh-mai-truc-ma">TROPE: Open with a time-span sentence (從小到大／認識他第二十年). They share private nicknames and in-jokes that are never explained to the reader. Everyday dialogue is insult-trading and roughhousing with no honorifics. The turning point is the second the familiar person suddenly feels like a stranger.</pre>
+          </article>
+          <article class="indo-guide-prompt-card" id="module-mafia">
+            <div class="indo-guide-prompt-head"><h3>Mafia · <strong lang="zh-Hant">黑手黨</strong></h3><button type="button" data-copy-target="prompt-module-mafia" aria-label="Copy module Mafia">Copy module</button></div>
+            <pre id="prompt-module-mafia">TROPE: Taiwanese gangster context, NOT Italian mafia. Taiwan has 角頭 turf-boss culture, not crime families. Use 角頭 堂口 堂主 大哥 兄弟 道上 圍事 押陣 喬事情 出來混. Mix in Taiwanese language (拍謝 恁北 講三小 卡緊 麥擱). Value vocabulary is 義氣 規矩 交代 面子 給個說法. Short imperative sentences; threats state the premise and leave the consequence unsaid. Never use 龍頭, 社團, or references to real religion.</pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="indo-guide-section" id="taiwan-guide-checklist">
+        <div class="indo-guide-checklist">
+          <div>
+            <p class="eyebrow">Bước 05</p>
+            <h2>Checklist trước khi bấm đăng.</h2>
+            <p class="taiwan-guide-section-lead">Tick hết là char sẵn sàng lên thị trường Đài Loan.</p>
+          </div>
+          <ul>
+            <li>App imely đã chuyển sang <strong lang="zh-Hant">繁體中文</strong> trước khi tạo char.</li>
+            <li>Dấu câu toàn giác, thoại dùng <strong lang="zh-Hant">「」</strong>.</li>
+            <li><code>{{user}}</code> và <code>{{char}}</code> còn nguyên, không bị dịch.</li>
+            <li>Char bám đúng một chủ đề trong danh sách thể loại Đài Loan.</li>
+            <li>Nội dung ở mức PG13 · SFW, không dùng lịch sử hay tôn giáo có thật và đạt <a href="criteria.html?v=20260612-discord">tiêu chí xét duyệt của imely</a>.</li>
+          </ul>
+        </div>
+        <aside class="taiwan-guide-quick-check">
+          <span aria-hidden="true">🔍</span>
+          <p><strong>Cách kiểm tra nhanh chữ Giản thể:</strong> dán char vào AI và hỏi “Are there any simplified Chinese characters in this text? List them.” — nhanh hơn tự dò mắt.</p>
+        </aside>
+      </section>
+
+      <section class="indo-guide-final-cta">
+        <div>
+          <p class="eyebrow">2/8 – 2/9/2026</p>
+          <h2>Char của bạn đã sẵn sàng sang Đài Loan.</h2>
+          <p>Chuyển app sang <span lang="zh-Hant">繁體中文</span>, dán bản Phồn thể vào và tạo char như bình thường. Hệ thống lo phần còn lại.</p>
+        </div>
+        <a class="button-primary" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Tạo char ngay <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="gems-campaign-footer indo-guide-footer">
+      <a class="creator-brand footer-brand" href="index.html" aria-label="imely Creator Program Việt Nam">
+        <img src="assets/brand/app-icon.png" alt="imely">
+        <span>
+          <strong>Guideline chuyển ngữ Đài Loan</strong>
+          <small>imely Creator Việt Nam · 2/8–2/9/2026</small>
+        </span>
+      </a>
+      <nav aria-label="Link guideline">
+        <a href="characters-for-gems-taiwan.html">Chủ đề Đài Loan</a>
+        <a href="index.html">Creator Program</a>
+        <a href="character.html">Character Creator</a>
+        <a href="criteria.html?v=20260612-discord">Tiêu chí xét duyệt</a>
+      </nav>
+    </footer>
+  </div>
+
+  <p class="taiwan-guide-copy-status" id="taiwanGuideCopyStatus" role="status" aria-live="polite"></p>
+  <script>
+    function fallbackCopyTaiwanGuideText(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    function copyTaiwanGuideText(text, button) {
+      const announceCopy = function () {
+        const oldText = button.textContent;
+        button.textContent = "Đã copy";
+        button.classList.add("is-copied");
+        document.getElementById("taiwanGuideCopyStatus").textContent = "Đã copy nội dung vào clipboard.";
+        window.setTimeout(function () {
+          button.textContent = oldText;
+          button.classList.remove("is-copied");
+        }, 1400);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(announceCopy).catch(function () {
+          fallbackCopyTaiwanGuideText(text);
+          announceCopy();
+        });
+        return;
+      }
+
+      fallbackCopyTaiwanGuideText(text);
+      announceCopy();
+    }
+
+    document.querySelectorAll("[data-copy-target]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const target = document.getElementById(button.dataset.copyTarget);
+        if (target) {
+          copyTaiwanGuideText(target.textContent.trim(), button);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

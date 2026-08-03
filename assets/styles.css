@@ -3689,6 +3689,20 @@ body.gems-campaign-page {
   margin-top: 0.34rem;
 }
 
+.gems-campaign-entry-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+}
+
+.gems-campaign-entry-actions .mini-button.is-guide {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(255, 111, 145, 0.34);
+  color: var(--gems-plum);
+}
+
 .gems-guideline-entry {
   align-items: center;
   background:
@@ -4344,6 +4358,14 @@ body.gems-campaign-page {
     width: 100%;
   }
 
+  .gems-campaign-entry-actions {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    width: 100%;
+  }
+
   .gems-campaign-footer {
     padding: 2rem 1rem;
   }
@@ -4369,6 +4391,270 @@ body.indo-guide-page {
   --indo-guide-terminal: #0c201a;
   background:
     linear-gradient(135deg, #f3fbf7 0%, #f2fbff 52%, #fff8eb 100%);
+}
+
+/* Taiwan localization guideline */
+body.taiwan-guide-page {
+  --indo-guide-green: #7657e8;
+  --indo-guide-green-deep: #582ced;
+  --indo-guide-green-soft: #ede6ff;
+  --indo-guide-blue: #ff6f91;
+  --indo-guide-ink: #17101f;
+  --indo-guide-terminal: #171027;
+  background:
+    radial-gradient(circle at 10% 14%, rgba(118, 87, 232, 0.13), transparent 31%),
+    linear-gradient(135deg, #fffaf8 0%, #f7f3ff 52%, #fff8eb 100%);
+}
+
+.taiwan-guide-page .indo-guide-hero {
+  background:
+    radial-gradient(circle at 86% 8%, rgba(255, 111, 145, 0.22), transparent 35%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(237, 230, 255, 0.78));
+  border-color: rgba(118, 87, 232, 0.2);
+  box-shadow: 0 24px 70px rgba(88, 44, 237, 0.12);
+}
+
+.taiwan-guide-page .indo-guide-hero-card,
+.taiwan-guide-page .indo-guide-stats,
+.taiwan-guide-page .indo-guide-step-grid article,
+.taiwan-guide-page .indo-guide-checklist {
+  border-color: rgba(118, 87, 232, 0.18);
+  box-shadow: 0 18px 48px rgba(88, 44, 237, 0.08);
+}
+
+.taiwan-guide-page .indo-guide-hero-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 233, 242, 0.72));
+}
+
+.taiwan-guide-page .indo-guide-hero-card img {
+  aspect-ratio: 1;
+  padding: 0;
+}
+
+.taiwan-guide-benefits {
+  color: var(--landing-ink-soft);
+  display: grid;
+  font-size: 0.92rem;
+  gap: 0.55rem;
+  line-height: 1.5;
+  margin: 0.8rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.taiwan-guide-benefits strong,
+.taiwan-guide-step-note strong,
+.taiwan-guide-callouts strong,
+.taiwan-guide-quick-check strong {
+  color: var(--indo-guide-green-deep);
+}
+
+.taiwan-guide-page .indo-guide-hero-card .taiwan-guide-benefits strong {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.taiwan-guide-campaign-note {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 111, 145, 0.24);
+  border-radius: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+}
+
+.taiwan-guide-campaign-note div {
+  color: var(--landing-ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.taiwan-guide-campaign-note strong {
+  color: var(--indo-guide-ink);
+}
+
+.taiwan-guide-step-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.taiwan-guide-step-note {
+  background: var(--indo-guide-green-soft);
+  border-radius: 14px;
+  margin-top: 0.85rem;
+  padding: 0.75rem 0.8rem;
+}
+
+.taiwan-guide-step-note a,
+.taiwan-guide-checklist a {
+  color: var(--indo-guide-green-deep);
+  font-weight: 900;
+}
+
+.taiwan-guide-section-lead {
+  color: var(--landing-ink-soft);
+  line-height: 1.65;
+  margin-top: 0.65rem;
+}
+
+.taiwan-guide-page .indo-guide-copy-primary {
+  background: linear-gradient(135deg, #7657e8, #ff6f91);
+  box-shadow: 0 12px 28px rgba(88, 44, 237, 0.2);
+  color: #ffffff;
+}
+
+.taiwan-guide-page .indo-guide-prompt-card {
+  border-color: rgba(203, 184, 255, 0.22);
+}
+
+.taiwan-guide-page .indo-guide-prompt-head {
+  background: #100b1d;
+  border-color: rgba(203, 184, 255, 0.22);
+}
+
+.taiwan-guide-page .indo-guide-prompt-head span,
+.taiwan-guide-page .indo-guide-prompt-head h3,
+.taiwan-guide-page .indo-guide-prompt-head button {
+  color: #d4c8ff;
+}
+
+.taiwan-guide-page .indo-guide-prompt-head h3 {
+  font-size: 0.92rem;
+  font-weight: 900;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.taiwan-guide-page .indo-guide-prompt-head button {
+  border-color: rgba(203, 184, 255, 0.34);
+}
+
+.taiwan-guide-page .indo-guide-prompt-card pre {
+  color: #eee9ff;
+}
+
+.taiwan-guide-callouts {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.taiwan-guide-callouts p,
+.taiwan-guide-quick-check {
+  background: rgba(255, 250, 236, 0.88);
+  border: 1px solid rgba(247, 185, 85, 0.32);
+  border-radius: 18px;
+  color: var(--landing-ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  padding: 0.95rem 1rem;
+}
+
+.taiwan-guide-module-index {
+  margin-top: 1.25rem;
+}
+
+.taiwan-guide-module-index a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(118, 87, 232, 0.2);
+  border-radius: 999px;
+  color: #4b3a63;
+  display: inline-flex;
+  flex: 0 1 auto;
+  font-size: 0.84rem;
+  font-weight: 900;
+  max-width: 100%;
+  min-height: 38px;
+  padding: 0.52rem 0.72rem;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.taiwan-guide-module-index a:hover {
+  background: var(--indo-guide-green-soft);
+  border-color: rgba(118, 87, 232, 0.42);
+}
+
+.taiwan-guide-module-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
+  margin-top: 0;
+  scroll-margin-top: 7rem;
+}
+
+.taiwan-guide-module-grid .indo-guide-prompt-head {
+  align-items: flex-start;
+}
+
+.taiwan-guide-module-grid .indo-guide-prompt-head span,
+.taiwan-guide-module-grid .indo-guide-prompt-head h3 {
+  line-height: 1.45;
+}
+
+.taiwan-guide-module-grid .indo-guide-prompt-card pre {
+  max-height: none;
+}
+
+.taiwan-guide-quick-check {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.taiwan-guide-quick-check > span {
+  font-size: 1.35rem;
+}
+
+.taiwan-guide-page .indo-guide-final-cta {
+  background: linear-gradient(135deg, #171027, #4a2359);
+  box-shadow: 0 28px 70px rgba(88, 44, 237, 0.2);
+}
+
+.taiwan-guide-page .indo-guide-footer {
+  border-top-color: rgba(203, 184, 255, 0.26);
+}
+
+.taiwan-guide-copy-status {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media (max-width: 900px) {
+  .taiwan-guide-step-grid,
+  .taiwan-guide-module-grid,
+  .taiwan-guide-callouts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .taiwan-guide-campaign-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .taiwan-guide-module-grid .indo-guide-prompt-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .taiwan-guide-module-grid .indo-guide-prompt-head button {
+    width: 100%;
+  }
 }
 
 .indo-guide-main {
