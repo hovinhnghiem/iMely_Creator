@@ -1790,8 +1790,44 @@ body.creator-landing *::after {
   display: flex;
   font-size: 0.78rem;
   font-weight: 900;
-  justify-content: space-between;
+  gap: 0.55rem;
   text-transform: uppercase;
+}
+
+.program-status-badge {
+  align-items: center;
+  background: #fff7e8;
+  border: 1px solid #f0c36d;
+  border-radius: 999px;
+  color: #7a4e00;
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-top: 0.1rem;
+  padding: 0.48rem 0.68rem;
+  white-space: nowrap;
+}
+
+.program-card-top .program-status-badge {
+  margin-left: auto;
+}
+
+.program-expired-note {
+  background: rgba(255, 247, 232, 0.78);
+  border-left: 3px solid #f0c36d;
+  border-radius: 0 12px 12px 0;
+  color: #6f5222 !important;
+  font-size: 0.84rem !important;
+  font-weight: 700;
+  line-height: 1.45 !important;
+  margin: -0.45rem 0 0;
+  padding: 0.62rem 0.75rem;
+}
+
+.program-dashboard-hero .program-status-badge {
+  margin: 0.15rem 0 0.15rem;
 }
 
 .program-icon {
