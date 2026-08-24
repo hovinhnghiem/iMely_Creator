@@ -2482,6 +2482,148 @@ body.creator-landing *::after {
   color: var(--landing-ink);
 }
 
+/* Performance reward stepper (detail page) */
+.reward-steps {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.3rem;
+}
+
+.reward-step {
+  padding: 0 0.9rem;
+  position: relative;
+  text-align: center;
+}
+
+.reward-step:not(:last-child)::after {
+  background: var(--landing-teal-100, #d6f5f3);
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  right: -50%;
+  top: 20px;
+  z-index: 0;
+}
+
+.reward-step-num {
+  align-items: center;
+  background: linear-gradient(135deg, var(--landing-mint), #5865f2);
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(88, 101, 242, 0.22);
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 1.1rem;
+  font-weight: 900;
+  height: 42px;
+  justify-content: center;
+  position: relative;
+  width: 42px;
+  z-index: 1;
+}
+
+.reward-step-msg {
+  color: var(--landing-ink);
+  font-size: 0.98rem;
+  font-weight: 800;
+  margin-top: 0.75rem;
+}
+
+.reward-step-amt {
+  color: var(--landing-ink);
+  display: block;
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 0.35rem;
+}
+
+.reward-step-cum {
+  color: var(--landing-muted);
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 640px) {
+  .reward-steps {
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .reward-step {
+    padding: 0;
+    text-align: left;
+  }
+
+  .reward-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+.reward-max-panel {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.reward-max-panel div {
+  background: rgba(234, 251, 253, 0.6);
+  border: 1px solid rgba(39, 215, 232, 0.22);
+  border-radius: 18px;
+  padding: 1rem 1.15rem;
+}
+
+.reward-max-panel dt,
+.reward-max-panel .reward-max-label {
+  color: var(--landing-muted);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.reward-max-panel strong {
+  color: var(--landing-ink);
+  display: block;
+  font-size: 1.12rem;
+  font-weight: 900;
+  margin-top: 0.3rem;
+}
+
+.reward-max-panel small {
+  color: var(--landing-ink-soft);
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .reward-max-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Light-theme contrast fixes (detail page uses some dark-theme components) */
+.creator-landing .program-note {
+  background: rgba(234, 251, 253, 0.7);
+  border: 1px solid rgba(39, 215, 232, 0.22);
+  border-left: 4px solid var(--landing-mint);
+  color: var(--landing-ink-soft);
+}
+
+.creator-landing .program-note strong {
+  color: var(--landing-ink);
+}
+
+.creator-landing .detail-checklist li strong {
+  color: var(--landing-ink);
+}
+
 .policy-accordion {
   display: grid;
   gap: 0.68rem;
@@ -2752,7 +2894,8 @@ body.creator-landing *::after {
   padding: 0.95rem 1rem;
 }
 
-.criteria-support .discord-panel {
+.criteria-support .discord-panel,
+.contact-section .discord-panel {
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(234, 251, 253, 0.82)),
     #ffffff;
@@ -2762,36 +2905,48 @@ body.creator-landing *::after {
   max-width: 620px;
 }
 
-.criteria-support .discord-panel::before {
+.contact-section .discord-panel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.criteria-support .discord-panel::before,
+.contact-section .discord-panel::before {
   background: linear-gradient(90deg, var(--landing-mint), #5865f2, var(--landing-mint));
 }
 
-.criteria-support .imely-brand-mark {
+.criteria-support .imely-brand-mark,
+.contact-section .imely-brand-mark {
   background: var(--landing-ink);
   border-color: rgba(30, 224, 200, 0.38);
 }
 
-.criteria-support .imely-brand-copy strong {
+.criteria-support .imely-brand-copy strong,
+.contact-section .imely-brand-copy strong {
   color: var(--landing-ink);
   font-family: "Google Sans", sans-serif;
 }
 
-.criteria-support .imely-brand-copy small {
+.criteria-support .imely-brand-copy small,
+.contact-section .imely-brand-copy small {
   color: var(--landing-muted);
 }
 
-.criteria-support .official-badge {
+.criteria-support .official-badge,
+.contact-section .discord-panel .official-badge {
   background: var(--landing-teal-100);
   border-color: rgba(30, 224, 200, 0.3);
   color: var(--landing-teal-700, #0e9ba0);
   font-family: "Google Sans", sans-serif;
 }
 
-.criteria-support .discord-cta {
+.criteria-support .discord-cta,
+.contact-section .discord-cta {
   font-family: "Google Sans", sans-serif;
 }
 
-.criteria-support .discord-invite-code {
+.criteria-support .discord-invite-code,
+.contact-section .discord-invite-code {
   color: var(--landing-muted);
 }
 
