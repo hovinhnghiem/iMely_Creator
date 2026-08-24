@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sổ Tay Creator imely — Character Creator Handbook</title>
-  <meta name="description" content="Sổ tay hướng dẫn creator mới tạo nhân vật nhập vai trên imely: tính cách, lore, tin nhắn đầu tiên, NPC và giới hạn nhân vật.">
+  <title>Sổ Tay Tạo Character imely — Character Creator Handbook</title>
+  <meta name="description" content="Sổ tay hướng dẫn creator tạo nhân vật nhập vai trên imely qua 11 mục trong form: ảnh đại diện, tên, hashtag, tagline, tính cách, backstory, tin nhắn đầu, NPC và giới hạn.">
   <link rel="canonical" href="https://creator.imely.ai/creator-handbook.html">
-  <meta property="og:title" content="Sổ Tay Creator imely">
-  <meta property="og:description" content="Hướng dẫn tạo char nhập vai trên imely, từ bộ mặt nhân vật tới nội tâm, bối cảnh, tin nhắn đầu tiên và NPC.">
+  <meta property="og:title" content="Sổ Tay Tạo Character imely">
+  <meta property="og:description" content="Hướng dẫn tạo char nhập vai trên imely theo đúng 11 mục trong form: ảnh, tên, hashtag, tagline, tính cách, backstory, tin nhắn đầu, NPC và giới hạn.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://creator.imely.ai/creator-handbook.html">
   <meta property="og:image" content="https://creator.imely.ai/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sổ Tay Creator imely">
-  <meta name="twitter:description" content="Hướng dẫn tạo char nhập vai trên imely, từ bộ mặt nhân vật tới nội tâm, bối cảnh, tin nhắn đầu tiên và NPC.">
+  <meta name="twitter:title" content="Sổ Tay Tạo Character imely">
+  <meta name="twitter:description" content="Hướng dẫn tạo char nhập vai trên imely theo đúng 11 mục trong form: ảnh, tên, hashtag, tagline, tính cách, backstory, tin nhắn đầu, NPC và giới hạn.">
   <meta name="twitter:image" content="https://creator.imely.ai/assets/og-image.png">
   <link rel="alternate" hreflang="vi" href="https://creator.imely.ai/creator-handbook.html">
   <link rel="alternate" hreflang="en" href="https://creator.imely.ai/en/creator-handbook.html">
   <link rel="alternate" hreflang="id" href="https://creator.imely.ai/id/creator-handbook.html">
   <link rel="alternate" hreflang="tw" href="https://creator.imely.ai/tw/creator-handbook.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/creator-handbook.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260706-handbook-footer">
+  <link rel="stylesheet" href="assets/styles.css?v=20260824-char-handbook-flow">
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
@@ -62,174 +62,360 @@
       </div>
     </header>
 
-    <main class="handbook-main">
+    <main class="handbook-main char-hb">
       <section class="handbook-hero">
         <div>
           <p class="eyebrow">Sổ tay chính thức</p>
-          <h1>Sổ Tay Creator imely</h1>
-          <p class="hero-lead">Dành cho người mới bắt đầu tạo char nhập vai: từ ấn tượng đầu tiên, nội tâm, bối cảnh, tin nhắn mở đầu tới NPC và giới hạn an toàn.</p>
+          <h1>Sổ Tay Tạo Character imely</h1>
+          <p class="hero-lead">11 mục trong form tạo char của imely — mỗi mục kèm ảnh minh hoạ ngay trong app và phần hướng dẫn chi tiết để bạn tự triển khai nhân vật của mình.</p>
           <div class="hero-actions-row">
             <a class="button-primary" href="https://forms.gle/3YBhzq8EPbwhV5Dt9" target="_blank" rel="noopener noreferrer">Đăng ký creator <span aria-hidden="true">→</span></a>
+            <a class="button-secondary" href="#c1">Bắt đầu đọc</a>
+          </div>
+          <div class="hb-legend">
+            <span class="hb-legend-item"><span class="hb-swatch hb-swatch-shot"></span> Ảnh minh hoạ trong app</span>
+            <span class="hb-legend-item"><span class="hb-swatch hb-swatch-guide"></span> Hướng dẫn chi tiết theo mục</span>
           </div>
         </div>
-        <div class="handbook-hero-art" aria-hidden="true">
-          <img src="assets/brand/imo-mascot.png" alt="">
-        </div>
+        <figure class="handbook-hero-portrait">
+          <img src="assets/handbook/char-hero-portrait.jpg" alt="Ảnh đại diện nhân vật mẫu phong cách imely" loading="lazy">
+          <figcaption>Ảnh đại diện nhân vật mẫu</figcaption>
+        </figure>
       </section>
 
-      <section class="handbook-reader" id="handbook-content">
-        <nav class="handbook-tabs" id="handbookTabs" aria-label="Các phần trong sổ tay"></nav>
-        <div class="handbook-panels">
+      <div class="handbook-notice" role="note">
+        <span class="handbook-notice-ic" aria-hidden="true">!</span>
+        <div>
+          <p class="handbook-notice-title">Đọc kỹ quy tắc duyệt char trước khi tạo char.</p>
+          <p class="handbook-notice-body"><span class="handbook-pending">[ bổ sung quy tắc duyệt char ]</span> — phần này sẽ được cập nhật; luôn đối chiếu tiêu chí duyệt mới nhất của imely.</p>
+        </div>
+      </div>
 
-          <section class="handbook-panel is-active" data-title="Nhập môn" data-n="1">
-            <div class="handbook-panel-head">
-              <p class="eyebrow">Bắt đầu từ đây</p>
-              <h2>Nhập môn</h2>
-              <p>Các thông tin cơ bản về việc tạo nhân vật trên imely.</p>
-            </div>
-            <div class="handbook-card">
-              <div class="handbook-card-heading"><span>🎯</span><h3>Sổ tay này giúp bạn có được char thế nào</h3></div>
-              <ul class="handbook-list">
-                <li>Trả lời dài hơn, sâu hơn, có nội tâm</li>
-                <li>Có plot phức tạp, nhiều tình tiết</li>
-                <li>NPC (nhân vật phụ) tương tác tự nhiên</li>
-                <li>Đi đúng nhịp: không đẩy tình tiết quá nhanh, luôn chừa chỗ cho <code>{{user}}</code> quyết định — char không nói và làm thay</li>
+      <div class="char-hb-wrap">
+        <nav class="hb-toc" aria-label="Mục lục sổ tay">
+          <a href="#c1">01 Ảnh đại diện</a>
+          <a href="#c2">02 Tên</a>
+          <a href="#c3">03 Hashtag</a>
+          <a href="#c4">04 Tagline</a>
+          <a href="#c5">05 Thông tin công khai</a>
+          <a href="#c6">06 Tính cách</a>
+          <a href="#c7">07 Backstory</a>
+          <a href="#c8">08 Tin nhắn đầu</a>
+          <a href="#c9">09 Nhân vật phụ</a>
+          <a href="#c10">10 Phong cách giao tiếp</a>
+          <a href="#c11">11 Quy tắc &amp; giới hạn</a>
+        </nav>
+
+        <section class="hb-cat" id="c1">
+          <div class="hb-cat-head"><span class="hb-cat-num">01</span><h2 class="hb-cat-title">Ảnh đại diện</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Ảnh đại diện</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-01-avatar.jpg" alt="Ví dụ trong app — Ảnh đại diện" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>Tiêu chí chọn ảnh</h4>
+              <ul>
+                <li>Chọn phong cách hình ảnh <strong>khớp với thể loại char</strong> đã định trước khi đi tìm ảnh.</li>
+                <li>Ảnh đại diện phải <strong>khớp với mô tả tính cách</strong> đã viết. <em class="note">Ví dụ: tính cách "lạnh lùng, ít nói" mà ảnh cười tươi rói sẽ gây lệch kỳ vọng ngay khi người dùng vào chat.</em></li>
+              </ul>
+              <h4>Gợi ý cách tìm &amp; tạo ảnh</h4>
+              <ul>
+                <li><strong>Tự tạo ảnh</strong> (khuyến khích nhất để tránh vướng bản quyền): dùng công cụ tạo ảnh AI, mô tả rõ phong cách, giới tính, độ tuổi, biểu cảm, trang phục, màu tóc, màu mắt, tông màu, góc chụp, bối cảnh… Mô tả càng cụ thể, ảnh ra càng đúng ý. <em class="note">Nền tảng gợi ý: ChatGPT, TensorArt, Gemini…</em></li>
+                <li><strong>Tránh tuyệt đối:</strong> ảnh chụp từ game/phim nổi tiếng có bản quyền, ảnh người thật (đặc biệt người nổi tiếng), ảnh có watermark của nguồn khác — đây là nguyên nhân phổ biến nhất khiến char bị từ chối duyệt.</li>
+                <li><strong>Nếu tìm ảnh</strong> trên Google, Pinterest: chỉ dùng ảnh do AI tạo, không dùng ảnh người thật, tranh của artist, hay sản phẩm có bản quyền…</li>
               </ul>
             </div>
-            <div class="handbook-card">
-              <div class="handbook-card-heading"><span>📝</span><h3>Đi 1 vòng form tạo char</h3></div>
-              <p class="handbook-muted">Form có 12 trường, trường có dấu <code>*</code> là bắt buộc:</p>
-              <ul class="handbook-list">
-                <li><b>Bắt buộc:</b> Tên, Giới tính, Tagline, Tính cách, Thông tin công khai, Tiểu sử, Tin nhắn đầu tiên</li>
-                <li><b>Tùy chọn:</b> Hashtag, Nhân vật phụ, Phong cách giao tiếp, Quy tắc ứng xử, Ghi chú người tạo</li>
-              </ul>
-              <div class="handbook-shot-grid">
-                <figure><img src="assets/handbook/handbook-screen-1.jpg" alt="Màn 1: Tên, Giới tính, Hashtag, Tagline, Tính cách" loading="lazy"><figcaption>Màn 1: Tên · Giới tính · Hashtag · Tagline · Tính cách</figcaption></figure>
-                <figure><img src="assets/handbook/handbook-screen-2.jpg" alt="Màn 2: Thông tin công khai, Tiểu sử, Tin nhắn đầu tiên" loading="lazy"><figcaption>Màn 2: Thông tin công khai · Tiểu sử · Tin nhắn đầu tiên</figcaption></figure>
-                <figure><img src="assets/handbook/handbook-screen-3.jpg" alt="Màn 3: Nhân vật phụ, Phong cách, Quy tắc, Ghi chú" loading="lazy"><figcaption>Màn 3: Nhân vật phụ · Phong cách · Quy tắc · Ghi chú</figcaption></figure>
-              </div>
-            </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Bộ mặt nhân vật" data-n="2">
-            <div class="handbook-panel-head">
-              <p class="eyebrow">Ấn tượng đầu tiên</p>
-              <h2>Bộ mặt nhân vật</h2>
-              <p>Trường: <b>Tên</b> · <b>Giới tính</b> · <b>Hashtag</b> · <b>Tagline</b></p>
-            </div>
-            <div class="handbook-card handbook-split">
-              <div>
-                <div class="handbook-card-heading"><span>🛠️</span><h3>Cách làm</h3></div>
-                <ul class="handbook-list">
-                  <li>Tên + nickname: cho nickname một lý do cảm xúc để tồn tại → tạo được sự thân mật hoặc khoảng cách</li>
-                  <li>Hashtag: từ thông dụng, đúng chính tả để gọi tên thể loại — đây là cách người chơi tìm ra char</li>
-                  <li>Tagline: 1 câu hook gợi sự tò mò, cho người đọc thấy "chất" của char ngay</li>
+        <section class="hb-cat" id="c2">
+          <div class="hb-cat-head"><span class="hb-cat-num">02</span><h2 class="hb-cat-title">Tên nhân vật</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Tên nhân vật</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-02-name.jpg" alt="Ví dụ trong app — Tên nhân vật" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>Tiêu chí đặt tên</h4>
+              <ul>
+                <li>Ưu tiên tên <strong>2–3 âm tiết</strong>, dễ đọc, đúng chính tả…</li>
+                <li>Tránh trùng tên với char đang hot trên imely hoặc nhân vật có bản quyền (anime, phim, game, truyện…) — vừa dễ bị từ chối duyệt, vừa khiến char bị hiểu lầm là copy / đạo nhái.</li>
+                <li>Cân nhắc thêm <strong>biệt danh / danh xưng</strong> đi kèm tên chính thức:
+                  <ul>
+                    <li><strong>Tên đầy đủ</strong> — dùng trong tiểu sử / thông tin công khai (tạo cảm giác nghiêm túc, có chiều sâu).</li>
+                    <li><strong>Biệt danh thân mật</strong> — dùng khi nhân vật tự giới thiệu trong tin nhắn đầu (tạo cảm giác gần gũi ngay lần gặp đầu).</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">Gợi ý đặt tên theo thể loại</div>
+                <ul>
+                  <li><strong>CEO / tổng tài, quyền lực:</strong> Alexander, Damien, Sebastian, Vincent…</li>
+                  <li><strong>Học đường, đời thường:</strong> tên thuần Việt — Phong, Khánh, Linh, An…</li>
+                  <li><strong>Fantasy, siêu nhiên, dị giới:</strong> tên lạ tai, ít gặp — Kai, Rhys, Noel, Eryn…</li>
+                  <li><strong>Dark romance, bí ẩn:</strong> âm trầm, ít phổ biến — Adrian, Cain, Lysander…</li>
                 </ul>
               </div>
-              <figure><img src="assets/handbook/handbook-screen-4.jpg" alt="Phần Tên, Hashtag, Tagline trên form" loading="lazy"><figcaption>Phần Tên, Hashtag, Tagline trên form</figcaption></figure>
             </div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Tagline gợi sự tò mò, để lửng cho người đọc muốn biết thêm</li><li>Chọn 3–4 hashtag đúng thể loại cụ thể, đúng từ khoá dễ tìm kiếm</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng viết tagline kể hết nội dung</li><li>Đừng nhồi hashtag chung chung ("hay", "hot")</li><li>Đừng dùng từ ngữ nhạy cảm trong hashtag</li></ul></div>
-          </section>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Tính cách & nội tâm" data-n="3">
-            <div class="handbook-panel-head"><p class="eyebrow">Linh hồn của char</p><h2>Tính cách &amp; nội tâm</h2><p>Trường: <b>Tính cách</b></p></div>
-            <div class="handbook-card handbook-split">
-              <div><div class="handbook-card-heading"><span>🛠️</span><h3>Cách làm</h3></div><ul class="handbook-list"><li>Chọn 3 nét tính cách độc bản. Viết bằng cảm giác, đừng viết từ suông<ul class="handbook-sublist"><li>Thay vì "lạnh lùng" → "băng lãnh, không thứ gì có thể sưởi ấm"</li></ul></li><li>Cho char 1 <b>khao khát cốt lõi</b> (sống vì gì?) và 1 <b>nỗi sợ cốt lõi</b> (điều gì khiến char gục?)</li><li>Ghi rõ cách char xử lý cảm xúc: buồn thì im lặng bỏ đi hay đập phá? Giận thì cười mỉa hay gầm lên?</li></ul></div>
-              <figure><img src="assets/handbook/handbook-screen-5.jpg" alt="Phần Tính cách trên form" loading="lazy"><figcaption>Phần Tính cách trên form</figcaption></figure>
+        <section class="hb-cat" id="c3">
+          <div class="hb-cat-head"><span class="hb-cat-num">03</span><h2 class="hb-cat-title">Hashtag</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Hashtag</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-03-hashtag.jpg" alt="Ví dụ trong app — Hashtag" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>Chọn theo thể loại chính</h4>
+              <p>Char thuộc nhóm tìm kiếm nào (<strong>#romance, #ceo, #học_đường, #dark, #fantasy…</strong>). Chỉ nên chọn <strong>1 thể loại gốc</strong> để tránh tín hiệu bị loãng.</p>
+              <h4>Chọn theo đặc điểm tính cách</h4>
+              <p>Thêm 1–2 hashtag mô tả nét tính cách nổi bật nhất (<strong>#tsundere, #possessive, #gentle, #dominant, #playful…</strong>) — nhóm này giúp người dùng tìm đúng "gu" tính cách họ thích, không chỉ đúng thể loại.</p>
+              <h4>Số lượng &amp; thứ tự ưu tiên</h4>
+              <ul>
+                <li>Tổng nên dùng <strong>4–6 hashtag</strong>, sắp theo thứ tự: thể loại lớn → setup/mối quan hệ (#enemies_to_lovers, #office_romance) → đặc điểm tính cách.</li>
+                <li>Đặt hashtag quan trọng nhất <strong>lên đầu</strong> vì hệ thống thường ưu tiên đọc các tag đầu tiên để phân loại char.</li>
+              </ul>
+              <h4>Tránh spam hashtag không liên quan</h4>
+              <ul>
+                <li>Không gắn hashtag đang trend nhưng không khớp nội dung char — người dùng bấm vào sẽ thoát ngay vì sai kỳ vọng, khiến thuật toán đánh giá char có tỷ lệ giữ chân thấp, ảnh hưởng xấu tới khả năng được gợi ý về sau.</li>
+              </ul>
             </div>
-            <div class="handbook-card handbook-new"><div class="handbook-card-heading"><span>🔁</span><h3>Viết cảm xúc dạng "user làm X → char phản ứng Y"</h3><span class="handbook-tag">Mới</span></div><p class="handbook-muted">Đừng chỉ ghi tính từ ("nhạy cảm"), hãy ghi phản ứng cụ thể:</p><ul class="handbook-list"><li>user ngoan → bớt gắt, để ý nhiều hơn</li><li>user cãi lại → nổi nóng, muốn áp chế</li><li>user lạnh nhạt → khó chịu, kiếm cớ giữ lại</li><li>user đòi rời đi → mất bình tĩnh, lộ chiếm hữu</li></ul><p class="handbook-note">→ AI phản ứng đúng nhịp hơn nhiều so với chỉ tả tính cách.</p></div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Cho char một hệ giá trị "xám" — không hoàn hảo, ranh giới đúng/sai mập mờ → cuốn hút hơn</li><li><i>(Nâng cao)</i> thêm góc khuất: mặt ẩn, điểm yếu, trigger (từ/hành động khiến char mất kiểm soát)</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng xây char thánh nhân, cái gì cũng giỏi cũng tốt</li><li>Đừng cho char yêu <code>{{user}}</code> ngay từ tính cách</li></ul></div>
-          </section>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Bối cảnh & tiểu sử" data-n="4">
-            <div class="handbook-panel-head"><p class="eyebrow">Thế giới của char</p><h2>Bối cảnh &amp; tiểu sử</h2><p>Trường: <b>Thông tin công khai</b> · <b>Tiểu sử</b></p></div>
-            <div class="handbook-card handbook-split"><div><div class="handbook-card-heading"><span>🛠️</span><h3>Cách làm</h3></div><ul class="handbook-list"><li>Thông tin công khai: những gì hiện trên profile — thân phận, tuổi, nghề, 1 câu khơi tò mò</li><li>Dựng thế giới char đang sống: thời đại, nơi chốn, luật lệ xã hội quanh char</li></ul><p class="handbook-mini-title">Tiểu sử — mẫu sườn cho nhân vật đa chiều:</p><ol class="handbook-steps"><li>Xuất thân</li><li>Biến cố lớn nhất (phản bội / mất mát / cận kề cái chết)</li><li>Vết sẹo tâm lý để lại</li><li>Hiện tại char ra sao</li><li>Liên kết ngầm với <code>{{user}}</code> / bối cảnh truyện</li></ol></div><figure><img src="assets/handbook/handbook-screen-6.jpg" alt="Thông tin công khai và Tiểu sử" loading="lazy"><figcaption>Thông tin công khai &amp; Tiểu sử</figcaption></figure></div>
-            <div class="handbook-card handbook-new"><div class="handbook-card-heading"><span>📈</span><h3>Cho char thay đổi theo độ thân</h3><span class="handbook-tag">Mới</span></div><p class="handbook-muted">imely có 5 giai đoạn quan hệ: Mới quen → Thân thiết → Mập mờ → Tương tư → Định mệnh. Cùng 1 char nhưng nên đổi theo giai đoạn:</p><ul class="handbook-list"><li><b>Giọng điệu</b> (xa cách → dịu dần)</li><li><b>Động cơ</b> (thử thách → muốn giữ bên cạnh)</li><li><b>Nỗi sợ</b> (bị thách thức uy quyền → sợ mất <code>{{user}}</code>)</li></ul><p class="handbook-note">→ Người mới hay bỏ qua — char đứng yên 1 kiểu từ đầu đến cuối sẽ nhạt.</p></div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Mỗi câu tiểu sử phải giải thích được: <i>vì sao hiện tại char hành xử như vậy?</i></li><li>Tả bằng chi tiết giác quan ("mùi khét, tiếng củi nổ lách tách") thay vì kể dòng thời gian</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng viết cả cuốn tiểu thuyết — AI không tiêu hóa hết</li><li>Đừng để char giai đoạn "Định mệnh" vẫn lạnh y như "Mới quen"</li></ul></div>
-          </section>
+        <section class="hb-cat" id="c4">
+          <div class="hb-cat-head"><span class="hb-cat-num">04</span><h2 class="hb-cat-title">Tagline</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Tagline</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-04-tagline.jpg" alt="Ví dụ trong app — Tagline" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <ul>
+                <li>Dùng <strong>mâu thuẫn / xung đột ngắn</strong> để tạo hook ngay từ tagline.</li>
+                <li>Mô tả ngắn nhân vật qua 1 câu, hoặc gợi ý về câu chuyện để user hiểu sơ qua về char.</li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">Ví dụ khung sườn — tham khảo cấu trúc, không dùng nguyên văn</div>
+                <ul>
+                  <li><strong>Dạng mâu thuẫn:</strong> "Trước mặt mọi người hắn luôn giữ khoảng cách, nhưng chỉ có em lại khiến hắn phá lệ."</li>
+                  <li><strong>Dạng câu hỏi ngầm:</strong> "Hắn từng thề sẽ không yêu ai nữa, nhưng bạn có phải là ngoại lệ của hắn không?"</li>
+                  <li><strong>Dạng xưng hô trực tiếp:</strong> "Trong mắt người khác bạn chỉ là nhân viên mới — nhưng anh ấy lại nhớ tên bạn ngay từ ngày đầu."</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Tin nhắn đầu tiên" data-n="5">
-            <div class="handbook-panel-head"><p class="eyebrow">Phần dễ sai nhất của người mới</p><h2>Tin nhắn đầu tiên</h2><p>Trường: <b>Tin nhắn đầu tiên</b></p></div>
-            <div class="handbook-card handbook-split"><div><div class="handbook-card-heading"><span>🛠️</span><h3>Cách làm</h3></div><ul class="handbook-list"><li>Đây là "mẫu giọng văn" AI sẽ bắt chước cho cả cuộc chat sau này</li><li>Viết Scenario ngắn theo công thức:</li></ul><div class="handbook-formula">[Nơi chốn] + [char đang làm gì] + [trạng thái của {{user}}] + [mục đích cuộc gặp]</div><p class="handbook-mini-title">3 quy tắc viết:</p><ol class="handbook-steps"><li>Để hành động tự nói cảm xúc, đừng ghi thẳng "char rất buồn"</li><li>Đan âm thanh / xúc giác / ánh sáng vào</li><li>Kết bằng 1 hành động lửng hoặc câu ép <code>{{user}}</code> phải lên tiếng (<b>hook</b>)</li></ol></div><figure><img src="assets/handbook/handbook-screen-7.jpg" alt="Phần Tin nhắn đầu tiên" loading="lazy"><figcaption>Phần Tin nhắn đầu tiên</figcaption></figure></div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Đặt <code>{{user}}</code> vào thế phải phản hồi: phải chọn, phải giải thích, phải quyết định</li><li>Giữ độ dài vừa phải, đúng chất char</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng viết tin nhắn quá "hoàn hảo" — char tự diễn từ đầu tới cuối, tự kết thúc → <code>{{user}}</code> không biết trả lời gì</li><li>Đừng nói thay hay đoán cảm xúc của <code>{{user}}</code></li></ul></div>
-          </section>
+        <section class="hb-cat" id="c5">
+          <div class="hb-cat-head"><span class="hb-cat-num">05</span><h2 class="hb-cat-title">Thông tin công khai</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Thông tin công khai</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-05-public-info.jpg" alt="Ví dụ trong app — Thông tin công khai" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <p>Viết rõ về thông tin cá nhân của char.</p>
+              <div class="hb-field"><div class="hb-field-label">Tên</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Tuổi</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Chiều cao</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Vị thế</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Ngoại hình</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Tính cách</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Mối quan hệ với user</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">Bối cảnh <span class="opt">(nếu có)</span></div><div class="hb-field-blank"></div></div>
+            </div>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Cho nhân vật sống động hơn" data-n="6">
-            <div class="handbook-panel-head"><p class="eyebrow">Nâng cấp</p><h2>Cho nhân vật sống động hơn</h2><p>Trường: <b>Nhân vật phụ</b> (+ mẹo nâng cấp)</p></div>
-            <div class="handbook-card"><div class="handbook-card-heading"><span>🛠️</span><h3>Muốn char trả lời dài &amp; sâu</h3></div><ul class="handbook-list"><li>Đặt rõ yêu cầu cho mỗi phản hồi: có tả cảnh + nội tâm + lời thoại + tiến triển tình tiết</li><li><b>Ghi con số cụ thể</b> thay vì "dài hơn": VD <i>"mỗi phản hồi 600–900 ký tự"</i> <span class="handbook-tag">Mới</span></li><li>Viết ở phần Tính cách hoặc Ghi chú người tạo (Tab 7)</li></ul></div>
-            <div class="handbook-card handbook-split"><div><div class="handbook-card-heading"><span>🎬</span><h3>Muốn NPC tương tác tự nhiên</h3></div><ul class="handbook-list"><li>Mỗi NPC có: tên, vai trò, tính cách, lập trường riêng</li><li>Cho NPC được nói và phản ứng trong cảnh, có cuộc sống riêng kể cả khi <code>{{user}}</code> không nhắc tới</li></ul></div><figure><img src="assets/handbook/handbook-screen-8.jpg" alt="Phần Nhân vật phụ" loading="lazy"><figcaption>Phần Nhân vật phụ</figcaption></figure></div>
-            <div class="handbook-card handbook-new"><div class="handbook-card-heading"><span>🗣️</span><h3>Bảng xưng hô — char gọi ai bằng gì</h3><span class="handbook-tag">Mới</span></div><p class="handbook-muted">Liệt kê cách char xưng hô với từng đối tượng → hội thoại và NPC nhất quán hơn:</p><ul class="handbook-list"><li>với <code>{{user}}</code>: (VD tao / mày)</li><li>với cha mẹ: (VD con / thầy, u)</li><li>với anh em, người hầu khác, người lạ…</li></ul><p class="handbook-note">→ Char nói với user khác cách nói với cha — chi tiết nhỏ này làm char thật hơn hẳn.</p></div>
-            <div class="handbook-card"><div class="handbook-card-heading"><span>🎚️</span><h3>Giữ nhịp &amp; chống bế tắc</h3></div><ul class="handbook-list"><li>Sau biến cố lớn → chừa 1 khoảng lặng, rồi mới tới biến cố mới</li><li>Khi <code>{{user}}</code> trả lời cụt ("ừ", "...") → char chủ động: tạo sự kiện, cho NPC xuất hiện, đặt câu hỏi mở, chuyển cảnh</li></ul></div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Cho NPC được lên tiếng để cảnh sống động</li><li>Cho char thay đổi nhỏ sau mỗi biến cố (tích lũy dần)</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng dồn drama liên tục không nghỉ</li><li>Đừng để NPC nói/làm thay <code>{{user}}</code> — cho NPC hoạt động nhưng vẫn chừa chỗ cho người chơi quyết định</li></ul></div>
-          </section>
+        <section class="hb-cat" id="c6">
+          <div class="hb-cat-head"><span class="hb-cat-num">06</span><h2 class="hb-cat-title">Tính cách</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Tính cách</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-06-personality.jpg" alt="Ví dụ trong app — Tính cách" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4><span class="ord">a</span>Quy tắc phản hồi</h4>
+              <ul>
+                <li>Bắt buộc phản hồi từ <strong>…</strong> đến <strong>…</strong> kí tự.</li>
+                <li>Char <strong>không</strong> được quyết định lời nói, hành động thay cho user.</li>
+                <li>Luôn nhớ mọi hành động, lời nói, sự việc mà user đã từng làm.</li>
+                <li>Tránh lặp từ.</li>
+              </ul>
+              <h4><span class="ord">b</span>Lõi tính cách</h4>
+              <p>Chọn tính từ <strong>cụ thể</strong>, tránh mơ hồ (ví dụ "phức tạp" quá mơ hồ, AI không biết diễn thế nào).</p>
+              <div class="hb-eg">
+                <div class="eg-t">Ví dụ lõi tính cách hoàn chỉnh</div>
+                <p>"Kiêu hãnh, lạnh lùng bề ngoài, sở hữu quá mức với người mình quan tâm, chu đáo trong im lặng (thể hiện qua hành động chứ không lời nói)."</p>
+              </div>
+              <h4><span class="ord">c</span>Quy tắc phản hồi theo tình huống</h4>
+              <p>Viết rõ nhân vật phản ứng ra sao trong từng tình huống:</p>
+              <ul>
+                <li><strong>Khi được khen</strong> → giả vờ thờ ơ / ngại ngùng / đáp trả dí dỏm…</li>
+                <li><strong>Khi bị trêu chọc</strong> → đáp trả sắc bén hay né tránh.</li>
+                <li><strong>Khi user buồn / cần an ủi</strong> → có "lộ" phần mềm lòng ẩn giấu không, hay yếu đuối.</li>
+                <li><strong>Khi bị nghi ngờ / thử lòng tin</strong> → im lặng, giải thích, hay tổn thương ra mặt.</li>
+              </ul>
+              <h4><span class="ord">d</span>Giọng văn, phong cách nói chuyện</h4>
+              <ul>
+                <li>Mức trang trọng của lời thoại (anh/em, tôi/cô…) và cách xưng hô có thay đổi theo độ thân thiết không.</li>
+                <li>Độ dài câu trả lời trung bình: kiệm lời, nhiều khoảng lặng hay nói nhiều, tả cảnh chi tiết — nên khớp với lõi tính cách đã chọn.</li>
+                <li>Cho nhân vật <strong>1 cụm từ / thói quen nói chuyện riêng</strong> (ví dụ luôn gọi user bằng 1 biệt danh cố định) để tạo dấu ấn nhận diện riêng.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-          <section class="handbook-panel" data-title="Phong cách & giới hạn" data-n="7">
-            <div class="handbook-panel-head"><p class="eyebrow">Hoàn thiện</p><h2>Phong cách &amp; giới hạn</h2><p>Trường: <b>Phong cách giao tiếp</b> · <b>Quy tắc ứng xử</b> · <b>Ghi chú người tạo</b></p></div>
-            <div class="handbook-card handbook-split"><div><div class="handbook-card-heading"><span>🛠️</span><h3>Cách làm</h3></div><ul class="handbook-list"><li>Phong cách giao tiếp: chọn tag (Trung tính, Ngắn gọn, Gen Z, Văn vở, Trang trọng…) hoặc tự mô tả — chọn sao cho khớp tính cách char</li><li>Quy tắc ứng xử và giới hạn: ghi rõ việc char <b>tuyệt đối không làm</b> với <code>{{user}}</code> dù trong hoàn cảnh nào</li><li>Ghi chú người tạo: nơi đặt các lệnh cứng quan trọng cho AI (VD: độ dài phản hồi, cho NPC được thoại)</li></ul></div><figure><img src="assets/handbook/handbook-screen-9.jpg" alt="Phong cách, Quy tắc ứng xử và Ghi chú" loading="lazy"><figcaption>Phong cách, Quy tắc ứng xử &amp; Ghi chú</figcaption></figure></div>
-            <div class="handbook-card handbook-do"><div class="handbook-card-heading"><span>✅</span><h3>Nên</h3></div><ul class="handbook-list"><li>Giới hạn tạo nên sự nhất quán và lòng tự trọng cho char</li><li>Với thể loại nhạy cảm: dùng giới hạn để đặt "lằn ranh đỏ" rõ ràng — char được đi tới đâu, tuyệt đối dừng ở đâu → giữ char an toàn và nhất quán</li><li>Dùng ô Ghi chú để nhắc lại 2–3 lệnh bạn coi trọng nhất</li></ul></div>
-            <div class="handbook-card handbook-dont"><div class="handbook-card-heading"><span>✕</span><h3>Đừng</h3></div><ul class="handbook-list"><li>Đừng chọn phong cách trái ngược tính cách (char lạnh lùng mà set "Nói nhiều, tích cực")</li><li>Đừng bỏ trống giới hạn nếu char thuộc thể loại nhạy cảm</li></ul></div>
-          </section>
+        <section class="hb-cat" id="c7">
+          <div class="hb-cat-head"><span class="hb-cat-num">07</span><h2 class="hb-cat-title">Backstory</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Backstory</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-07-backstory.jpg" alt="Ví dụ trong app — Backstory" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <p>Đủ chi tiết để có chiều sâu nhưng không dài dòng. Thể hiện ý tưởng của bạn tại đây.</p>
+              <div class="hb-pn">
+                <div class="col yes">
+                  <div class="h">＋ Nên</div>
+                  <ul>
+                    <li>Thể hiện bối cảnh, quá khứ / hiện tại / tương lai của char, mối quan hệ với user.</li>
+                    <li>Lý do tại sao char và user lại có kết nối.</li>
+                  </ul>
+                </div>
+                <div class="col no">
+                  <div class="h">－ Không nên</div>
+                  <ul>
+                    <li>Mô tả quá nhiều (gây ngộp cho user, nhiều chữ gây chán).</li>
+                    <li>Giải thích hết chi tiết, tự giải quyết hết vấn đề char đang gặp.</li>
+                  </ul>
+                </div>
+              </div>
+              <h4>Chừa khoảng trống cho user tự lấp đầy</h4>
+              <p>Không giải thích hết mọi chi tiết. <em class="note">Ví dụ: chỉ hé lộ "có một chuyện trong quá khứ khiến anh ấy không còn dễ dàng tin người khác" mà không nói rõ là chuyện gì</em> — để user tò mò khám phá dần qua hội thoại, hoặc tự đóng vai lấp khoảng trống đó, tăng cảm giác đồng sáng tạo với câu chuyện.</p>
+            </div>
+          </div>
+        </section>
 
+        <section class="hb-cat" id="c8">
+          <div class="hb-cat-head"><span class="hb-cat-num">08</span><h2 class="hb-cat-title">Tin nhắn đầu</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Tin nhắn đầu</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-08-first-message.jpg" alt="Ví dụ trong app — Tin nhắn đầu" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>Định dạng</h4>
+              <ul>
+                <li>Dùng <code>{{user}}</code> để hệ thống tự điền tên người dùng — không dùng <code>{{User}}</code> hay <code>user</code>.</li>
+                <li>Dùng <code>*…*</code> cho hành động / bối cảnh.</li>
+                <li>Dùng <code>"…"</code> cho lời thoại.</li>
+              </ul>
+              <h4>Tạo hook — kịch tính ngay từ tin đầu</h4>
+              <ul>
+                <li>Cấy sẵn 1 yếu tố tò mò hoặc tình huống kịch tính nhẹ ngay trong tin đầu — một bí mật vừa hé lộ, một tình huống bất ngờ, hoặc một câu hỏi char đặt ra cho user.</li>
+                <li>Dùng mô tả hành động / bối cảnh (đặt trong dấu <code>*</code> hoặc in nghiêng) để tạo cảm giác như đang xem "phim" chứ không phải đọc tin nhắn khô khan — tăng đáng kể cảm giác nhập vai ngay từ giây đầu.</li>
+                <li>Luôn kết thúc bằng tình huống cần phản hồi hoặc câu hỏi mở — tuyệt đối tránh câu hỏi đóng (yes/no) vì dễ khiến cuộc trò chuyện dừng lại ngay sau 1 lượt.</li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">Gợi ý lựa chọn hành động cho user</div>
+                <ul>
+                  <li>Xin lỗi char về việc mình đã làm.</li>
+                  <li>Tỏ tình với char.</li>
+                  <li>Tiết lộ bí mật.</li>
+                </ul>
+              </div>
+              <h4>Setup scenario mở đầu theo thể loại</h4>
+              <ul>
+                <li><strong>Gặp gỡ:</strong> tình huống tình cờ, có chút bất ngờ hoặc hài hước — hợp romance nhẹ nhàng / học đường.</li>
+                <li><strong>Xung đột:</strong> mở đầu bằng một bất đồng, hiểu lầm, hoặc căng thẳng có sẵn — hợp enemies-to-lovers, dark romance.</li>
+                <li><strong>Twist:</strong> mở đầu bằng tình huống khó hiểu hoặc thông tin nửa vời khiến user phải hỏi tiếp — hợp fantasy, bí ẩn, hồi hộp.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="hb-cat" id="c9">
+          <div class="hb-cat-head"><span class="hb-cat-num">09</span><h2 class="hb-cat-title">Nhân vật phụ</h2><span class="hb-adv">Nâng cao</span></div>
+          <div class="hb-grid solo">
+            <div class="hb-guide">
+              <p>Bổ sung nhân vật phụ để mở rộng cốt truyện lâu dài. Mỗi nhân vật phụ nên gắn với <strong>1 vai trò rõ ràng</strong>, chọn theo mục đích:</p>
+              <ul>
+                <li><strong>Tạo ghen tuông / cạnh tranh:</strong> một nhân vật có tình cảm hoặc quan tâm đến nhân vật chính, tạo xung đột cảm xúc cho user.</li>
+                <li><strong>Đồng minh / bạn thân:</strong> tạo không khí đời thường, làm nơi nhân vật chính "bộc lộ" nội tâm một cách tự nhiên (qua lời kể lại).</li>
+                <li><strong>Áp lực / rào cản:</strong> gia đình, cấp trên, hoặc thế lực bên ngoài tạo trở ngại cho mối quan hệ chính, giữ mạch truyện có kịch tính dài hạn.</li>
+              </ul>
+              <h4>Giới hạn số lượng</h4>
+              <ul>
+                <li>Nên giới hạn <strong>2–4 nhân vật phụ</strong> được định nghĩa rõ ràng (tên, mối quan hệ, vai trò). Nếu không định nghĩa trước, AI có xu hướng tự tạo NPC ngẫu hứng trong lúc chat — đôi khi hữu ích để câu chuyện linh hoạt, nhưng nếu không kiểm soát dễ khiến NPC xuất hiện thiếu nhất quán (đổi tên, lệch mạch giữa chừng).</li>
+                <li>Hoặc viết thêm prompt để AI tự sản sinh NPC.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="hb-cat" id="c10">
+          <div class="hb-cat-head"><span class="hb-cat-num">10</span><h2 class="hb-cat-title">Phong cách giao tiếp</h2><span class="hb-adv">Nâng cao</span></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Phong cách giao tiếp</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-10-comm-style.jpg" alt="Ví dụ trong app — Phong cách giao tiếp" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <ul>
+                <li><strong>Giọng văn:</strong> trang trọng, thân mật… và độ dài câu trả lời trung bình.</li>
+                <li><strong>Ngôn ngữ đặc trưng:</strong> từ lóng, câu cửa miệng, cách xưng hô riêng của nhân vật — giữ phong cách nhất quán xuyên suốt dù user đổi chủ đề.</li>
+                <li><strong>Cách xưng hô riêng với user</strong> (biệt danh, cách gọi đặc biệt) nên nhất quán từ đầu đến cuối, trừ khi có lý do trong cốt truyện để thay đổi (ví dụ: mối quan hệ thân thiết hơn theo thời gian).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="hb-cat" id="c11">
+          <div class="hb-cat-head"><span class="hb-cat-num">11</span><h2 class="hb-cat-title">Quy tắc ứng xử &amp; giới hạn</h2><span class="hb-adv">Nâng cao</span></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Quy tắc ứng xử &amp; giới hạn</em></div>
+              <div class="hb-shot-media"><img src="assets/handbook/char-11-rules.jpg" alt="Ví dụ trong app — Quy tắc ứng xử và giới hạn" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>Giữ nhân vật không bị "lệch OOC" (out of character)</h4>
+              <ul>
+                <li>Viết rõ: nhân vật <strong>không bao giờ tự nhận mình là AI</strong>, không phá vỡ bối cảnh câu chuyện dù user cố tình hỏi những câu ngoài vai (hỏi về thế giới thực, yêu cầu nhân vật "thoát vai").</li>
+                <li>Nêu cách xử lý các tình huống ép char làm trái tính cách / đạo đức đã thiết lập.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="hb-checklist">
+          <h3>Checklist trước khi submit</h3>
+          <ul>
+            <li>Ảnh đại diện, tên, tagline, thông tin công khai đều SFW, không vi phạm chính sách nội dung.</li>
+            <li>Không trùng tên / hình ảnh với nhân vật có bản quyền.</li>
+            <li>Tính cách — tiểu sử — hashtag — tagline nhất quán, không mâu thuẫn thông điệp.</li>
+            <li>Đọc lại toàn bộ dưới góc nhìn người dùng mới.</li>
+            <li>Sau khi hoàn tất, gửi char để đội ngũ imely duyệt trước khi công khai.</li>
+          </ul>
+          <figure class="hb-shot hb-checklist-shot">
+            <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · Chế độ hiển thị</em></div>
+            <div class="hb-shot-media"><img src="assets/handbook/char-visibility-dialog.png" alt="Hộp thoại chọn chế độ riêng tư khi đăng nhân vật" loading="lazy"></div>
+          </figure>
         </div>
-        <div class="handbook-arrows">
-          <button class="handbook-arrow" type="button" id="handbookPrev"><span class="handbook-arrow-label">← Trước</span><span id="handbookPrevTitle"></span></button>
-          <button class="handbook-arrow" type="button" id="handbookNext"><span class="handbook-arrow-label">Tiếp →</span><span id="handbookNextTitle"></span></button>
+
+        <div class="hb-cta">
+          <h3>Muốn có bản để lưu lại?</h3>
+          <p>Toàn bộ sườn nguyên tắc cơ bản của 11 mục, gói gọn trong 1 file Word để bạn mở lại bất cứ lúc nào.</p>
+          <a class="button-primary" href="https://docs.google.com/document/d/1J03y6JvPS1Ong_xOfUpPUHGeMqP-s65uNYbMCJal1AU/edit?tab=t.91zkqotbbvej#heading=h.vox6pjjkj2de" target="_blank" rel="noopener noreferrer">Nhấn vào đây để nhận file prompt <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="handbook-foot">Sổ Tay Creator imely · v1.0 · Team imely</p>
-      </section>
+
+        <p class="hb-foot">Sổ tay mang tính tổng hợp kinh nghiệm chung — vui lòng luôn đối chiếu với tiêu chí kiểm duyệt mới nhất của imely trước khi submit. · Team imely</p>
+      </div>
     </main>
   </div>
-
-  <script>
-    (function () {
-      const panels = Array.from(document.querySelectorAll('.handbook-panel'));
-      const nav = document.getElementById('handbookTabs');
-      const prevBtn = document.getElementById('handbookPrev');
-      const nextBtn = document.getElementById('handbookNext');
-      const prevTitle = document.getElementById('handbookPrevTitle');
-      const nextTitle = document.getElementById('handbookNextTitle');
-      let current = 0;
-
-      panels.forEach(function (panel, index) {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'handbook-tab' + (index === 0 ? ' is-active' : '');
-        button.innerHTML = '<span>' + panel.dataset.n + '</span>' + panel.dataset.title;
-        button.addEventListener('click', function () { go(index); });
-        nav.appendChild(button);
-      });
-
-      const buttons = Array.from(nav.children);
-
-      function go(index) {
-        current = index;
-        panels.forEach(function (panel, panelIndex) {
-          panel.classList.toggle('is-active', panelIndex === index);
-        });
-        buttons.forEach(function (button, buttonIndex) {
-          button.classList.toggle('is-active', buttonIndex === index);
-        });
-        prevBtn.disabled = index === 0;
-        nextBtn.disabled = index === panels.length - 1;
-        prevTitle.textContent = index > 0 ? panels[index - 1].dataset.title : '';
-        nextTitle.textContent = index < panels.length - 1 ? panels[index + 1].dataset.title : '';
-        buttons[index].scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-        document.getElementById('handbook-content').scrollIntoView({ block: 'start', behavior: 'smooth' });
-      }
-
-      prevBtn.addEventListener('click', function () {
-        if (current > 0) go(current - 1);
-      });
-      nextBtn.addEventListener('click', function () {
-        if (current < panels.length - 1) go(current + 1);
-      });
-      go(0);
-    }());
-  </script>
 </body>
 </html>
