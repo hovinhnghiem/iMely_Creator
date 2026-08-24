@@ -6273,6 +6273,17 @@ html:has(body.creator-handbook-page) {
   margin-top: 0.25rem;
 }
 
+.handbook-notice-link {
+  color: #a35a12;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.handbook-notice-link:hover {
+  color: #7d4109;
+}
+
 .handbook-pending {
   background: rgba(240, 170, 60, 0.2);
   border-radius: 7px;
