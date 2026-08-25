@@ -2700,14 +2700,27 @@ body.creator-landing *::after {
   margin: 1.1rem 0 0.25rem;
 }
 
-.welcome-letter-lead {
+.welcome-letter p.welcome-letter-lead {
   color: var(--landing-ink);
   font-family: var(--font-display, "Outfit", sans-serif);
-  font-size: clamp(1.5rem, 3vw, 2.05rem);
-  font-weight: 900;
-  line-height: 1.28;
-  margin: 0 0 1.2rem;
-  max-width: 82%;
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  max-width: 88%;
+}
+
+.welcome-letter p.welcome-letter-closing {
+  color: var(--landing-ink);
+  font-weight: 700;
+}
+
+.welcome-letter-cta {
+  margin-top: 1.6rem;
+}
+
+.welcome-letter-cta .button-primary {
+  width: auto;
 }
 
 .welcome-letter p {
