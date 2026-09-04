@@ -3903,6 +3903,16 @@ body.gems-campaign-page {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* This reward section has two outcomes, unlike the three approval criteria.
+   Give both equal visual weight rather than leaving an empty third column. */
+.taiwan-campaign-page .gems-reward-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.taiwan-campaign-page .gems-reward-grid strong {
+  font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+}
+
 .gems-tier-grid article {
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(242, 251, 255, 0.82)),
@@ -3974,6 +3984,21 @@ body.gems-campaign-page {
   font-size: 1rem;
   line-height: 1.55;
   margin-top: 0.32rem;
+}
+
+.taiwan-campaign-page .gems-caps-panel h3 {
+  text-wrap: balance;
+}
+
+.taiwan-campaign-page .gems-caps-panel dl {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .taiwan-campaign-page .gems-reward-grid,
+  .taiwan-campaign-page .gems-caps-panel dl {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gems-schedule-section {
