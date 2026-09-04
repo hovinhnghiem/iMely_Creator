@@ -3741,9 +3741,11 @@ body.gems-campaign-page {
 
 .gems-topic-rail strong {
   color: var(--gems-lemon);
-  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-size: clamp(2.75rem, 4vw, 4rem);
   font-weight: 900;
   line-height: 0.92;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .gems-topic-content {
