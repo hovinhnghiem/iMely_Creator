@@ -5253,6 +5253,13 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
   box-shadow: 0 28px 70px rgba(88, 44, 237, 0.2);
 }
 
+/* Keep the final CTA headline compact and avoid leaving “Loan.” on a line
+   by itself beside the action button. */
+.taiwan-guide-page .indo-guide-final-cta h2 {
+  font-size: clamp(2rem, 3.25vw, 2.65rem);
+  text-wrap: balance;
+}
+
 .taiwan-guide-page .indo-guide-footer {
   border-top-color: rgba(203, 184, 255, 0.26);
 }
