@@ -3496,6 +3496,38 @@ body.gems-campaign-page {
   min-width: 0;
 }
 
+/* Taiwan campaign: bring the decision and its deadline into the first
+   viewport without making the campaign feel like a billboard. */
+.taiwan-campaign-page .gems-campaign-hero {
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.58fr);
+  padding-bottom: 1.5rem;
+  padding-top: clamp(3.1rem, 5.5vw, 4.5rem);
+}
+
+.taiwan-campaign-page .gems-campaign-hero h1 {
+  font-size: clamp(2.85rem, 4.8vw, 4.5rem);
+  line-height: 1.05;
+  max-width: 720px;
+}
+
+.taiwan-campaign-page .gems-campaign-hero .hero-lead {
+  font-size: 1.06rem;
+  line-height: 1.68;
+  margin-top: 1rem;
+  max-width: 650px;
+}
+
+.taiwan-campaign-page .gems-hero-panel {
+  border-radius: 26px;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.taiwan-campaign-page .gems-hero-panel strong {
+  font-size: clamp(1.6rem, 2.7vw, 2.15rem);
+}
+
 .gems-campaign-hero h1 {
   color: var(--gems-ink);
   font-size: clamp(3.4rem, 6vw, 5.7rem);
