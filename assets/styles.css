@@ -5073,6 +5073,14 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
   padding: 1rem 1.1rem;
 }
 
+/* The site's legacy global `strong` rule is white for dark pages. Reset it
+   here so the Traditional Chinese trope label remains readable on this
+   light accordion surface. */
+.taiwan-guide-module summary strong {
+  color: var(--indo-guide-ink);
+  -webkit-text-fill-color: currentColor;
+}
+
 .taiwan-guide-module summary::-webkit-details-marker {
   display: none;
 }
