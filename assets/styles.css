@@ -3528,6 +3528,35 @@ body.gems-campaign-page {
   font-size: clamp(1.6rem, 2.7vw, 2.15rem);
 }
 
+/* The compact desktop composition must collapse before the fixed-width
+   deadline card can squeeze the copy column on phones. */
+@media (max-width: 900px) {
+  .taiwan-campaign-page .gems-campaign-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .taiwan-campaign-page .gems-campaign-hero h1 {
+    font-size: clamp(2.55rem, 10vw, 3.5rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .taiwan-campaign-page .gems-campaign-hero {
+    padding: 3.3rem 1rem 1.4rem;
+  }
+
+  .taiwan-campaign-page .gems-campaign-hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.08;
+  }
+
+  .taiwan-campaign-page .gems-campaign-hero .hero-lead {
+    font-size: 1rem;
+    line-height: 1.72;
+    margin-top: 1.2rem;
+  }
+}
+
 .gems-campaign-hero h1 {
   color: var(--gems-ink);
   font-size: clamp(3.4rem, 6vw, 5.7rem);
