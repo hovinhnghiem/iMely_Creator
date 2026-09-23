@@ -2003,6 +2003,26 @@ body.creator-landing *::after {
   padding: 0.74rem 1.05rem;
 }
 
+.program-dashboard-hero .signup-closed-notice {
+  background: rgba(255, 255, 255, 0.86);
+  border: 2px solid rgba(39, 215, 232, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(20, 100, 120, 0.09);
+  color: var(--landing-ink);
+  font-size: clamp(1.45rem, 2.7vw, 2.15rem);
+  font-weight: 850;
+  line-height: 1.42;
+  margin-top: 1.25rem;
+  max-width: 760px;
+  padding: 1.15rem 1.3rem;
+}
+
+.program-dashboard-hero .signup-closed-notice a {
+  color: #087d8a;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
 .program-dashboard-stats {
   background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid var(--landing-line);
