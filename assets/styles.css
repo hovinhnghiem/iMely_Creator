@@ -2003,22 +2003,50 @@ body.creator-landing *::after {
   padding: 0.74rem 1.05rem;
 }
 
-.program-dashboard-hero .signup-closed-notice {
-  background: rgba(255, 255, 255, 0.86);
-  border: 2px solid rgba(39, 215, 232, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(20, 100, 120, 0.09);
-  color: var(--landing-ink);
-  font-size: clamp(1.45rem, 2.7vw, 2.15rem);
-  font-weight: 850;
-  line-height: 1.42;
+.program-dashboard-hero .tw-signup-closed-notice {
+  background: linear-gradient(130deg, #123b50, #08727c);
+  border: 0;
+  border-left: 8px solid #ffc451;
+  border-radius: 18px;
+  box-shadow: 0 16px 34px rgba(8, 51, 68, 0.25);
+  color: #ffffff;
+  line-height: 1.4;
   margin-top: 1.25rem;
   max-width: 760px;
-  padding: 1.15rem 1.3rem;
+  padding: 1.35rem 1.45rem;
 }
 
-.program-dashboard-hero .signup-closed-notice a {
-  color: #087d8a;
+.tw-signup-closed-label,
+.tw-signup-closed-message {
+  display: block;
+}
+
+.tw-signup-closed-label {
+  background: #ffc451;
+  border-radius: 999px;
+  color: #123b50;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.055em;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+  padding: 0.48rem 0.78rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.program-dashboard-hero .tw-signup-closed-message {
+  color: #ffffff;
+  font-size: clamp(1.65rem, 3.1vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.28;
+  margin: 0;
+  max-width: none;
+}
+
+.program-dashboard-hero .tw-signup-closed-notice a {
+  color: #ffe092;
   text-decoration: underline;
   text-underline-offset: 0.14em;
 }
