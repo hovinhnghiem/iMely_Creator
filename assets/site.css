@@ -2594,7 +2594,7 @@ body.menu-open {
 .hub-card.is-featured {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.4fr 0.6fr;
 }
 
 .hub-media {
@@ -2607,8 +2607,25 @@ body.menu-open {
 
 .hub-card.is-featured .hub-media {
   aspect-ratio: auto;
-  min-height: 360px;
+  background: radial-gradient(circle at 65% 30%, var(--teal-100), var(--teal-50) 55%, #fff);
+  min-height: 380px;
   order: 2;
+}
+
+/* Portrait image shown whole as a tilted card instead of cropped edge to edge */
+.hub-card.is-featured .hub-media img {
+  aspect-ratio: 2 / 3;
+  border-radius: 20px;
+  box-shadow: 0 24px 48px rgba(11, 19, 32, 0.18);
+  height: calc(100% - 64px);
+  inset: 32px auto auto 50%;
+  object-position: top;
+  transform: translateX(-50%) rotate(3deg);
+  width: auto;
+}
+
+.hub-card.is-featured:hover .hub-media img {
+  transform: translateX(-50%) rotate(0deg) scale(1.02);
 }
 
 .hub-media img {
@@ -3493,7 +3510,8 @@ body.menu-open {
   }
 
   .hub-card.is-featured .hub-media {
-    aspect-ratio: 16 / 9;
+    height: 300px;
+    min-height: 0;
     order: 0;
   }
 
