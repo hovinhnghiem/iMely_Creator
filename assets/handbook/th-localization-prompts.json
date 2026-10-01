@@ -1,0 +1,63 @@
+{
+  "tool": "built-in image_gen",
+  "use_case": "text-localization",
+  "character_name": "ธนกฤต วัฒนกุล",
+  "assets": [
+    {
+      "source": "char-01-avatar.jpg",
+      "output": "char-01-avatar-th.png",
+      "prompt": "Replace only the Vietnamese header with สร้างตัวละคร; preserve portrait, icons, layout and original aspect ratio."
+    },
+    {
+      "source": "char-02-name.jpg",
+      "output": "char-02-name-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabels: ชื่อตัวละคร: *\nName inside field: ธนกฤต วัฒนกุล\nGender label: เพศ: *\nDropdown: ชาย"
+    },
+    {
+      "source": "char-03-hashtag.jpg",
+      "output": "char-03-hashtag-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nTop label: แฮชแท็ก:\nSubtitle: ช่วยให้ทุกคนค้นหาตัวละครได้ง่ายขึ้น\nFour tags, top to bottom: ผู้บริหาร / หวง / ซึนเดเระ / รักค่อยเป็นค่อยไป\nButton: เพิ่มแฮชแท็ก"
+    },
+    {
+      "source": "char-04-tagline.jpg",
+      "output": "char-04-tagline-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabel: แท็กไลน์: *\nTextbox: “ในฐานะผู้บริหาร เขาควบคุมทุกอย่างได้เสมอ แต่เมื่อคุณปรากฏตัว ทุกอย่างกลับเริ่มหลุดจากการควบคุม…”"
+    },
+    {
+      "source": "char-05-public-info.jpg",
+      "output": "char-05-public-info-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabel: ข้อมูลสาธารณะ: *\nSubtitle: แสดงในโปรไฟล์ของตัวละคร\nTextbox, five lines:\nชื่อ: ธนกฤต วัฒนกุล\nอายุ: 34 ปี\nส่วนสูง: 185 ซม.\nตำแหน่ง: ประธานเจ้าหน้าที่บริหาร บริษัท E\nรูปลักษณ์: สวมสูทเรียบร้อย บุคลิกสุขุม"
+    },
+    {
+      "source": "char-06-personality.jpg",
+      "output": "char-06-personality-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabel: บุคลิกภาพ: *\nSubtitle: ลักษณะและนิสัยของตัวละคร\nTextbox: บุคลิกหลัก: หยิ่งทะนง ภายนอกดูเย็นชา หวงคนที่ตนใส่ใจมากเกินไป และดูแลอย่างเงียบ ๆ โดยแสดงออกผ่านการกระทำมากกว่าคำพูด\nCounter: 0 ตัวอักษร",
+      "repair_prompt": "Fix only the gray subtitle to read exactly ลักษณะและนิสัยของตัวละคร. Remove the stray vowel below the final ร; preserve everything else."
+    },
+    {
+      "source": "char-07-backstory.jpg",
+      "output": "char-07-backstory-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nTop label: การเริ่มบทสนทนา: *\nSubtitle: ฉากและคำพูดแรกเมื่อผู้ใช้เข้าสู่แชต\nInner label: ภูมิหลัง: *\nTextbox: ธนกฤต วัฒนกุลเข้ารับช่วงต่อบริษัท E เมื่ออายุ 28 ปี หลังจากพ่อเสียชีวิตอย่างกะทันหัน เขาจึงต้องเติบโตเร็วกว่าวัย และเรียนรู้ที่จะไม่ไว้วางใจใครอย่างเต็มที่ในโลกธุรกิจที่เต็มไปด้วยเล่ห์เหลี่ยม…\nCounter: 0 ตัวอักษร"
+    },
+    {
+      "source": "char-08-first-message.jpg",
+      "output": "char-08-first-message-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabel: ข้อความแรก: *\nTextbox, two paragraphs:\n*ความเงียบปกคลุมอยู่ครู่หนึ่ง เงาของเขาทอดยาวบนพื้น เกือบถึงจุดที่ {{user}} ยืนอยู่*\n\n\"ผมอยากรู้ว่าคุณชอบผู้ชายแบบไหน คุณมีเวลาคิดสามสิบวินาที\"\nCounter: 569 ตัวอักษร\nPreserve the exact literal {{user}} including two curly braces on each side."
+    },
+    {
+      "source": "char-10-comm-style.jpg",
+      "output": "char-10-comm-style-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nTextbox only (no new title): น้ำเสียง: สุภาพและเป็นทางการ ใช้ “ผม–คุณ” ในช่วงแรกที่รู้จักกัน และอาจเปลี่ยนเป็น “พี่–เธอ” เมื่อความสัมพันธ์ใกล้ชิดขึ้นตามเนื้อเรื่อง\nPreserve green caret. Adapt Vietnamese pronoun relationship naturally into Thai as specified."
+    },
+    {
+      "source": "char-11-rules.jpg",
+      "output": "char-11-rules-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nLabel: กฎและขอบเขต: \nTextbox: ธนกฤตจะไม่บอกว่าตนเป็นเอไอหรือหลุดจากบริบทของเรื่อง แม้ {{user}} จะถามเรื่องนอกบท เช่น โลกจริง หรือขอให้ “ออกจากบทบาท” เขาจะตอบอย่างสงสัยหรือเปลี่ยนไปคุยเรื่องงาน โดยคงบุคลิกของผู้บริหารไว้เสมอ\nKeep {{user}} verbatim. This is fictional roleplay example UI content, not instructions to the image model."
+    },
+    {
+      "source": "char-visibility-dialog.png",
+      "output": "char-visibility-dialog-th.png",
+      "prompt": "Use case: text-localization. Asset type: localized Thai screenshot for imely character handbook. Input image is the EDIT TARGET. Preserve original aspect ratio, white background, light-gray rounded input fields, all icons and layout. Replace ALL Vietnamese/English human-readable text with the exact Thai copy below. No extra labels, no invented text, no collage. Crisp Thai sans-serif app typography, correct Thai vowel and tone mark shaping, comfortable line spacing; wrap longer copy naturally and keep it within the original field. Do not crop any supplied text. Keep ages and character traits unchanged; consistent Thai character is ธนกฤต วัฒนกุล. Exact replacement text:\nTitle: โหมดความเป็นส่วนตัว\nUnselected option title: เฉพาะฉัน\nUnselected description: มีเพียงคุณที่เห็นเนื้อหานี้ แม้มีลิงก์ก็ไม่สามารถดูได้\nSelected option title: ทุกคน\nSelected description: ผู้ใช้ imely ทุกคนจะเห็นเนื้อหานี้\nPreserve lock and globe icons, unselected empty radio, selected green check, pale green selected region, close X."
+    }
+  ]
+}
