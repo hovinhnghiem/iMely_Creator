@@ -2685,8 +2685,13 @@ body.menu-open {
   padding-top: 18px;
 }
 
+/* Footer sticks to the card bottom so side-by-side cards line up */
 .hub-body .hub-foot {
-  margin-top: 24px;
+  margin-top: auto;
+}
+
+.hub-body > :nth-last-child(2) {
+  margin-bottom: 24px;
 }
 
 .hub-related {
