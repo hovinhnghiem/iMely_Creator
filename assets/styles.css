@@ -1242,6 +1242,10 @@ strong {
 }
 
 body.creator-landing {
+  /* theme mixing: 100% = light values; the dark theme lowers these */
+  --lmix: 100%;
+  --dmix: 100%;
+  --lc: #ffffff;
   --landing-paper: #fcfdfc;
   --landing-surface: #f4f8f9;
   --landing-surface-strong: #eafbfd;
@@ -1295,8 +1299,8 @@ body.creator-landing *::after {
   align-items: center;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  background: rgba(252, 253, 252, 0.86);
-  border: 1px solid rgba(255, 255, 255, 0.76);
+  background: color-mix(in srgb, rgba(252, 253, 252, 0.86) var(--lmix), var(--lc));
+  border: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.76) var(--lmix), var(--lc));
   border-radius: 999px;
   box-shadow: 0 16px 44px rgba(10, 17, 24, 0.07);
   display: grid;
@@ -1410,7 +1414,7 @@ body.creator-landing *::after {
 }
 
 .landing-language nav {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 18px;
   box-shadow: var(--landing-shadow-soft);
@@ -1477,7 +1481,7 @@ body.creator-landing *::after {
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.72);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   color: var(--landing-ink);
   min-height: 52px;
@@ -1605,7 +1609,7 @@ body.creator-landing *::after {
 
 .trust-row span {
   align-items: center;
-  background: rgba(255, 255, 255, 0.7);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.7) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 999px;
   display: inline-flex;
@@ -1620,10 +1624,10 @@ body.creator-landing *::after {
 .hero-scene {
   background-color: var(--landing-teal-50);
   background-image:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.55), rgba(166, 238, 243, 0.48));
+    linear-gradient(115deg, color-mix(in srgb, rgba(255, 255, 255, 0.55) var(--lmix), var(--lc)), color-mix(in srgb, rgba(166, 238, 243, 0.48) var(--lmix), var(--lc)));
   background-position: center;
   background-size: cover;
-  border: 1px solid rgba(255, 255, 255, 0.74);
+  border: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.74) var(--lmix), var(--lc));
   border-radius: 42px;
   box-shadow: var(--landing-shadow);
   min-height: 560px;
@@ -1632,7 +1636,7 @@ body.creator-landing *::after {
 }
 
 .hero-scene::after {
-  background: linear-gradient(0deg, rgba(252, 253, 252, 0.92), rgba(252, 253, 252, 0));
+  background: linear-gradient(0deg, color-mix(in srgb, rgba(252, 253, 252, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(252, 253, 252, 0) var(--lmix), var(--lc)));
   bottom: 0;
   content: "";
   height: 34%;
@@ -1654,7 +1658,7 @@ body.creator-landing *::after {
 }
 
 .proof-band {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border-bottom: 1px solid var(--landing-line);
   border-top: 1px solid var(--landing-line);
   display: grid;
@@ -1779,8 +1783,8 @@ body.creator-landing *::after {
 
 .program-card.is-featured {
   background:
-    linear-gradient(145deg, rgba(234, 251, 253, 0.9), rgba(255, 255, 255, 0.92)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(234, 251, 253, 0.9) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 255, 255, 0.92) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border-color: rgba(39, 215, 232, 0.34);
 }
 
@@ -1796,10 +1800,10 @@ body.creator-landing *::after {
 
 .program-status-badge {
   align-items: center;
-  background: #fff7e8;
+  background: color-mix(in srgb, #fff7e8 var(--lmix), var(--lc));
   border: 1px solid #f0c36d;
   border-radius: 999px;
-  color: #7a4e00;
+  color: color-mix(in srgb, #7a4e00 var(--dmix), var(--landing-ink));
   display: inline-flex;
   font-size: 0.68rem;
   font-weight: 950;
@@ -1815,10 +1819,10 @@ body.creator-landing *::after {
 }
 
 .program-expired-note {
-  background: rgba(255, 247, 232, 0.78);
+  background: color-mix(in srgb, rgba(255, 247, 232, 0.78) var(--lmix), var(--lc));
   border-left: 3px solid #f0c36d;
   border-radius: 0 12px 12px 0;
-  color: #6f5222 !important;
+  color: color-mix(in srgb, #6f5222 var(--dmix), var(--landing-ink)) !important;
   font-size: 0.84rem !important;
   font-weight: 700;
   line-height: 1.45 !important;
@@ -1867,7 +1871,7 @@ body.creator-landing *::after {
 }
 
 .program-stats div {
-  background: rgba(255, 255, 255, 0.72);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 20px;
   display: grid;
@@ -1943,8 +1947,8 @@ body.creator-landing *::after {
 
 .program-dashboard {
   background:
-    linear-gradient(155deg, rgba(255, 255, 255, 0.96), rgba(234, 251, 253, 0.86)),
-    #ffffff;
+    linear-gradient(155deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.86) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   gap: 0;
   overflow: hidden;
   padding: 0;
@@ -1953,7 +1957,7 @@ body.creator-landing *::after {
 .program-dashboard-hero {
   align-items: center;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(207, 247, 250, 0.8));
+    linear-gradient(135deg, color-mix(in srgb, rgba(255, 255, 255, 0.9) var(--lmix), var(--lc)), color-mix(in srgb, rgba(207, 247, 250, 0.8) var(--lmix), var(--lc)));
   display: grid;
   gap: 1.4rem;
   grid-template-columns: minmax(0, 1fr) 210px;
@@ -2024,7 +2028,7 @@ body.creator-landing *::after {
 .tw-signup-closed-label {
   background: #ffc451;
   border-radius: 999px;
-  color: #123b50;
+  color: color-mix(in srgb, #123b50 var(--dmix), var(--landing-ink));
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.055em;
@@ -2052,7 +2056,7 @@ body.creator-landing *::after {
 }
 
 .program-dashboard-stats {
-  background: rgba(255, 255, 255, 0.88);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.88) var(--lmix), var(--lc));
   border-bottom: 1px solid var(--landing-line);
   border-top: 1px solid rgba(39, 215, 232, 0.22);
   display: grid;
@@ -2101,7 +2105,7 @@ body.creator-landing *::after {
 
 .program-module,
 .reward-dashboard-panel {
-  background: rgba(255, 255, 255, 0.76);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.76) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.09);
   border-radius: 24px;
   min-width: 0;
@@ -2109,7 +2113,7 @@ body.creator-landing *::after {
 }
 
 .reward-dashboard-panel {
-  background: rgba(255, 255, 255, 0.88);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.88) var(--lmix), var(--lc));
   border-color: rgba(39, 215, 232, 0.38);
   box-shadow: 0 20px 52px rgba(39, 215, 232, 0.12);
 }
@@ -2164,7 +2168,7 @@ body.creator-landing *::after {
 
 .program-dashboard .detail-feature-grid div,
 .benefit-dashboard-grid div {
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.08);
   border-radius: 18px;
   min-width: 0;
@@ -2206,7 +2210,7 @@ body.creator-landing *::after {
 }
 
 .program-dashboard .detail-checklist li {
-  background: rgba(255, 255, 255, 0.72);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.07);
   border-radius: 16px;
   color: var(--landing-ink-soft);
@@ -2236,9 +2240,9 @@ body.creator-landing *::after {
 .benefit-dashboard-grid div {
   align-content: start;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 253, 253, 0.9));
+    linear-gradient(180deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(247, 253, 253, 0.9) var(--lmix), var(--lc)));
   border-color: rgba(15, 23, 32, 0.07);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   display: grid;
   gap: 0.42rem;
   min-height: 132px;
@@ -2327,15 +2331,15 @@ body.creator-landing *::after {
 
 .program-dashboard-bottom .program-module {
   background:
-    linear-gradient(155deg, rgba(255, 255, 255, 0.92), rgba(241, 253, 255, 0.86)),
-    #ffffff;
+    linear-gradient(155deg, color-mix(in srgb, rgba(255, 255, 255, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(241, 253, 255, 0.86) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   box-shadow: 0 18px 42px rgba(15, 23, 32, 0.06);
 }
 
 .detail-panel {
   background:
-    linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(234, 251, 253, 0.84)),
-    #ffffff;
+    linear-gradient(150deg, color-mix(in srgb, rgba(255, 255, 255, 0.94) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.84) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.1);
   border-radius: 34px;
   box-shadow: var(--landing-shadow-soft);
@@ -2409,7 +2413,7 @@ body.creator-landing *::after {
 
 .detail-feature-grid div,
 .detail-checklist li {
-  background: rgba(255, 255, 255, 0.6);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.6) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.08);
   border-radius: 18px;
   min-width: 0;
@@ -2453,7 +2457,7 @@ body.creator-landing *::after {
 }
 
 .detail-economics {
-  background: rgba(255, 255, 255, 0.58);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.58) var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.26);
   border-radius: 24px;
   padding: 1rem;
@@ -2516,7 +2520,7 @@ body.creator-landing *::after {
 }
 
 .detail-note {
-  background: rgba(234, 251, 253, 0.7);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.7) var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.22);
   border-radius: 18px;
   color: var(--landing-ink-soft);
@@ -2545,7 +2549,7 @@ body.creator-landing *::after {
 }
 
 .reward-step:not(:last-child)::after {
-  background: var(--landing-teal-100, #d6f5f3);
+  background: var(--landing-teal-100, color-mix(in srgb, #d6f5f3 var(--lmix), var(--lc)));
   content: "";
   height: 3px;
   left: 50%;
@@ -2619,7 +2623,7 @@ body.creator-landing *::after {
 }
 
 .reward-max-panel div {
-  background: rgba(234, 251, 253, 0.6);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.6) var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.22);
   border-radius: 18px;
   padding: 1rem 1.15rem;
@@ -2658,7 +2662,7 @@ body.creator-landing *::after {
 
 /* Light-theme contrast fixes (detail page uses some dark-theme components) */
 .creator-landing .program-note {
-  background: rgba(234, 251, 253, 0.7);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.7) var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.22);
   border-left: 4px solid var(--landing-mint);
   color: var(--landing-ink-soft);
@@ -2681,8 +2685,8 @@ body.creator-landing *::after {
 
 .welcome-letter-card {
   background:
-    radial-gradient(120% 80% at 100% 0%, rgba(26, 255, 224, 0.12), transparent 58%),
-    linear-gradient(162deg, #ffffff 0%, rgba(234, 251, 253, 0.78) 100%);
+    radial-gradient(120% 80% at 100% 0%, color-mix(in srgb, rgba(26, 255, 224, 0.12) var(--lmix), var(--lc)), transparent 58%),
+    linear-gradient(162deg, color-mix(in srgb, #ffffff var(--lmix), var(--lc)) 0%, color-mix(in srgb, rgba(234, 251, 253, 0.78) var(--lmix), var(--lc)) 100%);
   border: 1px solid rgba(39, 215, 232, 0.24);
   border-radius: 30px;
   box-shadow: 0 26px 64px rgba(39, 215, 232, 0.14);
@@ -2779,7 +2783,7 @@ body.creator-landing *::after {
 }
 
 .welcome-letter-highlight {
-  background: rgba(26, 255, 224, 0.12);
+  background: color-mix(in srgb, rgba(26, 255, 224, 0.12) var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.28);
   border-left: 4px solid var(--landing-mint);
   border-radius: 0 16px 16px 0;
@@ -2862,7 +2866,7 @@ body.creator-landing *::after {
 }
 
 .policy-accordion details {
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.78) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.08);
   border-radius: 18px;
   overflow: hidden;
@@ -2871,7 +2875,7 @@ body.creator-landing *::after {
 
 .policy-accordion details:hover,
 .policy-accordion details[open] {
-  background: rgba(255, 255, 255, 0.94);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.94) var(--lmix), var(--lc));
   border-color: rgba(30, 224, 200, 0.34);
   box-shadow: 0 14px 30px rgba(15, 23, 32, 0.06);
 }
@@ -2926,7 +2930,7 @@ body.creator-landing *::after {
 
 .policy-accordion p {
   border-top: 1px solid var(--landing-line);
-  background: linear-gradient(180deg, rgba(241, 253, 255, 0.74), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(180deg, color-mix(in srgb, rgba(241, 253, 255, 0.74) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc)));
   color: var(--landing-ink-soft);
   font-size: 0.9rem;
   line-height: 1.58;
@@ -2955,8 +2959,8 @@ body.creator-landing *::after {
 .criteria-hero {
   align-items: center;
   background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.96), rgba(234, 251, 253, 0.88)),
-    #ffffff;
+    linear-gradient(140deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.88) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   display: grid;
   gap: 1.6rem;
   grid-template-columns: minmax(0, 1fr) 190px;
@@ -3001,7 +3005,7 @@ body.creator-landing *::after {
 }
 
 .criteria-index {
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.09);
   border-radius: 24px;
   box-shadow: var(--landing-shadow-soft);
@@ -3045,8 +3049,8 @@ body.creator-landing *::after {
 
 .criteria-section {
   background:
-    linear-gradient(155deg, rgba(255, 255, 255, 0.94), rgba(247, 253, 253, 0.86)),
-    #ffffff;
+    linear-gradient(155deg, color-mix(in srgb, rgba(255, 255, 255, 0.94) var(--lmix), var(--lc)), color-mix(in srgb, rgba(247, 253, 253, 0.86) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(15, 23, 32, 0.09);
   border-radius: 28px;
   box-shadow: var(--landing-shadow-soft);
@@ -3112,7 +3116,7 @@ body.creator-landing *::after {
 }
 
 .criteria-section .callout {
-  background: linear-gradient(135deg, rgba(234, 251, 253, 0.92), rgba(255, 255, 255, 0.86));
+  background: linear-gradient(135deg, color-mix(in srgb, rgba(234, 251, 253, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 255, 255, 0.86) var(--lmix), var(--lc)));
   border: 1px solid rgba(39, 215, 232, 0.24);
   border-left: 4px solid var(--landing-mint);
   border-radius: 20px;
@@ -3124,8 +3128,8 @@ body.creator-landing *::after {
 .criteria-support .discord-panel,
 .contact-section .discord-panel {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(234, 251, 253, 0.82)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.95) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.82) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(39, 215, 232, 0.24);
   box-shadow: 0 18px 48px rgba(39, 215, 232, 0.1);
   color: var(--landing-ink-soft);
@@ -3221,7 +3225,7 @@ body.creator-landing *::after {
 }
 
 .earnings-section {
-  background: linear-gradient(180deg, rgba(234, 251, 253, 0), rgba(234, 251, 253, 0.72), rgba(234, 251, 253, 0));
+  background: linear-gradient(180deg, color-mix(in srgb, rgba(234, 251, 253, 0) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.72) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0) var(--lmix), var(--lc)));
   max-width: 100%;
   padding-left: max(1.5rem, calc((100vw - 1180px) / 2));
   padding-right: max(1.5rem, calc((100vw - 1180px) / 2));
@@ -3342,21 +3346,21 @@ body.creator-landing *::after {
 }
 
 .official-grid .brand-logo {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border-color: rgba(15, 23, 32, 0.08);
   box-shadow: 0 12px 28px rgba(10, 17, 24, 0.08);
 }
 
 .official-grid .facebook-logo {
-  color: #1877f2;
+  color: color-mix(in srgb, #1877f2 var(--dmix), var(--landing-ink));
 }
 
 .official-grid .discord-logo {
-  color: #5865f2;
+  color: color-mix(in srgb, #5865f2 var(--dmix), var(--landing-ink));
 }
 
 .official-grid .tiktok-logo {
-  color: #000000;
+  color: color-mix(in srgb, #000000 var(--dmix), var(--landing-ink));
 }
 
 .official-copy {
@@ -3422,7 +3426,7 @@ body.creator-landing *::after {
 .closing-cta {
   align-items: center;
   background: linear-gradient(135deg, var(--landing-teal-100), var(--landing-mint));
-  border: 1px solid rgba(255, 255, 255, 0.76);
+  border: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.76) var(--lmix), var(--lc));
   border-radius: 36px;
   box-shadow: var(--landing-shadow);
   display: grid;
@@ -3451,7 +3455,7 @@ body.creator-landing *::after {
 
 .closing-cta .button-primary {
   background: var(--landing-ink);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.18) var(--lmix), var(--lc));
   box-shadow: 0 18px 42px rgba(10, 17, 24, 0.24);
   color: #ffffff;
 }
@@ -3506,7 +3510,7 @@ body.creator-landing *::after {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid color-mix(in srgb, rgba(255, 255, 255, 0.12) var(--lmix), var(--lc));
   display: flex;
   flex-wrap: wrap;
   font-size: 0.82rem;
@@ -3527,7 +3531,7 @@ body.gems-campaign-page {
   --gems-card: rgba(255, 255, 255, 0.9);
   --gems-line: rgba(68, 33, 58, 0.14);
   background:
-    linear-gradient(135deg, #fffaf0 0%, #f2fbff 44%, #fff1f5 100%);
+    linear-gradient(135deg, color-mix(in srgb, #fffaf0 var(--lmix), var(--lc)) 0%, color-mix(in srgb, #f2fbff var(--lmix), var(--lc)) 44%, color-mix(in srgb, #fff1f5 var(--lmix), var(--lc)) 100%);
 }
 
 .gems-campaign-hero {
@@ -3624,8 +3628,8 @@ body.gems-campaign-page {
 
 .gems-hero-panel {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 232, 168, 0.76)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.95) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 232, 168, 0.76) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(247, 185, 85, 0.44);
   border-radius: 32px;
   box-shadow: 0 24px 70px rgba(68, 33, 58, 0.14);
@@ -3638,7 +3642,7 @@ body.gems-campaign-page {
 
 .gems-hero-panel img {
   aspect-ratio: 4 / 3;
-  background: rgba(255, 255, 255, 0.64);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.64) var(--lmix), var(--lc));
   border-radius: 24px;
   height: auto;
   object-fit: cover;
@@ -3685,7 +3689,7 @@ body.gems-campaign-page {
 }
 
 .gems-campaign-stats {
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.78) var(--lmix), var(--lc));
   border-bottom: 1px solid var(--gems-line);
   border-top: 1px solid var(--gems-line);
   display: grid;
@@ -3791,7 +3795,7 @@ body.gems-campaign-page {
 }
 
 .mini-button.is-disabled {
-  background: rgba(255, 255, 255, 0.58);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.58) var(--lmix), var(--lc));
   border-color: var(--gems-line);
   box-shadow: none;
   color: var(--landing-muted);
@@ -3803,8 +3807,8 @@ body.gems-campaign-page {
 
 .gems-topic-spotlight {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(234, 251, 253, 0.95) 48%, rgba(255, 248, 235, 0.88)),
-    #ffffff;
+    linear-gradient(135deg, color-mix(in srgb, rgba(255, 255, 255, 0.98) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.95) var(--lmix), var(--lc)) 48%, color-mix(in srgb, rgba(255, 248, 235, 0.88) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(22, 194, 192, 0.34);
   border-radius: 34px;
   box-shadow: 0 30px 90px rgba(22, 194, 192, 0.14);
@@ -3889,9 +3893,9 @@ body.gems-campaign-page {
 }
 
 .gems-topic-badge.is-soft {
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.78) var(--lmix), var(--lc));
   border: 1px solid rgba(22, 194, 192, 0.28);
-  color: #0e6f78;
+  color: color-mix(in srgb, #0e6f78 var(--dmix), var(--landing-ink));
 }
 
 .gems-topic-spotlight .section-heading {
@@ -3916,10 +3920,10 @@ body.gems-campaign-page {
 
 .gems-chip-cloud span {
   align-items: center;
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.78) var(--lmix), var(--lc));
   border: 1px solid rgba(22, 194, 192, 0.24);
   border-radius: 999px;
-  color: #2d5056;
+  color: color-mix(in srgb, #2d5056 var(--dmix), var(--landing-ink));
   display: inline-flex;
   flex: 0 1 auto;
   font-size: 0.86rem;
@@ -3933,8 +3937,8 @@ body.gems-campaign-page {
 .gems-topic-deadline {
   align-content: space-between;
   background:
-    linear-gradient(145deg, rgba(234, 251, 253, 0.96), rgba(255, 248, 235, 0.72)),
-    rgba(255, 255, 255, 0.72);
+    linear-gradient(145deg, color-mix(in srgb, rgba(234, 251, 253, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 248, 235, 0.72) var(--lmix), var(--lc))),
+    color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid rgba(22, 194, 192, 0.26);
   border-radius: 24px;
   display: grid;
@@ -3992,8 +3996,8 @@ body.gems-campaign-page {
 
 .gems-tier-grid article {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(242, 251, 255, 0.82)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.95) var(--lmix), var(--lc)), color-mix(in srgb, rgba(242, 251, 255, 0.82) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   overflow: hidden;
   position: relative;
 }
@@ -4043,7 +4047,7 @@ body.gems-campaign-page {
 }
 
 .gems-caps-panel dl div {
-  background: rgba(255, 255, 255, 0.72);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid var(--gems-line);
   border-radius: 18px;
   padding: 0.95rem;
@@ -4098,8 +4102,8 @@ body.gems-campaign-page {
 
 .gems-rule-grid article {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 241, 245, 0.84)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.95) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 241, 245, 0.84) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
 }
 
 .gems-campaign-cta {
@@ -4204,7 +4208,7 @@ body.gems-campaign-page {
 }
 
 .gems-campaign-entry-actions .mini-button.is-guide {
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border-color: rgba(255, 111, 145, 0.34);
   color: var(--gems-plum);
 }
@@ -4212,8 +4216,8 @@ body.gems-campaign-page {
 .gems-guideline-entry {
   align-items: center;
   background:
-    linear-gradient(135deg, rgba(234, 251, 253, 0.92), rgba(255, 232, 168, 0.42)),
-    #ffffff;
+    linear-gradient(135deg, color-mix(in srgb, rgba(234, 251, 253, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 232, 168, 0.42) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(89, 199, 231, 0.34);
   border-radius: 28px;
   box-shadow: 0 18px 48px rgba(68, 33, 58, 0.08);
@@ -4239,7 +4243,7 @@ body.gems-campaign-page {
 }
 
 .gems-topic-spotlight .gems-guideline-entry {
-  background: rgba(255, 255, 255, 0.68);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.68) var(--lmix), var(--lc));
   border-color: rgba(89, 199, 231, 0.42);
   box-shadow: none;
 }
@@ -4613,7 +4617,7 @@ body.gems-campaign-page {
   }
 
   .criteria-index a {
-    background: rgba(234, 251, 253, 0.72);
+    background: color-mix(in srgb, rgba(234, 251, 253, 0.72) var(--lmix), var(--lc));
     font-size: 0.84rem;
   }
 
@@ -4910,7 +4914,7 @@ body.indo-guide-page {
   --indo-guide-ink: #0e211a;
   --indo-guide-terminal: #0c201a;
   background:
-    linear-gradient(135deg, #f3fbf7 0%, #f2fbff 52%, #fff8eb 100%);
+    linear-gradient(135deg, color-mix(in srgb, #f3fbf7 var(--lmix), var(--lc)) 0%, color-mix(in srgb, #f2fbff var(--lmix), var(--lc)) 52%, color-mix(in srgb, #fff8eb var(--lmix), var(--lc)) 100%);
 }
 
 /* Taiwan localization guideline */
@@ -4923,13 +4927,13 @@ body.taiwan-guide-page {
   --indo-guide-terminal: #171027;
   background:
     radial-gradient(circle at 10% 14%, rgba(118, 87, 232, 0.13), transparent 31%),
-    linear-gradient(135deg, #fffaf8 0%, #f7f3ff 52%, #fff8eb 100%);
+    linear-gradient(135deg, color-mix(in srgb, #fffaf8 var(--lmix), var(--lc)) 0%, color-mix(in srgb, #f7f3ff var(--lmix), var(--lc)) 52%, color-mix(in srgb, #fff8eb var(--lmix), var(--lc)) 100%);
 }
 
 .taiwan-guide-page .indo-guide-hero {
   background:
     radial-gradient(circle at 86% 8%, rgba(255, 111, 145, 0.22), transparent 35%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(237, 230, 255, 0.78));
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(237, 230, 255, 0.78) var(--lmix), var(--lc)));
   border-color: rgba(118, 87, 232, 0.2);
   box-shadow: 0 24px 70px rgba(88, 44, 237, 0.12);
 }
@@ -4943,7 +4947,7 @@ body.taiwan-guide-page {
 }
 
 .taiwan-guide-page .indo-guide-hero-card {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 233, 242, 0.72));
+  background: linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 233, 242, 0.72) var(--lmix), var(--lc)));
 }
 
 .taiwan-guide-page .indo-guide-hero-card img {
@@ -5008,7 +5012,7 @@ body.taiwan-guide-page .landing-header {
 }
 
 .taiwan-guide-hero-facts span {
-  background: rgba(255, 255, 255, 0.72);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.72) var(--lmix), var(--lc));
   border: 1px solid rgba(118, 87, 232, 0.18);
   border-radius: 999px;
   padding: 0.34rem 0.65rem;
@@ -5067,7 +5071,7 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 
 .taiwan-guide-campaign-note {
   align-items: center;
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border: 1px solid rgba(255, 111, 145, 0.24);
   border-radius: 20px;
   display: flex;
@@ -5139,7 +5143,7 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 }
 
 .taiwan-guide-image-rules > div {
-  background: rgba(255, 255, 255, 0.74);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.74) var(--lmix), var(--lc));
   border: 1px solid rgba(118, 87, 232, 0.18);
   border-radius: 18px;
   padding: 0.9rem 1rem;
@@ -5166,7 +5170,7 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 }
 
 .taiwan-guide-image-moodboard {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(118, 87, 232, 0.2);
   border-radius: 26px;
   box-shadow: 0 22px 56px rgba(88, 44, 237, 0.12);
@@ -5187,7 +5191,7 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 }
 
 .taiwan-guide-module {
-  background: rgba(255, 255, 255, 0.84);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.84) var(--lmix), var(--lc));
   border: 1px solid rgba(118, 87, 232, 0.2);
   border-radius: 18px;
   overflow: hidden;
@@ -5311,7 +5315,7 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 
 .taiwan-guide-callouts p,
 .taiwan-guide-quick-check {
-  background: rgba(255, 250, 236, 0.88);
+  background: color-mix(in srgb, rgba(255, 250, 236, 0.88) var(--lmix), var(--lc));
   border: 1px solid rgba(247, 185, 85, 0.32);
   border-radius: 18px;
   color: var(--landing-ink-soft);
@@ -5326,10 +5330,10 @@ body.taiwan-guide-page .taiwan-guide-hero-image-card img {
 
 .taiwan-guide-module-index a {
   align-items: center;
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border: 1px solid rgba(118, 87, 232, 0.2);
   border-radius: 999px;
-  color: #4b3a63;
+  color: color-mix(in srgb, #4b3a63 var(--dmix), var(--landing-ink));
   display: inline-flex;
   flex: 0 1 auto;
   font-size: 0.84rem;
@@ -5457,7 +5461,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
   align-items: center;
   background:
     radial-gradient(circle at 86% 8%, rgba(18, 200, 154, 0.24), transparent 34%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(234, 251, 253, 0.84));
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.94) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.84) var(--lmix), var(--lc)));
   border: 1px solid rgba(18, 200, 154, 0.16);
   border-radius: 34px;
   box-shadow: 0 24px 70px rgba(10, 125, 90, 0.13);
@@ -5490,8 +5494,8 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .indo-guide-hero-card {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(219, 246, 236, 0.78)),
-    #ffffff;
+    linear-gradient(145deg, color-mix(in srgb, rgba(255, 255, 255, 0.96) var(--lmix), var(--lc)), color-mix(in srgb, rgba(219, 246, 236, 0.78) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(18, 200, 154, 0.28);
   border-radius: 28px;
   box-shadow: 0 18px 52px rgba(10, 125, 90, 0.12);
@@ -5502,7 +5506,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .indo-guide-hero-card img {
   aspect-ratio: 4 / 3;
-  background: rgba(255, 255, 255, 0.7);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.7) var(--lmix), var(--lc));
   border-radius: 22px;
   height: auto;
   object-fit: contain;
@@ -5542,7 +5546,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 }
 
 .indo-guide-stats {
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.82) var(--lmix), var(--lc));
   border: 1px solid rgba(18, 200, 154, 0.16);
   border-radius: 24px;
   box-shadow: 0 18px 48px rgba(10, 125, 90, 0.08);
@@ -5575,7 +5579,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 }
 
 .indo-guide-tabbar {
-  background: rgba(255, 255, 255, 0.84);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.84) var(--lmix), var(--lc));
   border: 1px solid rgba(18, 200, 154, 0.18);
   border-radius: 999px;
   box-shadow: 0 12px 34px rgba(10, 125, 90, 0.08);
@@ -5640,7 +5644,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 .indo-guide-vibe,
 .indo-guide-prompt-card,
 .indo-guide-reference-links a {
-  background: rgba(255, 255, 255, 0.9);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.9) var(--lmix), var(--lc));
   border: 1px solid rgba(18, 200, 154, 0.16);
   box-shadow: 0 18px 48px rgba(10, 125, 90, 0.08);
 }
@@ -6100,7 +6104,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
   aspect-ratio: 1;
   background:
     linear-gradient(135deg, rgba(77, 231, 244, 0.2), rgba(30, 224, 200, 0.08)),
-    #ffffff;
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid rgba(22, 194, 192, 0.18);
   border-radius: 32px;
   box-shadow: var(--landing-shadow-soft);
@@ -6124,7 +6128,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .handbook-tabs {
   align-items: center;
-  background: rgba(255, 255, 255, 0.86);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.86) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 999px;
   box-shadow: var(--landing-shadow-soft);
@@ -6201,8 +6205,8 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .handbook-panel-head {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(234, 251, 253, 0.82)),
-    #ffffff;
+    linear-gradient(135deg, color-mix(in srgb, rgba(255, 255, 255, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(234, 251, 253, 0.82) var(--lmix), var(--lc))),
+    color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 28px;
   box-shadow: var(--landing-shadow-soft);
@@ -6228,7 +6232,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 }
 
 .handbook-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.92) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 24px;
   box-shadow: 0 12px 34px rgba(10, 17, 24, 0.045);
@@ -6358,7 +6362,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 }
 
 .handbook-new {
-  background: linear-gradient(135deg, rgba(234, 251, 253, 0.88), rgba(255, 248, 237, 0.9));
+  background: linear-gradient(135deg, color-mix(in srgb, rgba(234, 251, 253, 0.88) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 248, 237, 0.9) var(--lmix), var(--lc)));
 }
 
 .handbook-split {
@@ -6368,7 +6372,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .handbook-card figure,
 .handbook-shot-grid figure {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 18px;
   overflow: hidden;
@@ -6408,7 +6412,7 @@ body.taiwan-guide-page .taiwan-guide-module-grid .indo-guide-prompt-card {
 
 .handbook-arrow {
   align-items: start;
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 22px;
   color: var(--landing-ink);
@@ -6660,7 +6664,7 @@ html:has(body.creator-handbook-page) {
   align-self: center;
   border: 1px solid rgba(240, 170, 60, 0.5);
   border-radius: 999px;
-  color: #a35a12;
+  color: color-mix(in srgb, #a35a12 var(--dmix), var(--landing-ink));
   font-family: var(--hb-mono);
   font-size: 0.66rem;
   letter-spacing: 0.1em;
@@ -6682,7 +6686,7 @@ html:has(body.creator-handbook-page) {
 
 /* In-app screenshot frame */
 .char-hb .hb-shot {
-  background: #ffffff;
+  background: color-mix(in srgb, #ffffff var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-radius: 16px;
   box-shadow: 0 18px 44px rgba(10, 17, 24, 0.08);
@@ -6735,7 +6739,7 @@ html:has(body.creator-handbook-page) {
 
 /* Guide (sườn) */
 .char-hb .hb-guide {
-  background: rgba(234, 251, 253, 0.5);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.5) var(--lmix), var(--lc));
   border: 1.5px dashed rgba(22, 194, 192, 0.42);
   border-radius: 14px;
   color: var(--landing-ink);
@@ -6817,7 +6821,7 @@ html:has(body.creator-handbook-page) {
 
 /* Example box */
 .char-hb .hb-eg {
-  background: rgba(234, 251, 253, 0.7);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.7) var(--lmix), var(--lc));
   border: 1px solid var(--landing-line);
   border-left: 3px solid var(--landing-teal-500);
   border-radius: 10px;
@@ -6901,7 +6905,7 @@ html:has(body.creator-handbook-page) {
 
 /* Checklist */
 .char-hb .hb-checklist {
-  background: rgba(234, 251, 253, 0.5);
+  background: color-mix(in srgb, rgba(234, 251, 253, 0.5) var(--lmix), var(--lc));
   border: 1.5px dashed rgba(22, 194, 192, 0.42);
   border-radius: 14px;
   margin-top: 3.6rem;
@@ -6988,7 +6992,7 @@ html:has(body.creator-handbook-page) {
 /* Warning notice under the hero */
 .handbook-notice {
   align-items: flex-start;
-  background: linear-gradient(135deg, rgba(255, 245, 224, 0.92), rgba(255, 236, 214, 0.86));
+  background: linear-gradient(135deg, color-mix(in srgb, rgba(255, 245, 224, 0.92) var(--lmix), var(--lc)), color-mix(in srgb, rgba(255, 236, 214, 0.86) var(--lmix), var(--lc)));
   border: 1px solid rgba(240, 170, 60, 0.4);
   border-radius: 20px;
   box-shadow: var(--landing-shadow-soft);
@@ -7028,20 +7032,20 @@ html:has(body.creator-handbook-page) {
 }
 
 .handbook-notice-link {
-  color: #a35a12;
+  color: color-mix(in srgb, #a35a12 var(--dmix), var(--landing-ink));
   font-weight: 800;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .handbook-notice-link:hover {
-  color: #7d4109;
+  color: color-mix(in srgb, #7d4109 var(--dmix), var(--landing-ink));
 }
 
 .handbook-pending {
   background: rgba(240, 170, 60, 0.2);
   border-radius: 7px;
-  color: #a35a12;
+  color: color-mix(in srgb, #a35a12 var(--dmix), var(--landing-ink));
   font-family: var(--hb-mono, monospace);
   font-size: 0.85em;
   font-weight: 700;
@@ -7083,4 +7087,97 @@ html:has(body.creator-handbook-page) {
   .char-hb .hb-checklist { padding: 1.6rem; }
   .char-hb .hb-cta { padding: 2.2rem 1.4rem; }
   .handbook-notice { border-radius: 16px; width: calc(100% - 2rem); }
+}
+
+
+/* ==========================================================================
+   Dark theme for the legacy creator-landing pages
+   (handbooks, translation guides, Social program pages)
+   ========================================================================== */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] body.creator-landing,
+:root[data-theme="dark"] body.creator-landing.indo-guide-page,
+:root[data-theme="dark"] body.creator-landing.taiwan-guide-page {
+  --lmix: 8%;
+  --dmix: 35%;
+  --lc: #111a24;
+  --landing-paper: #0a1017;
+  --landing-surface: #151f2a;
+  --landing-surface-strong: rgba(39, 215, 232, 0.1);
+  --landing-ink: #e9eff5;
+  --landing-ink-soft: #b9c5d1;
+  --landing-muted: #8e9bab;
+  --landing-line: rgba(255, 255, 255, 0.1);
+  --landing-card: rgba(17, 26, 36, 0.92);
+  --landing-teal-50: rgba(39, 215, 232, 0.08);
+  --landing-teal-100: rgba(39, 215, 232, 0.16);
+  --landing-teal-200: rgba(39, 215, 232, 0.3);
+  --landing-teal-700: #62e6f0;
+  --landing-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  --landing-shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.4);
+  --gems-card: rgba(17, 26, 36, 0.92);
+  --gems-line: rgba(255, 255, 255, 0.12);
+  --gems-plum: #f3c4dc;
+  --indo-guide-green-soft: rgba(18, 200, 154, 0.14);
+  --indo-guide-green-deep: #5ee0b5;
+}
+
+/* ---------- Theme toggle (legacy header) ---------- */
+
+.creator-landing .theme-toggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--landing-line);
+  border-radius: 50%;
+  color: var(--landing-ink-soft);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.2s, color 0.2s;
+  width: 40px;
+}
+
+.creator-landing .theme-toggle:hover {
+  background: var(--lc);
+  color: var(--landing-ink);
+}
+
+.creator-landing .theme-toggle svg {
+  display: none;
+  height: 18px;
+  width: 18px;
+}
+
+:root[data-theme-pref="system"] .creator-landing .theme-toggle .i-system,
+:root[data-theme-pref="light"] .creator-landing .theme-toggle .i-light,
+:root[data-theme-pref="dark"] .creator-landing .theme-toggle .i-dark,
+:root:not([data-theme-pref]) .creator-landing .theme-toggle .i-system {
+  display: block;
+}
+
+.theme-anim .creator-landing,
+.theme-anim .creator-landing *,
+.theme-anim .creator-landing *::before,
+.theme-anim .creator-landing *::after {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+/* Guide pages carry their own palettes on body; override them at the same level */
+:root[data-theme="dark"] body.indo-guide-page {
+  --indo-guide-ink: #e9eff5;
+  --indo-guide-green-soft: rgba(18, 200, 154, 0.14);
+  --indo-guide-green-deep: #5ee0b5;
+}
+
+:root[data-theme="dark"] body.taiwan-guide-page {
+  --indo-guide-ink: #e9eff5;
+  --indo-guide-green-soft: rgba(118, 87, 232, 0.2);
+  --indo-guide-green-deep: #b9a8ff;
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>!function(){var p;try{p=localStorage.getItem("imely-theme")}catch(e){}p=p==="light"||p==="dark"?p:"system";var d=p==="dark"||p==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches,r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-pref",p)}();</script>
   <meta name="theme-color" content="#fbfdfd">
   <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
@@ -27,13 +28,14 @@
   <link rel="alternate" hreflang="id" href="https://creator.imely.ai/id/character.html">
   <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/character.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/character.html">
-  <link rel="stylesheet" href="assets/site.css?v=20261002-2">
+  <link rel="stylesheet" href="assets/site.css?v=20261002-4">
   <script>document.documentElement.classList.add('js');</script>
-  <script defer src="assets/site.js?v=20261002-2"></script>
+  <script defer src="assets/site.js?v=20261002-4"></script>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="assets/theme.js?v=20261002-4"></script>
 </head>
 <body>
   <div class="site-bg" aria-hidden="true"><div class="grid-lines"></div></div>
@@ -48,7 +50,7 @@
       <nav class="site-nav" aria-label="Điều hướng chính">
         <a href="so-tay.html">Sổ tay Creator</a>
         <a href="character.html" aria-current="page">Beta Creator</a>
-        <a href="gems.html">Char4Gem · Video4Gem</a>
+        <a href="gems.html">Sự kiện</a>
         <a href="criteria.html">Tiêu chí &amp; FAQ</a>
       </nav>
       <div class="header-actions">
@@ -61,6 +63,7 @@
           <a href="th/index.html" hreflang="th">ไทย <span>TH</span></a>
           </nav>
         </details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Giao diện: theo hệ thống" title="Giao diện: theo hệ thống" data-label-system="Giao diện: theo hệ thống" data-label-light="Giao diện: sáng" data-label-dark="Giao diện: tối"><svg class="i-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
         <a class="live-pill" href="characters-for-gems-taiwan.html" data-ends="2026-10-05T23:59:59+07:00" data-role="while-live"><span class="dot" aria-hidden="true"></span><span class="lp-long">Char4Gem Đài Loan</span><span class="lp-short">Char4Gem</span></a>
         <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-sheet"><span></span></button>
       </div>
@@ -71,13 +74,14 @@
       <a href="index.html">Trang chủ</a>
         <a href="so-tay.html">Sổ tay Creator </a>
         <a href="character.html">Beta Creator </a>
-        <a href="gems.html">Char4Gem · Video4Gem </a>
+        <a href="gems.html">Sự kiện</a>
         <a href="criteria.html">Tiêu chí &amp; FAQ </a>
     </nav>
     <div class="sheet-foot">
       <a class="btn btn-gems" href="characters-for-gems-taiwan.html" data-ends="2026-10-05T23:59:59+07:00" data-role="while-live">Char4Gem Đài Loan đang mở <span class="arrow" aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">Tham gia Discord <span class="arrow" aria-hidden="true">↗</span></a>
       <nav class="sheet-langs" aria-label="Ngôn ngữ"><span aria-current="true">VI</span><a href="en/character.html" hreflang="en">EN</a><a href="id/character.html" hreflang="id">ID</a><a href="tw/character.html" hreflang="zh-TW">TW</a><a href="th/index.html" hreflang="th">TH</a></nav>
+      <div class="theme-seg" role="group" aria-label="Giao diện"><button type="button" data-theme-set="system">Theo hệ thống</button><button type="button" data-theme-set="light">Sáng</button><button type="button" data-theme-set="dark">Tối</button></div>
     </div>
   </div>
   <main id="main">
