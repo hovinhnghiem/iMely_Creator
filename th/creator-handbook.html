@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <title>คู่มือครีเอเตอร์ imely | คู่มือสร้างตัวละคร</title>
+  <meta name="description" content="คู่มือ imely สำหรับครีเอเตอร์มือใหม่ที่สร้างตัวละครโรลเพลย์: บุคลิกภาพ เรื่องราว ข้อความแรก NPC สไตล์ และขอบเขต">
+  <link rel="canonical" href="https://creator.imely.ai/th/creator-handbook.html">
+  <meta property="og:title" content="คู่มือครีเอเตอร์ imely">
+  <meta property="og:description" content="คู่มือสร้างตัวละครโรลเพลย์บน imely ให้แข็งแรงขึ้น ตั้งแต่ความประทับใจแรก บุคลิกภาพ เรื่องราว ข้อความแรก NPC ไปจนถึงขอบเขต">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creator.imely.ai/th/creator-handbook.html">
+  <meta property="og:image" content="https://creator.imely.ai/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="คู่มือครีเอเตอร์ imely">
+  <meta name="twitter:description" content="คู่มือสร้างตัวละครโรลเพลย์บน imely ให้แข็งแรงขึ้น ตั้งแต่ความประทับใจแรก บุคลิกภาพ เรื่องราว ข้อความแรก NPC ไปจนถึงขอบเขต">
+  <meta name="twitter:image" content="https://creator.imely.ai/assets/og-image.png">
+  <link rel="alternate" hreflang="vi" href="https://creator.imely.ai/creator-handbook.html">
+  <link rel="alternate" hreflang="en" href="https://creator.imely.ai/en/creator-handbook.html">
+  <link rel="alternate" hreflang="id" href="https://creator.imely.ai/id/creator-handbook.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/creator-handbook.html">
+  <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/creator-handbook.html">
+  <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/creator-handbook.html">
+  <link rel="stylesheet" href="../assets/styles.css?v=20260824-char-handbook-flow-2">
+  <style>
+    .creator-landing * { letter-spacing: 0 !important; }
+    .creator-landing h1, .creator-landing h2, .creator-landing h3 { line-height: 1.3; }
+  </style>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="creator-landing creator-handbook-page">
+  <div class="landing-shell">
+    <header class="landing-header">
+      <a class="creator-brand" href="index.html" aria-label="imely Creator, หน้าแรก">
+        <img src="../assets/brand/app-icon.png" alt="imely">
+        <span>
+          <strong>imely Creator</strong>
+          <small>Official program</small>
+        </span>
+      </a>
+
+      <nav class="landing-nav" aria-label="เมนูหลัก">
+        <a href="handbook.html" aria-current="page">คู่มือครีเอเตอร์</a>
+        <a href="criteria.html">เกณฑ์และคำถามที่พบบ่อย</a>
+      </nav>
+
+      <div class="landing-header-actions">
+        <details class="landing-language">
+          <summary aria-label="เลือกภาษา">
+            <span>TH</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <nav aria-label="เลือกภาษา">
+            <a href="../creator-handbook.html" hreflang="vi">VI</a>
+            <a href="../en/creator-handbook.html" hreflang="en">EN</a>
+            <a href="../id/creator-handbook.html" hreflang="id">ID</a>
+            <a href="../tw/creator-handbook.html" hreflang="zh-TW">TW</a>
+          </nav>
+        </details>
+        <a class="header-cta" href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">เข้าร่วม Discord</a>
+      </div>
+    </header>
+
+    <main class="handbook-main char-hb">
+      <section class="handbook-hero">
+        <div>
+          <p class="eyebrow">คู่มืออย่างเป็นทางการ</p>
+          <h1>คู่มือสร้างตัวละคร imely</h1>
+          <p class="hero-lead">11 ช่องในฟอร์มสร้างตัวละครของ imely แต่ละช่องมีภาพหน้าจอจากแอปและคำแนะนำอย่างละเอียด เพื่อให้คุณสร้างตัวละครของตัวเองได้</p>
+          <div class="hb-legend">
+            <span class="hb-legend-item"><span class="hb-swatch hb-swatch-shot"></span> ภาพหน้าจอจากแอป</span>
+            <span class="hb-legend-item"><span class="hb-swatch hb-swatch-guide"></span> คำแนะนำละเอียดแต่ละช่อง</span>
+          </div>
+        </div>
+        <figure class="handbook-hero-portrait">
+          <img src="../assets/handbook/char-hero-portrait.jpg" alt="ตัวอย่างรูปโปรไฟล์ตัวละครสไตล์ imely" loading="lazy">
+          <figcaption>ตัวอย่างรูปโปรไฟล์ตัวละคร</figcaption>
+        </figure>
+      </section>
+      <div class="handbook-notice" role="note">
+        <span class="handbook-notice-ic" aria-hidden="true">!</span>
+        <div>
+          <p class="handbook-notice-title">อ่านกฎการตรวจตัวละครให้ละเอียดก่อนเริ่มสร้าง</p>
+          <p class="handbook-notice-body"><a class="handbook-notice-link" href="criteria.html">ดูกฎการตรวจตัวละคร <span aria-hidden="true">→</span></a> และตรวจเกณฑ์ล่าสุดของ imely ทุกครั้งก่อนส่ง</p>
+        </div>
+      </div>
+      <div class="char-hb-wrap">
+        <nav class="hb-toc" aria-label="สารบัญคู่มือ">
+          <a href="#c1">01 รูปโปรไฟล์</a>
+          <a href="#c2">02 ชื่อ</a>
+          <a href="#c3">03 แฮชแท็ก</a>
+          <a href="#c4">04 แท็กไลน์</a>
+          <a href="#c5">05 ข้อมูลสาธารณะ</a>
+          <a href="#c6">06 บุคลิกภาพ</a>
+          <a href="#c7">07 ภูมิหลัง</a>
+          <a href="#c8">08 ข้อความแรก</a>
+          <a href="#c9">09 ตัวละครรอง</a>
+          <a href="#c10">10 สไตล์การสื่อสาร</a>
+          <a href="#c11">11 กฎและขอบเขต</a>
+        </nav>
+        <section class="hb-cat" id="c1">
+          <div class="hb-cat-head"><span class="hb-cat-num">01</span><h2 class="hb-cat-title">รูปโปรไฟล์</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · รูปโปรไฟล์</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-01-avatar.jpg" alt="ตัวอย่างในแอป: รูปโปรไฟล์" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>เกณฑ์การเลือกรูป</h4>
+              <ul>
+                <li>เลือกสไตล์ภาพที่<strong>เข้ากับแนวของตัวละคร</strong>ที่คุณกำหนดไว้ก่อนจะเริ่มหารูป</li>
+                <li>รูปโปรไฟล์ต้อง<strong>ตรงกับคำอธิบายบุคลิกภาพ</strong>ที่เขียนไว้ <em class="note">ตัวอย่าง: บุคลิก "เย็นชา พูดน้อย" แต่รูปยิ้มกว้างสดใส จะทำให้ผู้ใช้ผิดความคาดหวังทันทีที่เข้าแชต</em></li>
+              </ul>
+              <h4>วิธีหาและสร้างรูป</h4>
+              <ul>
+                <li><strong>สร้างรูปเอง</strong> (แนะนำที่สุดเพื่อเลี่ยงปัญหาลิขสิทธิ์): ใช้เครื่องมือสร้างภาพ AI และบรรยายให้ชัด ทั้งสไตล์ เพศ อายุ สีหน้า ชุด สีผม สีตา โทนสี มุมกล้อง ฉากหลัง… ยิ่งบรรยายละเอียด ภาพยิ่งตรงใจ <em class="note">แพลตฟอร์มแนะนำ: ChatGPT, TensorArt, Gemini…</em></li>
+                <li><strong>ห้ามใช้เด็ดขาด:</strong> ภาพจากเกมหรือภาพยนตร์ที่มีลิขสิทธิ์ ภาพคนจริง (โดยเฉพาะคนดัง) หรือภาพที่ติดลายน้ำของแหล่งอื่น เพราะเป็นสาเหตุที่พบบ่อยที่สุดที่ทำให้ตัวละครไม่ผ่านการตรวจ</li>
+                <li><strong>ถ้าหารูป</strong>จาก Google หรือ Pinterest: ใช้เฉพาะภาพที่สร้างด้วย AI ห้ามใช้ภาพคนจริง ผลงานของศิลปิน หรือสินค้าที่มีลิขสิทธิ์…</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c2">
+          <div class="hb-cat-head"><span class="hb-cat-num">02</span><h2 class="hb-cat-title">ชื่อตัวละคร</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · ชื่อตัวละคร</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-02-name-en-v2.png" alt="ตัวอย่างในแอป: ชื่อตัวละคร" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>เกณฑ์การตั้งชื่อ</h4>
+              <ul>
+                <li>เลือกชื่อ<strong>สั้น 2–3 พยางค์</strong> อ่านง่าย สะกดถูก…</li>
+                <li>อย่าตั้งชื่อซ้ำกับตัวละครที่กำลังดังบน imely หรือตัวละครที่มีลิขสิทธิ์ (อนิเมะ ภาพยนตร์ เกม นิยาย…) เพราะเสี่ยงไม่ผ่านการตรวจ และทำให้ตัวละครดูเหมือนลอกเลียน</li>
+                <li>ลองเพิ่ม<strong>ชื่อเล่น / ฉายา</strong>ควบคู่กับชื่อจริง:
+                  <ul>
+                    <li><strong>ชื่อเต็ม</strong>: ใช้ในภูมิหลัง / ข้อมูลสาธารณะ (ให้ความรู้สึกจริงจัง มีมิติ)</li>
+                    <li><strong>ชื่อเล่นสนิทสนม</strong>: ใช้ตอนตัวละครแนะนำตัวในข้อความแรก (ให้ความรู้สึกใกล้ชิดตั้งแต่พบกันครั้งแรก)</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">ไอเดียการตั้งชื่อตามแนว</div>
+                <ul>
+                  <li><strong>ซีอีโอ / ทายาทมหาเศรษฐี ผู้มีอำนาจ:</strong> Alexander, Damien, Sebastian, Vincent…</li>
+                  <li><strong>ชีวิตวัยเรียน ชีวิตประจำวัน:</strong> ชื่อไทยคุ้นหู: ภูมิ, ต้นกล้า, ใบเตย, ฟ้า…</li>
+                  <li><strong>แฟนตาซี เหนือธรรมชาติ ต่างโลก:</strong> ชื่อแปลกหู ไม่ค่อยพบ: Kai, Rhys, Noel, Eryn…</li>
+                  <li><strong>ดาร์กโรแมนซ์ ลึกลับ:</strong> ชื่อเสียงทุ้ม ไม่แพร่หลาย: Adrian, Cain, Lysander…</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c3">
+          <div class="hb-cat-head"><span class="hb-cat-num">03</span><h2 class="hb-cat-title">แฮชแท็ก</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · แฮชแท็ก</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-03-hashtag-en.png" alt="ตัวอย่างในแอป: แฮชแท็ก" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>เลือกตามแนวหลัก</h4>
+              <p>ตัวละครอยู่ในกลุ่มการค้นหาไหน (<strong>#romance, #ceo, #school_life, #dark, #fantasy…</strong>) ควรเลือก<strong>แนวหลักเพียง 1 แนว</strong> เพื่อไม่ให้สัญญาณกระจัดกระจาย</p>
+              <h4>เลือกตามลักษณะนิสัย</h4>
+              <p>เพิ่มแฮชแท็ก 1–2 อันที่บอกนิสัยเด่นที่สุด (<strong>#tsundere, #possessive, #gentle, #dominant, #playful…</strong>) กลุ่มนี้ช่วยให้ผู้ใช้เจอนิสัยที่ตรง "สเปก" ไม่ใช่แค่แนวที่ตรง</p>
+              <h4>จำนวนและลำดับความสำคัญ</h4>
+              <ul>
+                <li>ใช้ทั้งหมด<strong> 4–6 แฮชแท็ก</strong> เรียงตามลำดับ: แนวหลัก → การตั้งเรื่อง/ความสัมพันธ์ (#enemies_to_lovers, #office_romance) → ลักษณะนิสัย</li>
+                <li>ใส่แฮชแท็กที่สำคัญที่สุด<strong>ไว้ก่อน</strong> เพราะระบบมักอ่านแท็กแรกๆ เพื่อจัดหมวดตัวละคร</li>
+              </ul>
+              <h4>อย่าสแปมแฮชแท็กที่ไม่เกี่ยวข้อง</h4>
+              <ul>
+                <li>อย่าใส่แฮชแท็กที่กำลังเทรนด์แต่ไม่ตรงกับเนื้อหาตัวละคร ผู้ใช้ที่กดเข้ามาจะออกทันทีเพราะไม่ตรงความคาดหวัง ทำให้อัลกอริทึมมองว่าตัวละครรักษาผู้ใช้ได้ต่ำ และลดโอกาสถูกแนะนำในภายหลัง</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c4">
+          <div class="hb-cat-head"><span class="hb-cat-num">04</span><h2 class="hb-cat-title">แท็กไลน์</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · แท็กไลน์</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-04-tagline-en.png" alt="ตัวอย่างในแอป: แท็กไลน์" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <ul>
+                <li>ใช้<strong>ความขัดแย้งสั้นๆ</strong>เพื่อสร้างจุดดึงดูดตั้งแต่แท็กไลน์</li>
+                <li>อธิบายตัวละครสั้นๆ ในหนึ่งประโยค หรือบอกใบ้เรื่องราวให้ผู้ใช้พอเข้าใจตัวละคร</li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">ตัวอย่างโครงประโยค: ใช้อ้างอิงโครงสร้าง อย่าคัดลอกไปใช้ตรงๆ</div>
+                <ul>
+                  <li><strong>แบบขัดแย้ง:</strong> "ต่อหน้าทุกคนเขามักรักษาระยะห่าง แต่มีแค่คุณที่ทำให้เขายอมแหกกฎของตัวเอง"</li>
+                  <li><strong>แบบคำถามแฝง:</strong> "เขาเคยสาบานว่าจะไม่รักใครอีก แต่คุณจะเป็นข้อยกเว้นของเขาหรือเปล่า?"</li>
+                  <li><strong>แบบพูดกับผู้ใช้โดยตรง:</strong> "สำหรับคนอื่นคุณเป็นแค่พนักงานใหม่ แต่เขากลับจำชื่อคุณได้ตั้งแต่วันแรก"</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c5">
+          <div class="hb-cat-head"><span class="hb-cat-num">05</span><h2 class="hb-cat-title">ข้อมูลสาธารณะ</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · ข้อมูลสาธารณะ</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-05-public-info-en-v2.png" alt="ตัวอย่างในแอป: ข้อมูลสาธารณะ" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <p>เขียนข้อมูลส่วนตัวของตัวละครให้ชัดเจน</p>
+              <div class="hb-field"><div class="hb-field-label">ชื่อ</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">อายุ</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">ส่วนสูง</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">สถานะ</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">รูปลักษณ์</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">บุคลิกภาพ</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">ความสัมพันธ์กับผู้ใช้</div><div class="hb-field-blank"></div></div>
+              <div class="hb-field"><div class="hb-field-label">ฉากหลัง <span class="opt">(ถ้ามี)</span></div><div class="hb-field-blank"></div></div>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c6">
+          <div class="hb-cat-head"><span class="hb-cat-num">06</span><h2 class="hb-cat-title">บุคลิกภาพ</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · บุคลิกภาพ</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-06-personality-en.png" alt="ตัวอย่างในแอป: บุคลิกภาพ" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4><span class="ord">a</span>กฎการตอบ</h4>
+              <ul>
+                <li>ต้องตอบความยาวตั้งแต่ <strong>…</strong> ถึง <strong>…</strong> ตัวอักษร</li>
+                <li>ตัวละคร<strong>ห้าม</strong>ตัดสินใจพูดหรือทำแทนผู้ใช้</li>
+                <li>จดจำทุกการกระทำ คำพูด และเหตุการณ์ที่ผู้ใช้เคยทำเสมอ</li>
+                <li>หลีกเลี่ยงการใช้คำซ้ำ</li>
+              </ul>
+              <h4><span class="ord">b</span>แก่นบุคลิกภาพ</h4>
+              <p>เลือกคำคุณศัพท์ที่<strong>เจาะจง</strong> หลีกเลี่ยงคำกว้างๆ (เช่น "ซับซ้อน" กว้างเกินไป AI จะไม่รู้ว่าต้องแสดงออกอย่างไร)</p>
+              <div class="hb-eg">
+                <div class="eg-t">ตัวอย่างแก่นบุคลิกภาพที่สมบูรณ์</div>
+                <p>"หยิ่ง ภายนอกเย็นชา หวงคนที่ตัวเองใส่ใจมากเกินไป ใส่ใจแบบเงียบๆ (แสดงออกด้วยการกระทำมากกว่าคำพูด)"</p>
+              </div>
+              <h4><span class="ord">c</span>กฎการตอบสนองตามสถานการณ์</h4>
+              <p>เขียนให้ชัดว่าตัวละครตอบสนองอย่างไรในแต่ละสถานการณ์:</p>
+              <ul>
+                <li><strong>เมื่อถูกชม</strong> → ทำเป็นไม่สนใจ / เขิน / ตอบกลับอย่างมีไหวพริบ…</li>
+                <li><strong>เมื่อถูกแซว</strong> → ตอบกลับแรงๆ หรือเลี่ยงไป</li>
+                <li><strong>เมื่อผู้ใช้เศร้า / ต้องการคนปลอบ</strong> → เผยด้านอ่อนโยนที่ซ่อนไว้ หรือความเปราะบาง</li>
+                <li><strong>เมื่อถูกสงสัย / ถูกทดสอบความไว้ใจ</strong> → เงียบ อธิบาย หรือแสดงความเจ็บปวดออกมาตรงๆ</li>
+              </ul>
+              <h4><span class="ord">d</span>น้ำเสียงและสไตล์การพูด</h4>
+              <ul>
+                <li>ระดับความเป็นทางการของบทสนทนา (คำเรียกขาน สรรพนาม…) และการเปลี่ยนคำเรียกตามระดับความสนิท</li>
+                <li>ความยาวเฉลี่ยของคำตอบ: ห้วนสั้นเว้นจังหวะเยอะ หรือพูดมากบรรยายฉากละเอียด ควรสอดคล้องกับแก่นบุคลิกภาพที่เลือก</li>
+                <li>ให้ตัวละครมี<strong>วลีติดปาก / นิสัยการพูด 1 อย่าง</strong> (เช่น เรียกผู้ใช้ด้วยชื่อเล่นเดิมเสมอ) เพื่อสร้างเอกลักษณ์ที่จำได้</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c7">
+          <div class="hb-cat-head"><span class="hb-cat-num">07</span><h2 class="hb-cat-title">ภูมิหลัง</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · ภูมิหลัง</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-07-backstory-en-v2.png" alt="ตัวอย่างในแอป: ภูมิหลัง" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <p>ละเอียดพอให้มีมิติ แต่ไม่ยืดยาว ใส่ไอเดียของคุณไว้ตรงนี้</p>
+              <div class="hb-pn">
+                <div class="col yes">
+                  <div class="h">＋ ควรทำ</div>
+                  <ul>
+                    <li>แสดงฉากหลัง อดีต / ปัจจุบัน / อนาคตของตัวละคร และความสัมพันธ์กับผู้ใช้</li>
+                    <li>เหตุผลที่ตัวละครกับผู้ใช้เชื่อมโยงกัน</li>
+                  </ul>
+                </div>
+                <div class="col no">
+                  <div class="h">－ ไม่ควรทำ</div>
+                  <ul>
+                    <li>บรรยายมากเกินไป (ผู้ใช้รับไม่ไหว ตัวหนังสือเยอะจนน่าเบื่อ)</li>
+                    <li>อธิบายทุกรายละเอียด หรือแก้ทุกปัญหาที่ตัวละครเผชิญไว้เองหมด</li>
+                  </ul>
+                </div>
+              </div>
+              <h4>เว้นช่องว่างให้ผู้ใช้เติม</h4>
+              <p>อย่าอธิบายทุกรายละเอียด <em class="note">ตัวอย่าง: แค่บอกใบ้ว่า "มีเรื่องบางอย่างในอดีตที่ทำให้เขาไม่ไว้ใจใครง่ายๆ" โดยไม่บอกว่าเป็นเรื่องอะไร</em> เพื่อให้ผู้ใช้อยากรู้และค่อยๆ ค้นพบผ่านบทสนทนา หรือโรลเพลย์เติมช่องว่างนั้นเอง ทำให้รู้สึกเหมือนร่วมกันสร้างเรื่องราว</p>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c8">
+          <div class="hb-cat-head"><span class="hb-cat-num">08</span><h2 class="hb-cat-title">ข้อความแรก</h2></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · ข้อความแรก</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-08-first-message-en.png" alt="ตัวอย่างในแอป: ข้อความแรก" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>รูปแบบการเขียน</h4>
+              <ul>
+                <li>ใช้ <code>{{user}}</code> เพื่อให้ระบบใส่ชื่อผู้ใช้อัตโนมัติ ห้ามใช้ <code>{{User}}</code> หรือ <code>user</code></li>
+                <li>ใช้ <code>*…*</code> สำหรับการกระทำ / ฉาก</li>
+                <li>ใช้ <code>"…"</code> สำหรับบทพูด</li>
+              </ul>
+              <h4>สร้างจุดดึงดูด: ดราม่าตั้งแต่ข้อความแรก</h4>
+              <ul>
+                <li>ใส่ปมให้สงสัยหรือสถานการณ์ดราม่าเบาๆ ในข้อความแรก เช่น ความลับที่เพิ่งถูกเปิดเผย สถานการณ์ที่ไม่คาดคิด หรือคำถามที่ตัวละครถามผู้ใช้</li>
+                <li>ใช้การบรรยายการกระทำ / ฉาก (ใส่ไว้ใน <code>*</code> หรือตัวเอียง) ให้รู้สึกเหมือนดู "หนัง" มากกว่าอ่านข้อความแห้งๆ ช่วยเพิ่มความอินตั้งแต่วินาทีแรก</li>
+                <li>จบด้วยสถานการณ์ที่ต้องตอบสนองหรือคำถามปลายเปิดเสมอ หลีกเลี่ยงคำถามปลายปิด (ใช่/ไม่ใช่) เพราะอาจทำให้บทสนทนาจบลงหลังตอบแค่ครั้งเดียว</li>
+              </ul>
+              <div class="hb-eg">
+                <div class="eg-t">ตัวอย่างตัวเลือกการกระทำให้ผู้ใช้</div>
+                <ul>
+                  <li>ขอโทษตัวละครในสิ่งที่คุณทำ</li>
+                  <li>สารภาพความรู้สึกกับตัวละคร</li>
+                  <li>เปิดเผยความลับ</li>
+                </ul>
+              </div>
+              <h4>วางฉากเปิดเรื่องตามแนว</h4>
+              <ul>
+                <li><strong>บังเอิญพบกัน:</strong> สถานการณ์ไม่ได้ตั้งใจ มีความประหลาดใจหรือความตลกเล็กน้อย เหมาะกับโรแมนซ์เบาๆ / วัยเรียน</li>
+                <li><strong>ความขัดแย้ง:</strong> เปิดด้วยความเห็นไม่ตรงกัน ความเข้าใจผิด หรือความตึงเครียดที่มีอยู่แล้ว เหมาะกับ enemies-to-lovers และดาร์กโรแมนซ์</li>
+                <li><strong>พลิกเรื่อง:</strong> เปิดด้วยสถานการณ์ชวนงงหรือข้อมูลครึ่งๆ กลางๆ ที่ทำให้ผู้ใช้อยากถามต่อ เหมาะกับแฟนตาซี ลึกลับ ระทึกขวัญ</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c9">
+          <div class="hb-cat-head"><span class="hb-cat-num">09</span><h2 class="hb-cat-title">ตัวละครรอง</h2><span class="hb-adv">ขั้นสูง</span></div>
+          <div class="hb-grid solo">
+            <div class="hb-guide">
+              <p>เพิ่มตัวละครรองเพื่อขยายเนื้อเรื่องในระยะยาว ตัวละครรองแต่ละตัวควรมี<strong>บทบาทชัดเจน 1 อย่าง</strong> เลือกตามจุดประสงค์:</p>
+              <ul>
+                <li><strong>สร้างความหึงหวง / การแข่งขัน:</strong> ตัวละครที่มีใจหรือสนใจตัวละครหลัก สร้างความขัดแย้งทางอารมณ์ให้ผู้ใช้</li>
+                <li><strong>พันธมิตร / เพื่อนสนิท:</strong> สร้างบรรยากาศชีวิตประจำวัน และเป็นที่ให้ตัวละครหลัก "เผย" ความคิดในใจอย่างเป็นธรรมชาติ (ผ่านการเล่าให้ฟัง)</li>
+                <li><strong>แรงกดดัน / อุปสรรค:</strong> ครอบครัว หัวหน้า หรือแรงภายนอกที่สร้างอุปสรรคให้ความสัมพันธ์หลัก ทำให้เนื้อเรื่องมีดราม่าต่อเนื่อง</li>
+              </ul>
+              <h4>จำกัดจำนวน</h4>
+              <ul>
+                <li>ควรมีตัวละครรอง<strong> 2–4 ตัว</strong> ที่กำหนดไว้ชัดเจน (ชื่อ ความสัมพันธ์ บทบาท) ถ้าไม่กำหนดไว้ก่อน AI มักแต่ง NPC ขึ้นเองระหว่างแชต ซึ่งบางครั้งช่วยให้เรื่องยืดหยุ่น แต่ถ้าควบคุมไม่ได้ NPC อาจโผล่มาไม่สม่ำเสมอ (เปลี่ยนชื่อ หลุดบทกลางทาง)</li>
+                <li>หรือเขียนพรอมต์เพิ่มให้ AI สร้าง NPC ขึ้นเอง</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c10">
+          <div class="hb-cat-head"><span class="hb-cat-num">10</span><h2 class="hb-cat-title">สไตล์การสื่อสาร</h2><span class="hb-adv">ขั้นสูง</span></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · สไตล์การสื่อสาร</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-10-comm-style-en.png" alt="ตัวอย่างในแอป: สไตล์การสื่อสาร" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <ul>
+                <li><strong>น้ำเสียง:</strong> เป็นทางการ สนิทสนม… และความยาวเฉลี่ยของคำตอบ</li>
+                <li><strong>ภาษาเฉพาะตัว:</strong> สแลง วลีติดปาก คำเรียกขานของตัวละครเอง รักษาสไตล์ให้สม่ำเสมอตลอด แม้ผู้ใช้จะเปลี่ยนเรื่องคุย</li>
+                <li><strong>วิธีเรียกผู้ใช้ของตัวละคร</strong> (ชื่อเล่น คำเรียกพิเศษ) ควรคงที่ตั้งแต่ต้นจนจบ เว้นแต่มีเหตุผลในเนื้อเรื่องให้เปลี่ยน (เช่น ความสัมพันธ์สนิทขึ้นตามเวลา)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="hb-cat" id="c11">
+          <div class="hb-cat-head"><span class="hb-cat-num">11</span><h2 class="hb-cat-title">กฎและขอบเขต</h2><span class="hb-adv">ขั้นสูง</span></div>
+          <div class="hb-grid">
+            <figure class="hb-shot">
+              <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · กฎและขอบเขต</em></div>
+              <div class="hb-shot-media"><img src="../assets/handbook/char-11-rules-en-v2.png" alt="ตัวอย่างในแอป: กฎและขอบเขต" loading="lazy"></div>
+            </figure>
+            <div class="hb-guide">
+              <h4>ไม่ให้ตัวละครหลุดบท (OOC)</h4>
+              <ul>
+                <li>เขียนให้ชัดว่าตัวละคร<strong>ไม่ยอมรับว่าตัวเองเป็น AI</strong> และไม่หลุดออกจากฉากของเรื่อง แม้ผู้ใช้จะจงใจถามนอกบท (ถามเรื่องโลกจริง หรือขอให้ตัวละคร "หลุดบท")</li>
+                <li>ระบุวิธีรับมือสถานการณ์ที่กดดันให้ตัวละครทำขัดกับบุคลิกภาพ / ศีลธรรมที่คุณตั้งไว้</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="hb-checklist">
+          <h3>เช็กลิสต์ก่อนส่ง</h3>
+          <ul>
+            <li>รูปโปรไฟล์ ชื่อ แท็กไลน์ และข้อมูลสาธารณะเป็น SFW ทั้งหมด และไม่ละเมิดนโยบายเนื้อหา</li>
+            <li>ชื่อ / รูป ไม่ซ้ำกับตัวละครที่มีลิขสิทธิ์</li>
+            <li>บุคลิกภาพ ภูมิหลัง แฮชแท็ก และแท็กไลน์สอดคล้องกัน ไม่มีข้อความขัดแย้งกัน</li>
+            <li>อ่านทวนทั้งหมดจากมุมมองของผู้ใช้ใหม่</li>
+            <li>เมื่อเสร็จแล้ว ส่งตัวละครให้ทีม imely ตรวจก่อนเผยแพร่สู่สาธารณะ</li>
+          </ul>
+          <figure class="hb-shot hb-checklist-shot">
+            <div class="hb-shot-bar"><span class="b"></span><span class="b"></span><span class="b"></span><em class="hb-shot-app">imely · โหมดการมองเห็น</em></div>
+            <div class="hb-shot-media"><img src="../assets/handbook/char-visibility-dialog-en.png" alt="หน้าต่างเลือกโหมดความเป็นส่วนตัวเมื่อเผยแพร่ตัวละคร" loading="lazy"></div>
+          </figure>
+        </div>
+        <div class="hb-cta">
+          <h3>อยากได้ไฟล์เก็บไว้ไหม?</h3>
+          <p>กรอบหลักการพื้นฐานของทั้ง 11 ช่อง รวมไว้ในไฟล์ Word ไฟล์เดียว เปิดดูได้ทุกเมื่อ</p>
+          <a class="button-primary" href="https://docs.google.com/document/d/1J03y6JvPS1Ong_xOfUpPUHGeMqP-s65uNYbMCJal1AU/edit?tab=t.91zkqotbbvej#heading=h.vox6pjjkj2de" target="_blank" rel="noopener noreferrer">คลิกเพื่อรับไฟล์พรอมต์ <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hb-foot">คู่มือนี้รวบรวมจากประสบการณ์ทั่วไป โปรดตรวจเกณฑ์ล่าสุดของ imely ทุกครั้งก่อนส่ง · Team imely</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

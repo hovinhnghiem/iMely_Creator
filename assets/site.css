@@ -3749,3 +3749,42 @@ body.menu-open {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Thai: stacked tone marks need taller lines, and Thai script is never tracked
+   ========================================================================== */
+
+html[lang="th"] body {
+  line-height: 1.75;
+}
+
+html[lang="th"] h1,
+html[lang="th"] h2,
+html[lang="th"] h3,
+html[lang="th"] h4 {
+  line-height: 1.3;
+}
+
+html[lang="th"] *,
+html[lang="th"] *::before,
+html[lang="th"] *::after {
+  letter-spacing: 0 !important;
+}
+
+html[lang="th"] .status,
+html[lang="th"] .card .k,
+html[lang="th"] .hub-body .k,
+html[lang="th"] .footer-grid h4 {
+  text-transform: none;
+}
+
+/* Discord block stretched across the full row (markets without a program block) */
+.b-discord.is-wide {
+  grid-column: 1 / -1;
+}
+
+.b-discord.is-wide .block-cover {
+  right: clamp(80px, 9vw, 120px);
+  top: 40px;
+  width: 150px;
+}
