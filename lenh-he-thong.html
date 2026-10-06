@@ -84,7 +84,7 @@
       <div class="hero-in">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><a href="so-tay.html">Sổ tay Creator</a><span aria-hidden="true">/</span><span aria-current="page">Thư viện lệnh</span></nav>
         <h1>Thư viện <span class="text-grad">lệnh</span> cho char</h1>
-        <p class="lead">Lệnh giúp char có giao diện riêng: điện thoại, nhật ký, bảng nhiệm vụ, diễn đàn. User gõ lệnh, AI sinh nội dung đúng khung bạn chọn. Chọn lệnh hợp với char, gom thành một bộ rồi copy.</p>
+        <p class="lead">Lệnh giúp char có giao diện riêng: điện thoại, nhật ký, bảng nhiệm vụ, diễn đàn. User gõ lệnh, AI sinh nội dung đúng khung bạn chọn. Chọn lệnh hợp với char, copy rồi dán vào char trên app imely.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#thu-vien">Chọn lệnh <span class="arrow" aria-hidden="true">→</span></a>
           <a class="btn btn-ghost" href="#cach-viet">Cách viết lệnh</a>
@@ -445,7 +445,7 @@ format:
         <div class="part-head" data-reveal>
           <div>
             <h2>Bộ lệnh của bạn</h2>
-            <p>Các lệnh đã chọn được bọc trong đúng một cặp <code class="cmd-inline">[START_COMMANDS]</code> … <code class="cmd-inline">[END_COMMANDS]</code>, sẵn sàng để dán vào char.</p>
+            <p>Các lệnh đã chọn được bọc trong đúng một cặp <code class="cmd-inline">[START_COMMANDS]</code> … <code class="cmd-inline">[END_COMMANDS]</code>, chỉ cần copy rồi dán vào char trên app imely.</p>
           </div>
           <span class="num" aria-hidden="true">02</span>
         </div>
@@ -463,11 +463,12 @@ format:
             </div>
           </div>
           <div class="cmd-out">
-            <div class="cmd-out-head"><strong data-count>0 lệnh</strong><span>Dán nguyên khối, không tách cặp thẻ</span></div>
+            <div class="cmd-out-head"><strong data-count>0 lệnh</strong><span>Copy nguyên khối, không tách cặp thẻ</span></div>
             <pre class="cmd-pre" data-output aria-live="polite"></pre>
             <div class="cta-row" style="margin:0">
               <button class="btn btn-brand btn-sm" type="button" data-copy-all disabled>Copy bộ lệnh</button>
               <button class="btn btn-ghost btn-sm" type="button" data-clear disabled>Xóa hết</button>
+              <a class="btn btn-ghost btn-sm" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">Mở imely <span class="arrow" aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
@@ -674,7 +675,7 @@ format:
     });
     document.querySelectorAll('[data-copy-all]').forEach(function (b) {
       b.addEventListener('click', function () {
-        if (picked.length) copy(bundle(), 'Đã copy bộ ' + picked.length + ' lệnh', 'Dán nguyên khối vào char.');
+        if (picked.length) copy(bundle(), 'Đã copy bộ ' + picked.length + ' lệnh', 'Mở app imely và dán vào char.');
       });
     });
     clear.addEventListener('click', function () { picked = []; save(); render(); });
