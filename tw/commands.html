@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>!function(){var p;try{p=localStorage.getItem("imely-theme")}catch(e){}p=p==="light"||p==="dark"?p:"system";var d=p==="dark"||p==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches,r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-pref",p)}();</script>
+  <meta name="theme-color" content="#fbfdfd">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <title>角色指令庫 | imely 創作者計畫</title>
+  <meta name="description" content="imely 角色現成指令：手機、訊息、日記、備忘錄、個人頁面、任務、論壇。挑選指令、複製後貼到 imely App 裡的角色。">
+  <link rel="canonical" href="https://creator.imely.ai/tw/commands.html">
+  <meta property="og:title" content="角色指令庫 | imely 創作者計畫">
+  <meta property="og:description" content="imely 角色現成指令：手機、訊息、日記、備忘錄、個人頁面、任務、論壇。挑選指令、複製後貼到 imely App 裡的角色。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creator.imely.ai/tw/commands.html">
+  <meta property="og:image" content="https://creator.imely.ai/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="角色指令庫 | imely 創作者計畫">
+  <meta name="twitter:description" content="imely 角色現成指令：手機、訊息、日記、備忘錄、個人頁面、任務、論壇。挑選指令、複製後貼到 imely App 裡的角色。">
+  <meta name="twitter:image" content="https://creator.imely.ai/assets/og-image.png">
+  <link rel="alternate" hreflang="vi" href="https://creator.imely.ai/lenh-he-thong.html">
+  <link rel="alternate" hreflang="en" href="https://creator.imely.ai/en/commands.html">
+  <link rel="alternate" hreflang="id" href="https://creator.imely.ai/id/commands.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/commands.html">
+  <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/commands.html">
+  <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/lenh-he-thong.html">
+  <link rel="stylesheet" href="../assets/site.css?v=20261006-2">
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="../assets/site.js?v=20261002-5"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="../assets/theme.js?v=20261002-5"></script>
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"><div class="grid-lines"></div></div>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html" aria-label="imely Creator, 首頁">
+        <img src="../assets/brand/app-icon.png" alt="" width="40" height="40">
+        <span><strong>imely Creator</strong><small>Official program</small></span>
+      </a>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="handbook.html" aria-current="page">創作者手冊</a>
+        <a href="character.html">台灣 Beta 計畫</a>
+        <a href="criteria.html">審核標準與常見問題</a>
+      </nav>
+      <div class="header-actions">
+        <details class="lang">
+          <summary aria-label="選擇語言">TW <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <nav class="lang-menu" aria-label="語言">
+          <a href="../lenh-he-thong.html" hreflang="vi">Tiếng Việt <span>VI</span></a>
+          <a href="../en/commands.html" hreflang="en">English <span>EN</span></a>
+          <a href="../id/commands.html" hreflang="id">Bahasa Indonesia <span>ID</span></a>
+          <a href="../th/commands.html" hreflang="th">ไทย <span>TH</span></a>
+          </nav>
+        </details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="外觀：跟隨系統" title="外觀：跟隨系統" data-label-system="外觀：跟隨系統" data-label-light="外觀：淺色" data-label-dark="外觀：深色"><svg class="i-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+        <a class="live-pill" href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg><span class="lp-long">加入 Discord</span><span class="lp-short">Discord</span></a>
+        <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="mobile-sheet"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-sheet" id="mobile-sheet">
+    <nav aria-label="行動版選單">
+      <a href="index.html">首頁</a>
+        <a href="handbook.html">創作者手冊 </a>
+        <a href="character.html">台灣 Beta 計畫 </a>
+        <a href="criteria.html">審核標準與常見問題 </a>
+    </nav>
+    <div class="sheet-foot">
+      <a class="btn btn-primary" href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">加入 Discord <span class="arrow" aria-hidden="true">↗</span></a>
+      <nav class="sheet-langs" aria-label="語言"><span aria-current="true">TW</span><a href="../lenh-he-thong.html" hreflang="vi">VI</a><a href="../en/commands.html" hreflang="en">EN</a><a href="../id/commands.html" hreflang="id">ID</a><a href="../th/commands.html" hreflang="th">TH</a></nav>
+      <div class="theme-seg" role="group" aria-label="外觀"><button type="button" data-theme-set="system">跟隨系統</button><button type="button" data-theme-set="light">淺色</button><button type="button" data-theme-set="dark">深色</button></div>
+    </div>
+  </div>
+  <main id="main">
+    <section class="container page-hero">
+      <div class="hero-in">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">首頁</a><span aria-hidden="true">/</span><a href="handbook.html">創作者手冊</a><span aria-hidden="true">/</span><span aria-current="page">指令庫</span></nav>
+        <h1>角色<span class="text-grad">指令</span>庫</h1>
+        <p class="lead">指令讓角色擁有自己的介面：手機、日記、任務面板、論壇。使用者輸入指令，AI 就依照你設計的格式回覆。挑選適合角色的指令，複製後貼到 imely App 裡的角色即可。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#thu-vien">挑選指令 <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#cach-viet">指令寫法</a>
+        </div>
+      </div>
+      <div class="page-hero-art" data-reveal="scale">
+        <div class="cmd-demo" aria-label="範例：使用者輸入 /phone，看到角色的手機畫面">
+          <span class="bubble">/phone</span>
+          <pre>📱 陸辰的手機
+───────────────
+🔋 12% · 01:47
+🔔 通知
+• 行事曆：那個人的生日，還有 3 天
+• 訊息：媽媽：「週末回家吃飯喔」
+🔍 最近搜尋
+• 送不喜歡甜食的人什麼禮物
+• 怎麼道歉又不說對不起
+───────────────
+＊他匆忙把手機翻面蓋在桌上。＊</pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="container tabbar-wrap">
+      <nav class="tabbar" data-spy aria-label="頁面內容">
+        <span class="tab-indicator" aria-hidden="true"></span>
+        <a href="#thu-vien">指令庫</a>
+        <a href="#bo-lenh">我的組合</a>
+        <a href="#cach-viet">寫法</a>
+      </nav>
+    </div>
+
+    <div class="container doc">
+      <section class="doc-part" id="thu-vien">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>挑選指令</h2>
+            <p>14 個現成指令，分成 4 類。可依角色氛圍搜尋或篩選，點「加入組合」收集多個指令，再依故事世界調整。</p>
+          </div>
+          <span class="num" aria-hidden="true">01</span>
+        </div>
+        <div>
+          <div class="cmd-toolbar">
+            <label class="search cmd-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr-only">搜尋指令</span><input type="search" placeholder="搜尋：手機、衝突、/quest…" autocomplete="off" data-cmd-search></label>
+            <div class="cmd-filter-row"><span class="cmd-filter-label">分類</span><div class="filters" role="group" aria-label="依分類篩選"><button type="button" data-g="all" aria-pressed="true">全部 <span></span></button><button type="button" data-g="doi-song" aria-pressed="false">日常 <span></span></button><button type="button" data-g="he-thong" aria-pressed="false">系統 <span></span></button><button type="button" data-g="the-gioi" aria-pressed="false">世界觀 <span></span></button><button type="button" data-g="hau-truong" aria-pressed="false">幕後 <span></span></button></div></div>
+            <div class="cmd-filter-row"><span class="cmd-filter-label">氛圍</span><div class="filters" role="group" aria-label="依氛圍篩選"><button type="button" data-m="all" aria-pressed="true">全部 <span></span></button><button type="button" data-m="bi-mat" aria-pressed="false">秘密 <span></span></button><button type="button" data-m="drama" aria-pressed="false">衝突 <span></span></button><button type="button" data-m="cam-xuc" aria-pressed="false">情感 <span></span></button><button type="button" data-m="hai" aria-pressed="false">搞笑 <span></span></button><button type="button" data-m="ngot" aria-pressed="false">甜蜜 <span></span></button><button type="button" data-m="game" aria-pressed="false">遊戲化 <span></span></button></div></div>
+            <p class="cmd-result" aria-live="polite"><span data-result></span><button type="button" data-reset hidden>清除篩選</button></p>
+          </div>
+          <div class="cmd-grid" id="cmd-list">
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat drama" data-cmd="phone">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📱</span><div><h3>手機</h3><span class="cmd-name">/phone</span></div></div>
+            <p>通知、搜尋紀錄，還有 char 藏著的秘密。</p>
+            <div class="cmd-moods"><span>秘密</span><span>衝突</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: phone
+desc: {{char}} 此刻的手機畫面：新通知與搜尋紀錄。語氣日常自然，帶表情符號。透露 {{char}} 在意或想隱瞞的事。
+rules:
+  * 內容要符合故事最新的發展
+  * 每次只暗示 1–2 個秘密，不要一次全部揭露
+format:
+  📱 {{char}} 的手機
+  ───────────────
+  🔋 [電量]% · [時間]
+  🔔 通知
+  • [App 名稱]：[內容，1 句]
+  （2–3 則通知）
+  🔍 最近搜尋
+  • [關鍵字]
+  （3–4 個關鍵字，至少 1 個可疑）
+  ───────────────
+  ＊[{{char}} 發現 {{user}} 拿著自己手機時的反應]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="drama" data-cmd="messages">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💬</span><div><h3>訊息</h3><span class="cmd-name">/messages</span></div></div>
+            <p>char 與其他角色的對話，最適合製造衝突。</p>
+            <div class="cmd-moods"><span>衝突</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: messages
+desc: {{char}} 與故事中另一個角色最近的聊天紀錄。真實的傳訊語氣：簡寫、表情符號、連發訊息。製造衝突或揭露隱藏的關係。
+rules:
+  * 對話對象必須是已出場或被提過的角色
+  * 不要讓 {{char}} 傳出不符合個性的訊息
+format:
+  💬 訊息 · {{char}} &amp; [對方名字]
+  ───────────────
+  [對方名字] · [時間]
+  [訊息]
+  {{char}} · [時間]
+  [訊息]
+  （6–10 則，交替出現，可連發）
+  ───────────────
+  [已讀 / 已送達 / 對方正在輸入...]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc bi-mat" data-cmd="diary">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📔</span><div><h3>日記</h3><span class="cmd-name">/diary</span></div></div>
+            <p>一天結束時的日記，寫下 char 說不出口的話。</p>
+            <div class="cmd-moods"><span>情感</span><span>秘密</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: diary
+desc: {{char}} 在一天結束時寫下的日記。語氣低聲而真誠，和外表截然不同。讓 {{user}} 看見 {{char}} 藏起來的情緒。
+rules:
+  * 只寫故事中已經發生的事
+  * 一律使用 {{char}} 的第一人稱
+format:
+  📔 日記 · [日期]
+  ───────────────
+  天氣：[1 個詞] · 心情：[表情符號]
+  [日記內容 80–120 字，第一人稱「我」]
+  [1 句寫到一半就停下的話...]
+  ───────────────
+  ＊[{{char}} 闔上日記，收進抽屜]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="hai ngot" data-cmd="notes">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📝</span><div><h3>備忘錄</h3><span class="cmd-name">/notes</span></div></div>
+            <p>待辦事項，還有 char 記住的關於 user 的小事。</p>
+            <div class="cmd-moods"><span>搞笑</span><span>甜蜜</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: notes
+desc: {{char}} 手機裡的備忘錄：待辦事項、要記住的事、隨手寫下的句子。條列式、簡短，偶爾好笑。透露 {{char}} 有多在意 {{user}}。
+format:
+  📝 備忘錄
+  ───────────────
+  📌 [備忘標題]
+  ☐ [待辦]
+  ☑ [已完成]
+  📌 關於 {{user}}
+  • [{{char}} 注意到的小細節]
+  （2–3 則，每則 2–4 行）
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="drama" data-cmd="profile">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">👤</span><div><h3>個人頁面</h3><span class="cmd-name">/profile</span></div></div>
+            <p>社群個人頁面：簡介、最新貼文、留言。</p>
+            <div class="cmd-moods"><span>衝突</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: profile
+desc: {{char}} 的社群個人頁面：簡介、最新貼文與留言。符合 {{char}} 風格的網路人設。呈現 {{char}} 想讓別人看到的形象。
+format:
+  👤 @[帳號] · [數字] 位追蹤者
+  ───────────────
+  簡介：[1 行]
+  📸 最新貼文 · [時間]
+  [貼文內容 1–2 句 + hashtag]
+  ❤️ [數字] · 💬 [數字]
+  💬 留言
+  • @[暱稱]：[留言]
+  • @[帳號] 回覆：[回覆]
+  （3–4 則留言）
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat" data-cmd="wallet">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💳</span><div><h3>錢包</h3><span class="cmd-name">/wallet</span></div></div>
+            <p>交易紀錄：每一筆支出都是線索。</p>
+            <div class="cmd-moods"><span>秘密</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: wallet
+desc: {{char}} 錢包裡的交易紀錄：餘額、轉帳、消費。語氣像銀行明細一樣冷淡，內容卻在說故事。透過每筆花費揭露習慣與秘密。
+rules:
+  * 金額要符合 {{char}} 的處境與身分
+format:
+  💳 {{char}} 的錢包
+  ───────────────
+  餘額：[金額]
+  • [時間] · [+/-][金額] · [交易備註]
+  （4–6 筆交易，至少 1 筆可疑）
+  ───────────────
+  ＊[若 {{user}} 看到，{{char}} 會趕緊關掉螢幕]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="quest">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>任務</h3><span class="cmd-name">/quest</span></div></div>
+            <p>跟著劇情更新的任務面板。</p>
+            <div class="cmd-moods"><span>遊戲化</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: quest
+desc: {{user}} 的任務管理系統。遊戲面板語氣，簡短清楚。追蹤進度，並在相關事件發生時更新。
+rules:
+  * 一律顯示：任務名稱、狀態、進度、目標、獎勵
+  * 任務已存在時不要重置進度
+  * 只有 {{user}} 達成所有條件時才改為「完成」
+  * 不要新增故事脈絡以外的目標
+format:
+  📜 任務 · [任務名稱]
+  ───────────────
+  狀態：[進行中 / 完成 / 失敗]
+  進度：[x/y]
+  目標：[簡短描述]
+  獎勵：[道具 / 點數 / 解鎖]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="status">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">❤️</span><div><h3>狀態</h3><span class="cmd-name">/status</span></div></div>
+            <p>即時顯示體力、精神與危險程度。</p>
+            <div class="cmd-moods"><span>遊戲化</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: status
+desc: {{char}} 的即時狀態面板。遊戲數值語氣，簡短。反映當下情況，讓 {{user}} 知道 {{char}} 好不好。
+rules:
+  * 數值：體力、精神、危險，皆為 0–100
+  * 每個 ▮ = 10 點，▮ 的數量必須與數值一致
+  * 受傷時體力下降；壓力大時精神下降
+  * 沒有明確事件時不要突然改變
+format:
+  ❤️ {{char}} 的狀態
+  ───────────────
+  體力：[▮▮▮▮▮▯▯▯▯▯] [x]/100
+  精神：[▮▮▮▮▮▯▯▯▯▯] [x]/100
+  危險：[▮▮▮▮▮▯▯▯▯▯] [x]/100
+  ───────────────
+  ＊[1 句描述目前狀況]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game ngot" data-cmd="affection">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💗</span><div><h3>好感度</h3><span class="cmd-name">/affection</span></div></div>
+            <p>好感度分數，以及 char 對 user 的真心話。</p>
+            <div class="cmd-moods"><span>遊戲化</span><span>甜蜜</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: affection
+desc: {{char}} 對 {{user}} 的好感度，附上 {{char}} 此刻的真實想法。簡短，符合 {{char}} 的個性。逐輪追蹤關係的發展。
+rules:
+  * 分數為 0–100，每輪最多變動 10 點
+  * 每個 ▮ = 10 點，▮ 的數量必須與數值一致
+  * 只有 {{user}} 做出明確行動時才會變動
+  * 輪與輪之間不要重置分數
+format:
+  💗 好感度 · {{char}} 對 {{user}}
+  ───────────────
+  分數：[▮▮▮▮▮▯▯▯▯▯] [x]/100（[+/- 變化]）
+  階段：[陌生 / 認識 / 熟悉 / 心動 / 戀愛]
+  原因：[{{user}} 做了什麼讓分數改變]
+  ───────────────
+  ＊真心話：「[1 句 {{char}} 說不出口的話]」＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="choices">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔀</span><div><h3>抉擇</h3><span class="cmd-name">/choices</span></div></div>
+            <p>給 user 3 個選項，每個都把劇情帶往不同方向。</p>
+            <div class="cmd-moods"><span>遊戲化</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: choices
+desc: 在關鍵時刻給 {{user}} 3 個選項，並暗示後果。視覺小說語氣，簡短又帶點懸念。讓 {{user}} 主動決定劇情走向，而不只是閱讀。
+rules:
+  * 3 個選項必須截然不同：一個安全、一個冒險、一個出人意料
+  * 後果只能模糊暗示，不要劇透結果
+  * {{user}} 做出選擇後，依照該選項繼續劇情
+format:
+  🔀 抉擇 · [情境，1 句]
+  ───────────────
+  A. [安全的選項]
+     ↳ [模糊的後果暗示]
+  B. [冒險的選項]
+     ↳ [模糊的後果暗示]
+  C. [出人意料的選項]
+     ↳ [模糊的後果暗示]
+  ───────────────
+  ＊[{{char}} 正等著 {{user}} 的反應]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="forum">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>論壇</h3><span class="cmd-name">/forum</span></div></div>
+            <p>3–5 則 NPC 貼文，熱烈討論故事裡的八卦。</p>
+            <div class="cmd-moods"><span>衝突</span><span>搞笑</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: forum
+desc: 故事世界裡的論壇，3–5 則 NPC 貼文。八卦語氣，每個人風格不同。把故事中的事件變成大家熱議的話題。
+format:
+  📋 論壇 · [看板名稱]
+  ───────────────
+  • @[暱稱] · [時間]
+    [貼文內容，1–2 句]
+    💬 [數字] · ❤️ [數字] · 🔄 [數字]
+  ───────────────
+  （重複 3–5 則，語氣多樣）</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="cam-xuc ngot" data-cmd="radio">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📻</span><div><h3>深夜電台</h3><span class="cmd-name">/radio</span></div></div>
+            <p>聽眾來信，竟和 char 與 user 的故事出奇相似。</p>
+            <div class="cmd-moods"><span>情感</span><span>甜蜜</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: radio
+desc: 故事世界裡的深夜電台節目：主持人朗讀聽眾來信並點播一首歌。語氣溫暖，像在談心。這封信恰巧與 {{char}} 和 {{user}} 之間的事出奇相似，像一則間接的訊息。
+rules:
+  * 不要說出 {{char}} 或 {{user}} 的名字，只埋下讓人自己認出的細節
+  * 歌名與歌手由 AI 自創，不要使用真實存在的歌曲
+format:
+  📻 深夜電台 · [節目名稱] · [時間]
+  ───────────────
+  🎙️ 主持人：[開場，1–2 句]
+  ✉️ 「[筆名]」的來信：
+  [來信內容 50–80 字]
+  🎵 點播歌曲：[歌名] · [歌手]
+  ───────────────
+  ＊[{{char}} 聽到熟悉的細節時的反應]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="hai" data-cmd="backstage">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎬</span><div><h3>幕後花絮</h3><span class="cmd-name">/backstage</span></div></div>
+            <p>char 跳出角色，評論自己的故事。</p>
+            <div class="cmd-moods"><span>搞笑</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: backstage
+desc: 幕後花絮：{{char}} 跳出角色，像演員一樣評論劇情。語氣搞笑、不按牌理出牌。在緊張的劇情之間放鬆一下，不影響主線。
+rules:
+  * 不要改變主線中的事件或關係
+  * 一律以回到未完成的場景作結
+format:
+  🎬 幕後花絮
+  ───────────────
+  {{char}}：[評論剛演完的場景]
+  導演：[提醒或調侃]
+  {{char}}：[反應]
+  （4–6 句對白）
+  ───────────────
+  ＊Action！{{char}} 回到角色中＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="ngot hai" data-cmd="whatif">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌀</span><div><h3>如果</h3><span class="cmd-name">/whatif</span></div></div>
+            <p>把 char 和 user 帶到平行世界：校園、古裝、偶像…</p>
+            <div class="cmd-moods"><span>甜蜜</span><span>搞笑</span></div>
+            <details class="cmd-code"><summary>查看指令 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: whatif
+desc: 平行世界（AU）的短篇場景，{{char}} 和 {{user}} 過著不同的人生：校園、古裝、偶像、職場…語氣輕鬆，依 AU 偏搞笑或甜蜜。呈現這段關係的另一種版本，不影響主線。
+rules:
+  * 保留 {{char}} 的核心個性，只改變背景與身分
+  * {{user}} 有指定 AU 就使用該 AU；沒有的話，選一個與主線反差大的 AU
+  * 不要改變主線中的事件或關係
+format:
+  🌀 如果 · [AU 名稱]
+  ───────────────
+  身分：{{char}} 是 [新身分] · {{user}} 是 [新身分]
+  [短篇場景 80–120 字]
+  ───────────────
+  ＊回到現實。[{{char}} 愣了一下，彷彿剛做了一場夢]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">加入組合</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>複製</button>
+            </div>
+          </article>
+          </div>
+          <div class="cmd-none" data-none hidden><p>沒有符合篩選條件的指令。</p><button class="btn btn-ghost btn-sm" type="button" data-reset>清除篩選</button></div>
+        </div>
+      </section>
+
+      <section class="doc-part" id="bo-lenh">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>我的指令組合</h2>
+            <p>選好的指令會包在唯一一組 <code class="cmd-inline">[START_COMMANDS]</code> … <code class="cmd-inline">[END_COMMANDS]</code> 裡，複製後貼到 imely App 裡的角色即可。</p>
+          </div>
+          <span class="num" aria-hidden="true">02</span>
+        </div>
+        <div class="cmd-builder">
+          <div class="card cmd-side">
+            <div>
+              <h3>快速選擇</h3>
+              <div class="filters cmd-presets" role="group" aria-label="推薦組合"><button type="button" data-preset="phone messages diary">日常組合</button><button type="button" data-preset="quest affection choices">系統組合</button><button type="button" data-preset="messages profile forum radio">衝突組合</button></div>
+            </div>
+            <div>
+              <h3>已選</h3>
+              <div class="cmd-chips" data-chips></div>
+              <p class="cmd-empty" data-empty>尚未選擇。在指令庫點「加入組合」，或選一個推薦組合。</p>
+              <p class="cmd-hint" data-hint>每個角色建議 3–5 個指令。太多的話，AI 容易混亂、忘記格式。</p>
+            </div>
+          </div>
+          <div class="cmd-out">
+            <div class="cmd-out-head"><strong data-count></strong><span>整段複製，不要拆開標籤</span></div>
+            <pre class="cmd-pre" data-output aria-live="polite"></pre>
+            <div class="cta-row" style="margin:0">
+              <button class="btn btn-brand btn-sm" type="button" data-copy-all disabled>複製組合</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-clear disabled>全部清除</button>
+              <a class="btn btn-ghost btn-sm" href="https://imely.ai/" target="_blank" rel="noopener noreferrer">開啟 imely <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-part" id="cach-viet">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>指令的寫法</h2>
+            <p>每個指令有 4 個部分。可以用來修改範例，或為你的故事世界自己寫：修仙、科幻、校園、偶像…</p>
+          </div>
+          <span class="num" aria-hidden="true">03</span>
+        </div>
+        <div class="grid-2">
+          <div class="card cmd-field" data-reveal style="--d:0"><h3><span class="cmd-name">/command:</span><span class="tag">必填</span></h3><p>使用者輸入來觸發的名稱。不加空格，連著寫或用 <code class="cmd-inline">_</code>，簡短好記。</p><p style="margin-top:10px">建議：<code class="cmd-inline">diary</code> <code class="cmd-inline">forum</code> <code class="cmd-inline">messages</code>。避免：<code class="cmd-inline">任務 系統</code> <code class="cmd-inline">cmd1</code></p></div>
+          <div class="card cmd-field" data-reveal style="--d:1"><h3><span class="cmd-name">desc:</span><span class="tag">必填</span></h3><p>1–2 句話回答 3 件事：指令會產生什麼、用什麼語氣、對劇情有什麼作用（揭露秘密、製造衝突、追蹤進度…）。</p></div>
+          <div class="card cmd-field" data-reveal style="--d:2"><h3><span class="cmd-name">rules:</span><span class="tag">選填</span></h3><p>只有指令需要嚴格邏輯時才需要：任務、數值、好感度。每行以 <code class="cmd-inline">*</code> 開頭，寫成「一律…」、「絕不…」、「只有…時才…」，並加上數值範圍，例如 0–100。</p></div>
+          <div class="card cmd-field" data-reveal style="--d:3"><h3><span class="cmd-name">format:</span><span class="tag">必填</span></h3><p>顯示格式，也是最重要的部分。寫得越具體，AI 越能穩定維持。</p></div>
+        </div>
+
+        <div data-reveal>
+          <h3 class="sub-head">寫出 AI 能維持的格式</h3>
+          <ul class="cmd-tips">
+            <li>標題行：表情符號 + 大寫或醒目的名稱，例如 <code>📋 論壇 · [看板名稱]</code>。</li>
+            <li>分隔線：直接複製這串字元 <code>───────────────</code>。</li>
+            <li>用 <code>[方括號]</code> 標出 AI 要填的地方，並用 <code>{{user}}</code>、<code>{{char}}</code> 讓名字自動帶入。</li>
+            <li>寫清楚數量與長度：「3–5 則」、「1–2 句」、「80–120 字」。</li>
+            <li>可選的結尾行，描寫角色的動作或情緒，用 <code>＊…＊</code> 包起來。</li>
+            <li>格式有多個區塊（貼文 + 留言）時，每個區塊要分清楚。</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="sub-head">整組只用一對標籤</h3>
+          <p style="color:var(--muted);margin:-6px 0 16px">不管 1 個還是 10 個指令，<code class="cmd-inline">[START_COMMANDS]</code> 只在最前面開一次，<code class="cmd-inline">[END_COMMANDS]</code> 只在最後面關一次。上面的「我的指令組合」已經幫你處理好了。</p>
+          <div class="grid-2 cmd-compare">
+            <div class="card is-bad" data-reveal style="--d:0"><h3>✕ 錯誤：每個指令各包一對標籤</h3><pre class="cmd-pre">[START_COMMANDS]
+/command: diary
+...
+[END_COMMANDS]
+[START_COMMANDS]
+/command: messages
+...
+[END_COMMANDS]</pre></div>
+            <div class="card is-good" data-reveal style="--d:1"><h3>✓ 正確：一對標籤包住全部</h3><pre class="cmd-pre">[START_COMMANDS]
+
+/command: diary
+...
+
+/command: messages
+...
+
+[END_COMMANDS]</pre></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="sub-head">發布前</h3>
+          <div class="acc" data-reveal>
+            <details open><summary>每個角色 3–5 個指令</summary><div class="acc-body"><p>指令太多會讓 AI 混亂、忘記格式。只留真正對故事有幫助的指令。</p></div></details>
+            <details><summary>指令語氣要符合角色</summary><div class="acc-body"><p>Z 世代角色就用 Z 世代語氣，古裝角色就用古風用詞。把範例裡的 App 名稱、貨幣、稱呼改成符合你的故事世界。</p></div></details>
+            <details><summary>測試 5–10 輪</summary><div class="acc-body"><p>每個指令都在 5–10 輪對話中試試看，確認 AI 有維持格式、數量與數值，再發布。</p></div></details>
+            <details><summary>內容仍須符合審核標準</summary><div class="acc-body"><p>指令產生的內容同樣要符合<a href="criteria.html">審核標準</a>，公開內容必須維持 SFW。</p></div></details>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cmd-tray" data-tray aria-live="polite"><strong data-tray-count></strong><a href="#bo-lenh">查看組合</a><button type="button" data-copy-all>複製</button></div>
+    <div class="cmd-toast" data-toast role="status"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="imely Creator, 首頁">
+            <img src="../assets/brand/app-icon.png" alt="" width="40" height="40" loading="lazy">
+            <span><strong>imely Creator</strong><small>Official program</small></span>
+          </a>
+          <p>imely 官方創作者計畫。寫角色、說故事，和社群一起獲得透明的報酬。</p>
+        </div>
+        <div>
+          <h4>探索</h4>
+          <nav aria-label="探索">
+            <a href="handbook.html">創作者手冊</a>
+            <a href="character.html">台灣 Beta 計畫</a>
+            <a href="criteria.html">審核標準與常見問題</a>
+          </nav>
+        </div>
+        <div>
+          <h4>指南</h4>
+          <nav aria-label="指南">
+            <a href="creator-handbook.html">角色創作手冊</a>
+            <a href="commands.html">角色指令庫</a>
+            <a href="criteria.html">角色審核標準</a>
+          </nav>
+        </div>
+        <div>
+          <h4>社群</h4>
+          <nav aria-label="社群">
+            <a href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://www.facebook.com/imelyofficial" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.tiktok.com/@imely.ai" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://imely.ai/" target="_blank" rel="noopener noreferrer">imely.ai ↗</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 imely Creator Program</span>
+        <span>Managed by imely team</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script>
+  (function () {
+    var KEY = 'imely-cmd-set-tw';
+    var T = {"add": "加入組合", "added": "已加入 ✓", "hint": "每個角色建議 3–5 個指令。太多的話，AI 容易混亂、忘記格式。", "hint_warn": "目前有 {k} 個指令。建議保持 3–5 個，AI 才不會混亂。", "unit": "{k} 個指令", "out_empty": "（從指令庫挑選指令）", "tray": "已選 {k} 個指令", "t_copy": "已複製 /{name}", "t_copy_sub": "請放在一對 [START_COMMANDS] … [END_COMMANDS] 之間。", "t_all": "已複製 {k} 個指令", "t_all_sub": "開啟 imely App，貼到角色裡。", "t_fail": "複製失敗，請選取文字後手動複製。", "t_preset": "已選擇：{name}", "chip_rm": "從組合移除 /{name}", "result_some": "{k} / {n} 個指令"};
+    function t(key, vars) {
+      var k = vars && vars.k === 1 && T[key + '_one'] ? key + '_one' : key;
+      return T[k].replace(/\{(\w+)\}/g, function (m, v) { return vars && v in vars ? vars[v] : m; });
+    }
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.cmd-card'));
+    var byName = {};
+    cards.forEach(function (c) { byName[c.getAttribute('data-cmd')] = c; });
+    var picked = [];
+    try { picked = JSON.parse(localStorage.getItem(KEY) || '[]').filter(function (n) { return byName[n]; }); } catch (e) { picked = []; }
+
+    var $ = function (s) { return document.querySelector(s); };
+    var chips = $('[data-chips]'), empty = $('[data-empty]'), hint = $('[data-hint]');
+    var output = $('[data-output]'), count = $('[data-count]'), clear = $('[data-clear]');
+    var tray = $('[data-tray]'), trayCount = $('[data-tray-count]'), toast = $('[data-toast]');
+    var builder = document.getElementById('bo-lenh');
+    var builderInView = false, toastTimer;
+
+    function code(n) { return byName[n].querySelector('.cmd-pre').textContent; }
+    function bundle() { return '[START_COMMANDS]\n\n' + picked.map(code).join('\n\n') + '\n\n[END_COMMANDS]'; }
+
+    function save() { try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch (e) {} }
+
+    function render() {
+      cards.forEach(function (c) {
+        var on = picked.indexOf(c.getAttribute('data-cmd')) !== -1;
+        var b = c.querySelector('[data-add]');
+        c.classList.toggle('is-picked', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.textContent = on ? T.added : T.add;
+      });
+      chips.innerHTML = '';
+      picked.forEach(function (n) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', t('chip_rm', { name: n }));
+        b.innerHTML = '/' + n + ' <span aria-hidden="true">×</span>';
+        b.addEventListener('click', function () { toggle(n); });
+        chips.appendChild(b);
+      });
+      var k = picked.length;
+      empty.hidden = k > 0;
+      count.textContent = t('unit', { k: k });
+      hint.classList.toggle('is-warn', k > 5);
+      hint.textContent = k > 5 ? t('hint_warn', { k: k }) : T.hint;
+      output.textContent = k ? bundle() : '[START_COMMANDS]\n\n' + T.out_empty + '\n\n[END_COMMANDS]';
+      document.querySelectorAll('[data-copy-all]').forEach(function (b) { b.disabled = !k; });
+      clear.disabled = !k;
+      trayCount.textContent = t('tray', { k: k });
+      tray.classList.toggle('is-shown', k > 0 && !builderInView);
+    }
+
+    function toggle(n) {
+      var i = picked.indexOf(n);
+      if (i === -1) picked.push(n); else picked.splice(i, 1);
+      save(); render();
+    }
+
+    function showToast(msg, sub) {
+      toast.innerHTML = '';
+      toast.appendChild(document.createTextNode(msg));
+      if (sub) { var s = document.createElement('small'); s.textContent = sub; toast.appendChild(s); }
+      toast.classList.add('is-shown');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () { toast.classList.remove('is-shown'); }, 2600);
+    }
+
+    function copy(text, msg, sub) {
+      function fallback() {
+        var t = document.createElement('textarea');
+        t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(t);
+        showToast(ok ? msg : T.t_fail, ok ? sub : '');
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { showToast(msg, sub); }, fallback);
+      } else { fallback(); }
+    }
+
+    cards.forEach(function (c) {
+      var n = c.getAttribute('data-cmd');
+      c.querySelector('[data-add]').addEventListener('click', function () { toggle(n); });
+      c.querySelector('[data-copy]').addEventListener('click', function () {
+        copy(code(n), t('t_copy', { name: n }), T.t_copy_sub);
+      });
+    });
+    document.querySelectorAll('[data-copy-all]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (picked.length) copy(bundle(), t('t_all', { k: picked.length }), T.t_all_sub);
+      });
+    });
+    clear.addEventListener('click', function () { picked = []; save(); render(); });
+    document.querySelectorAll('[data-preset]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        picked = b.getAttribute('data-preset').split(' ');
+        save(); render();
+        showToast(t('t_preset', { name: b.textContent }), picked.map(function (n) { return '/' + n; }).join(' · '));
+      });
+    });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        builderInView = entries[0].isIntersecting;
+        tray.classList.toggle('is-shown', picked.length > 0 && !builderInView);
+      }, { threshold: 0.15 }).observe(builder);
+    }
+
+    /* Search + filters */
+    var search = document.querySelector('[data-cmd-search]');
+    var gBtns = Array.prototype.slice.call(document.querySelectorAll('[data-g]'));
+    var mBtns = Array.prototype.slice.call(document.querySelectorAll('[data-m]'));
+    var result = document.querySelector('[data-result]');
+    var none = document.querySelector('[data-none]');
+    var resets = document.querySelectorAll('[data-reset]');
+    var fG = 'all', fM = 'all';
+    function norm(t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd'); }
+    cards.forEach(function (c) {
+      var d = c.querySelector('.cmd-pre').textContent.split('\n')[1] || '';
+      c._text = norm([c.querySelector('h3').textContent, '/' + c.getAttribute('data-cmd'), c.querySelector('p').textContent, c.querySelector('.cmd-moods').textContent, d].join(' '));
+    });
+    function match(c, g, m, q) {
+      return (g === 'all' || c.getAttribute('data-group') === g) &&
+        (m === 'all' || c.getAttribute('data-mood').split(' ').indexOf(m) !== -1) &&
+        (!q || q.split(/\s+/).every(function (w) { return c._text.indexOf(w) !== -1; }));
+    }
+    function countMatch(g, m, q) { return cards.filter(function (c) { return match(c, g, m, q); }).length; }
+    function applyFilter() {
+      var q = norm(search.value.trim().replace(/^\//, ''));
+      var shown = 0;
+      cards.forEach(function (c) {
+        var v = match(c, fG, fM, q);
+        c.hidden = !v;
+        if (v) shown++;
+      });
+      gBtns.forEach(function (b) {
+        var g = b.getAttribute('data-g');
+        b.setAttribute('aria-pressed', g === fG ? 'true' : 'false');
+        b.querySelector("span").textContent = countMatch(g, fM, q);
+      });
+      mBtns.forEach(function (b) {
+        var m = b.getAttribute('data-m');
+        b.setAttribute('aria-pressed', m === fM ? 'true' : 'false');
+        b.querySelector("span").textContent = countMatch(fG, m, q);
+      });
+      var active = fG !== 'all' || fM !== 'all' || q;
+      result.textContent = active ? t('result_some', { k: shown, n: cards.length }) : t('unit', { k: cards.length });
+      none.hidden = shown > 0;
+      resets.forEach(function (r) { r.hidden = !active; });
+      none.querySelector('[data-reset]').hidden = false;
+    }
+    gBtns.forEach(function (b) { b.addEventListener('click', function () { fG = b.getAttribute('data-g'); applyFilter(); }); });
+    mBtns.forEach(function (b) { b.addEventListener('click', function () { fM = b.getAttribute('data-m'); applyFilter(); }); });
+    search.addEventListener('input', applyFilter);
+    resets.forEach(function (r) { r.addEventListener('click', function () { fG = 'all'; fM = 'all'; search.value = ''; applyFilter(); search.focus(); }); });
+    applyFilter();
+    render();
+  })();
+  </script>
+</body>
+</html>

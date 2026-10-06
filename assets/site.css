@@ -4462,3 +4462,106 @@ html[lang="th"] .footer-grid h4 {
 .hub-card:hover .cmd-hub-art span:nth-child(odd) {
   transform: translateY(-3px);
 }
+
+.cmd-toolbar {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.cmd-search {
+  width: min(100%, 520px);
+}
+
+.cmd-filter-row {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.cmd-filter-label {
+  color: var(--muted);
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 44px;
+}
+
+.cmd-filter-row .filters {
+  margin: 0;
+}
+
+.cmd-filter-row .filters button {
+  font-size: 0.85rem;
+  padding: 7px 13px;
+}
+
+.cmd-result {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.88rem;
+  gap: 12px;
+  margin: 2px 0 0;
+}
+
+.cmd-result button {
+  background: none;
+  border: 0;
+  color: var(--teal-700);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0;
+}
+
+.cmd-result button[hidden] {
+  display: none;
+}
+
+.cmd-card[hidden] {
+  display: none;
+}
+
+.cmd-moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cmd-moods span {
+  background: var(--surface);
+  border-radius: 999px;
+  color: var(--ink-2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+}
+
+.cmd-none {
+  background: var(--card);
+  border-radius: var(--r-md);
+  box-shadow: 0 0 0 1px var(--line);
+  color: var(--muted);
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.cmd-none[hidden] {
+  display: none;
+}
+
+.cmd-none p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .cmd-filter-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
