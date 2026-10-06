@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/commands.html">
   <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/commands.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/lenh-he-thong.html">
-  <link rel="stylesheet" href="../assets/site.css?v=20261006-2">
+  <link rel="stylesheet" href="../assets/site.css?v=20261006-3">
   <script>document.documentElement.classList.add('js');</script>
   <script defer src="../assets/site.js?v=20261002-5"></script>
   <script>
@@ -123,7 +123,7 @@
         <div class="part-head" data-reveal>
           <div>
             <h2>เลือกคำสั่ง</h2>
-            <p>คำสั่งสำเร็จรูป 14 แบบ แบ่งเป็น 4 กลุ่ม ค้นหาหรือกรองตามฟีลของตัวละคร กด “เพิ่มในชุด” เพื่อรวมหลายคำสั่ง แล้วปรับให้เข้ากับโลกของเรื่อง</p>
+            <p>คำสั่งสำเร็จรูป 36 แบบ แบ่งเป็น 4 กลุ่ม ค้นหาหรือกรองตามฟีลของตัวละคร กด “เพิ่มในชุด” เพื่อรวมหลายคำสั่ง แล้วปรับให้เข้ากับโลกของเรื่อง</p>
           </div>
           <span class="num" aria-hidden="true">01</span>
         </div>
@@ -272,6 +272,154 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc ngot" data-cmd="drafts">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">✉️</span><div><h3>ข้อความร่าง</h3><span class="cmd-name">/drafts</span></div></div>
+            <p>ข้อความที่ char พิมพ์ถึง user แล้วลบทิ้ง ไม่เคยส่ง</p>
+            <div class="cmd-moods"><span>อารมณ์</span><span>หวาน</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: drafts
+desc: ข้อความที่ {{char}} พิมพ์ถึง {{user}} แล้วลบทิ้งโดยไม่ได้ส่ง โทนจริงใจและลังเล ต่างจากสิ่งที่ {{char}} พูดออกมา ให้ {{user}} เห็นสิ่งที่ {{char}} อยากพูดแต่ไม่กล้า
+rules:
+  * ข้อความร่างแต่ละอันต้องผูกกับเหตุการณ์ที่เกิดขึ้นแล้วในเรื่อง
+  * {{char}} ไม่รู้ว่า {{user}} กำลังอ่านอยู่
+format:
+  ✉️ ข้อความร่าง · ถึง {{user}}
+  ───────────────
+  🕐 [เวลาที่พิมพ์]
+  "[ข้อความ 1–3 ประโยค]"
+  ❌ [เหตุผลที่ลบ 1 ประโยคสั้นๆ]
+  (2–3 ข้อความ ยิ่งท้ายยิ่งจริงใจ)
+  ───────────────
+  ＊[{{char}} พิมพ์แล้วก็ลบทิ้งอีกครั้ง]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat drama" data-cmd="calls">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📞</span><div><h3>สายที่ไม่ได้รับ</h3><span class="cmd-name">/calls</span></div></div>
+            <p>ประวัติการโทร และข้อความเสียงที่ถูกตัดกลางคัน</p>
+            <div class="cmd-moods"><span>ความลับ</span><span>ดราม่า</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: calls
+desc: ประวัติการโทรในโทรศัพท์ของ {{char}} พร้อมข้อความเสียงหนึ่งข้อความ โทนสั้นและชวนสงสัย เผยว่าใครกำลังตามหา {{char}} และเพราะอะไร
+rules:
+  * ผู้โทรต้องเป็นตัวละครที่ปรากฏหรือถูกพูดถึงแล้ว หรือเบอร์แปลกที่เกี่ยวกับความลับในเรื่อง
+  * ข้อความเสียงต้องถูกตัดก่อนจะพูดถึงประเด็นสำคัญเสมอ
+format:
+  📞 การโทรล่าสุด
+  ───────────────
+  • [ชื่อ / เบอร์ไม่รู้จัก] · [เวลา] · [ไม่ได้รับ / โทรออก / สายเข้า · ระยะเวลา]
+  (4–6 สาย)
+  🎙️ ข้อความเสียง · [ชื่อ] · [เวลา]
+  "[เนื้อหา 1–3 ประโยค ถูกตัดตอนท้าย...]"
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat ngot" data-cmd="gallery">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📸</span><div><h3>แกลเลอรี</h3><span class="cmd-name">/gallery</span></div></div>
+            <p>รูปล่าสุดในโทรศัพท์ของ char และอัลบั้มที่ซ่อนไว้</p>
+            <div class="cmd-moods"><span>ความลับ</span><span>หวาน</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: gallery
+desc: แกลเลอรีรูปในโทรศัพท์ของ {{char}} บรรยายรูปล่าสุดเป็นข้อความ โทนชีวิตประจำวัน เต็มไปด้วยรายละเอียดเล็กๆ อัลบั้มที่ซ่อนไว้บอกใบ้สิ่งที่ {{char}} หวงแหนหรือปิดบัง
+rules:
+  * รูปต้องตรงกับเหตุการณ์และสถานที่ที่มีอยู่แล้วในเรื่อง
+  * อัลบั้มที่ซ่อนบรรยายแบบคลุมเครือ ห้ามเปิดเผยทั้งหมด
+format:
+  📸 แกลเลอรี
+  ───────────────
+  🖼️ [วันที่] · [คำบรรยายรูป 1 ประโยค]
+  (4–6 รูป)
+  🔒 อัลบั้มที่ซ่อนไว้ · [จำนวน] รูป
+  [บรรยายแบบคลุมเครือ 1 รูปในนั้น]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc" data-cmd="playlist">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎧</span><div><h3>เพลย์ลิสต์</h3><span class="cmd-name">/playlist</span></div></div>
+            <p>เพลย์ลิสต์ที่ char เปิดวนซ้ำ อารมณ์ซ่อนอยู่ในชื่อเพลง</p>
+            <div class="cmd-moods"><span>อารมณ์</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: playlist
+desc: เพลย์ลิสต์ที่ {{char}} ฟังช่วงนี้ โทนเหงาๆ โรแมนติกนิดๆ ชื่อเพลย์ลิสต์และเพลงสะท้อนความรู้สึกของ {{char}} ในตอนนี้
+rules:
+  * ชื่อเพลงและศิลปินให้ AI แต่งขึ้นเอง ห้ามใช้เพลงที่มีอยู่จริง
+  * ห้ามเขียนเนื้อเพลง
+format:
+  🎧 เพลย์ลิสต์ · "[ชื่อเพลย์ลิสต์ที่ {{char}} ตั้ง]"
+  ───────────────
+  ▶️ กำลังเล่น: [ชื่อเพลง] · [ศิลปิน] · 🔁 [จำนวนครั้งที่เปิดซ้ำ]
+  1. [ชื่อเพลง] · [ศิลปิน]
+  (4–5 เพลง)
+  ───────────────
+  ＊[ทำไม {{char}} ถึงฟังเพลงนี้ 1 ประโยค]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="ngot hai" data-cmd="cart">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🛒</span><div><h3>ตะกร้าสินค้า</h3><span class="cmd-name">/cart</span></div></div>
+            <p>ของในตะกร้าที่ยังไม่จ่ายเงิน มีชิ้นหนึ่งซื้อให้ user ชัดๆ</p>
+            <div class="cmd-moods"><span>หวาน</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: cart
+desc: ตะกร้าสินค้าของ {{char}}: ของที่ใส่ไว้แต่ยังไม่จ่ายเงิน โทนชีวิตประจำวัน ตลกนิดๆ เผยว่า {{char}} ใส่ใจ {{user}} มีของชิ้นหนึ่งที่เห็นชัดว่าซื้อให้ {{user}}
+format:
+  🛒 ตะกร้า · [จำนวน] ชิ้น
+  ───────────────
+  • [สินค้า] · [ราคา] · [โน้ตของ {{char}}]
+  (4–5 ชิ้น อย่างน้อย 1 ชิ้นสำหรับ {{user}})
+  💭 ดูแล้วแต่ยังไม่ใส่ตะกร้า: [ของน่าสงสัย 1 ชิ้น]
+  ───────────────
+  ＊[{{char}} ลังเลอยู่หน้าปุ่มชำระเงิน]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat hai" data-cmd="bag">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎒</span><div><h3>ของในกระเป๋า</h3><span class="cmd-name">/bag</span></div></div>
+            <p>ของในกระเป๋าของ char แต่ละชิ้นมีเรื่องเล่าเล็กๆ</p>
+            <div class="cmd-moods"><span>ความลับ</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bag
+desc: ของที่ {{char}} พกอยู่ในกระเป๋าหรือกระเป๋าเสื้อตอนนี้ รายการสั้นๆ ตลกนิดๆ ของแต่ละชิ้นเล่าเรื่องเล็กๆ เกี่ยวกับ {{char}}
+rules:
+  * ของต้องเข้ากับฉากและฐานะของ {{char}}
+  * อย่างน้อย 1 ชิ้นเกี่ยวข้องกับ {{user}}
+format:
+  🎒 ของในกระเป๋าของ {{char}}
+  ───────────────
+  • [ของ]: [เรื่องเล่าเล็กๆ 1 ประโยค]
+  (5–6 ชิ้น มี 1 ชิ้นแปลกๆ ที่ไม่รู้ที่มา)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat" data-cmd="schedule">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗓️</span><div><h3>ตารางนัด</h3><span class="cmd-name">/schedule</span></div></div>
+            <p>ตารางสัปดาห์ของ char มีช่องหนึ่งถูกลบอย่างน่าสงสัย</p>
+            <div class="cmd-moods"><span>ความลับ</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: schedule
+desc: ตารางนัดสัปดาห์นี้ของ {{char}} โทนสมุดบันทึกเรียบร้อย ค่อนข้างแห้ง ช่องที่ถูกลบหรือโน้ตลึกลับทำให้ {{user}} อยากรู้
+rules:
+  * ตารางต้องเข้ากับงานและนิสัยของ {{char}}
+format:
+  🗓️ ตารางนัด · สัปดาห์ที่ [เลข]
+  ───────────────
+  [วัน] · [เวลา] · [กิจกรรม]
+  (6–8 รายการ)
+  [วัน] · [เวลา] · ▒▒▒ (ถูกลบ) · [โน้ตลึกลับ 1 ข้อ]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="quest">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>ภารกิจ</h3><span class="cmd-name">/quest</span></div></div>
             <p>แผงภารกิจที่อัปเดตตามเนื้อเรื่อง</p>
@@ -370,6 +518,137 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="hai cam-xuc" data-cmd="inner">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🧠</span><div><h3>เสียงในใจ</h3><span class="cmd-name">/inner</span></div></div>
+            <p>สิ่งที่ char พูด เทียบกับสิ่งที่คิดจริงๆ</p>
+            <div class="cmd-moods"><span>ตลก</span><span>อารมณ์</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: inner
+desc: วางสิ่งที่ {{char}} เพิ่งพูดไว้คู่กับสิ่งที่คิดจริงในใจ โทนตลก บางทีก็เจ็บเพราะต่างกันมาก ให้ {{user}} เห็นว่า {{char}} ปากไม่ตรงกับใจ
+rules:
+  * คำพูดต้องมาจากคำตอบล่าสุดของ {{char}}
+  * ความคิดจริงยังต้องตรงกับนิสัยของ {{char}}
+format:
+  🧠 เสียงในใจของ {{char}}
+  ───────────────
+  💬 พูด: "[สิ่งที่ {{char}} เพิ่งพูด]"
+  💭 คิด: "[สิ่งที่ {{char}} คิดจริงๆ]"
+  (2–3 คู่)
+  ───────────────
+  ＊[ท่าทางเล็กๆ ที่ทำให้ความคิดจริงหลุดออกมา]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game hai" data-cmd="achievement">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🏆</span><div><h3>ความสำเร็จ</h3><span class="cmd-name">/achievement</span></div></div>
+            <p>ปลดล็อกเหรียญเมื่อ user ทำเรื่องน่าจดจำ</p>
+            <div class="cmd-moods"><span>สไตล์เกม</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: achievement
+desc: แจ้งเตือนปลดล็อกความสำเร็จตามสิ่งที่ {{user}} ทำในเรื่อง โทนเกมสนุกๆ ชื่อเหรียญสร้างสรรค์ บันทึกหมุดหมายของความสัมพันธ์
+rules:
+  * ปลดล็อกเฉพาะสิ่งที่เกิดขึ้นจริงแล้วเท่านั้น
+  * ห้ามปลดล็อกความสำเร็จเดิมซ้ำ
+format:
+  🏆 ปลดล็อกความสำเร็จ
+  ───────────────
+  🏅 [ชื่อเหรียญสร้างสรรค์]
+  [สิ่งที่ {{user}} ทำ 1 ประโยค]
+  ความหายาก: [ธรรมดา / หายาก / ตำนาน]
+  ปลดล็อกแล้ว: [x]/[ทั้งหมด]
+  ───────────────
+  🔒 ความสำเร็จถัดไป: [คำใบ้คลุมเครือ]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game drama" data-cmd="event">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎲</span><div><h3>เหตุการณ์พลิกผัน</h3><span class="cmd-name">/event</span></div></div>
+            <p>ทอยลูกเต๋า แล้วโยนเหตุการณ์ไม่คาดฝันเข้าไปในฉาก</p>
+            <div class="cmd-moods"><span>สไตล์เกม</span><span>ดราม่า</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: event
+desc: ทอยลูกเต๋าเพื่อเพิ่มเหตุการณ์ไม่คาดฝันในฉากตอนนี้: อากาศเปลี่ยน อุบัติเหตุเล็กๆ คนแปลกหน้าโผล่มา… เล่าเร็วและดราม่า ทำลายทางตันและพาเรื่องไปทางใหม่
+rules:
+  * เหตุการณ์ต้องเข้ากับฉากและอยู่ในระดับ PG13
+  * แต้มยิ่งต่ำยิ่งยุ่งยาก ยิ่งสูงยิ่งโชคดี
+  * หลังเกิดเหตุการณ์ ให้ดำเนินฉากต่อด้วยปฏิกิริยาของ {{char}}
+format:
+  🎲 เหตุการณ์พลิกผัน · ลูกเต๋า: [1–20]
+  ───────────────
+  [ชื่อเหตุการณ์]
+  [คำบรรยาย 1–2 ประโยค]
+  ───────────────
+  ＊[ปฏิกิริยาแรกของ {{char}}]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="cam-xuc bi-mat" data-cmd="tarot">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔮</span><div><h3>ไพ่ทาโรต์</h3><span class="cmd-name">/tarot</span></div></div>
+            <p>ไพ่ทาโรต์ 3 ใบ สำหรับอดีต ปัจจุบัน และอนาคตของทั้งสอง</p>
+            <div class="cmd-moods"><span>อารมณ์</span><span>ความลับ</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tarot
+desc: เปิดไพ่ทาโรต์ 3 ใบให้ความสัมพันธ์ระหว่าง {{char}} กับ {{user}}: อดีต ปัจจุบัน อนาคต โทนลึกลับ คลุมเครือ ชี้ทิศทางโดยไม่ฟันธงตอนจบ
+rules:
+  * คำทำนายเชื่อมกับเหตุการณ์ในเรื่องแต่ต้องเปิดกว้างเสมอ
+  * ห้ามทำนายเรื่องร้ายเกี่ยวกับสุขภาพหรือความเป็นความตาย
+format:
+  🔮 ทาโรต์ · {{char}} &amp; {{user}}
+  ───────────────
+  🃏 อดีต: [ชื่อไพ่] · [คำทำนาย 1 ประโยค]
+  🃏 ปัจจุบัน: [ชื่อไพ่] · [คำทำนาย 1 ประโยค]
+  🃏 อนาคต: [ชื่อไพ่] · [คำทำนาย 1 ประโยค]
+  ───────────────
+  ＊[ข้อความรวม คลุมเครือ]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="recap">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏪</span><div><h3>สรุปตอนที่แล้ว</h3><span class="cmd-name">/recap</span></div></div>
+            <p>“ตอนที่แล้ว…”: สรุปเรื่องให้ user กลับมาเล่นต่อได้</p>
+            <div class="cmd-moods"><span>สไตล์เกม</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: recap
+desc: สรุปแบบซีรีส์ "ตอนที่แล้ว…" เล่าสิ่งที่เกิดขึ้นไปแล้ว เสียงผู้บรรยาย กระชับและชวนติดตาม ช่วยให้ {{user}} กลับเข้าเรื่องได้หลังหยุดไปนาน
+rules:
+  * สรุปเฉพาะเหตุการณ์ที่เกิดขึ้นแล้ว ห้ามเพิ่มรายละเอียดใหม่
+  * จบที่สถานการณ์ที่ค้างอยู่เสมอ
+format:
+  ⏪ ตอนที่แล้ว…
+  ───────────────
+  • [เหตุการณ์สำคัญ 1 ประโยค]
+  (3–5 เหตุการณ์ตามลำดับ)
+  📍 ค้างไว้ที่: [สถานการณ์ตอนนี้]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="map">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗺️</span><div><h3>แผนที่</h3><span class="cmd-name">/map</span></div></div>
+            <p>ตำแหน่งตอนนี้ สถานที่ใกล้ๆ และใครอยู่ที่ไหน</p>
+            <div class="cmd-moods"><span>สไตล์เกม</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: map
+desc: แผนที่รอบๆ {{char}} และ {{user}}: ตำแหน่งปัจจุบัน สถานที่ใกล้เคียง และตัวละครแต่ละคนอยู่ที่ไหน โทนคู่มือเกมสั้นๆ ช่วยให้ {{user}} เลือกว่าจะไปไหนต่อ
+rules:
+  * ใช้เฉพาะสถานที่ที่เข้ากับโลกของเรื่อง
+  * ตำแหน่งตัวละครตรงกับเหตุการณ์ล่าสุด
+format:
+  🗺️ แผนที่ · [พื้นที่]
+  ───────────────
+  📍 ตอนนี้อยู่ที่: [สถานที่]
+  • [สถานที่ใกล้เคียง] · [ระยะทาง] · [ใครอยู่ที่นั่น / กำลังเกิดอะไรขึ้น]
+  (3–4 สถานที่)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="forum">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>กระทู้</h3><span class="cmd-name">/forum</span></div></div>
             <p>3–5 โพสต์ของ NPC ที่เม้าท์ดราม่าในเรื่อง</p>
@@ -407,6 +686,88 @@ format:
   🎵 เพลงที่มอบให้: [ชื่อเพลง] · [นักร้อง]
   ───────────────
   ＊[ปฏิกิริยาของ {{char}} เมื่อได้ยินรายละเอียดที่คุ้นเคย]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="confession">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💌</span><div><h3>เพจคอนเฟส</h3><span class="cmd-name">/confession</span></div></div>
+            <p>เพจคอนเฟสนิรนาม ทุกโพสต์เหมือนพูดถึง char กับ user</p>
+            <div class="cmd-moods"><span>ดราม่า</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: confession
+desc: เพจคอนเฟสนิรนามของโรงเรียน ที่ทำงาน หรือที่ที่ {{char}} ใช้ชีวิตอยู่ โทนระบายความในใจปนเผือก โพสต์ที่ดูเหมือนพูดถึง {{char}} กับ {{user}} ทำให้ทั้งคู่เขิน
+rules:
+  * ห้ามใช้ชื่อจริง ใส่แค่รายละเอียดให้คนอ่านเดาเอง
+format:
+  💌 คอนเฟส · [ชื่อเพจ]
+  ───────────────
+  #[หมายเลข]
+  [เนื้อหาคอนเฟส 40–70 คำ]
+  💬 [คอมเมนต์เด่น 1 ประโยค]
+  (2–3 คอนเฟส)
+  ───────────────
+  ＊[ปฏิกิริยาของ {{char}} ตอนได้อ่าน]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="hai drama" data-cmd="livestream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📺</span><div><h3>ไลฟ์สด</h3><span class="cmd-name">/livestream</span></div></div>
+            <p>char ไลฟ์สด คอมเมนต์ไหลไม่หยุด มีแอนตี้ด้วย</p>
+            <div class="cmd-moods"><span>ตลก</span><span>ดราม่า</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: livestream
+desc: {{char}} กำลังไลฟ์สด คอมเมนต์ไหลไม่หยุด โทนวุ่นวายและสนุก คนดูจับผิดทุกรายละเอียดและเอ่ยถึง {{user}} ตลอด
+rules:
+  * คอมเมนต์หลากหลาย: แฟนคลับ แอนตี้ คนส่งของขวัญ คนรอดูดราม่า
+format:
+  📺 ไลฟ์ · @[ชื่อช่อง] · 👁️ [จำนวน] คนดู
+  ───────────────
+  🎥 [{{char}} กำลังทำอะไรในไลฟ์ 1 ประโยค]
+  💬 @[ชื่อเล่น]: [คอมเมนต์]
+  (6–8 คอมเมนต์)
+  🎁 @[ชื่อเล่น] ส่ง [ของขวัญ]
+  ───────────────
+  ＊[{{char}} ตอบคอมเมนต์ที่เด่นที่สุด]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama" data-cmd="news">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📰</span><div><h3>ข่าวเช้า</h3><span class="cmd-name">/news</span></div></div>
+            <p>ข่าวเช้าของโลกในเรื่อง มีข่าวหนึ่งเกี่ยวกับ char</p>
+            <div class="cmd-moods"><span>ดราม่า</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: news
+desc: ข่าวเช้าในโลกของเรื่อง โทนผู้ประกาศข่าวทางการ ข่าวสั้นข่าวหนึ่งเกี่ยวกับ {{char}} หรือ {{user}} ราวกับทั้งโลกกำลังจับตามอง
+format:
+  📰 ข่าวเช้า · [วันที่]
+  ───────────────
+  🗞️ [พาดหัวข่าวหลัก]
+  [สรุป 1–2 ประโยค]
+  • [ข่าวสั้น 1 ประโยค]
+  (3–4 ข่าวสั้น มี 1 ข่าวเกี่ยวกับ {{char}} หรือ {{user}})
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="ngot hai" data-cmd="weather">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌦️</span><div><h3>พยากรณ์อากาศ</h3><span class="cmd-name">/weather</span></div></div>
+            <p>พยากรณ์อากาศ พร้อมพยากรณ์อารมณ์ของ char</p>
+            <div class="cmd-moods"><span>หวาน</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: weather
+desc: พยากรณ์อากาศวันนี้ พร้อม "พยากรณ์อารมณ์" ของ {{char}} ในแบบเปรียบเปรย โทนน่ารัก แซวนิดๆ แนะนำว่า {{user}} ควรปฏิบัติกับ {{char}} อย่างไรวันนี้
+format:
+  🌦️ พยากรณ์ · [สถานที่] · [วันที่]
+  ───────────────
+  อากาศ: [สภาพอากาศ] · [อุณหภูมิ]
+  อารมณ์ของ {{char}}: [เปรียบเป็นสภาพอากาศ เช่น "มีเมฆมาก อาจมีฝนตกบางพื้นที่"]
+  โอกาสงอน: [x]%
+  คำแนะนำสำหรับ {{user}}: [1 ประโยค]
+  ───────────────</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
@@ -452,6 +813,112 @@ format:
   [ฉากสั้นๆ 80–120 คำ]
   ───────────────
   ＊กลับสู่ความจริง [{{char}} ชะงักไปราวกับเพิ่งตื่นจากฝัน]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc bi-mat" data-cmd="dream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💤</span><div><h3>ความฝัน</h3><span class="cmd-name">/dream</span></div></div>
+            <p>ความฝันเมื่อคืนของ char ที่เผยความกลัวและความปรารถนา</p>
+            <div class="cmd-moods"><span>อารมณ์</span><span>ความลับ</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: dream
+desc: ความฝันเมื่อคืนของ {{char}} เล่าด้วยมุมมองบุรุษที่หนึ่ง โทนเลือนราง เต็มไปด้วยภาพเปรียบเปรย เผยความกลัวหรือความปรารถนาลึกๆ ของ {{char}}
+rules:
+  * ภาพในฝันได้แรงบันดาลใจจากเหตุการณ์ที่เกิดขึ้นแล้ว
+  * ห้ามอธิบายความหมายของความฝัน
+format:
+  💤 ความฝันเมื่อคืน
+  ───────────────
+  [เล่าความฝัน 60–100 คำ ใช้สรรพนาม "ฉัน" ภาพแปลกประหลาด]
+  ───────────────
+  ＊[{{char}} ตื่นขึ้นมาและจำได้แค่รายละเอียดเดียว]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="drama hai" data-cmd="trailer">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎞️</span><div><h3>ตัวอย่างหนัง</h3><span class="cmd-name">/trailer</span></div></div>
+            <p>ตัวอย่างหนังของเรื่องราวนี้ พร้อมแท็กไลน์</p>
+            <div class="cmd-moods"><span>ดราม่า</span><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: trailer
+desc: ตัวอย่างหนังที่สร้างจากเรื่องราวของ {{char}} กับ {{user}} เสียงบรรยายทุ้มต่ำ ดราม่า ตัดฉากเร็ว เปลี่ยนสิ่งที่เกิดขึ้นให้เป็นหนังที่น่าดู
+rules:
+  * ใช้ฉากจริงจากเรื่อง เพิ่มฉาก "เร็วๆ นี้" แบบคลุมเครือได้ 1 ฉาก
+format:
+  🎞️ ตัวอย่างหนัง · "[ชื่อหนัง]"
+  ───────────────
+  🎙️ [เสียงบรรยายเปิด 1 ประโยค]
+  🎬 [ฉากที่ 1 1 ประโยค]
+  🎬 [ฉากที่ 2 1 ประโยค]
+  🎬 [ฉากที่ 3 1 ประโยค]
+  🎙️ [ประโยคเด็ดของ {{char}}]
+  ───────────────
+  ✨ [แท็กไลน์] · เร็วๆ นี้</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc" data-cmd="pov">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔁</span><div><h3>สลับมุมมอง</h3><span class="cmd-name">/pov</span></div></div>
+            <p>เล่าฉากเมื่อครู่ใหม่ผ่านมุมมองของ char</p>
+            <div class="cmd-moods"><span>อารมณ์</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: pov
+desc: เล่าฉากที่เพิ่งเกิดขึ้นใหม่ผ่านมุมมองและความคิดของ {{char}} บุรุษที่หนึ่ง ช้าและละเอียด ให้ {{user}} รู้ว่า {{char}} รู้สึกอย่างไรกับช่วงเวลานั้น
+rules:
+  * ห้ามเปลี่ยนเหตุการณ์ เพิ่มได้แค่มุมมองของ {{char}}
+format:
+  🔁 มุมมองของ {{char}}
+  ───────────────
+  [เล่าใหม่ 80–120 คำ ใช้สรรพนาม "ฉัน"]
+  ───────────────
+  ＊[สิ่งที่ {{char}} สังเกตเห็นใน {{user}} โดยที่ {{user}} ไม่เคยรู้]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="ngot" data-cmd="future">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏩</span><div><h3>5 ปีต่อมา</h3><span class="cmd-name">/future</span></div></div>
+            <p>ภาพอนาคต ถ้าทั้งสองยังอยู่ด้วยกัน</p>
+            <div class="cmd-moods"><span>หวาน</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: future
+desc: ฉากสั้นๆ ในอีก 5 ปีข้างหน้า ถ้าความสัมพันธ์ของ {{char}} กับ {{user}} ยังดำเนินต่อ โทนอบอุ่น เหงาๆ ให้ {{user}} มีอะไรให้รอคอยโดยไม่กระทบเนื้อเรื่องหลัก
+rules:
+  * ห้ามเปลี่ยนเหตุการณ์หรือความสัมพันธ์ในเรื่องหลัก
+  * สะท้อนรายละเอียดจากปัจจุบันอย่างน้อย 1 อย่าง
+format:
+  ⏩ 5 ปีต่อมา
+  ───────────────
+  📍 [สถานที่] · [ช่วงเวลา]
+  [ฉากสั้นๆ 60–100 คำ]
+  ───────────────
+  ＊กลับสู่ปัจจุบัน [{{char}} ยิ้มออกมาโดยไม่รู้ว่าเพราะอะไร]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="hai" data-cmd="interview">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎤</span><div><h3>สัมภาษณ์</h3><span class="cmd-name">/interview</span></div></div>
+            <p>ทอล์กโชว์สัมภาษณ์ char กับ user พิธีกรขี้เผือก</p>
+            <div class="cmd-moods"><span>ตลก</span></div>
+            <details class="cmd-code"><summary>ดูคำสั่ง <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: interview
+desc: ทอล์กโชว์สัมภาษณ์ {{char}} กับ {{user}} เรื่องความสัมพันธ์ของทั้งคู่ พิธีกรกวนๆ ถามจี้จุด บังคับให้ {{char}} ตอบคำถามที่ปกติจะเลี่ยง
+rules:
+  * {{char}} ตอบตามนิสัย อาจเลี่ยงได้แต่ความรู้สึกต้องหลุดออกมา
+  * คำถามสุดท้ายเป็นของ {{user}} เว้นไว้ให้ {{user}} ตอบเอง
+format:
+  🎤 ทอล์กโชว์ · "[ชื่อรายการ]"
+  ───────────────
+  พิธีกร: [คำถาม]
+  {{char}}: [คำตอบ]
+  (3–4 คำถาม ยิ่งหลังยิ่งจี้)
+  พิธีกร: [คำถามสำหรับ {{user}}]
+  ───────────────
+  ＊[ปฏิกิริยาของผู้ชม]＊</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">เพิ่มในชุด</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>คัดลอก</button>

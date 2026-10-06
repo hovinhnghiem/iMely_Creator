@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/commands.html">
   <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/commands.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/lenh-he-thong.html">
-  <link rel="stylesheet" href="../assets/site.css?v=20261006-2">
+  <link rel="stylesheet" href="../assets/site.css?v=20261006-3">
   <script>document.documentElement.classList.add('js');</script>
   <script defer src="../assets/site.js?v=20261002-5"></script>
   <script>
@@ -125,7 +125,7 @@
         <div class="part-head" data-reveal>
           <div>
             <h2>Pilih command</h2>
-            <p>14 command siap pakai dalam 4 grup. Cari atau filter sesuai vibe karaktermu, ketuk “Tambah ke set” untuk mengumpulkan beberapa, lalu sesuaikan dengan dunia ceritamu.</p>
+            <p>36 command siap pakai dalam 4 grup. Cari atau filter sesuai vibe karaktermu, ketuk “Tambah ke set” untuk mengumpulkan beberapa, lalu sesuaikan dengan dunia ceritamu.</p>
           </div>
           <span class="num" aria-hidden="true">01</span>
         </div>
@@ -274,6 +274,154 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc ngot" data-cmd="drafts">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">✉️</span><div><h3>Draf pesan</h3><span class="cmd-name">/drafts</span></div></div>
+            <p>Pesan yang char ketik untuk user lalu dihapus, tak pernah terkirim.</p>
+            <div class="cmd-moods"><span>Perasaan</span><span>Manis</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: drafts
+desc: Pesan yang {{char}} ketik untuk {{user}} lalu dihapus tanpa dikirim. Suara jujur dan ragu, berbeda dari yang {{char}} ucapkan. Menunjukkan pada {{user}} apa yang ingin {{char}} katakan tapi tak berani.
+rules:
+  * Setiap draf terkait kejadian yang sudah terjadi dalam cerita
+  * {{char}} tidak tahu {{user}} sedang membacanya
+format:
+  ✉️ DRAF · untuk {{user}}
+  ───────────────
+  🕐 [jam ditulis]
+  "[isi pesan, 1–3 kalimat]"
+  ❌ [alasan dihapus, 1 kalimat singkat]
+  (2–3 draf, makin lama makin jujur)
+  ───────────────
+  ＊[{{char}} mengetik, lalu menghapusnya sekali lagi]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat drama" data-cmd="calls">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📞</span><div><h3>Panggilan tak terjawab</h3><span class="cmd-name">/calls</span></div></div>
+            <p>Riwayat panggilan dan pesan suara yang terpotong.</p>
+            <div class="cmd-moods"><span>Rahasia</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: calls
+desc: Riwayat panggilan di ponsel {{char}} dan transkrip satu pesan suara. Gaya singkat, bikin penasaran. Mengungkap siapa yang mencari {{char}} dan kenapa.
+rules:
+  * Penelepon adalah karakter yang sudah muncul atau disebut, atau nomor asing yang terkait rahasia dalam cerita
+  * Pesan suara selalu terpotong sebelum maksudnya tersampaikan
+format:
+  📞 PANGGILAN TERAKHIR
+  ───────────────
+  • [nama / nomor asing] · [jam] · [Tak terjawab / Keluar / Masuk · durasi]
+  (4–6 panggilan)
+  🎙️ Pesan suara · [nama] · [jam]
+  "[isi 1–3 kalimat, terpotong di akhir...]"
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat ngot" data-cmd="gallery">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📸</span><div><h3>Galeri</h3><span class="cmd-name">/gallery</span></div></div>
+            <p>Foto terbaru di ponsel char, plus satu album tersembunyi.</p>
+            <div class="cmd-moods"><span>Rahasia</span><span>Manis</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: gallery
+desc: Galeri foto di ponsel {{char}}, foto terbaru dijelaskan dengan kata-kata. Gaya sehari-hari, penuh detail kecil. Album tersembunyi memberi petunjuk tentang hal yang {{char}} sayangi atau sembunyikan.
+rules:
+  * Foto sesuai kejadian dan tempat yang sudah ada dalam cerita
+  * Album tersembunyi dijelaskan samar, tidak dibongkar
+format:
+  📸 GALERI
+  ───────────────
+  🖼️ [tanggal] · [deskripsi foto, 1 kalimat]
+  (4–6 foto)
+  🔒 Album tersembunyi · [jumlah] foto
+  [deskripsi samar 1 foto di dalamnya]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc" data-cmd="playlist">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎧</span><div><h3>Playlist</h3><span class="cmd-name">/playlist</span></div></div>
+            <p>Playlist yang terus diputar char, isi hatinya ada di judul lagu.</p>
+            <div class="cmd-moods"><span>Perasaan</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: playlist
+desc: Playlist yang belakangan didengarkan {{char}}. Gaya galau, sedikit romantis. Nama playlist dan lagu-lagunya mencerminkan perasaan {{char}} saat ini.
+rules:
+  * Judul lagu dan penyanyi dikarang AI, jangan memakai lagu sungguhan
+  * Jangan menulis lirik lagu
+format:
+  🎧 PLAYLIST · "[nama playlist buatan {{char}}]"
+  ───────────────
+  ▶️ Sedang diputar: [judul] · [penyanyi] · 🔁 [jumlah diputar ulang]
+  1. [judul] · [penyanyi]
+  (4–5 lagu)
+  ───────────────
+  ＊[alasan {{char}} memutar lagu ini, 1 kalimat]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="ngot hai" data-cmd="cart">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🛒</span><div><h3>Keranjang</h3><span class="cmd-name">/cart</span></div></div>
+            <p>Barang di keranjang belum dibayar, ada satu untuk user.</p>
+            <div class="cmd-moods"><span>Manis</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: cart
+desc: Keranjang belanja {{char}}: barang yang sudah ditambahkan tapi belum dibayar. Gaya sehari-hari, agak lucu. Menunjukkan {{char}} memperhatikan {{user}}, ada barang yang jelas untuk {{user}}.
+format:
+  🛒 KERANJANG · [jumlah] barang
+  ───────────────
+  • [barang] · [harga] · [catatan {{char}}]
+  (4–5 barang, minimal 1 untuk {{user}})
+  💭 Dilihat tapi belum ditambahkan: [1 barang mencurigakan]
+  ───────────────
+  ＊[{{char}} ragu di depan tombol bayar]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat hai" data-cmd="bag">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎒</span><div><h3>Isi tas</h3><span class="cmd-name">/bag</span></div></div>
+            <p>Isi tas char, tiap barang punya cerita kecil.</p>
+            <div class="cmd-moods"><span>Rahasia</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bag
+desc: Barang yang sedang dibawa {{char}} di tas atau sakunya. Daftar singkat, sedikit lucu. Tiap barang menceritakan kisah kecil tentang {{char}}.
+rules:
+  * Barang sesuai latar dan status {{char}}
+  * Minimal 1 barang terkait {{user}}
+format:
+  🎒 ISI TAS {{char}}
+  ───────────────
+  • [barang]: [kisah kecil, 1 kalimat]
+  (5–6 barang, 1 barang aneh yang asal-usulnya tak jelas)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat" data-cmd="schedule">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗓️</span><div><h3>Jadwal</h3><span class="cmd-name">/schedule</span></div></div>
+            <p>Jadwal mingguan char, dengan satu slot terhapus yang mencurigakan.</p>
+            <div class="cmd-moods"><span>Rahasia</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: schedule
+desc: Jadwal {{char}} minggu ini. Gaya agenda yang rapi, agak kaku. Satu slot terhapus atau catatan misterius membuat {{user}} penasaran.
+rules:
+  * Jadwal sesuai pekerjaan dan kebiasaan {{char}}
+format:
+  🗓️ JADWAL · Minggu ke-[angka]
+  ───────────────
+  [hari] · [jam] · [kegiatan]
+  (6–8 kegiatan)
+  [hari] · [jam] · ▒▒▒ (dihapus) · [1 catatan misterius]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="quest">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>Misi</h3><span class="cmd-name">/quest</span></div></div>
             <p>Panel misi yang diperbarui mengikuti cerita.</p>
@@ -372,6 +520,137 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="hai cam-xuc" data-cmd="inner">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🧠</span><div><h3>Suara hati</h3><span class="cmd-name">/inner</span></div></div>
+            <p>Ucapan char di samping isi hatinya yang sebenarnya.</p>
+            <div class="cmd-moods"><span>Lucu</span><span>Perasaan</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: inner
+desc: Menyandingkan ucapan {{char}} barusan dengan isi hatinya yang sebenarnya. Lucu, kadang bikin sedih karena bedanya jauh. Menunjukkan pada {{user}} bahwa {{char}} bilang A tapi maksudnya B.
+rules:
+  * Ucapan diambil dari balasan terakhir {{char}}
+  * Isi hati tetap sesuai kepribadian {{char}}
+format:
+  🧠 SUARA HATI {{char}}
+  ───────────────
+  💬 Bilang: "[ucapan {{char}} barusan]"
+  💭 Pikir: "[isi hati {{char}} sebenarnya]"
+  (2–3 pasang)
+  ───────────────
+  ＊[gerakan kecil yang membongkar isi hatinya]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game hai" data-cmd="achievement">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🏆</span><div><h3>Pencapaian</h3><span class="cmd-name">/achievement</span></div></div>
+            <p>Buka lencana saat user melakukan hal berkesan.</p>
+            <div class="cmd-moods"><span>Ala game</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: achievement
+desc: Notifikasi pencapaian terbuka berdasarkan tindakan {{user}} dalam cerita. Gaya game yang lucu dengan nama lencana kreatif. Mencatat momen penting dalam hubungan.
+rules:
+  * Hanya dibuka untuk tindakan yang benar-benar terjadi
+  * Jangan membuka pencapaian yang sama dua kali
+format:
+  🏆 PENCAPAIAN TERBUKA
+  ───────────────
+  🏅 [nama lencana kreatif]
+  [yang dilakukan {{user}}, 1 kalimat]
+  Kelangkaan: [Biasa / Langka / Legendaris]
+  Terbuka: [x]/[total]
+  ───────────────
+  🔒 Pencapaian berikutnya: [petunjuk samar]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game drama" data-cmd="event">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎲</span><div><h3>Kejadian tak terduga</h3><span class="cmd-name">/event</span></div></div>
+            <p>Lempar dadu dan masukkan kejadian mendadak ke adegan.</p>
+            <div class="cmd-moods"><span>Ala game</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: event
+desc: Melempar dadu untuk memasukkan kejadian tak terduga ke adegan: cuaca berubah, insiden kecil, orang asing muncul… Narasi cepat dan dramatis. Memecah kebuntuan dan membawa cerita ke arah baru.
+rules:
+  * Kejadian sesuai latar dan tetap PG13
+  * Makin kecil angka dadu makin repot, makin besar makin beruntung
+  * Setelah kejadian, lanjutkan adegan dengan reaksi {{char}}
+format:
+  🎲 KEJADIAN · Dadu: [1–20]
+  ───────────────
+  [nama kejadian]
+  [deskripsi 1–2 kalimat]
+  ───────────────
+  ＊[reaksi pertama {{char}}]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="cam-xuc bi-mat" data-cmd="tarot">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔮</span><div><h3>Tarot</h3><span class="cmd-name">/tarot</span></div></div>
+            <p>3 kartu tarot untuk masa lalu, kini, dan masa depan mereka.</p>
+            <div class="cmd-moods"><span>Perasaan</span><span>Rahasia</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tarot
+desc: Menarik 3 kartu tarot untuk hubungan {{char}} dan {{user}}: masa lalu, masa kini, masa depan. Gaya mistis dan samar. Memberi arah tanpa memastikan akhir cerita.
+rules:
+  * Tafsiran terkait kejadian dalam cerita tapi tetap terbuka
+  * Jangan meramalkan hal buruk soal kesehatan atau hidup-mati
+format:
+  🔮 TAROT · {{char}} &amp; {{user}}
+  ───────────────
+  🃏 Masa lalu: [nama kartu] · [tafsiran 1 kalimat]
+  🃏 Masa kini: [nama kartu] · [tafsiran 1 kalimat]
+  🃏 Masa depan: [nama kartu] · [tafsiran 1 kalimat]
+  ───────────────
+  ＊[pesan umum, samar]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="recap">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏪</span><div><h3>Rangkuman</h3><span class="cmd-name">/recap</span></div></div>
+            <p>“Sebelumnya…”: rangkuman agar user bisa lanjut lagi.</p>
+            <div class="cmd-moods"><span>Ala game</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: recap
+desc: Rangkuman ala serial TV "Sebelumnya…" tentang apa yang sudah terjadi. Suara narator, ringkas dan seru. Membantu {{user}} kembali ke cerita setelah lama tidak main.
+rules:
+  * Hanya merangkum kejadian yang sudah terjadi, jangan menambah detail baru
+  * Selalu berakhir di situasi yang menggantung
+format:
+  ⏪ SEBELUMNYA…
+  ───────────────
+  • [kejadian penting, 1 kalimat]
+  (3–5 kejadian berurutan)
+  📍 Terakhir di: [situasi saat ini]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="map">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗺️</span><div><h3>Peta</h3><span class="cmd-name">/map</span></div></div>
+            <p>Posisi sekarang, tempat terdekat, dan siapa ada di mana.</p>
+            <div class="cmd-moods"><span>Ala game</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: map
+desc: Peta area sekitar {{char}} dan {{user}}: lokasi sekarang, tempat terdekat, dan posisi para karakter. Gaya panduan game yang singkat. Membantu {{user}} memilih tujuan berikutnya.
+rules:
+  * Hanya pakai tempat yang sesuai dunia cerita
+  * Posisi karakter sesuai kejadian terbaru
+format:
+  🗺️ PETA · [area]
+  ───────────────
+  📍 Posisi sekarang: [tempat]
+  • [tempat terdekat] · [jarak] · [siapa di sana / apa yang terjadi]
+  (3–4 tempat)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="forum">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>Forum</h3><span class="cmd-name">/forum</span></div></div>
             <p>3–5 postingan NPC yang bergosip soal drama dalam cerita.</p>
@@ -409,6 +688,88 @@ format:
   🎵 Lagu untukmu: [judul lagu] · [penyanyi]
   ───────────────
   ＊[reaksi {{char}} saat mendengar detail yang familiar]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="confession">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💌</span><div><h3>Menfess</h3><span class="cmd-name">/confession</span></div></div>
+            <p>Halaman menfess anonim, tiap postingan seperti tentang char dan user.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: confession
+desc: Halaman menfess anonim di sekolah, kantor, atau tempat {{char}} beraktivitas. Gaya curhat campur julid. Postingan yang sepertinya tentang {{char}} dan {{user}} membuat keduanya salah tingkah.
+rules:
+  * Jangan sebut nama asli, cukup detail yang bisa ditebak pembaca
+format:
+  💌 MENFESS · [nama akun]
+  ───────────────
+  #[nomor]
+  [isi menfess 40–70 kata]
+  💬 [komentar teratas, 1 kalimat]
+  (2–3 menfess)
+  ───────────────
+  ＊[reaksi {{char}} saat membacanya]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="hai drama" data-cmd="livestream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📺</span><div><h3>Live streaming</h3><span class="cmd-name">/livestream</span></div></div>
+            <p>Char siaran langsung, kolom komentar tak berhenti, ada haters juga.</p>
+            <div class="cmd-moods"><span>Lucu</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: livestream
+desc: {{char}} sedang live dan kolom komentar terus bergulir. Gaya ramai dan seru. Penonton memperhatikan setiap detail dan terus menyebut {{user}}.
+rules:
+  * Komentar beragam: fans, haters, pemberi hadiah, penonton drama
+format:
+  📺 LIVE · @[nama akun] · 👁️ [jumlah] menonton
+  ───────────────
+  🎥 [yang dilakukan {{char}} saat live, 1 kalimat]
+  💬 @[nickname]: [komentar]
+  (6–8 komentar)
+  🎁 @[nickname] mengirim [hadiah]
+  ───────────────
+  ＊[{{char}} menanggapi komentar yang paling mencuri perhatian]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama" data-cmd="news">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📰</span><div><h3>Berita pagi</h3><span class="cmd-name">/news</span></div></div>
+            <p>Berita pagi dunia cerita, ada satu kabar tentang char.</p>
+            <div class="cmd-moods"><span>Drama</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: news
+desc: Berita pagi di dunia cerita. Gaya pembawa berita yang formal. Satu kabar kecil melibatkan {{char}} atau {{user}}, seolah seluruh dunia ikut memperhatikan.
+format:
+  📰 BERITA PAGI · [tanggal]
+  ───────────────
+  🗞️ [judul berita utama]
+  [ringkasan 1–2 kalimat]
+  • [kabar singkat, 1 kalimat]
+  (3–4 kabar singkat, 1 tentang {{char}} atau {{user}})
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="ngot hai" data-cmd="weather">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌦️</span><div><h3>Cuaca</h3><span class="cmd-name">/weather</span></div></div>
+            <p>Prakiraan cuaca plus prakiraan suasana hati char.</p>
+            <div class="cmd-moods"><span>Manis</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: weather
+desc: Prakiraan cuaca hari ini plus "prakiraan suasana hati" {{char}} dalam bentuk kiasan. Gaya imut dan sedikit menggoda. Memberi saran bagaimana {{user}} memperlakukan {{char}} hari ini.
+format:
+  🌦️ PRAKIRAAN · [tempat] · [tanggal]
+  ───────────────
+  Cuaca: [kondisi] · [suhu]
+  Suasana hati {{char}}: [kiasan cuaca, misalnya "berawan, mungkin hujan"]
+  Peluang ngambek: [x]%
+  Saran untuk {{user}}: [1 kalimat]
+  ───────────────</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
@@ -454,6 +815,112 @@ format:
   [adegan singkat 80–120 kata]
   ───────────────
   ＊Kembali ke kenyataan. [{{char}} terdiam seolah baru terbangun dari mimpi]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc bi-mat" data-cmd="dream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💤</span><div><h3>Mimpi</h3><span class="cmd-name">/dream</span></div></div>
+            <p>Mimpi char semalam, menyiratkan ketakutan dan harapannya.</p>
+            <div class="cmd-moods"><span>Perasaan</span><span>Rahasia</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: dream
+desc: Mimpi {{char}} semalam, diceritakan dengan sudut pandang orang pertama. Samar dan penuh gambaran kiasan. Mengungkap ketakutan atau harapan terdalam {{char}}.
+rules:
+  * Gambaran mimpi terinspirasi kejadian yang sudah terjadi
+  * Jangan jelaskan arti mimpinya
+format:
+  💤 MIMPI SEMALAM
+  ───────────────
+  [cerita mimpi 60–100 kata, sudut pandang "aku", gambaran aneh]
+  ───────────────
+  ＊[{{char}} terbangun dan hanya ingat satu detail]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="drama hai" data-cmd="trailer">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎞️</span><div><h3>Trailer</h3><span class="cmd-name">/trailer</span></div></div>
+            <p>Trailer film tentang cerita ini, lengkap dengan tagline.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: trailer
+desc: Trailer film tentang kisah {{char}} dan {{user}}. Suara narator berat dan dramatis, potongan adegan cepat. Mengubah yang sudah terjadi menjadi film yang layak ditonton.
+rules:
+  * Pakai adegan nyata dari cerita, boleh tambah 1 adegan "segera hadir" yang samar
+format:
+  🎞️ TRAILER · "[judul film]"
+  ───────────────
+  🎙️ [narasi pembuka, 1 kalimat]
+  🎬 [adegan 1, 1 kalimat]
+  🎬 [adegan 2, 1 kalimat]
+  🎬 [adegan 3, 1 kalimat]
+  🎙️ [kalimat andalan {{char}}]
+  ───────────────
+  ✨ [tagline] · Segera hadir</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc" data-cmd="pov">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔁</span><div><h3>Ganti sudut pandang</h3><span class="cmd-name">/pov</span></div></div>
+            <p>Adegan barusan diceritakan ulang dari sudut pandang char.</p>
+            <div class="cmd-moods"><span>Perasaan</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: pov
+desc: Menceritakan ulang adegan barusan dari sudut pandang dan pikiran {{char}}. Orang pertama, pelan dan detail. Menunjukkan pada {{user}} bagaimana {{char}} merasakan momen itu.
+rules:
+  * Jangan ubah kejadian, hanya tambahkan sudut pandang {{char}}
+format:
+  🔁 SUDUT PANDANG {{char}}
+  ───────────────
+  [cerita ulang 80–120 kata, sudut pandang "aku"]
+  ───────────────
+  ＊[hal yang {{char}} perhatikan dari {{user}} tanpa {{user}} sadari]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="ngot" data-cmd="future">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏩</span><div><h3>5 tahun lagi</h3><span class="cmd-name">/future</span></div></div>
+            <p>Sekilas masa depan jika mereka tetap bersama.</p>
+            <div class="cmd-moods"><span>Manis</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: future
+desc: Adegan singkat 5 tahun dari sekarang, jika hubungan {{char}} dan {{user}} berlanjut. Gaya hangat dan sendu. Memberi {{user}} sesuatu untuk dinanti tanpa memengaruhi alur utama.
+rules:
+  * Jangan mengubah kejadian atau hubungan di cerita utama
+  * Gemakan minimal 1 detail dari masa kini
+format:
+  ⏩ 5 TAHUN LAGI
+  ───────────────
+  📍 [tempat] · [momen]
+  [adegan singkat 60–100 kata]
+  ───────────────
+  ＊Kembali ke masa kini. [{{char}} tersenyum tanpa tahu alasannya]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="hai" data-cmd="interview">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎤</span><div><h3>Wawancara</h3><span class="cmd-name">/interview</span></div></div>
+            <p>Talk show mewawancarai char dan user, host-nya kepo.</p>
+            <div class="cmd-moods"><span>Lucu</span></div>
+            <details class="cmd-code"><summary>Lihat command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: interview
+desc: Talk show yang mewawancarai {{char}} dan {{user}} tentang hubungan mereka. Host jahil yang suka bertanya tajam. Memaksa {{char}} menjawab hal yang biasanya dihindari.
+rules:
+  * {{char}} menjawab sesuai karakter, boleh mengelak tapi perasaannya terlihat
+  * Pertanyaan terakhir untuk {{user}}, dibiarkan untuk dijawab {{user}}
+format:
+  🎤 TALK SHOW · "[nama acara]"
+  ───────────────
+  Host: [pertanyaan]
+  {{char}}: [jawaban]
+  (3–4 pertanyaan, makin lama makin tajam)
+  Host: [pertanyaan untuk {{user}}]
+  ───────────────
+  ＊[reaksi penonton]＊</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Tambah ke set</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Salin</button>

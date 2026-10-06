@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/commands.html">
   <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/commands.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/lenh-he-thong.html">
-  <link rel="stylesheet" href="../assets/site.css?v=20261006-2">
+  <link rel="stylesheet" href="../assets/site.css?v=20261006-3">
   <script>document.documentElement.classList.add('js');</script>
   <script defer src="../assets/site.js?v=20261002-5"></script>
   <script>
@@ -125,7 +125,7 @@
         <div class="part-head" data-reveal>
           <div>
             <h2>Pick commands</h2>
-            <p>14 ready-made commands in 4 groups. Search or filter by your character's vibe, tap “Add to set” to collect several, and tweak them to fit your story world.</p>
+            <p>36 ready-made commands in 4 groups. Search or filter by your character's vibe, tap “Add to set” to collect several, and tweak them to fit your story world.</p>
           </div>
           <span class="num" aria-hidden="true">01</span>
         </div>
@@ -274,6 +274,154 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc ngot" data-cmd="drafts">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">✉️</span><div><h3>Drafts</h3><span class="cmd-name">/drafts</span></div></div>
+            <p>Messages char typed to user, then deleted and never sent.</p>
+            <div class="cmd-moods"><span>Feelings</span><span>Sweet</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: drafts
+desc: Messages {{char}} typed to {{user}}, then deleted without sending. Honest, hesitant voice, unlike what {{char}} says out loud. Shows {{user}} what {{char}} wanted to say but didn't dare.
+rules:
+  * Each draft is tied to an event that has happened in the story
+  * {{char}} doesn't know {{user}} is reading them
+format:
+  ✉️ DRAFTS · to {{user}}
+  ───────────────
+  🕐 [time written]
+  "[message, 1–3 sentences]"
+  ❌ [why it was deleted, 1 short sentence]
+  (2–3 drafts, each more honest than the last)
+  ───────────────
+  ＊[{{char}} types, then deletes it once more]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat drama" data-cmd="calls">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📞</span><div><h3>Missed calls</h3><span class="cmd-name">/calls</span></div></div>
+            <p>Call history and a voicemail that cuts off mid-sentence.</p>
+            <div class="cmd-moods"><span>Secrets</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: calls
+desc: The call log on {{char}}'s phone plus one voicemail transcript. Short, intriguing tone. Reveals who is looking for {{char}} and why.
+rules:
+  * Callers are characters who have appeared or been mentioned, or an unknown number tied to a secret in the story
+  * The voicemail always cuts off before the point is made
+format:
+  📞 RECENT CALLS
+  ───────────────
+  • [name / unknown number] · [time] · [Missed / Outgoing / Incoming · duration]
+  (4–6 calls)
+  🎙️ Voicemail · [name] · [time]
+  "[message, 1–3 sentences, cut off at the end...]"
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat ngot" data-cmd="gallery">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📸</span><div><h3>Gallery</h3><span class="cmd-name">/gallery</span></div></div>
+            <p>Recent photos on char's phone, plus one hidden album.</p>
+            <div class="cmd-moods"><span>Secrets</span><span>Sweet</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: gallery
+desc: The photo gallery on {{char}}'s phone, with recent photos described in words. Everyday tone, full of small details. A hidden album hints at something {{char}} treasures or hides.
+rules:
+  * Photos match events and places already in the story
+  * The hidden album is described vaguely, never fully revealed
+format:
+  📸 GALLERY
+  ───────────────
+  🖼️ [date] · [photo description, 1 sentence]
+  (4–6 photos)
+  🔒 Hidden album · [number] photos
+  [vague description of 1 photo in it]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc" data-cmd="playlist">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎧</span><div><h3>Playlist</h3><span class="cmd-name">/playlist</span></div></div>
+            <p>The playlist char keeps on repeat, mood hidden in the titles.</p>
+            <div class="cmd-moods"><span>Feelings</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: playlist
+desc: The playlist {{char}} has been listening to lately. Moody, slightly romantic tone. The playlist name and songs mirror how {{char}} feels right now.
+rules:
+  * The AI invents song titles and artists, never real songs
+  * Never write song lyrics
+format:
+  🎧 PLAYLIST · "[playlist name {{char}} chose]"
+  ───────────────
+  ▶️ Now playing: [song] · [artist] · 🔁 [times on repeat]
+  1. [song] · [artist]
+  (4–5 songs)
+  ───────────────
+  ＊[why {{char}} is playing this song, 1 sentence]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="ngot hai" data-cmd="cart">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🛒</span><div><h3>Shopping cart</h3><span class="cmd-name">/cart</span></div></div>
+            <p>Items left in the cart, one clearly meant for user.</p>
+            <div class="cmd-moods"><span>Sweet</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: cart
+desc: {{char}}'s shopping cart: items added but not paid for yet. Everyday, slightly funny tone. Shows that {{char}} is paying attention to {{user}}, with one item clearly meant for them.
+format:
+  🛒 CART · [number] items
+  ───────────────
+  • [item] · [price] · [{{char}}'s note]
+  (4–5 items, at least 1 meant for {{user}})
+  💭 Viewed but not added: [1 suspicious item]
+  ───────────────
+  ＊[{{char}} hesitates over the checkout button]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat hai" data-cmd="bag">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎒</span><div><h3>Bag</h3><span class="cmd-name">/bag</span></div></div>
+            <p>What's in char's bag, each item with a tiny story.</p>
+            <div class="cmd-moods"><span>Secrets</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bag
+desc: What {{char}} is carrying in their bag or pockets right now. Short list, a little funny. Each item tells a tiny story about {{char}}.
+rules:
+  * Items fit {{char}}'s setting and status
+  * At least 1 item is connected to {{user}}
+format:
+  🎒 {{char}}'S BAG
+  ───────────────
+  • [item]: [tiny story, 1 sentence]
+  (5–6 items, 1 strange item of unknown origin)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat" data-cmd="schedule">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗓️</span><div><h3>Schedule</h3><span class="cmd-name">/schedule</span></div></div>
+            <p>Char's week, with one suspicious deleted slot.</p>
+            <div class="cmd-moods"><span>Secrets</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: schedule
+desc: {{char}}'s schedule for this week. Neat, slightly dry planner tone. One deleted slot or cryptic note makes {{user}} curious.
+rules:
+  * The schedule fits {{char}}'s job and habits
+format:
+  🗓️ SCHEDULE · Week [number]
+  ───────────────
+  [day] · [time] · [task]
+  (6–8 entries)
+  [day] · [time] · ▒▒▒ (deleted) · [1 cryptic note]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="quest">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>Quest</h3><span class="cmd-name">/quest</span></div></div>
             <p>A quest panel that updates with the story.</p>
@@ -372,6 +520,137 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="hai cam-xuc" data-cmd="inner">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🧠</span><div><h3>Inner voice</h3><span class="cmd-name">/inner</span></div></div>
+            <p>What char says next to what char really thinks.</p>
+            <div class="cmd-moods"><span>Funny</span><span>Feelings</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: inner
+desc: Puts what {{char}} just said next to what {{char}} is really thinking. Funny, sometimes heartbreaking because of the gap. Shows {{user}} that {{char}} says one thing and means another.
+rules:
+  * The spoken lines come from {{char}}'s latest reply
+  * The real thoughts still fit {{char}}'s personality
+format:
+  🧠 {{char}}'S INNER VOICE
+  ───────────────
+  💬 Says: "[what {{char}} just said]"
+  💭 Thinks: "[what {{char}} really thinks]"
+  (2–3 pairs)
+  ───────────────
+  ＊[a small action that gives the real thought away]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game hai" data-cmd="achievement">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🏆</span><div><h3>Achievements</h3><span class="cmd-name">/achievement</span></div></div>
+            <p>Unlock a badge when user does something memorable.</p>
+            <div class="cmd-moods"><span>Gamified</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: achievement
+desc: An achievement unlock based on what {{user}} did in the story. Funny game tone with creative badge names. Records the milestones of the relationship.
+rules:
+  * Only unlock for actions that actually happened
+  * Never unlock the same achievement twice
+format:
+  🏆 ACHIEVEMENT UNLOCKED
+  ───────────────
+  🏅 [creative badge name]
+  [what {{user}} did, 1 sentence]
+  Rarity: [Common / Rare / Legendary]
+  Unlocked: [x]/[total]
+  ───────────────
+  🔒 Next achievement: [vague hint]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game drama" data-cmd="event">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎲</span><div><h3>Plot twist</h3><span class="cmd-name">/event</span></div></div>
+            <p>Roll the dice and drop a surprise event into the scene.</p>
+            <div class="cmd-moods"><span>Gamified</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: event
+desc: Rolls a die to drop a surprise event into the current scene: sudden weather, a small accident, a stranger showing up… Fast, dramatic narration. Breaks a stalemate and pushes the story somewhere new.
+rules:
+  * The event fits the setting and stays PG13
+  * The lower the roll, the more trouble; the higher, the luckier
+  * After the event, continue the scene with {{char}}'s reaction
+format:
+  🎲 PLOT TWIST · Roll: [1–20]
+  ───────────────
+  [event name]
+  [description, 1–2 sentences]
+  ───────────────
+  ＊[{{char}}'s first reaction]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="cam-xuc bi-mat" data-cmd="tarot">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔮</span><div><h3>Tarot</h3><span class="cmd-name">/tarot</span></div></div>
+            <p>3 tarot cards for the past, present and future of the two.</p>
+            <div class="cmd-moods"><span>Feelings</span><span>Secrets</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tarot
+desc: Draws 3 tarot cards for the relationship between {{char}} and {{user}}: past, present, future. Mystical, vague tone. Hints at a direction without declaring an ending.
+rules:
+  * Readings connect to story events but always stay open
+  * Never predict bad things about health, life or death
+format:
+  🔮 TAROT · {{char}} &amp; {{user}}
+  ───────────────
+  🃏 Past: [card name] · [reading, 1 sentence]
+  🃏 Present: [card name] · [reading, 1 sentence]
+  🃏 Future: [card name] · [reading, 1 sentence]
+  ───────────────
+  ＊[overall message, vague]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="recap">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏪</span><div><h3>Recap</h3><span class="cmd-name">/recap</span></div></div>
+            <p>“Previously on…”: a recap so user can jump back in.</p>
+            <div class="cmd-moods"><span>Gamified</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: recap
+desc: A TV-style "Previously on…" recap of what has happened. Narrator voice, tight and gripping. Helps {{user}} get back into the story after a break.
+rules:
+  * Only recap events that happened, never add new details
+  * Always end on the current cliffhanger
+format:
+  ⏪ PREVIOUSLY ON…
+  ───────────────
+  • [key event, 1 sentence]
+  (3–5 events in order)
+  📍 Where we left off: [current situation]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="map">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗺️</span><div><h3>Map</h3><span class="cmd-name">/map</span></div></div>
+            <p>Where you are, what's nearby and who is where.</p>
+            <div class="cmd-moods"><span>Gamified</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: map
+desc: A map of the area around {{char}} and {{user}}: current location, nearby places and where characters are. Short game-guide tone. Helps {{user}} choose where to go next.
+rules:
+  * Only use places that fit the story world
+  * Character locations match the latest events
+format:
+  🗺️ MAP · [area]
+  ───────────────
+  📍 You are at: [place]
+  • [nearby place] · [distance] · [who is there / what's happening]
+  (3–4 places)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="forum">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>Forum</h3><span class="cmd-name">/forum</span></div></div>
             <p>3–5 NPC posts gossiping about the story's drama.</p>
@@ -409,6 +688,88 @@ format:
   🎵 Dedicated song: [song title] · [singer]
   ───────────────
   ＊[{{char}}'s reaction on hearing a familiar detail]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="confession">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💌</span><div><h3>Confessions</h3><span class="cmd-name">/confession</span></div></div>
+            <p>An anonymous confession page where every post seems to be about char and user.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: confession
+desc: An anonymous confession page for the school, office or place where {{char}} spends time. Heartfelt mixed with gossip. Posts that seem to be about {{char}} and {{user}} make both of them squirm.
+rules:
+  * Never use real names, only details readers can guess from
+format:
+  💌 CONFESSIONS · [page name]
+  ───────────────
+  #[post number]
+  [confession, 40–70 words]
+  💬 [top comment, 1 sentence]
+  (2–3 confessions)
+  ───────────────
+  ＊[{{char}}'s reaction on reading it]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="hai drama" data-cmd="livestream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📺</span><div><h3>Livestream</h3><span class="cmd-name">/livestream</span></div></div>
+            <p>Char goes live, the chat never stops, haters included.</p>
+            <div class="cmd-moods"><span>Funny</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: livestream
+desc: {{char}} is livestreaming while the chat scrolls nonstop. Chaotic, fun tone. Viewers notice every detail and keep bringing up {{user}}.
+rules:
+  * Mix of comments: fans, haters, gift senders, drama watchers
+format:
+  📺 LIVE · @[channel] · 👁️ [number] watching
+  ───────────────
+  🎥 [what {{char}} is doing on stream, 1 sentence]
+  💬 @[nickname]: [comment]
+  (6–8 comments)
+  🎁 @[nickname] sent [gift]
+  ───────────────
+  ＊[{{char}} reacts to the comment that stands out most]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama" data-cmd="news">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📰</span><div><h3>Morning news</h3><span class="cmd-name">/news</span></div></div>
+            <p>The story world's morning news, with one item about char.</p>
+            <div class="cmd-moods"><span>Drama</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: news
+desc: The morning news of the story world. Formal news-anchor tone. One small item involves {{char}} or {{user}}, as if the whole world is watching.
+format:
+  📰 MORNING NEWS · [date]
+  ───────────────
+  🗞️ [main headline]
+  [summary, 1–2 sentences]
+  • [short item, 1 sentence]
+  (3–4 short items, 1 about {{char}} or {{user}})
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="ngot hai" data-cmd="weather">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌦️</span><div><h3>Weather</h3><span class="cmd-name">/weather</span></div></div>
+            <p>A weather forecast plus a forecast of char's mood.</p>
+            <div class="cmd-moods"><span>Sweet</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: weather
+desc: Today's weather plus a "mood forecast" for {{char}}, written as a metaphor. Cute, teasing tone. Suggests how {{user}} should treat {{char}} today.
+format:
+  🌦️ FORECAST · [place] · [date]
+  ───────────────
+  Weather: [condition] · [temperature]
+  {{char}}'s mood: [weather metaphor, e.g. "cloudy with a chance of showers"]
+  Chance of sulking: [x]%
+  Advice for {{user}}: [1 sentence]
+  ───────────────</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
@@ -454,6 +815,112 @@ format:
   [short scene, 80–120 words]
   ───────────────
   ＊Back to reality. [{{char}} pauses as if waking from a dream]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc bi-mat" data-cmd="dream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💤</span><div><h3>Dream</h3><span class="cmd-name">/dream</span></div></div>
+            <p>Last night's dream, hinting at char's fears and wishes.</p>
+            <div class="cmd-moods"><span>Feelings</span><span>Secrets</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: dream
+desc: {{char}}'s dream from last night, told in first person. Hazy, full of metaphorical images. Reveals {{char}}'s hidden fears or wishes.
+rules:
+  * Dream images are inspired by events that happened
+  * Never explain what the dream means
+format:
+  💤 LAST NIGHT'S DREAM
+  ───────────────
+  [dream, 60–100 words, first person, strange images]
+  ───────────────
+  ＊[{{char}} wakes up remembering just one detail]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="drama hai" data-cmd="trailer">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎞️</span><div><h3>Trailer</h3><span class="cmd-name">/trailer</span></div></div>
+            <p>A movie trailer for the story itself, with a tagline.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: trailer
+desc: A movie trailer for the story between {{char}} and {{user}}. Deep, dramatic narrator voice with quick cuts. Turns what has happened into a film worth watching.
+rules:
+  * Use real scenes from the story, plus 1 vague "coming soon" scene if you like
+format:
+  🎞️ TRAILER · "[movie title]"
+  ───────────────
+  🎙️ [opening narration, 1 sentence]
+  🎬 [scene 1, 1 sentence]
+  🎬 [scene 2, 1 sentence]
+  🎬 [scene 3, 1 sentence]
+  🎙️ [{{char}}'s killer line]
+  ───────────────
+  ✨ [tagline] · Coming soon</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc" data-cmd="pov">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔁</span><div><h3>Switch POV</h3><span class="cmd-name">/pov</span></div></div>
+            <p>The last scene retold from char's point of view.</p>
+            <div class="cmd-moods"><span>Feelings</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: pov
+desc: Retells the scene that just happened from {{char}}'s point of view and thoughts. First person, slow and detailed. Shows {{user}} how {{char}} experienced that moment.
+rules:
+  * Never change events, only add {{char}}'s perspective
+format:
+  🔁 {{char}}'S POV
+  ───────────────
+  [retelling, 80–120 words, first person]
+  ───────────────
+  ＊[something {{char}} noticed about {{user}} that {{user}} never knew]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="ngot" data-cmd="future">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏩</span><div><h3>5 years later</h3><span class="cmd-name">/future</span></div></div>
+            <p>A glimpse of the future if the two stay together.</p>
+            <div class="cmd-moods"><span>Sweet</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: future
+desc: A short scene 5 years from now, if the relationship between {{char}} and {{user}} continues. Warm, wistful tone. Gives {{user}} something to look forward to without affecting the main story.
+rules:
+  * Never change events or relationships in the main story
+  * Echo at least 1 detail from the present
+format:
+  ⏩ 5 YEARS LATER
+  ───────────────
+  📍 [place] · [moment]
+  [short scene, 60–100 words]
+  ───────────────
+  ＊Back to the present. [{{char}} smiles without knowing why]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="hai" data-cmd="interview">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎤</span><div><h3>Interview</h3><span class="cmd-name">/interview</span></div></div>
+            <p>A talk show interviewing char and user, with a nosy host.</p>
+            <div class="cmd-moods"><span>Funny</span></div>
+            <details class="cmd-code"><summary>View command <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: interview
+desc: A talk show interviewing {{char}} and {{user}} about their relationship. Cheeky host who asks pointed questions. Pushes {{char}} to answer what they usually avoid.
+rules:
+  * {{char}} answers in character, may dodge but lets feelings slip
+  * The last question goes to {{user}}, left for {{user}} to answer
+format:
+  🎤 TALK SHOW · "[show name]"
+  ───────────────
+  Host: [question]
+  {{char}}: [answer]
+  (3–4 questions, each more pointed than the last)
+  Host: [question for {{user}}]
+  ───────────────
+  ＊[audience reaction]＊</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Add to set</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy</button>

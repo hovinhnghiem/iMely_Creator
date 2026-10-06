@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="zh-TW" href="https://creator.imely.ai/tw/commands.html">
   <link rel="alternate" hreflang="th" href="https://creator.imely.ai/th/commands.html">
   <link rel="alternate" hreflang="x-default" href="https://creator.imely.ai/lenh-he-thong.html">
-  <link rel="stylesheet" href="assets/site.css?v=20261006-2">
+  <link rel="stylesheet" href="assets/site.css?v=20261006-3">
   <script>document.documentElement.classList.add('js');</script>
   <script defer src="assets/site.js?v=20261002-5"></script>
   <script>
@@ -128,7 +128,7 @@
         <div class="part-head" data-reveal>
           <div>
             <h2>Chọn lệnh</h2>
-            <p>14 lệnh mẫu chia theo 4 nhóm. Tìm hoặc lọc theo vibe của char, bấm “Thêm vào bộ” để gom nhiều lệnh, sửa lại cho khớp thế giới của char nếu cần.</p>
+            <p>36 lệnh mẫu chia theo 4 nhóm. Tìm hoặc lọc theo vibe của char, bấm “Thêm vào bộ” để gom nhiều lệnh, sửa lại cho khớp thế giới của char nếu cần.</p>
           </div>
           <span class="num" aria-hidden="true">01</span>
         </div>
@@ -277,6 +277,154 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc ngot" data-cmd="bannhap">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">✉️</span><div><h3>Bản nháp</h3><span class="cmd-name">/bannhap</span></div></div>
+            <p>Tin nhắn char soạn cho user rồi xóa, không bao giờ gửi.</p>
+            <div class="cmd-moods"><span>Cảm xúc</span><span>Ngọt</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bannhap
+desc: Những tin nhắn {{char}} đã soạn cho {{user}} rồi xóa, không gửi đi. Giọng thật lòng, ngập ngừng, khác hẳn những gì {{char}} nói ra. Cho {{user}} thấy điều {{char}} muốn nói mà không dám.
+rules:
+  * Mỗi bản nháp gắn với một sự kiện đã xảy ra trong truyện
+  * {{char}} không biết {{user}} đang xem
+format:
+  ✉️ BẢN NHÁP · gửi {{user}}
+  ───────────────
+  🕐 [giờ soạn]
+  "[nội dung tin nhắn, 1–3 câu]"
+  ❌ [lý do xóa, 1 câu ngắn]
+  (2–3 bản nháp, càng về sau càng thật lòng)
+  ───────────────
+  ＊[{{char}} gõ rồi lại xóa thêm một lần nữa]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat drama" data-cmd="cuocgoi">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📞</span><div><h3>Cuộc gọi nhỡ</h3><span class="cmd-name">/cuocgoi</span></div></div>
+            <p>Lịch sử cuộc gọi và một tin nhắn thoại bị cắt ngang.</p>
+            <div class="cmd-moods"><span>Bí mật</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: cuocgoi
+desc: Lịch sử cuộc gọi trên điện thoại {{char}} và bản ghi một tin nhắn thoại. Giọng ngắn, gợi tò mò. Hé lộ ai đang tìm {{char}} và vì sao.
+rules:
+  * Người gọi là nhân vật đã xuất hiện, đã được nhắc tới, hoặc một số lạ liên quan tới bí mật trong truyện
+  * Tin nhắn thoại luôn bị cắt trước khi nói hết ý
+format:
+  📞 CUỘC GỌI GẦN ĐÂY
+  ───────────────
+  • [tên / số lạ] · [giờ] · [Nhỡ / Gọi đi / Gọi đến · thời lượng]
+  (4–6 cuộc gọi)
+  🎙️ Tin nhắn thoại · [tên] · [giờ]
+  "[nội dung 1–3 câu, bị cắt ngang ở cuối...]"
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat ngot" data-cmd="thuvienanh">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📸</span><div><h3>Thư viện ảnh</h3><span class="cmd-name">/thuvienanh</span></div></div>
+            <p>Ảnh gần đây trong máy char, kèm một album bị ẩn.</p>
+            <div class="cmd-moods"><span>Bí mật</span><span>Ngọt</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: thuvienanh
+desc: Thư viện ảnh trên điện thoại {{char}}: những ảnh gần đây được tả bằng chữ. Giọng đời thường, nhiều chi tiết nhỏ. Một album bị ẩn hé lộ điều {{char}} trân trọng hoặc che giấu.
+rules:
+  * Ảnh khớp với sự kiện và địa điểm đã có trong truyện
+  * Album ẩn chỉ tả mơ hồ, không lộ hết
+format:
+  📸 THƯ VIỆN ẢNH
+  ───────────────
+  🖼️ [ngày] · [mô tả ảnh, 1 câu]
+  (4–6 ảnh)
+  🔒 Album ẩn · [số] ảnh
+  [mô tả mơ hồ 1 ảnh trong album]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="cam-xuc" data-cmd="playlist">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎧</span><div><h3>Playlist</h3><span class="cmd-name">/playlist</span></div></div>
+            <p>Playlist char đang nghe lặp lại, tâm trạng nằm trong tên bài.</p>
+            <div class="cmd-moods"><span>Cảm xúc</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: playlist
+desc: Playlist {{char}} đang nghe gần đây. Giọng tâm trạng, hơi lãng mạn. Tên playlist và các bài hát phản chiếu cảm xúc của {{char}} lúc này.
+rules:
+  * Tên bài hát và ca sĩ do AI tự đặt, không dùng bài hát có thật
+  * Không viết lời bài hát
+format:
+  🎧 PLAYLIST · "[tên playlist {{char}} tự đặt]"
+  ───────────────
+  ▶️ Đang phát: [tên bài] · [ca sĩ] · 🔁 [số lần nghe lặp]
+  1. [tên bài] · [ca sĩ]
+  (4–5 bài)
+  ───────────────
+  ＊[vì sao {{char}} nghe bài đang phát, 1 câu]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="ngot hai" data-cmd="giohang">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🛒</span><div><h3>Giỏ hàng</h3><span class="cmd-name">/giohang</span></div></div>
+            <p>Món đồ trong giỏ chưa thanh toán, có một món dành cho user.</p>
+            <div class="cmd-moods"><span>Ngọt</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: giohang
+desc: Giỏ hàng trên app mua sắm của {{char}}: những món đã thêm mà chưa thanh toán. Giọng đời thường, hơi buồn cười. Lộ ra {{char}} đang để ý {{user}}, có món rõ ràng mua cho {{user}}.
+format:
+  🛒 GIỎ HÀNG · [số] món
+  ───────────────
+  • [tên món] · [giá] · [ghi chú của {{char}}]
+  (4–5 món, ít nhất 1 món dành cho {{user}})
+  💭 Đã xem nhưng chưa thêm: [1 món đáng ngờ]
+  ───────────────
+  ＊[{{char}} lưỡng lự trước nút thanh toán]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat hai" data-cmd="tuido">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎒</span><div><h3>Túi đồ</h3><span class="cmd-name">/tuido</span></div></div>
+            <p>Đồ trong balo của char, mỗi món một mẩu chuyện.</p>
+            <div class="cmd-moods"><span>Bí mật</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tuido
+desc: Những món đồ trong balo hoặc túi áo của {{char}} lúc này. Giọng liệt kê ngắn, có chút hài. Mỗi món kể một mẩu chuyện nhỏ về {{char}}.
+rules:
+  * Đồ vật hợp với bối cảnh và thân phận của {{char}}
+  * Ít nhất 1 món liên quan tới {{user}}
+format:
+  🎒 TÚI ĐỒ CỦA {{char}}
+  ───────────────
+  • [món đồ]: [mẩu chuyện, 1 câu]
+  (5–6 món, có 1 món lạ không rõ nguồn gốc)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="doi-song" data-mood="bi-mat" data-cmd="lichtrinh">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗓️</span><div><h3>Lịch trình</h3><span class="cmd-name">/lichtrinh</span></div></div>
+            <p>Lịch tuần của char, có một ô bị xóa đầy nghi vấn.</p>
+            <div class="cmd-moods"><span>Bí mật</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: lichtrinh
+desc: Lịch trình tuần này của {{char}}. Giọng ghi chú gọn gàng, hơi khô. Một ô bị xóa hoặc ghi chú khó hiểu khiến {{user}} tò mò.
+rules:
+  * Lịch khớp với công việc và thói quen của {{char}}
+format:
+  🗓️ LỊCH TRÌNH · Tuần [số]
+  ───────────────
+  [thứ] · [giờ] · [việc]
+  (6–8 mục)
+  [thứ] · [giờ] · ▒▒▒ (đã xóa) · [1 ghi chú khó hiểu]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="quest">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>Nhiệm vụ</h3><span class="cmd-name">/quest</span></div></div>
             <p>Bảng nhiệm vụ tự cập nhật theo diễn biến truyện.</p>
@@ -375,6 +523,137 @@ format:
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
             </div>
           </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="hai cam-xuc" data-cmd="noitam">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🧠</span><div><h3>Nội tâm</h3><span class="cmd-name">/noitam</span></div></div>
+            <p>Lời char nói ra và suy nghĩ thật, đặt cạnh nhau.</p>
+            <div class="cmd-moods"><span>Hài</span><span>Cảm xúc</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: noitam
+desc: Đặt cạnh nhau lời {{char}} vừa nói và suy nghĩ thật trong đầu. Giọng hài, đôi khi đau lòng vì hai bên vênh nhau. Cho {{user}} thấy {{char}} nghĩ một đằng nói một nẻo.
+rules:
+  * Lời nói lấy từ lượt trả lời gần nhất của {{char}}
+  * Suy nghĩ thật vẫn đúng tính cách {{char}}
+format:
+  🧠 NỘI TÂM {{char}}
+  ───────────────
+  💬 Nói: "[câu {{char}} vừa nói]"
+  💭 Nghĩ: "[điều {{char}} thật sự nghĩ]"
+  (2–3 cặp)
+  ───────────────
+  ＊[một hành động nhỏ để lộ suy nghĩ thật]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game hai" data-cmd="thanhtuu">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🏆</span><div><h3>Thành tựu</h3><span class="cmd-name">/thanhtuu</span></div></div>
+            <p>Mở khóa huy hiệu khi user làm điều đáng nhớ.</p>
+            <div class="cmd-moods"><span>Game hóa</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: thanhtuu
+desc: Thông báo mở khóa thành tựu dựa trên hành động của {{user}} trong truyện. Giọng game, hài hước, tên huy hiệu sáng tạo. Ghi lại những cột mốc của mối quan hệ.
+rules:
+  * Chỉ mở khóa cho hành động đã thật sự xảy ra
+  * Không mở lại thành tựu đã có
+format:
+  🏆 THÀNH TỰU MỞ KHÓA
+  ───────────────
+  🏅 [tên huy hiệu sáng tạo]
+  [điều kiện đã đạt, 1 câu]
+  Độ hiếm: [Thường / Hiếm / Huyền thoại]
+  Đã mở: [x]/[tổng số]
+  ───────────────
+  🔒 Thành tựu tiếp theo: [gợi ý mơ hồ]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game drama" data-cmd="bienco">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎲</span><div><h3>Biến cố</h3><span class="cmd-name">/bienco</span></div></div>
+            <p>Tung xúc xắc, ném một biến cố bất ngờ vào cảnh.</p>
+            <div class="cmd-moods"><span>Game hóa</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bienco
+desc: Tung xúc xắc để thêm một biến cố bất ngờ vào cảnh hiện tại: đổi thời tiết, sự cố nhỏ, người lạ xuất hiện… Giọng kể nhanh, kịch tính. Phá thế bế tắc và đẩy truyện sang hướng mới.
+rules:
+  * Biến cố hợp với bối cảnh và giữ mức PG13
+  * Điểm càng thấp biến cố càng rắc rối, càng cao càng thuận lợi
+  * Sau biến cố, tiếp tục cảnh bằng phản ứng của {{char}}
+format:
+  🎲 BIẾN CỐ · Xúc xắc: [1–20]
+  ───────────────
+  [tên biến cố]
+  [mô tả 1–2 câu]
+  ───────────────
+  ＊[phản ứng đầu tiên của {{char}}]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="cam-xuc bi-mat" data-cmd="tarot">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔮</span><div><h3>Bói bài</h3><span class="cmd-name">/tarot</span></div></div>
+            <p>3 lá tarot cho quá khứ, hiện tại, tương lai của hai người.</p>
+            <div class="cmd-moods"><span>Cảm xúc</span><span>Bí mật</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tarot
+desc: Rút 3 lá tarot cho mối quan hệ giữa {{char}} và {{user}}: quá khứ, hiện tại, tương lai. Giọng huyền bí, mơ hồ. Gợi hướng đi mà không khẳng định kết cục.
+rules:
+  * Lời giải gắn với sự kiện trong truyện nhưng luôn để ngỏ
+  * Không dự đoán điều xấu về sức khỏe hay sinh tử
+format:
+  🔮 TAROT · {{char}} &amp; {{user}}
+  ───────────────
+  🃏 Quá khứ: [tên lá bài] · [lời giải 1 câu]
+  🃏 Hiện tại: [tên lá bài] · [lời giải 1 câu]
+  🃏 Tương lai: [tên lá bài] · [lời giải 1 câu]
+  ───────────────
+  ＊[thông điệp chung, mơ hồ]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="tomtat">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏪</span><div><h3>Tóm tắt</h3><span class="cmd-name">/tomtat</span></div></div>
+            <p>“Tập trước…”: kể lại diễn biến để user quay lại truyện.</p>
+            <div class="cmd-moods"><span>Game hóa</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tomtat
+desc: Đoạn tóm tắt kiểu "Tập trước…" của phim, kể lại những gì đã xảy ra. Giọng người dẫn chuyện, gọn và cuốn. Giúp {{user}} quay lại truyện sau thời gian nghỉ.
+rules:
+  * Chỉ tóm tắt sự kiện đã xảy ra, không thêm chi tiết mới
+  * Luôn kết bằng tình huống đang dở
+format:
+  ⏪ TẬP TRƯỚC…
+  ───────────────
+  • [sự kiện quan trọng, 1 câu]
+  (3–5 sự kiện theo thứ tự)
+  📍 Đang dừng ở: [tình huống hiện tại]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="he-thong" data-mood="game" data-cmd="bando">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🗺️</span><div><h3>Bản đồ</h3><span class="cmd-name">/bando</span></div></div>
+            <p>Vị trí hiện tại, địa điểm gần đó và ai đang ở đâu.</p>
+            <div class="cmd-moods"><span>Game hóa</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bando
+desc: Bản đồ khu vực quanh {{char}} và {{user}}: vị trí hiện tại, các địa điểm gần đó và nhân vật đang ở đâu. Giọng chỉ đường ngắn gọn kiểu game. Giúp {{user}} chọn nơi đi tiếp.
+rules:
+  * Chỉ dùng địa điểm hợp với thế giới truyện
+  * Vị trí nhân vật khớp với diễn biến gần nhất
+format:
+  🗺️ BẢN ĐỒ · [khu vực]
+  ───────────────
+  📍 Đang ở: [địa điểm]
+  • [địa điểm gần] · [khoảng cách] · [ai đang ở đó / chuyện gì đang diễn ra]
+  (3–4 địa điểm)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
           <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="diendan">
             <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>Diễn đàn</h3><span class="cmd-name">/diendan</span></div></div>
             <p>3–5 bài đăng NPC bàn tán về drama trong truyện.</p>
@@ -412,6 +691,88 @@ format:
   🎵 Gửi tặng: [tên bài hát] · [ca sĩ]
   ───────────────
   ＊[phản ứng của {{char}} khi nghe đến chi tiết quen thuộc]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama hai" data-cmd="confession">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💌</span><div><h3>Confession</h3><span class="cmd-name">/confession</span></div></div>
+            <p>Trang confession ẩn danh, bài nào cũng nghi là về char và user.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: confession
+desc: Trang confession ẩn danh của trường, công ty hoặc nơi {{char}} sinh hoạt. Giọng tâm sự xen hóng hớt. Các bài nghi là nói về {{char}} và {{user}} khiến cả hai khó xử.
+rules:
+  * Không nêu tên thật, chỉ dùng chi tiết để người đọc tự đoán
+format:
+  💌 CONFESSION · [tên trang]
+  ───────────────
+  #[số thứ tự]
+  [nội dung confession 40–70 chữ]
+  💬 [bình luận nổi bật, 1 câu]
+  (2–3 confession)
+  ───────────────
+  ＊[phản ứng của {{char}} khi đọc được]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="hai drama" data-cmd="livestream">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📺</span><div><h3>Livestream</h3><span class="cmd-name">/livestream</span></div></div>
+            <p>Char lên live, bình luận chạy liên tục, có cả antifan.</p>
+            <div class="cmd-moods"><span>Hài</span><span>Drama</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: livestream
+desc: {{char}} đang livestream, khung bình luận chạy liên tục. Giọng hỗn loạn, vui nhộn. Người xem soi từng chi tiết và réo tên {{user}}.
+rules:
+  * Bình luận đa dạng: fan, antifan, người tặng quà, người hóng drama
+format:
+  📺 LIVE · @[tên kênh] · 👁️ [số] người xem
+  ───────────────
+  🎥 [{{char}} đang làm gì trên live, 1 câu]
+  💬 @[nickname]: [bình luận]
+  (6–8 bình luận)
+  🎁 @[nickname] đã tặng [quà]
+  ───────────────
+  ＊[{{char}} phản ứng với bình luận gây chú ý nhất]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="drama" data-cmd="bantin">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📰</span><div><h3>Bản tin</h3><span class="cmd-name">/bantin</span></div></div>
+            <p>Bản tin sáng của thế giới truyện, có một tin liên quan char.</p>
+            <div class="cmd-moods"><span>Drama</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: bantin
+desc: Bản tin buổi sáng của thế giới truyện. Giọng phát thanh viên trang trọng. Một tin vặt liên quan tới {{char}} hoặc {{user}}, như thể cả thế giới đang dõi theo.
+format:
+  📰 BẢN TIN SÁNG · [ngày]
+  ───────────────
+  🗞️ [tiêu đề tin chính]
+  [tóm tắt 1–2 câu]
+  • [tin ngắn, 1 câu]
+  (3–4 tin ngắn, 1 tin liên quan {{char}} hoặc {{user}})
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="the-gioi" data-mood="ngot hai" data-cmd="thoitiet">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌦️</span><div><h3>Thời tiết</h3><span class="cmd-name">/thoitiet</span></div></div>
+            <p>Dự báo thời tiết kèm dự báo tâm trạng của char.</p>
+            <div class="cmd-moods"><span>Ngọt</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: thoitiet
+desc: Dự báo thời tiết hôm nay kèm "dự báo tâm trạng" của {{char}}, viết theo kiểu ẩn dụ. Giọng dễ thương, hơi trêu chọc. Gợi ý cách {{user}} đối xử với {{char}} hôm nay.
+format:
+  🌦️ DỰ BÁO · [địa điểm] · [ngày]
+  ───────────────
+  Thời tiết: [trạng thái] · [nhiệt độ]
+  Tâm trạng {{char}}: [ẩn dụ thời tiết, ví dụ "nhiều mây, có thể mưa rào"]
+  Khả năng dỗi: [x]%
+  Lời khuyên cho {{user}}: [1 câu]
+  ───────────────</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
@@ -457,6 +818,112 @@ format:
   [cảnh ngắn 80–120 chữ]
   ───────────────
   ＊Trở về thực tại. [{{char}} khựng lại như vừa mơ thấy điều gì đó]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc bi-mat" data-cmd="giacmo">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💤</span><div><h3>Giấc mơ</h3><span class="cmd-name">/giacmo</span></div></div>
+            <p>Giấc mơ đêm qua của char, hé lộ nỗi sợ và mong muốn.</p>
+            <div class="cmd-moods"><span>Cảm xúc</span><span>Bí mật</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: giacmo
+desc: Giấc mơ đêm qua của {{char}}, kể ở ngôi thứ nhất. Giọng mơ hồ, đầy hình ảnh ẩn dụ. Hé lộ nỗi sợ hoặc mong muốn sâu kín của {{char}}.
+rules:
+  * Hình ảnh trong mơ lấy cảm hứng từ sự kiện đã xảy ra
+  * Không giải thích ý nghĩa giấc mơ
+format:
+  💤 GIẤC MƠ ĐÊM QUA
+  ───────────────
+  [đoạn kể 60–100 chữ, xưng "tôi", nhiều hình ảnh lạ]
+  ───────────────
+  ＊[{{char}} tỉnh dậy, chỉ nhớ đúng một chi tiết]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="drama hai" data-cmd="trailer">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎞️</span><div><h3>Trailer</h3><span class="cmd-name">/trailer</span></div></div>
+            <p>Trailer phim về chính câu chuyện, kèm tagline.</p>
+            <div class="cmd-moods"><span>Drama</span><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: trailer
+desc: Trailer phim về câu chuyện giữa {{char}} và {{user}}. Giọng dẫn trầm, kịch tính, cảnh cắt nhanh. Biến những gì đã xảy ra thành một bộ phim đáng xem.
+rules:
+  * Dùng cảnh có thật trong truyện, có thể thêm 1 cảnh "sắp tới" mơ hồ
+format:
+  🎞️ TRAILER · "[tên phim]"
+  ───────────────
+  🎙️ [giọng dẫn mở đầu, 1 câu]
+  🎬 [cảnh 1, 1 câu]
+  🎬 [cảnh 2, 1 câu]
+  🎬 [cảnh 3, 1 câu]
+  🎙️ [câu thoại đắt giá của {{char}}]
+  ───────────────
+  ✨ [tagline] · Sắp ra mắt</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="cam-xuc" data-cmd="gocnhin">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔁</span><div><h3>Đổi góc nhìn</h3><span class="cmd-name">/gocnhin</span></div></div>
+            <p>Kể lại cảnh vừa rồi qua góc nhìn của char.</p>
+            <div class="cmd-moods"><span>Cảm xúc</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: gocnhin
+desc: Kể lại cảnh vừa xảy ra qua góc nhìn và suy nghĩ của {{char}}. Giọng ngôi thứ nhất, chậm và chi tiết. Cho {{user}} thấy {{char}} đã cảm nhận khoảnh khắc đó thế nào.
+rules:
+  * Không thay đổi sự kiện, chỉ thêm cảm nhận của {{char}}
+format:
+  🔁 GÓC NHÌN CỦA {{char}}
+  ───────────────
+  [đoạn kể 80–120 chữ, xưng "tôi"]
+  ───────────────
+  ＊[điều {{char}} để ý ở {{user}} mà {{user}} không hề biết]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="ngot" data-cmd="tuonglai">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">⏩</span><div><h3>5 năm sau</h3><span class="cmd-name">/tuonglai</span></div></div>
+            <p>Một lát cắt tương lai nếu hai người vẫn đi cùng nhau.</p>
+            <div class="cmd-moods"><span>Ngọt</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tuonglai
+desc: Một cảnh ngắn 5 năm sau, nếu mối quan hệ giữa {{char}} và {{user}} tiếp tục. Giọng ấm, man mác. Cho {{user}} một điều để mong chờ mà không ảnh hưởng mạch truyện chính.
+rules:
+  * Không thay đổi sự kiện hay quan hệ trong truyện chính
+  * Gợi lại ít nhất 1 chi tiết từ hiện tại
+format:
+  ⏩ 5 NĂM SAU
+  ───────────────
+  📍 [địa điểm] · [thời điểm]
+  [cảnh ngắn 60–100 chữ]
+  ───────────────
+  ＊Trở về hiện tại. [{{char}} khẽ mỉm cười mà không rõ vì sao]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-group="hau-truong" data-mood="hai" data-cmd="phongvan">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎤</span><div><h3>Phỏng vấn</h3><span class="cmd-name">/phongvan</span></div></div>
+            <p>Talk show phỏng vấn char và user, MC hỏi xoáy.</p>
+            <div class="cmd-moods"><span>Hài</span></div>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: phongvan
+desc: Talk show phỏng vấn {{char}} và {{user}} về mối quan hệ của hai người. Giọng MC lém lỉnh, hỏi xoáy. Buộc {{char}} trả lời những câu bình thường vẫn né tránh.
+rules:
+  * {{char}} trả lời đúng tính cách, có thể né nhưng để lộ cảm xúc
+  * Câu hỏi cuối dành cho {{user}}, để {{user}} tự trả lời
+format:
+  🎤 TALK SHOW · "[tên chương trình]"
+  ───────────────
+  MC: [câu hỏi]
+  {{char}}: [câu trả lời]
+  (3–4 câu hỏi, câu sau xoáy hơn câu trước)
+  MC: [câu hỏi dành cho {{user}}]
+  ───────────────
+  ＊[khán giả phản ứng]＊</code></pre></details>
             <div class="cmd-actions">
               <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
               <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
