@@ -4016,3 +4016,449 @@ html[lang="th"] .footer-grid h4 {
     display: none;
   }
 }
+
+/* ---------- Command library (lenh-he-thong.html) ---------- */
+
+.cmd-demo {
+  background: var(--card);
+  border-radius: var(--r-xl);
+  box-shadow: 0 0 0 1px var(--line), var(--shadow-md);
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+}
+
+.cmd-demo .bubble {
+  background: var(--grad-brand);
+  border-radius: 16px 16px 4px 16px;
+  color: #0b1320;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-self: end;
+  padding: 8px 14px;
+}
+
+.cmd-demo pre {
+  background: var(--surface);
+  border-radius: 16px 16px 16px 4px;
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
+  padding: 16px 18px;
+  white-space: pre-wrap;
+}
+
+.cmd-grid {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cmd-card {
+  background: var(--card);
+  border-radius: var(--r-md);
+  box-shadow: 0 0 0 1px var(--line), var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 22px;
+  transition: box-shadow 0.25s var(--ease);
+}
+
+.cmd-card.is-picked {
+  box-shadow: 0 0 0 2px var(--teal-600), var(--shadow-sm);
+}
+
+.cmd-head {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.cmd-emoji {
+  background: var(--surface);
+  border-radius: 14px;
+  display: grid;
+  flex-shrink: 0;
+  font-size: 1.35rem;
+  height: 46px;
+  place-items: center;
+  width: 46px;
+}
+
+.cmd-head h3 {
+  font-size: 1.08rem;
+  margin: 0 0 2px;
+}
+
+.cmd-name {
+  color: var(--teal-700);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cmd-card > p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.cmd-code summary {
+  align-items: center;
+  color: var(--ink-2);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 6px;
+  list-style: none;
+}
+
+.cmd-code summary::-webkit-details-marker {
+  display: none;
+}
+
+.cmd-code summary svg {
+  height: 16px;
+  transition: transform 0.25s var(--ease);
+  width: 16px;
+}
+
+.cmd-code[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.cmd-pre {
+  background: var(--surface);
+  border-radius: var(--r-sm);
+  color: var(--ink-2);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  max-height: 380px;
+  overflow: auto;
+  padding: 14px 16px;
+  overflow-wrap: anywhere;
+  tab-size: 2;
+  white-space: pre-wrap;
+}
+
+.cmd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.cmd-actions .btn[aria-pressed="true"] {
+  background: var(--solid);
+  box-shadow: none;
+  color: var(--on-solid);
+}
+
+.cmd-builder {
+  align-items: start;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+}
+
+.cmd-side {
+  display: grid;
+  gap: 22px;
+}
+
+.cmd-side h3 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.cmd-presets {
+  margin: 0;
+}
+
+.cmd-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cmd-chips button {
+  align-items: center;
+  background: var(--surface);
+  border: 0;
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  gap: 8px;
+  padding: 7px 10px 7px 14px;
+}
+
+.cmd-chips button span {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.cmd-chips button:hover span {
+  color: var(--fg-red);
+}
+
+.cmd-empty {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.cmd-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 10px 0 0;
+}
+
+.cmd-hint.is-warn {
+  color: var(--fg-amber);
+}
+
+.cmd-out {
+  background: var(--grad-ink);
+  border-radius: var(--r-lg);
+  color: #e9eff5;
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  padding: 22px;
+}
+
+.cmd-out-head {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.cmd-out-head strong {
+  font-size: 1rem;
+}
+
+.cmd-out-head span {
+  color: rgba(233, 239, 245, 0.6);
+  font-size: 0.88rem;
+}
+
+.cmd-out .cmd-pre {
+  background: rgba(255, 255, 255, 0.06);
+  color: #dfe7ef;
+  margin: 0;
+  max-height: 520px;
+  min-height: 160px;
+}
+
+.cmd-out .btn-ghost {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.cmd-out .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cmd-out .btn[disabled] {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.cmd-field .cmd-name {
+  font-size: 1rem;
+}
+
+.cmd-field .tag {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.cmd-field h3 {
+  margin: 0 0 8px;
+}
+
+.cmd-compare h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cmd-compare .is-bad h3 {
+  color: var(--fg-red);
+}
+
+.cmd-compare .is-good h3 {
+  color: var(--fg-green);
+}
+
+.cmd-tips {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cmd-tips li {
+  color: var(--ink-2);
+  padding-left: 22px;
+  position: relative;
+}
+
+.cmd-tips li::before {
+  background: var(--teal-600);
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 4px;
+  position: absolute;
+  top: 0.62em;
+  width: 7px;
+}
+
+.cmd-tips code,
+.cmd-inline {
+  background: var(--surface);
+  border-radius: 6px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  padding: 1px 6px;
+}
+
+.cmd-tray {
+  align-items: center;
+  background: var(--solid);
+  border-radius: 999px;
+  bottom: 16px;
+  box-shadow: var(--shadow-md);
+  color: var(--on-solid);
+  display: flex;
+  gap: 6px;
+  left: 50%;
+  max-width: calc(100% - 32px);
+  padding: 6px 6px 6px 18px;
+  position: fixed;
+  transform: translate(-50%, 160%);
+  transition: transform 0.4s var(--ease);
+  z-index: 60;
+}
+
+.cmd-tray.is-shown {
+  transform: translate(-50%, 0);
+}
+
+.cmd-tray strong {
+  font-size: 0.92rem;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.cmd-tray a {
+  color: var(--on-solid-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.cmd-tray a:hover {
+  color: var(--on-solid);
+}
+
+.cmd-tray button {
+  background: var(--grad-brand);
+  border: 0;
+  border-radius: 999px;
+  color: #0b1320;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+.cmd-toast {
+  background: var(--solid);
+  border-radius: 14px;
+  box-shadow: var(--shadow-md);
+  color: var(--on-solid);
+  font-size: 0.9rem;
+  left: 50%;
+  max-width: calc(100% - 32px);
+  opacity: 0;
+  padding: 11px 16px;
+  pointer-events: none;
+  bottom: 84px;
+  position: fixed;
+  transform: translate(-50%, 12px);
+  transition: opacity 0.25s, transform 0.25s var(--ease);
+  z-index: 70;
+}
+
+.cmd-toast.is-shown {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.cmd-toast small {
+  color: var(--on-solid-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+@media (max-width: 860px) {
+  .cmd-grid,
+  .cmd-builder {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.cmd-hub-art {
+  align-content: center;
+  background: radial-gradient(circle at 30% 20%, var(--teal-100), var(--teal-50) 60%, var(--card));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  inset: 0;
+  justify-content: center;
+  padding: 28px;
+  position: absolute;
+}
+
+.cmd-hub-art span {
+  background: var(--card);
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px var(--line), var(--shadow-sm);
+  color: var(--ink);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  transition: transform 0.5s var(--ease);
+}
+
+.cmd-hub-art span.is-on {
+  background: var(--grad-brand);
+  box-shadow: var(--shadow-teal);
+  color: #0b1320;
+}
+
+.hub-card:hover .cmd-hub-art span:nth-child(odd) {
+  transform: translateY(-3px);
+}

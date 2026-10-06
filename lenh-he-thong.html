@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>!function(){var p;try{p=localStorage.getItem("imely-theme")}catch(e){}p=p==="light"||p==="dark"?p:"system";var d=p==="dark"||p==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches,r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-pref",p)}();</script>
+  <meta name="theme-color" content="#fbfdfd">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <title>Thư viện lệnh cho char | imely Creator</title>
+  <meta name="description" content="Bộ sưu tập lệnh hệ thống cho char imely: điện thoại, tin nhắn, nhật ký, ghi chú, tài khoản, nhiệm vụ, diễn đàn. Chọn lệnh, gom thành bộ và copy dán vào char.">
+  <link rel="canonical" href="https://creator.imely.ai/lenh-he-thong.html">
+  <meta property="og:title" content="Thư viện lệnh cho char | imely Creator">
+  <meta property="og:description" content="Bộ sưu tập lệnh hệ thống cho char imely: điện thoại, tin nhắn, nhật ký, ghi chú, tài khoản, nhiệm vụ, diễn đàn. Chọn lệnh, gom thành bộ và copy dán vào char.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creator.imely.ai/lenh-he-thong.html">
+  <meta property="og:image" content="https://creator.imely.ai/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thư viện lệnh cho char | imely Creator">
+  <meta name="twitter:description" content="Bộ sưu tập lệnh hệ thống cho char imely: điện thoại, tin nhắn, nhật ký, ghi chú, tài khoản, nhiệm vụ, diễn đàn. Chọn lệnh, gom thành bộ và copy dán vào char.">
+  <meta name="twitter:image" content="https://creator.imely.ai/assets/og-image.png">
+  <link rel="stylesheet" href="assets/site.css?v=20261006-1">
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="assets/site.js?v=20261002-5"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="assets/theme.js?v=20261002-5"></script>
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"><div class="grid-lines"></div></div>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html" aria-label="imely Creator, Trang chủ">
+        <img src="assets/brand/app-icon.png" alt="" width="40" height="40">
+        <span><strong>imely Creator</strong><small>Official program</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Điều hướng chính">
+        <a href="so-tay.html" aria-current="page">Sổ tay Creator</a>
+        <a href="character.html">Beta Creator</a>
+        <a href="gems.html">Sự kiện</a>
+        <a href="criteria.html">Tiêu chí &amp; FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <details class="lang">
+          <summary aria-label="Chọn ngôn ngữ">VI <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <nav class="lang-menu" aria-label="Ngôn ngữ">
+          <a href="en/handbook.html" hreflang="en">English <span>EN</span></a>
+          <a href="id/handbook.html" hreflang="id">Bahasa Indonesia <span>ID</span></a>
+          <a href="tw/handbook.html" hreflang="zh-TW">繁體中文 <span>TW</span></a>
+          <a href="th/handbook.html" hreflang="th">ไทย <span>TH</span></a>
+          </nav>
+        </details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Giao diện: theo hệ thống" title="Giao diện: theo hệ thống" data-label-system="Giao diện: theo hệ thống" data-label-light="Giao diện: sáng" data-label-dark="Giao diện: tối"><svg class="i-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+        <a class="live-pill" href="characters-for-gems-bl.html" data-ends="2026-10-25T23:59:59+07:00" data-role="while-live"><span class="dot" aria-hidden="true"></span><span class="lp-long">Char4Gem BL</span><span class="lp-short">Char4Gem</span></a>
+        <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-sheet"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-sheet" id="mobile-sheet">
+    <nav aria-label="Menu di động">
+      <a href="index.html">Trang chủ</a>
+        <a href="so-tay.html">Sổ tay Creator </a>
+        <a href="character.html">Beta Creator </a>
+        <a href="gems.html">Sự kiện</a>
+        <a href="criteria.html">Tiêu chí &amp; FAQ </a>
+    </nav>
+    <div class="sheet-foot">
+      <a class="btn btn-gems" href="characters-for-gems-bl.html" data-ends="2026-10-25T23:59:59+07:00" data-role="while-live">Char4Gem BL đang mở <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">Tham gia Discord <span class="arrow" aria-hidden="true">↗</span></a>
+      <nav class="sheet-langs" aria-label="Ngôn ngữ"><span aria-current="true">VI</span><a href="en/handbook.html" hreflang="en">EN</a><a href="id/handbook.html" hreflang="id">ID</a><a href="tw/handbook.html" hreflang="zh-TW">TW</a><a href="th/handbook.html" hreflang="th">TH</a></nav>
+      <div class="theme-seg" role="group" aria-label="Giao diện"><button type="button" data-theme-set="system">Theo hệ thống</button><button type="button" data-theme-set="light">Sáng</button><button type="button" data-theme-set="dark">Tối</button></div>
+    </div>
+  </div>
+  <main id="main">
+    <section class="container page-hero">
+      <div class="hero-in">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><a href="so-tay.html">Sổ tay Creator</a><span aria-hidden="true">/</span><span aria-current="page">Thư viện lệnh</span></nav>
+        <h1>Thư viện <span class="text-grad">lệnh</span> cho char</h1>
+        <p class="lead">Lệnh giúp char có giao diện riêng: điện thoại, nhật ký, bảng nhiệm vụ, diễn đàn. User gõ lệnh, AI sinh nội dung đúng khung bạn chọn. Chọn lệnh hợp với char, gom thành một bộ rồi copy.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#thu-vien">Chọn lệnh <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#cach-viet">Cách viết lệnh</a>
+        </div>
+      </div>
+      <div class="page-hero-art" data-reveal="scale">
+        <div class="cmd-demo" aria-label="Ví dụ: user gõ /dienthoai và nhận màn hình điện thoại của char">
+          <span class="bubble">/dienthoai</span>
+          <pre>📱 ĐIỆN THOẠI CỦA HẠO NHIÊN
+───────────────
+🔋 12% · 01:47
+🔔 Thông báo
+• Lịch: Sinh nhật cậu ấy, còn 3 ngày
+• Tin nhắn: Mẹ: "Cuối tuần về ăn cơm nhé"
+🔍 Tìm kiếm gần đây
+• quà cho người không thích đồ ngọt
+• cách xin lỗi mà không nói xin lỗi
+───────────────
+＊Anh úp vội điện thoại xuống bàn.＊</pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="container tabbar-wrap">
+      <nav class="tabbar" data-spy aria-label="Nội dung trang">
+        <span class="tab-indicator" aria-hidden="true"></span>
+        <a href="#thu-vien">Thư viện</a>
+        <a href="#bo-lenh">Bộ lệnh</a>
+        <a href="#cach-viet">Cách viết</a>
+      </nav>
+    </div>
+
+    <div class="container doc">
+      <section class="doc-part" id="thu-vien">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>Chọn lệnh</h2>
+            <p>14 lệnh mẫu chia theo 4 nhóm. Bấm “Thêm vào bộ” để gom nhiều lệnh, sửa lại cho khớp thế giới của char nếu cần.</p>
+          </div>
+          <span class="num" aria-hidden="true">01</span>
+        </div>
+        <div>
+          <div class="filters" data-filter-group="#cmd-list" role="group" aria-label="Lọc lệnh theo nhóm"><button type="button" data-filter="all" aria-pressed="true">Tất cả <span>14</span></button><button type="button" data-filter="doi-song" aria-pressed="false">Đời sống <span>6</span></button><button type="button" data-filter="he-thong" aria-pressed="false">Hệ thống <span>4</span></button><button type="button" data-filter="the-gioi" aria-pressed="false">Thế giới <span>2</span></button><button type="button" data-filter="hau-truong" aria-pressed="false">Hậu trường <span>2</span></button></div>
+          <div class="cmd-grid" id="cmd-list">
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="dienthoai">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📱</span><div><h3>Điện thoại</h3><span class="cmd-name">/dienthoai</span></div></div>
+            <p>Thông báo, lịch sử tìm kiếm và những thứ char đang giấu.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: dienthoai
+desc: Màn hình điện thoại của {{char}} lúc này: thông báo mới và lịch sử tìm kiếm. Văn phong đời thường, có emoji. Hé lộ điều {{char}} đang để tâm hoặc cố giấu.
+rules:
+  * Nội dung khớp với diễn biến gần nhất trong truyện
+  * Chỉ gợi 1–2 chi tiết bí mật mỗi lần, không lộ hết
+format:
+  📱 ĐIỆN THOẠI CỦA {{char}}
+  ───────────────
+  🔋 [pin]% · [giờ]
+  🔔 Thông báo
+  • [tên app]: [nội dung, 1 câu]
+  (2–3 thông báo)
+  🔍 Tìm kiếm gần đây
+  • [từ khóa]
+  (3–4 từ khóa, ít nhất 1 từ khóa đáng ngờ)
+  ───────────────
+  ＊[phản ứng của {{char}} nếu bắt gặp {{user}} cầm điện thoại]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="tinnhan">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💬</span><div><h3>Tin nhắn</h3><span class="cmd-name">/tinnhan</span></div></div>
+            <p>Đoạn chat của char với một nhân vật khác, dễ tạo drama.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: tinnhan
+desc: Đoạn chat gần nhất giữa {{char}} và một nhân vật khác trong truyện. Giọng nhắn tin thật: viết tắt, emoji, nhắn dồn. Tạo drama hoặc hé lộ một mối quan hệ ngầm.
+rules:
+  * Người nhắn phải là nhân vật đã xuất hiện hoặc được nhắc tới
+  * Không để {{char}} nhắn điều trái với tính cách
+format:
+  💬 TIN NHẮN · {{char}} &amp; [tên người kia]
+  ───────────────
+  [tên người kia] · [giờ]
+  [tin nhắn]
+  {{char}} · [giờ]
+  [tin nhắn]
+  (6–10 tin, xen kẽ, có thể nhắn dồn)
+  ───────────────
+  [Đã xem / Đã nhận / Đang soạn tin...]</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="nhatky">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📔</span><div><h3>Nhật ký</h3><span class="cmd-name">/nhatky</span></div></div>
+            <p>Trang nhật ký cuối ngày, nơi char viết điều không nói ra.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: nhatky
+desc: Trang nhật ký {{char}} viết cuối ngày. Giọng thủ thỉ, thật lòng, khác hẳn vẻ ngoài. Cho {{user}} thấy cảm xúc {{char}} giấu kín.
+rules:
+  * Chỉ viết về sự kiện đã xảy ra trong truyện
+  * Luôn viết ở ngôi thứ nhất của {{char}}
+format:
+  📔 NHẬT KÝ · [ngày/tháng]
+  ───────────────
+  Thời tiết: [1 từ] · Tâm trạng: [emoji]
+  [đoạn nhật ký 80–120 chữ, xưng "tôi"]
+  [1 câu viết dở rồi bỏ ngang...]
+  ───────────────
+  ＊[{{char}} gập sổ, cất vào ngăn kéo]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="ghichu">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📝</span><div><h3>Ghi chú</h3><span class="cmd-name">/ghichu</span></div></div>
+            <p>App ghi chú: việc cần làm và những điều char nhớ về user.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: ghichu
+desc: App ghi chú trên điện thoại {{char}}: việc cần làm, điều cần nhớ, vài dòng viết vội. Văn phong gạch đầu dòng, ngắn, đôi khi buồn cười. Lộ ra {{char}} để ý {{user}} đến mức nào.
+format:
+  📝 GHI CHÚ
+  ───────────────
+  📌 [tiêu đề ghi chú]
+  ☐ [việc cần làm]
+  ☑ [việc đã xong]
+  📌 Về {{user}}
+  • [chi tiết nhỏ {{char}} để ý]
+  (2–3 ghi chú, mỗi ghi chú 2–4 dòng)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="taikhoan">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">👤</span><div><h3>Tài khoản</h3><span class="cmd-name">/taikhoan</span></div></div>
+            <p>Trang cá nhân mạng xã hội: bio, bài đăng mới, bình luận.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: taikhoan
+desc: Trang cá nhân mạng xã hội của {{char}}: bio, bài đăng mới nhất và bình luận. Giọng sống ảo đúng chất {{char}}. Cho thấy hình ảnh {{char}} muốn người khác nhìn vào.
+format:
+  👤 @[username] · [số] người theo dõi
+  ───────────────
+  Bio: [1 dòng]
+  📸 Bài mới nhất · [thời gian]
+  [caption 1–2 câu + hashtag]
+  ❤️ [số] · 💬 [số]
+  💬 Bình luận
+  • @[nickname]: [bình luận]
+  • @[username] trả lời: [phản hồi]
+  (3–4 bình luận)
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="doi-song" data-cmd="vitien">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💳</span><div><h3>Ví tiền</h3><span class="cmd-name">/vitien</span></div></div>
+            <p>Lịch sử giao dịch: mỗi khoản chi là một manh mối.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: vitien
+desc: Lịch sử giao dịch trong ví của {{char}}: số dư, chuyển khoản, mua sắm. Giọng sao kê khô khan nhưng nội dung lại kể chuyện. Hé lộ thói quen và bí mật qua từng khoản chi.
+rules:
+  * Số tiền hợp với hoàn cảnh và thân phận của {{char}}
+format:
+  💳 VÍ CỦA {{char}}
+  ───────────────
+  Số dư: [số tiền]
+  • [giờ] · [+/-][số tiền] · [nội dung giao dịch]
+  (4–6 giao dịch, ít nhất 1 khoản đáng ngờ)
+  ───────────────
+  ＊[{{char}} vội tắt màn hình nếu {{user}} nhìn thấy]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="he-thong" data-cmd="quest">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📜</span><div><h3>Nhiệm vụ</h3><span class="cmd-name">/quest</span></div></div>
+            <p>Bảng nhiệm vụ tự cập nhật theo diễn biến truyện.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: quest
+desc: Hệ thống quản lý nhiệm vụ của {{user}}. Giọng bảng game ngắn gọn, rõ ràng. Theo dõi tiến độ và tự cập nhật khi có sự kiện liên quan.
+rules:
+  * Luôn hiển thị: tên nhiệm vụ, trạng thái, tiến độ, mục tiêu, phần thưởng
+  * Không tự reset tiến độ nếu nhiệm vụ đã tồn tại
+  * Chỉ chuyển sang "Hoàn thành" khi {{user}} đạt đủ điều kiện
+  * Không tự thêm mục tiêu ngoài ngữ cảnh
+format:
+  📜 NHIỆM VỤ · [tên nhiệm vụ]
+  ───────────────
+  Trạng thái: [Đang tiến hành / Hoàn thành / Thất bại]
+  Tiến độ: [x/y]
+  Mục tiêu: [mô tả ngắn]
+  Phần thưởng: [vật phẩm / điểm / mở khóa]
+  ───────────────</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="he-thong" data-cmd="status">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">❤️</span><div><h3>Trạng thái</h3><span class="cmd-name">/status</span></div></div>
+            <p>Thể lực, tinh thần, mức nguy hiểm theo thời gian thực.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: status
+desc: Bảng trạng thái của {{char}} theo thời gian thực. Giọng chỉ số game, ngắn gọn. Phản ánh đúng tình huống để {{user}} biết {{char}} đang ổn hay không.
+rules:
+  * Chỉ số: thể lực, tinh thần, nguy hiểm, nằm trong 0–100
+  * Mỗi ▮ = 10 điểm, số ▮ luôn khớp với con số
+  * Bị thương thì thể lực giảm; căng thẳng thì tinh thần giảm
+  * Không thay đổi đột ngột nếu không có sự kiện rõ ràng
+format:
+  ❤️ TRẠNG THÁI {{char}}
+  ───────────────
+  Thể lực:   [▮▮▮▮▮▯▯▯▯▯] [x]/100
+  Tinh thần: [▮▮▮▮▮▯▯▯▯▯] [x]/100
+  Nguy hiểm: [▮▮▮▮▮▯▯▯▯▯] [x]/100
+  ───────────────
+  ＊[1 câu mô tả tình trạng hiện tại]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="he-thong" data-cmd="thiencam">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">💗</span><div><h3>Thiện cảm</h3><span class="cmd-name">/thiencam</span></div></div>
+            <p>Điểm thiện cảm và suy nghĩ thật của char về user.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: thiencam
+desc: Điểm thiện cảm {{char}} dành cho {{user}}, kèm suy nghĩ thật lúc này. Giọng ngắn, hợp tính cách {{char}}. Theo dõi quan hệ tiến triển qua từng lượt.
+rules:
+  * Điểm nằm trong 0–100, mỗi lượt thay đổi tối đa 10 điểm
+  * Mỗi ▮ = 10 điểm, số ▮ luôn khớp với con số
+  * Chỉ thay đổi khi {{user}} có hành động rõ ràng
+  * Không reset điểm giữa các lượt
+format:
+  💗 THIỆN CẢM · {{char}} với {{user}}
+  ───────────────
+  Điểm: [▮▮▮▮▮▯▯▯▯▯] [x]/100 ([+/- thay đổi])
+  Giai đoạn: [Xa lạ / Quen biết / Thân thiết / Rung động / Yêu]
+  Lý do: [hành động của {{user}} khiến điểm thay đổi]
+  ───────────────
+  ＊Suy nghĩ thật: "[1 câu {{char}} không nói ra]"＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="he-thong" data-cmd="ngare">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🔀</span><div><h3>Ngã rẽ</h3><span class="cmd-name">/ngare</span></div></div>
+            <p>3 lựa chọn cho user, mỗi lựa chọn đưa truyện sang một hướng.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: ngare
+desc: Hiện 3 lựa chọn cho {{user}} tại thời điểm quan trọng, kèm gợi ý hậu quả. Giọng ngắn gọn kiểu visual novel, hơi úp mở. Giúp {{user}} chủ động rẽ hướng truyện thay vì chỉ đọc.
+rules:
+  * 3 lựa chọn khác hẳn nhau: một an toàn, một liều lĩnh, một bất ngờ
+  * Gợi ý hậu quả chỉ úp mở, không nói trước kết quả
+  * Khi {{user}} chọn, tiếp tục truyện đúng theo lựa chọn đó
+format:
+  🔀 NGÃ RẼ · [tình huống, 1 câu]
+  ───────────────
+  A. [lựa chọn an toàn]
+     ↳ [gợi ý hậu quả, mơ hồ]
+  B. [lựa chọn liều lĩnh]
+     ↳ [gợi ý hậu quả, mơ hồ]
+  C. [lựa chọn bất ngờ]
+     ↳ [gợi ý hậu quả, mơ hồ]
+  ───────────────
+  ＊[{{char}} đang chờ phản ứng của {{user}}]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="the-gioi" data-cmd="diendan">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📋</span><div><h3>Diễn đàn</h3><span class="cmd-name">/diendan</span></div></div>
+            <p>3–5 bài đăng NPC bàn tán về drama trong truyện.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: diendan
+desc: Diễn đàn trong thế giới truyện với 3–5 bài đăng của NPC. Giọng hóng hớt, mỗi người một kiểu. Biến sự kiện trong truyện thành chủ đề bàn tán.
+format:
+  📋 DIỄN ĐÀN · [tên box]
+  ───────────────
+  • @[nickname] · [thời gian]
+    [nội dung bài, 1–2 câu]
+    💬 [số] · ❤️ [số] · 🔄 [số]
+  ───────────────
+  (lặp lại 3–5 bài, giọng đa dạng)</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="the-gioi" data-cmd="radio">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">📻</span><div><h3>Radio đêm khuya</h3><span class="cmd-name">/radio</span></div></div>
+            <p>Lá thư thính giả trùng hợp kỳ lạ với chuyện của char và user.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: radio
+desc: Chương trình radio đêm khuya trong thế giới truyện: MC đọc thư thính giả và gửi tặng một bài hát. Giọng trầm ấm, tâm sự. Lá thư trùng hợp kỳ lạ với chuyện giữa {{char}} và {{user}}, như một lời nhắn gián tiếp.
+rules:
+  * Không nêu tên {{char}} hay {{user}}, chỉ cài chi tiết để người nghe tự nhận ra
+  * Tên bài hát và ca sĩ do AI tự đặt, không dùng bài hát có thật
+format:
+  📻 RADIO ĐÊM KHUYA · [tên chương trình] · [giờ]
+  ───────────────
+  🎙️ MC: [lời dẫn, 1–2 câu]
+  ✉️ Thư của "[bút danh]":
+  [nội dung thư 50–80 chữ]
+  🎵 Gửi tặng: [tên bài hát] · [ca sĩ]
+  ───────────────
+  ＊[phản ứng của {{char}} khi nghe đến chi tiết quen thuộc]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="hau-truong" data-cmd="hautruong">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🎬</span><div><h3>Hậu trường</h3><span class="cmd-name">/hautruong</span></div></div>
+            <p>Char bước ra khỏi vai, bình luận về chính câu chuyện.</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: hautruong
+desc: Cảnh hậu trường: {{char}} bước ra khỏi vai và bình luận như một diễn viên. Giọng hài hước, phá cách. Giải trí giữa các cảnh căng thẳng mà không ảnh hưởng mạch truyện.
+rules:
+  * Không thay đổi sự kiện hay quan hệ trong truyện chính
+  * Luôn kết thúc bằng việc quay lại cảnh đang dở
+format:
+  🎬 HẬU TRƯỜNG
+  ───────────────
+  {{char}}: [bình luận về cảnh vừa diễn]
+  Đạo diễn: [nhắc nhở hoặc chọc ghẹo]
+  {{char}}: [phản ứng]
+  (4–6 lượt thoại)
+  ───────────────
+  ＊Action! {{char}} trở lại vai＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          <article class="cmd-card" data-filter-item data-tags="hau-truong" data-cmd="neunhu">
+            <div class="cmd-head"><span class="cmd-emoji" aria-hidden="true">🌀</span><div><h3>Nếu như</h3><span class="cmd-name">/neunhu</span></div></div>
+            <p>Đưa char và user sang vũ trụ song song: học đường, cổ trang, idol…</p>
+            <details class="cmd-code"><summary>Xem lệnh <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><pre class="cmd-pre"><code>/command: neunhu
+desc: Một cảnh ngắn ở vũ trụ song song (AU), nơi {{char}} và {{user}} sống một cuộc đời khác: học đường, cổ trang, idol, công sở… Giọng nhẹ nhàng, hài hoặc ngọt tùy AU. Cho {{user}} thấy mối quan hệ ở một phiên bản khác mà không ảnh hưởng mạch truyện chính.
+rules:
+  * Giữ nguyên tính cách cốt lõi của {{char}}, chỉ đổi bối cảnh và thân phận
+  * Nếu {{user}} nêu AU thì dùng AU đó; nếu không, tự chọn một AU tương phản với truyện chính
+  * Không thay đổi sự kiện hay quan hệ trong truyện chính
+format:
+  🌀 NẾU NHƯ · [tên AU]
+  ───────────────
+  Thân phận: {{char}} là [vai mới] · {{user}} là [vai mới]
+  [cảnh ngắn 80–120 chữ]
+  ───────────────
+  ＊Trở về thực tại. [{{char}} khựng lại như vừa mơ thấy điều gì đó]＊</code></pre></details>
+            <div class="cmd-actions">
+              <button class="btn btn-sm btn-primary" type="button" data-add aria-pressed="false">Thêm vào bộ</button>
+              <button class="btn btn-sm btn-ghost" type="button" data-copy>Copy lệnh</button>
+            </div>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-part" id="bo-lenh">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>Bộ lệnh của bạn</h2>
+            <p>Các lệnh đã chọn được bọc trong đúng một cặp <code class="cmd-inline">[START_COMMANDS]</code> … <code class="cmd-inline">[END_COMMANDS]</code>, sẵn sàng để dán vào char.</p>
+          </div>
+          <span class="num" aria-hidden="true">02</span>
+        </div>
+        <div class="cmd-builder">
+          <div class="card cmd-side">
+            <div>
+              <h3>Chọn nhanh</h3>
+              <div class="filters cmd-presets" role="group" aria-label="Bộ lệnh gợi ý"><button type="button" data-preset="dienthoai tinnhan nhatky">Bộ đời thường</button><button type="button" data-preset="quest thiencam ngare">Bộ hệ thống</button><button type="button" data-preset="tinnhan taikhoan diendan radio">Bộ drama</button></div>
+            </div>
+            <div>
+              <h3>Đã chọn</h3>
+              <div class="cmd-chips" data-chips></div>
+              <p class="cmd-empty" data-empty>Chưa có lệnh nào. Bấm “Thêm vào bộ” ở thư viện hoặc chọn một bộ gợi ý.</p>
+              <p class="cmd-hint" data-hint>Nên dùng 3–5 lệnh mỗi char. Nhiều hơn, AI dễ rối và quên khung.</p>
+            </div>
+          </div>
+          <div class="cmd-out">
+            <div class="cmd-out-head"><strong data-count>0 lệnh</strong><span>Dán nguyên khối, không tách cặp thẻ</span></div>
+            <pre class="cmd-pre" data-output aria-live="polite"></pre>
+            <div class="cta-row" style="margin:0">
+              <button class="btn btn-brand btn-sm" type="button" data-copy-all disabled>Copy bộ lệnh</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-clear disabled>Xóa hết</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-part" id="cach-viet">
+        <div class="part-head" data-reveal>
+          <div>
+            <h2>Cách viết một lệnh</h2>
+            <p>Mỗi lệnh gồm 4 phần. Dùng để sửa lệnh mẫu, hoặc tự viết lệnh cho thế giới của bạn: tu luyện, sci-fi, học đường, idol…</p>
+          </div>
+          <span class="num" aria-hidden="true">03</span>
+        </div>
+        <div class="grid-2">
+          <div class="card cmd-field" data-reveal style="--d:0"><h3><span class="cmd-name">/command:</span><span class="tag">Bắt buộc</span></h3><p>Tên lệnh user gõ để kích hoạt. Không dấu, không khoảng trắng, viết liền hoặc dùng <code class="cmd-inline">_</code>, ngắn và gợi nhớ chức năng.</p><p style="margin-top:10px">Nên: <code class="cmd-inline">nhatky</code> <code class="cmd-inline">diendan</code> <code class="cmd-inline">tinnhan</code>. Tránh: <code class="cmd-inline">Hệ Thống Nhiệm Vụ</code> <code class="cmd-inline">cmd1</code></p></div>
+          <div class="card cmd-field" data-reveal style="--d:1"><h3><span class="cmd-name">desc:</span><span class="tag">Bắt buộc</span></h3><p>1–2 câu trả lời đủ 3 ý: lệnh sinh ra cái gì, văn phong ra sao, và phục vụ gì cho mạch truyện (hé lộ bí mật, tạo drama, theo dõi tiến độ…).</p></div>
+          <div class="card cmd-field" data-reveal style="--d:2"><h3><span class="cmd-name">rules:</span><span class="tag">Tùy chọn</span></h3><p>Chỉ cần khi lệnh phải giữ logic chặt: nhiệm vụ, chỉ số, điểm thiện cảm. Mỗi dòng bắt đầu bằng <code class="cmd-inline">*</code>, viết dạng “Luôn…”, “Không bao giờ…”, “Chỉ … khi …”, kèm giới hạn giá trị như 0–100.</p></div>
+          <div class="card cmd-field" data-reveal style="--d:3"><h3><span class="cmd-name">format:</span><span class="tag">Bắt buộc</span></h3><p>Khung hiển thị, phần quan trọng nhất. Khung càng cụ thể, AI càng giữ đúng qua nhiều lượt.</p></div>
+        </div>
+
+        <div data-reveal>
+          <h3 class="sub-head">Viết format để AI giữ đúng khung</h3>
+          <ul class="cmd-tips">
+            <li>Dòng tiêu đề: emoji + TÊN IN HOA, ví dụ <code>📋 DIỄN ĐÀN · [tên box]</code>.</li>
+            <li>Đường kẻ phân cách: copy nguyên ký tự <code>───────────────</code>.</li>
+            <li>Dùng <code>[ngoặc vuông]</code> cho chỗ AI tự điền, và <code>{{user}}</code>, <code>{{char}}</code> để AI tự thay tên.</li>
+            <li>Ghi rõ số lượng và độ dài: “3–5 bài”, “1–2 câu”, “80–120 chữ”.</li>
+            <li>Dòng kết tùy chọn cho hành động hoặc cảm xúc của nhân vật, bọc trong <code>＊…＊</code>.</li>
+            <li>Format có nhiều khối (bài đăng + bình luận) thì tách rõ từng khối.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="sub-head">Chỉ một cặp thẻ cho cả bộ</h3>
+          <p style="color:var(--muted);margin:-6px 0 16px">Dù có 1 hay 10 lệnh, <code class="cmd-inline">[START_COMMANDS]</code> chỉ mở một lần ở đầu và <code class="cmd-inline">[END_COMMANDS]</code> đóng một lần ở cuối. Phần “Bộ lệnh của bạn” ở trên đã làm sẵn việc này.</p>
+          <div class="grid-2 cmd-compare">
+            <div class="card is-bad" data-reveal style="--d:0"><h3>✕ Sai: mỗi lệnh một cặp thẻ</h3><pre class="cmd-pre">[START_COMMANDS]
+/command: nhatky
+...
+[END_COMMANDS]
+[START_COMMANDS]
+/command: tinnhan
+...
+[END_COMMANDS]</pre></div>
+            <div class="card is-good" data-reveal style="--d:1"><h3>✓ Đúng: một cặp bao toàn bộ</h3><pre class="cmd-pre">[START_COMMANDS]
+
+/command: nhatky
+...
+
+/command: tinnhan
+...
+
+[END_COMMANDS]</pre></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="sub-head">Trước khi publish</h3>
+          <div class="acc" data-reveal>
+            <details open><summary>Dùng 3–5 lệnh mỗi char</summary><div class="acc-body"><p>Nhiều lệnh quá, AI dễ rối và quên khung. Chọn những lệnh thật sự phục vụ câu chuyện.</p></div></details>
+            <details><summary>Văn phong lệnh khớp với char</summary><div class="acc-body"><p>Char GenZ thì lệnh viết kiểu GenZ, char cổ trang thì lệnh dùng từ cổ. Sửa tên app, đơn vị tiền, cách xưng hô trong lệnh mẫu cho hợp thế giới truyện.</p></div></details>
+            <details><summary>Test 5–10 lượt</summary><div class="acc-body"><p>Gõ thử từng lệnh trong 5–10 lượt chat, xem AI có giữ đúng khung, số lượng và chỉ số không, rồi mới publish.</p></div></details>
+            <details><summary>Nội dung vẫn theo tiêu chí chung</summary><div class="acc-body"><p>Nội dung lệnh sinh ra cũng phải đạt <a href="criteria.html">tiêu chí xét duyệt</a>: PG13 · SFW trong phần công khai, không lịch sử và tôn giáo có thật.</p></div></details>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cmd-tray" data-tray aria-live="polite"><strong data-tray-count>0 lệnh đã chọn</strong><a href="#bo-lenh">Xem bộ lệnh</a><button type="button" data-copy-all>Copy</button></div>
+    <div class="cmd-toast" data-toast role="status"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="imely Creator, Trang chủ">
+            <img src="assets/brand/app-icon.png" alt="" width="40" height="40" loading="lazy">
+            <span><strong>imely Creator</strong><small>Official program</small></span>
+          </a>
+          <p>Trang đồng hành với creator chính thức của imely. Sáng tạo nhân vật, tham gia chương trình &amp; nhận thưởng cùng cộng đồng AI Chat</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <nav aria-label="Khám phá">
+            <a href="so-tay.html">Sổ tay Creator</a>
+            <a href="character.html">Beta Creator</a>
+            <a href="gems.html">Char4Gem · Video4Gem</a>
+            <a href="criteria.html">Tiêu chí &amp; FAQ</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Sổ tay</h4>
+          <nav aria-label="Sổ tay">
+            <a href="creator-handbook.html">Sổ tay chính thức</a>
+            <a href="lenh-he-thong.html">Thư viện lệnh</a>
+            <a href="guideline-chuyen-ngu-taiwan.html">Chuyển ngữ Đài Loan</a>
+            <a href="huong-dan-char-indo.html">Chuyển thể Indonesia</a>
+            <a href="social-content-criteria.html">Tiêu chuẩn nội dung video</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Cộng đồng</h4>
+          <nav aria-label="Cộng đồng">
+            <a href="https://discord.gg/EaK8dMubt4" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://www.facebook.com/imelyofficial" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.facebook.com/groups/vutruimely" target="_blank" rel="noopener noreferrer">Group Vũ trụ imely</a>
+            <a href="https://www.tiktok.com/@imely.ai" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://imely.ai/" target="_blank" rel="noopener noreferrer">imely.ai ↗</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 imely Creator Program</span>
+        <span>Managed by imely team</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+  (function () {
+    var KEY = 'imely-cmd-set';
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.cmd-card'));
+    var byName = {};
+    cards.forEach(function (c) { byName[c.getAttribute('data-cmd')] = c; });
+    var picked = [];
+    try { picked = JSON.parse(localStorage.getItem(KEY) || '[]').filter(function (n) { return byName[n]; }); } catch (e) { picked = []; }
+
+    var $ = function (s) { return document.querySelector(s); };
+    var chips = $('[data-chips]'), empty = $('[data-empty]'), hint = $('[data-hint]');
+    var output = $('[data-output]'), count = $('[data-count]'), clear = $('[data-clear]');
+    var tray = $('[data-tray]'), trayCount = $('[data-tray-count]'), toast = $('[data-toast]');
+    var builder = document.getElementById('bo-lenh');
+    var builderInView = false, toastTimer;
+
+    function code(n) { return byName[n].querySelector('.cmd-pre').textContent; }
+    function bundle() { return '[START_COMMANDS]\n\n' + picked.map(code).join('\n\n') + '\n\n[END_COMMANDS]'; }
+
+    function save() { try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch (e) {} }
+
+    function render() {
+      cards.forEach(function (c) {
+        var on = picked.indexOf(c.getAttribute('data-cmd')) !== -1;
+        var b = c.querySelector('[data-add]');
+        c.classList.toggle('is-picked', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.textContent = on ? 'Đã thêm ✓' : 'Thêm vào bộ';
+      });
+      chips.innerHTML = '';
+      picked.forEach(function (n) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Bỏ /' + n + ' khỏi bộ');
+        b.innerHTML = '/' + n + ' <span aria-hidden="true">×</span>';
+        b.addEventListener('click', function () { toggle(n); });
+        chips.appendChild(b);
+      });
+      var k = picked.length;
+      empty.hidden = k > 0;
+      count.textContent = k + ' lệnh';
+      hint.classList.toggle('is-warn', k > 5);
+      hint.textContent = k > 5 ? 'Đang có ' + k + ' lệnh. Nên giữ 3–5 lệnh để AI không rối.' : 'Nên dùng 3–5 lệnh mỗi char. Nhiều hơn, AI dễ rối và quên khung.';
+      output.textContent = k ? bundle() : '[START_COMMANDS]\n\n(chọn lệnh ở thư viện)\n\n[END_COMMANDS]';
+      document.querySelectorAll('[data-copy-all]').forEach(function (b) { b.disabled = !k; });
+      clear.disabled = !k;
+      trayCount.textContent = k + ' lệnh đã chọn';
+      tray.classList.toggle('is-shown', k > 0 && !builderInView);
+    }
+
+    function toggle(n) {
+      var i = picked.indexOf(n);
+      if (i === -1) picked.push(n); else picked.splice(i, 1);
+      save(); render();
+    }
+
+    function showToast(msg, sub) {
+      toast.innerHTML = '';
+      toast.appendChild(document.createTextNode(msg));
+      if (sub) { var s = document.createElement('small'); s.textContent = sub; toast.appendChild(s); }
+      toast.classList.add('is-shown');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () { toast.classList.remove('is-shown'); }, 2600);
+    }
+
+    function copy(text, msg, sub) {
+      function fallback() {
+        var t = document.createElement('textarea');
+        t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(t);
+        showToast(ok ? msg : 'Không copy được, hãy bôi đen và copy thủ công.', ok ? sub : '');
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { showToast(msg, sub); }, fallback);
+      } else { fallback(); }
+    }
+
+    cards.forEach(function (c) {
+      var n = c.getAttribute('data-cmd');
+      c.querySelector('[data-add]').addEventListener('click', function () { toggle(n); });
+      c.querySelector('[data-copy]').addEventListener('click', function () {
+        copy(code(n), 'Đã copy /' + n, 'Đặt lệnh bên trong cặp [START_COMMANDS] … [END_COMMANDS].');
+      });
+    });
+    document.querySelectorAll('[data-copy-all]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (picked.length) copy(bundle(), 'Đã copy bộ ' + picked.length + ' lệnh', 'Dán nguyên khối vào char.');
+      });
+    });
+    clear.addEventListener('click', function () { picked = []; save(); render(); });
+    document.querySelectorAll('[data-preset]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        picked = b.getAttribute('data-preset').split(' ');
+        save(); render();
+        showToast('Đã chọn ' + b.textContent, picked.map(function (n) { return '/' + n; }).join(' · '));
+      });
+    });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        builderInView = entries[0].isIntersecting;
+        tray.classList.toggle('is-shown', picked.length > 0 && !builderInView);
+      }, { threshold: 0.15 }).observe(builder);
+    }
+    render();
+  })();
+  </script>
+</body>
+</html>
