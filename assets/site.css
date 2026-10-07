@@ -165,22 +165,6 @@ button {
   display: none !important;
 }
 
-.skip-link {
-  background: var(--solid);
-  border-radius: 999px;
-  color: var(--on-solid);
-  left: 16px;
-  padding: 10px 16px;
-  position: fixed;
-  top: -60px;
-  transition: top 0.2s var(--ease);
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 12px;
-}
-
 .sr-only {
   clip: rect(0 0 0 0);
   height: 1px;
