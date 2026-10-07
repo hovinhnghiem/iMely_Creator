@@ -41,7 +41,7 @@
 
   /* Close language menu on outside click */
   document.addEventListener('click', function (e) {
-    document.querySelectorAll('details.lang[open]').forEach(function (d) {
+    document.querySelectorAll('details.lang[open], details.landing-language[open]').forEach(function (d) {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });

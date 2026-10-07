@@ -4576,3 +4576,164 @@ html[lang="th"] .footer-grid h4 {
     gap: 8px;
   }
 }
+
+/* ---------- Phone tuning ---------- */
+
+@media (max-width: 640px) {
+  .page-hero {
+    gap: 24px;
+    padding-block: 24px 16px;
+  }
+
+  /* Decorative mascot art only adds scroll on phones */
+  .page-hero-art:has(> .art-card.is-contain) {
+    display: none;
+  }
+
+  /* Home portrait: a shorter crop so the first screen reaches the content */
+  .home-hero .hero-visual {
+    aspect-ratio: 4 / 3;
+    max-width: none;
+  }
+
+  .home-hero .hero-frame {
+    inset: 0;
+  }
+
+  .cmd-demo {
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .cmd-demo pre {
+    font-size: 0.82rem;
+    max-height: 200px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent);
+    mask-image: linear-gradient(to bottom, #000 72%, transparent);
+    overflow: hidden;
+  }
+
+  /* Filter chips: one swipeable row instead of a wrapping block */
+  .filters:not(.cmd-presets) {
+    contain: inline-size;
+    flex-wrap: nowrap;
+    margin-inline: calc(var(--gutter) * -1);
+    overflow-x: auto;
+    padding: 2px var(--gutter);
+    scroll-padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+
+  .filters:not(.cmd-presets)::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filters:not(.cmd-presets) button {
+    flex: 0 0 auto;
+  }
+
+  .faq-tools .filters {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .faq-tools .search {
+    width: 100%;
+  }
+
+  .cmd-toolbar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cmd-filter-row {
+    min-width: 0;
+  }
+
+  .cmd-filter-row .filters {
+    align-self: stretch;
+    min-width: 0;
+  }
+
+  /* Comfortable tap targets */
+  .toc-chips a {
+    padding: 9px 12px;
+  }
+
+  .cmd-code summary,
+  .hub-foot .link-arrow {
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* Let wide children (tables, long words) shrink instead of widening the page */
+  .doc-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  /* Program matrix: one card-like block per program instead of a 3-column table */
+  .program-matrix thead {
+    display: none;
+  }
+
+  .program-matrix,
+  .program-matrix tbody,
+  .program-matrix tr,
+  .program-matrix th,
+  .program-matrix td {
+    display: block;
+    width: auto;
+  }
+
+  .program-matrix tr {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 18px;
+  }
+
+  .program-matrix tr:last-child {
+    border-bottom: 0;
+  }
+
+  .program-matrix th,
+  .program-matrix td {
+    border: 0;
+    padding: 2px 0;
+  }
+
+  .program-matrix th {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .program-matrix td:nth-of-type(1) {
+    color: var(--teal-700);
+    font-size: 0.85rem;
+  }
+
+  .program-matrix td:nth-of-type(2) {
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand > span {
+    display: none;
+  }
+
+  .stat-row {
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat {
+    padding: 16px;
+  }
+
+  .stat strong {
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+  }
+}
