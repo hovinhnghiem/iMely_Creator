@@ -7504,3 +7504,97 @@ body.creator-landing .landing-menu nav > a[aria-current="page"] {
     gap: 6px;
   }
 }
+
+/* Thai guideline: pronoun table and module group tag */
+.thai-guide-table {
+  background: color-mix(in srgb, rgba(255, 255, 255, 0.84) var(--lmix), var(--lc));
+  border: 1px solid rgba(118, 87, 232, 0.2);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.thai-guide-table table {
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.thai-guide-table th,
+.thai-guide-table td {
+  border-bottom: 1px solid var(--landing-line);
+  padding: 0.8rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.thai-guide-table th {
+  color: var(--indo-guide-green-deep);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.thai-guide-table td:nth-child(2) {
+  color: var(--indo-guide-ink);
+  font-weight: 800;
+}
+
+.thai-guide-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.thai-guide-module-tag {
+  color: #cbb8ff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.taiwan-guide-callouts p:nth-child(3):last-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .thai-guide-table thead {
+    display: none;
+  }
+
+  .thai-guide-table table,
+  .thai-guide-table tbody,
+  .thai-guide-table tr,
+  .thai-guide-table td {
+    display: block;
+  }
+
+  .thai-guide-table tr {
+    border-bottom: 1px solid var(--landing-line);
+    padding: 0.75rem 1rem;
+  }
+
+  .thai-guide-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .thai-guide-table td {
+    border: 0;
+    padding: 0.1rem 0;
+  }
+
+  .thai-guide-table td:first-child {
+    font-weight: 700;
+  }
+
+  .thai-guide-table td:last-child {
+    color: var(--landing-ink-soft);
+    font-size: 0.88rem;
+  }
+}
+
+/* The legacy global strong colour is near-white; keep guideline emphasis readable */
+.taiwan-guide-page .taiwan-guide-image-copy strong,
+.taiwan-guide-page .indo-guide-checklist strong {
+  color: var(--indo-guide-ink);
+}

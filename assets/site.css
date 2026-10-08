@@ -4716,3 +4716,12 @@ html[lang="th"] .footer-grid h4 {
     overflow-wrap: anywhere;
   }
 }
+
+/* Inline links inside card copy */
+.card p a:not(.btn):not(.link-arrow) {
+  color: var(--teal-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
