@@ -2068,6 +2068,11 @@ body.menu-open {
   box-shadow: none;
 }
 
+.card.is-soft p + .k {
+  display: block;
+  margin-top: 18px;
+}
+
 .card-ic {
   align-items: center;
   background: var(--teal-50);
